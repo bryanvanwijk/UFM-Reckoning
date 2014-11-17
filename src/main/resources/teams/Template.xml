@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- name is the correctly capitalized and spaced team name
+	 id must be all lowercase and written together -->
+<TEAM name="Team Name" id="teamname">
+	<PLAYERS>
+		<!-- For every player, copy this part. Use the id listed in the player database -->
+		<PLAYER id="firstnamestuffbetweenlastname">
+			<!-- Active: Is this player in the regular lineup
+				 Type: What type is this player performing (Can be another type than the player is)
+				 Pos: Position of the player
+				 NUM: Backnumber of the player -->
+			<ACTIVE>true</ACTIVE>
+			<TYPE></TYPE>
+			<POS></POS>
+			<NUM></NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>
