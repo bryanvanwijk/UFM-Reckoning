@@ -13,8 +13,40 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <build>
+    <directory>build</directory>
+    <outputDirectory>build/classes</outputDirectory>
+
+    <plugins>
+      <!-- This will add a classpath and define the main class, it will be runnable with 'java -jar' -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>nl.joshuaslik.UFMReckoning.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+
+    <!-- Make sure that Java 1.8 is used (Java 8) -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+        </configuration>
+      </plugin>
+  </build>
 
   <dependencies>
+    <!-- The test classes are of course dependant on junit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
