@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="FC Utrecht" id="fc-utrecht">
+	<PLAYERS>
+		<PLAYER id="robinruiter">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="markvandermaarel">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="ramonleeuwin">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="christiankum">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="anouarkali">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="édouardduplan">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="willemjanssen" captain="true">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="ruudboymans">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="nacerbarazite">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="tommyoar">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="géveromarkiet">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>13</NUM>
+		</PLAYER>
+		<PLAYER id="kaiheerings">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="markdiemers">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="yassineayoub">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>16</NUM>
+		</PLAYER>
+		<PLAYER id="michaelzullo">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
+		<PLAYER id="fernandoquesada">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="dannyverbeek">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="kristofferpeterson">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="yannickcortie">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="seanklaiber">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="gylianovanvelzen">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>27</NUM>
+		</PLAYER>
+		<PLAYER id="jeroenverhoeven">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="jeffhardeveld">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>34</NUM>
+		</PLAYER>
+		<PLAYER id="rubiorubin">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>45</NUM>
+		</PLAYER>
+		<PLAYER id="rodneyantwi">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>47</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

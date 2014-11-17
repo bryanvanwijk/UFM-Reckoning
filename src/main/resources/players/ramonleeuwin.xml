@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="ramonleeuwin">
+	<NAME first="Ramon" last="Leeuwin" />
+	<COUNTRY>NETHERLANDS</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>51</ATT>
+		<DEF>70</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>650000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>
