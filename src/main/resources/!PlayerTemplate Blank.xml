@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="">
+	<NAME first="" last="" />
+	<COUNTRY></COUNTRY>
+	<TYPE></TYPE>
+	<POS></POS>
+	<STATS>
+		<ATT></ATT>
+		<DEF></DEF>
+		<STA></STA>
+	</STATS>
+	<TPRICE></TPRICE>
+	<APRICE></APRICE>
+	<TEAM></TEAM>
+</PLAYER>

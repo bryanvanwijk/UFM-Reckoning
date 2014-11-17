@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PLAYER id="firstnamestuffbetweenlastname">
+<PLAYER id="firstnamevanderlastname">
 	<!-- Image is the same name as the ID and must be in PNG format
 		 Images can be found on the futhead profile, right click on the face and use Save Image As > -->
 	<!-- Name is in format [Surname, Firstname StuffBetween] -->
-	<NAME>Surname, Firstname van der</NAME>
-	<COUNTRY>AUSTRALIA</COUNTRY>
-	<!-- ATT = Attack, MID = Midfield, DEF = Defence, GK = Goal Keeper -->
-	<TYPE>ATT</TYPE>
-	<!-- Position on the field -->
-	<POS>LW</POS>
+	<NAME first="" last="" />
+	<COUNTRY></COUNTRY>
+	<!-- FW = Forward (Attacking), MD = Midfield, DF = Defence, GK = Goal Keeper -->
+	<TYPE></TYPE>
+	<!-- Position on the field (Trivial) -->
+	<POS></POS>
 	
 	<!-- http://www.futhead.com/15/leagues/eredivisie/
 		 Regular player 			Goalkeeper
@@ -16,11 +16,14 @@
 		 DEF = Defender Rating 		HND = Handling
 		 STA = Stamina (Physical) 	REF = Reflexes -->
 	<STATS>
-		<ATT>64</ATT>
-		<DEF>37</DEF>
-		<STA>74</STA>
+		<ATT></ATT>
+		<DEF></DEF>
+		<STA></STA>
 	</STATS>
 	<!-- http://www.transfermarkt.com/ for the TPRICE -->
-	<TPRICE>2000000</TPRICE>
+	<TPRICE></TPRICE>
+	<!-- Has not been agreed how to determine annual  price. Please leave blank -->
 	<APRICE></APRICE>
+	<!-- If the player is playing in a team, fill this in WITH THE TEAM ID. If not, leave it empty -->
+	<TEAM></TEAM>
 </PLAYER>

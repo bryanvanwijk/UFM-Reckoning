@@ -1,30 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="Ajax" id="1">
-	<PLAYERS count="22">
-		<PLAYER name="Schøne, Lasse">
+<TEAM name="FC Utrecht" id="fc-utrecht">
+	<PLAYERS>
+		<PLAYER id="tommyoar">
 			<ACTIVE>true</ACTIVE>
-			<POS></POS>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
 		</PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
-		<PLAYER></PLAYER>
 	</PLAYERS>
 </TEAM>

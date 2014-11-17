@@ -33,7 +33,7 @@
         </configuration>
       </plugin>
     
-    <!-- Make sure that Java 1.8 is used (Java 8) -->
+      <!-- Make sure that Java 1.8 is used (Java 8) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>

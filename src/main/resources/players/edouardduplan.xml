@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="edouardduplan">
+	<NAME first="Edouard" last="Duplan" />
+	<COUNTRY>FRANCE</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>40</DEF>
+		<STA>67</STA>
+	</STATS>
+	<TPRICE>1000000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>
