@@ -4,7 +4,7 @@
 #   if you don't know exactly what you are doing.
 
 # If you want a cool Gource configuration for this project, contact: Joshua Slik
-/gource/
+/gource/**
 
 # Exclude build files from the project
 /build/
@@ -21,10 +21,9 @@
 # Exclude commitlog file, so you can keep track of your changes up for commmitting
 commitlog
 
-
-################################################################
-### !!! ONLY EXCEPTIONS BELOW THIS LINE PLEASE THANK YOU !!! ###
-################################################################
+# --------------------------------------------------------
+# !!! ONLY EXCEPTIONS BELOW THIS LINE PLEASE THANK YOU !!!
+# --------------------------------------------------------
 
 # Include the Gource captions, so other people can add milestones to them.
 !/gource/gource-captions.txt
