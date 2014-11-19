@@ -21,6 +21,9 @@
 # Exclude commitlog file, so you can keep track of your changes up for commmitting
 commitlog
 
+# Thumbs ignore
+**/Thumbs.db
+
 # --------------------------------------------------------
 # !!! ONLY EXCEPTIONS BELOW THIS LINE PLEASE THANK YOU !!!
 # --------------------------------------------------------
