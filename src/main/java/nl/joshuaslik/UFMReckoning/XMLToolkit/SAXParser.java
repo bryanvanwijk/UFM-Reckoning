@@ -1,8 +1,10 @@
-package nl.joshuaslik.UFMReckoning;
+package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
+
+import nl.joshuaslik.UFMReckoning.App;
 
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;

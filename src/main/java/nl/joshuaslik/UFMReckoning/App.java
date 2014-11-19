@@ -1,6 +1,5 @@
 package nl.joshuaslik.UFMReckoning;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.security.CodeSource;
@@ -9,11 +8,13 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
+import nl.joshuaslik.UFMReckoning.XMLToolkit.SAXParser;
+
 public class App {
 	
 	public static void main(String[] args) throws IOException {
 		SAXParser.parse("players/adamsarota.xml");
-		String[] files = filesInAlt("players");
+		String[] files = filesIn("players");
 		for(int i = 0; i < files.length; i++) 
 			SAXParser.parse(files[i]);
 		for(int i = 0; i < files.length; i++) 
@@ -21,23 +22,10 @@ public class App {
 		System.out.println(files.length);
 	}
 	
-	public static File[] filesIn(String folderpath) {
-		File folder = new File(folderpath);
-		File[] listOfFiles = folder.listFiles();
-		
-		for (int i = 0; i < listOfFiles.length; i++) {
-			if (listOfFiles[i].isFile()) {
-				System.out.println("File " + listOfFiles[i].getName());
-		    }
-		}
-		
-		return listOfFiles;
-	}
-	
-	public static String[] filesInAlt(String folderpath) throws IOException {
+	public static String[] filesIn(String folderpath) throws IOException {
 		CodeSource src = App.class.getProtectionDomain().getCodeSource();
 		List<String> list = new ArrayList<String>();
-
+		
 		if( src != null ) {
 		    URL jar = src.getLocation();
 		    ZipInputStream zip = new ZipInputStream( jar.openStream());
