@@ -1,2 +1,6 @@
 1416248158|[Info] Project is created on Mon, 17 Nov 2014 18:15:58 GMT!
 1416248159|[Info] 1st contributor joins: Joshua Slik!
+1416259197|[Mile] First team completely implemented!
+1416345575|[Info] 2nd contributor joins: sabenoist!
+1416404700|[Sprint] Start of Sprint #1!
+1416413887|[Info] 3rd contributor joins: Robert Haaring!
