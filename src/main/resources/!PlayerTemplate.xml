@@ -13,7 +13,7 @@
 	<!-- http://www.futhead.com/15/leagues/eredivisie/
 		 Regular player 			Goalkeeper
 		 ATT = Attacker Rating 		DIV = Diving
-		 DEF = Defender Rating 		HND = Handling
+		 DEF = Defender Rating 		POS = Positioning
 		 STA = Stamina (Physical) 	REF = Reflexes -->
 	<STATS>
 		<ATT></ATT>
