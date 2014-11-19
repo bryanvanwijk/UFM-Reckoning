@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="christiankum">
+	<NAME first="Christian" last="Kum" />
+	<COUNTRY>GERMANY</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>47</ATT>
+		<DEF>67</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

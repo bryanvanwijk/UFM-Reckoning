@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jeroenverhoeven">
+	<NAME first="Jeroen" last="Verhoeven" />
+	<COUNTRY>NETHERLANDS</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>57</DIV>
+		<HND>67</HND>
+		<REF>71</REF>
+	</STATS>
+	<TPRICE>100000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

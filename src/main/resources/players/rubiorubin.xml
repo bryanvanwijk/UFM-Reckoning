@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="rubiorubin">
+	<NAME first="Rubio" last="Rubin" />
+	<COUNTRY>UNITED STATES</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>58</ATT>
+		<DEF>29</DEF>
+		<STA>50</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

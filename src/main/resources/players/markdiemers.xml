@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="markdiemers">
+	<NAME first="Mark" last="Diemers" />
+	<COUNTRY>NETHERLANDS</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>61</ATT>
+		<DEF>56</DEF>
+		<STA>58</STA>
+	</STATS>
+	<TPRICE>300000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>
