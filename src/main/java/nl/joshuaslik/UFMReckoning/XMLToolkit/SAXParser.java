@@ -1,6 +1,5 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -19,19 +18,8 @@ import org.xml.sax.helpers.DefaultHandler;
  *
  */
 public class SAXParser extends DefaultHandler {
-
-	public static void main(String args[]) throws Exception {
-		XMLReader xr = XMLReaderFactory.createXMLReader();
-		SAXParser handler = new SAXParser();
-		xr.setContentHandler(handler);
-		xr.setErrorHandler(handler);
-
-		// Parse each file provided on the command line.
-		for (int i = 0; i < args.length; i++) {
-			FileReader r = new FileReader(args[i]);
-			xr.parse(new InputSource(r));
-		}
-	}
+	
+	public SAXParser() {}
 
 	public static void parse(String filename) {
 		XMLReader xr = null;
@@ -52,10 +40,6 @@ public class SAXParser extends DefaultHandler {
 		} catch (IOException | SAXException e) {
 			e.printStackTrace();
 		}
-	}
-	
-	public SAXParser() {
-		super();
 	}
 
 	// //////////////////////////////////////////////////////////////////
