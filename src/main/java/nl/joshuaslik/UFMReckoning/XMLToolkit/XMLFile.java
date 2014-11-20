@@ -6,5 +6,14 @@ package nl.joshuaslik.UFMReckoning.XMLToolkit;
  *
  */
 public class XMLFile {
-
+	
+	XMLTag mastertag = new XMLTag();
+	
+	/**
+	 * Constructor
+	 */
+	public XMLFile() {
+		
+	}
+	
 }
