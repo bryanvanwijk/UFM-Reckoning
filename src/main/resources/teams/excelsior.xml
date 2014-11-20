@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Excelsior" id="excelsior">
+	<PLAYERS>
+		<PLAYER id="jordanbotaka">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="tomvanweert">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="darylvanmieghem">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="richardstolte">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="ninosgouriye">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
+		<PLAYER id="carlodereuver">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="markomaletić">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>
