@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Willem II" id="willem-ii">
+	<PLAYERS>
+		<PLAYER id="konstantinoslamprou">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="freekheerkens">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="jordenspeters">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="frankvanderstruijk">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="fabiansporkslede">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="terellondaan">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="robbiehaemhouts">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="samuelarmenteros">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="alimessaoud">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="brunoandrade">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="ricardoippel">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>12</NUM>
+		</PLAYER>
+		<PLAYER id="bensahar">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="drieswuytens">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="niekvossebelt">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="jonasheymans">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="jersoncabral">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="davidmeul">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="renanzanelli">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="simonvanzeelst">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="timcornelisse">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>28</NUM>
+		</PLAYER>
+		<PLAYER id="stijnwuytens">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MD</TYPE>
+			<NUM>29</NUM>
+		</PLAYER>
+		<PLAYER id="mattijsbranderhorst">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>31</NUM>
+		</PLAYER>
+		<PLAYER id="mitchelldijks">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>35</NUM>
+		</PLAYER>
+		<PLAYER id="charltonvicento">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FA</TYPE>
+			<NUM>36</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>
