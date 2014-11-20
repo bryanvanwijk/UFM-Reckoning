@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="bensahar">
+	<NAME first="Ben" last="Sahar" />
+	<COUNTRY>Israel</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>71</ATT>
+		<DEF>35</DEF>
+		<STA>55</STA>
+	</STATS>
+	<TPRICE></TPRICE>
+	<TEAM>willem-II</TEAM>
+</PLAYER>
