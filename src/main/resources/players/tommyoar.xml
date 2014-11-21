@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="tommyoar">
 	<NAME first="Tommy" last="Oar" />
-	<COUNTRY>AUSTRALIA</COUNTRY>
+	<COUNTRY>Australia</COUNTRY>
 	<TYPE>FW</TYPE>
 	<POS>LW</POS>
 	<STATS>
