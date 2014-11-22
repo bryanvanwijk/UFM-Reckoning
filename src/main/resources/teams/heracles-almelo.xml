@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Heracles Almelo" id="heracles-almelo">
+	<PLAYERS>
+		<PLAYER id="milanokoenders">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="bartschenkeveld">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="jeroenveldmate">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="fahdaktaou">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="ramonzomer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="coengortemaker">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>29</NUM>
+		</PLAYER>
+		<PLAYER id="markengberink">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="miketewierik">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>32</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

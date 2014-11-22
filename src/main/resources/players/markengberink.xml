@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="markengberink">
+	<NAME first="Mark" last="Engberink" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>39</ATT>
+		<DEF>58</DEF>
+		<STA>55</STA>
+	</STATS>
+	<TPRICE>75000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>
