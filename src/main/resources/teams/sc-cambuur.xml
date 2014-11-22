@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="SC Cambuur" id="sc-cambuur">
+	<PLAYERS>
+		<PLAYER id="leonardnienhuis">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="harmzeinstra">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="jurjanwouda">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>28</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>
