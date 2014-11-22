@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEAM name="Go Ahead Eagles" id="go-ahead-eagles">
 	<PLAYERS>
-		<PLAYER id="alexschalk">
+		<PLAYER id="mickeyvanderhart">
 			<ACTIVE>true</ACTIVE>
-			<TYPE>FW</TYPE>
-			<NUM>7</NUM>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="bartvriends">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="jobvanderlinden">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="xandroschenk">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
 		</PLAYER>
 		<PLAYER id="sjoerdovergoor">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="alexschalk">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
 		</PLAYER>
 		<PLAYER id="deniztürüç">
 			<ACTIVE>true</ACTIVE>
@@ -31,10 +51,25 @@
 			<TYPE>FW</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>
+		<PLAYER id="mawounaamevor">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
 		<PLAYER id="sanderduits">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="erikcummins">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>16</NUM>
+		</PLAYER>
+		<PLAYER id="svennieuwpoort">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>17</NUM>
 		</PLAYER>
 		<PLAYER id="larslambooij">
 			<ACTIVE>false</ACTIVE>
@@ -60,6 +95,21 @@
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="robinvandermeer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="rubenlucas">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="gilianowijnaldum">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>25</NUM>
 		</PLAYER>
 		<PLAYER id="teijetenden">
 			<ACTIVE>false</ACTIVE>
