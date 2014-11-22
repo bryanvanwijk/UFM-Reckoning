@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEAM name="SC Cambuur" id="sc-cambuur">
 	<PLAYERS>
-		<PLAYER id="leonardnienhuis">
+		<PLAYER id="furdjelnarsingh">
 			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="danielderidder">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="martijnbarto">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="dejanmeleg">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="michielhemmen">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>12</NUM>
+		</PLAYER>
+		<PLAYER id="oebeleschokker">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="bartholomewogbeche">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="leonardnienhuis">
+			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="sebastiansteblecki">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>24</NUM>
 		</PLAYER>
 		<PLAYER id="harmzeinstra">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="bobschepers">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>27</NUM>
 		</PLAYER>
 		<PLAYER id="jurjanwouda">
 			<ACTIVE>false</ACTIVE>
