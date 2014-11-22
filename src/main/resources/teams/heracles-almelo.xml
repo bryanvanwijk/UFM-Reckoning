@@ -31,15 +31,40 @@
 			<TYPE>MF</TYPE>
 			<NUM>8</NUM>
 		</PLAYER>
+		<PLAYER id="denniavdić">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
 		<PLAYER id="thomasbruns">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>10</NUM>
 		</PLAYER>
+		<PLAYER id="bryanlinssen">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="alekseikangaskolkka">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>12</NUM>
+		</PLAYER>
+		<PLAYER id="draganpaljić">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>13</NUM>
+		</PLAYER>
 		<PLAYER id="joeypelupessy">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="jaroslavnavratil">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>15</NUM>
 		</PLAYER>
 		<PLAYER id="dariovujičević">
 			<ACTIVE>false</ACTIVE>
@@ -51,10 +76,25 @@
 			<TYPE>DF</TYPE>
 			<NUM>18</NUM>
 		</PLAYER>
+		<PLAYER id="woutweghorst">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="edwingyasi">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
 		<PLAYER id="simoncziommer">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="oussamatannane">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>22</NUM>
 		</PLAYER>
 		<PLAYER id="mark-janfledderus">
 			<ACTIVE>false</ACTIVE>
