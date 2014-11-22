@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="bassibum">
+	<NAME first="Bas" last="Sibum" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CDM</POS>
+	<STATS>
+		<ATT>51</ATT>
+		<DEF>65</DEF>
+		<STA>80</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>

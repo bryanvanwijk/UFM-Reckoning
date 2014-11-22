@@ -21,10 +21,50 @@
 			<TYPE>DF</TYPE>
 			<NUM>5</NUM>
 		</PLAYER>
+		<PLAYER id="bassibum">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="illiassbelhassani">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="thomasbruns">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="joeypelupessy">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="dariovujičević">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
 		<PLAYER id="ramonzomer">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="simoncziommer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="mark-janfledderus">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="mennoheerkes">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>24</NUM>
 		</PLAYER>
 		<PLAYER id="coengortemaker">
 			<ACTIVE>false</ACTIVE>
@@ -36,10 +76,20 @@
 			<TYPE>DF</TYPE>
 			<NUM>30</NUM>
 		</PLAYER>
+		<PLAYER id="daanrienstra">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>31</NUM>
+		</PLAYER>
 		<PLAYER id="miketewierik">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>32</NUM>
+		</PLAYER>
+		<PLAYER id="rickhemmink">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>35</NUM>
 		</PLAYER>
 	</PLAYERS>
 </TEAM>
