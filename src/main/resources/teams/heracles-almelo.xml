@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEAM name="Heracles Almelo" id="heracles-almelo">
 	<PLAYERS>
+		<PLAYER id="dennistelgenkamp">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
 		<PLAYER id="milanokoenders">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
@@ -47,7 +52,7 @@
 			<NUM>11</NUM>
 		</PLAYER>
 		<PLAYER id="alekseikangaskolkka">
-			<ACTIVE>false</ACTIVE>
+			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>12</NUM>
 		</PLAYER>
@@ -65,6 +70,11 @@
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="bramcastro">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>16</NUM>
 		</PLAYER>
 		<PLAYER id="dariovujičević">
 			<ACTIVE>false</ACTIVE>
@@ -105,6 +115,16 @@
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="renzefij">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="michaelbrouwer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>26</NUM>
 		</PLAYER>
 		<PLAYER id="coengortemaker">
 			<ACTIVE>false</ACTIVE>
