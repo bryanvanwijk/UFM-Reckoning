@@ -7,7 +7,7 @@ package nl.joshuaslik.UFMReckoning;
  */
 
 public abstract class Player {
-	private String playerID, fullName, team, country;
+	private String playerID, fullName, country;
 	private int price;
 
 	/**
@@ -19,18 +19,15 @@ public abstract class Player {
 	 *            is the first name of the player as a String
 	 * @param lastName
 	 *            is the last name of the player as a String
-	 * @param t
-	 *            is the name of the team the player belongs to as a String
 	 * @param heritage
 	 *            is the country of birth from the player as a String
 	 * @param pr
 	 *            is the price of the player as an int.
 	 */
-	public Player(String id, String firstName, String lastName, String t,
+	public Player(String id, String firstName, String lastName,
 			String heritage, int pr) {
 		playerID = id;
 		fullName = firstName + " " + lastName;
-		team = t;
 		country = heritage;
 		price = pr;
 	}
@@ -41,10 +38,6 @@ public abstract class Player {
 
 	public String getName() {
 		return fullName;
-	}
-
-	public String getTeam() {
-		return team;
 	}
 
 	public String getCountry() {

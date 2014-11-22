@@ -32,14 +32,10 @@ public class Fieldplayer extends Player {
 	 *            is the stamina of the player as an int
 	 * @param price
 	 *            is the price of the player as an int
-	 * @param team
-	 *            is the name of the team the player currently belongs to as a
-	 *            String
 	 */
 	public Fieldplayer(String id, String firstName, String lastName,
-			String country, String pos, int atkP, int defP, int sta, int price,
-			String team) {
-		super(id, firstName, lastName, team, country, price);
+			String country, String pos, int atkP, int defP, int sta, int price) {
+		super(id, firstName, lastName, country, price);
 
 		position = pos;
 		attackPower = atkP;
@@ -52,7 +48,6 @@ public class Fieldplayer extends Player {
 			Fieldplayer that = (Fieldplayer) other;
 			if (this.getID().equals(that.getID())
 					&& this.getName().equals(that.getName())
-					&& this.getTeam().equals(that.getTeam())
 					&& this.getCountry().equals(that.getCountry())
 					&& this.getPrice() == that.getPrice()
 					&& this.attackPower == that.attackPower
