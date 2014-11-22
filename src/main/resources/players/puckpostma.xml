@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="puckpostma">
+	<NAME first="Puck" last="Postma" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>28</DEF>
+		<STA>60</STA>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

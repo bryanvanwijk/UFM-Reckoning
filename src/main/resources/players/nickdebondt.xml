@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="nickdebondt">
+	<NAME first="Nick" last="de Bondt" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>29</DEF>
+		<STA>60</STA>
+	</STATS>
+	<TPRICE>100000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

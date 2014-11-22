@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Go Ahead Eagles" id="go-ahead-eagles">
+	<PLAYERS>
+		<PLAYER id="alexschalk">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="marnixkolder">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="leslydesa">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="fernandolewis">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="nickdebondt">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="julesreimerink">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="puckpostma">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>27</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>
