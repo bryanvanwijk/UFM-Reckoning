@@ -1,7 +1,9 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import nl.joshuaslik.UFMReckoning.App;
 
@@ -19,9 +21,11 @@ import org.xml.sax.helpers.DefaultHandler;
  */
 public class SAXParser extends DefaultHandler {
 	
+	private XMLFile root = null;
+	
 	public SAXParser() {}
 
-	public static void parse(String filename) {
+	public static void parseFile(String filename) {
 		XMLReader xr = null;
 		try {
 			xr = XMLReaderFactory.createXMLReader();
@@ -38,6 +42,26 @@ public class SAXParser extends DefaultHandler {
 		try {
 			xr.parse(new InputSource(is));
 		} catch (IOException | SAXException e) {
+			System.err.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+	
+	public static void parseString(String xmlstring) {
+		XMLReader xr = null;
+		try {
+			xr = XMLReaderFactory.createXMLReader();
+		} catch (SAXException e) {
+			e.printStackTrace();
+		}
+		SAXParser handler = new SAXParser();
+		xr.setContentHandler(handler);
+		xr.setErrorHandler(handler);
+		InputStream is = new ByteArrayInputStream(xmlstring.getBytes(StandardCharsets.UTF_8));
+		try {
+			xr.parse(new InputSource(is));
+		} catch (IOException | SAXException e) {
+			System.err.println(e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -64,6 +88,10 @@ public class SAXParser extends DefaultHandler {
 			}
 		} else {
 			System.out.println("Start element: {" + uri + "}" + name);
+		}
+		
+		if (root == null) {
+			
 		}
 	}
 
