@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="michaelchacon">
+	<NAME first="Michael" last="Chacón" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>53</ATT>
+		<DEF>59</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>100000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

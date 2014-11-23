@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jukkaraitala">
+	<NAME first="Jukka" last="Raitala" />
+	<COUNTRY>Finland</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>45</ATT>
+		<DEF>64</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

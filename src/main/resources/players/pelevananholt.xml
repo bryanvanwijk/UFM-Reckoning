@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="pelevananholt">
+	<NAME first="Pelé" last="van Anholt" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>60</ATT>
+		<DEF>68</DEF>
+		<STA>76</STA>
+	</STATS>
+	<TPRICE>1500000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

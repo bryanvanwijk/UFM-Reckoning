@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="daleysinkgraven">
+	<NAME first="Daley" last="Sinkgraven" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>55</ATT>
+		<DEF>50</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>1500000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>
