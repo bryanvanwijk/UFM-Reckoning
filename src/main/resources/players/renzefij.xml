@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="renzefij">
+	<NAME first="Renze" last="Fij" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>56</DIV>
+		<POS>55</POS>
+		<RES>70</RES>
+	</STATS>
+	<TPRICE>75000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>
