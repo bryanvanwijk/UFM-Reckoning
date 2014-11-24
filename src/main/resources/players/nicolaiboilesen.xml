@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="">
+	<NAME first="Nicolai" last="Boilesen" />
+	<COUNTRY>DENMARK</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>72</DEF>
+		<STA>77</STA>
+	</STATS>
+	<TPRICE>800000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>ajax</TEAM>
+</PLAYER>

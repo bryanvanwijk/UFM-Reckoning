@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="stefanodenswil">
+	<NAME first="Stefano" last="Denswil" />
+	<COUNTRY>NETHERLANDS</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>57</ATT>
+		<DEF>70</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>800000</TPRICE>
+	<APRICE></APRICE>
+	<TEAM>ajax</TEAM>
+</PLAYER>
