@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="riechedlybazoer">
 	<NAME first="Riechedly" last="Bazoer" />
-	<COUNTRY>NETHERLANDS</COUNTRY>
+	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE>MF</TYPE>
 	<POS>CDM</POS>
 	<STATS>
@@ -9,7 +9,6 @@
 		<DEF>62</DEF>
 		<STA>68</STA>
 	</STATS>
-	<TPRICE>1400000</TPRICE>
-	<APRICE></APRICE>
+	<TPRICE>400000</TPRICE>
 	<TEAM>ajax</TEAM>
 </PLAYER>
