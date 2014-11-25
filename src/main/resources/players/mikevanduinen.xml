@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mikevanduinen">
+	<NAME first="Mike" last="van Duinen" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FA</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>47</DEF>
+		<STA>82</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="timothyderijck">
+	<NAME first="Timothy" last="Derijck" />
+	<COUNTRY>Begium</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>45</ATT>
+		<DEF>66</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>
