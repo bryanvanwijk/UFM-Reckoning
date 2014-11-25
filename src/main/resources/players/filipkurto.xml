@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="filipkurto">
+	<NAME first="Filip" last="Kurto" />
+	<COUNTRY>Poland</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>67</DIV>
+		<POS>60</POS>
+		<REF>66</REF>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>
