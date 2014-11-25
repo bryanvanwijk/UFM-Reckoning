@@ -135,6 +135,7 @@ public class Team {
 			if (this.activePlayers.equals(that.activePlayers)
 					&& this.benchPlayers.equals(that.benchPlayers)
 					&& this.teamCaptain.equals(that.teamCaptain)
+					&& this.teamName.equals(that.teamName)
 					&& this.coachName.equals(that.coachName)
 					&& this.totalWins == that.totalWins
 					&& this.totalLosses == that.totalLosses

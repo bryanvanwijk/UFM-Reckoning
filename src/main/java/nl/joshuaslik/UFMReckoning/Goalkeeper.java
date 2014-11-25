@@ -2,13 +2,13 @@ package nl.joshuaslik.UFMReckoning;
 
 /**
  * A goalkeeper is a special kind of player with different stats. It has
- * reflexes, handling and blocking variables.
+ * reflexes, diving and positioning variables.
  * 
  * @author Sander
  *
  */
 public class Goalkeeper extends Player {
-	private int reflexes, handling, blocking;
+	private int reflexes, diving, positioning;
 
 	/**
 	 * Initialises the Object.
@@ -23,21 +23,21 @@ public class Goalkeeper extends Player {
 	 *            is the country of birth of the player as a String
 	 * @param refl
 	 *            are the reflexes of the player as an int (1...100)
-	 * @param handl
-	 *            are the handling skills of the player as an int (1...100)
-	 * @param blk
-	 *            are the blocking skills of the player as an int (1...100)
+	 * @param dive
+	 *            are the diving skills of the player as an int (1...100)
+	 * @param pos
+	 *            are the positioning skills of the player as an int (1...100)
 	 * @param price
 	 *            is the price of the player as an int
 	 */
 	public Goalkeeper(String id, String firstName, String lastName,
-			String country, int refl, int handl, int blk, int price) {
+			String country, int refl, int dive, int pos, int price) {
 
 		super(id, firstName, lastName, country, price);
 
 		reflexes = refl;
-		handling = handl;
-		blocking = blk;
+		diving = dive;
+		positioning = pos;
 	}
 
 	public boolean equals(Object other) {
@@ -48,8 +48,8 @@ public class Goalkeeper extends Player {
 					&& this.getCountry().equals(that.getCountry())
 					&& this.getPrice() == that.getPrice()
 					&& this.reflexes == that.reflexes
-					&& this.handling == that.handling
-					&& this.blocking == that.blocking) {
+					&& this.diving == that.diving
+					&& this.positioning == that.positioning) {
 				return true;
 			}
 		}
@@ -60,11 +60,11 @@ public class Goalkeeper extends Player {
 		return reflexes;
 	}
 
-	public int getHandling() {
-		return handling;
+	public int getDiving() {
+		return diving;
 	}
 
-	public int getBlocking() {
-		return blocking;
+	public int getPositioning() {
+		return positioning;
 	}
 }
