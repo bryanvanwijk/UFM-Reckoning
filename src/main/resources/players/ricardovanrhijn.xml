@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="ricardovanrhijn">
 	<NAME first="Ricardo" last="van Rhijn" />
-	<COUNTRY>NETHERLANDS</COUNTRY>
+	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE>DF</TYPE>
 	<POS>RB</POS>
 	<STATS>
-		<ATT>64</ATT>
-		<DEF>72</DEF>
-		<STA>90</STA>
+		<ATT>61</ATT>
+		<DEF>70</DEF>
+		<STA>87</STA>
 	</STATS>
-	<TPRICE>800000</TPRICE>
-	<APRICE></APRICE>
+	<TPRICE>4000000</TPRICE>
 	<TEAM>ajax</TEAM>
 </PLAYER>

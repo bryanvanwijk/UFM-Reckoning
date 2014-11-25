@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="mikevanderhoorn">
 	<NAME first="Mike" last="van der Hoorn" />
-	<COUNTRY>NETHERLANDS</COUNTRY>
+	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE>DF</TYPE>
 	<POS>CB</POS>
 	<STATS>
@@ -9,7 +9,6 @@
 		<DEF>70</DEF>
 		<STA>65</STA>
 	</STATS>
-	<TPRICE>800000</TPRICE>
-	<APRICE></APRICE>
+	<TPRICE>2000000</TPRICE>
 	<TEAM>ajax</TEAM>
 </PLAYER>
