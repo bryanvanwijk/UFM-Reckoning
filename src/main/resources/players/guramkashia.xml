@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="guramkashia">
+	<NAME first="Guram" last="Kashia" />
+	<COUNTRY>Georgia</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>35</ATT>
+		<DEF>73</DEF>
+		<STA>85</STA>
+	</STATS>
+	<TPRICE>3000000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>
