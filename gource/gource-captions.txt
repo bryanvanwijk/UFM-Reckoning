@@ -6,7 +6,7 @@
 1416413887|[Info] 3rd contributor joins: Robert Haaring!
 1416516346|[Info] 4th contributor joins: Bryan van Wijk!
 1416857236|[Info] 5th contributor joins: Naomi de Ridder!
-
+1416944101|[Info] 6th contributor joins: Lisette Veldkamp (Lisette V)!
 
 
 1417005000|[Scrum] End of Sprint #1!
