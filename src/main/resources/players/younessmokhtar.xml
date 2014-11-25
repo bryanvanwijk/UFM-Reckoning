@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="younessmokhtar">
+	<NAME first="Youness" last="Mokhtar" />
+	<COUNTRY>Morocco</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>39</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

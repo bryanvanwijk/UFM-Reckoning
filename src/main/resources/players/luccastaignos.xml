@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="luccastaignos">
+	<NAME first="Luc" last="Castaignos" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>74</ATT>
+		<DEF>35</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>7000000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

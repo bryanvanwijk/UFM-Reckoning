@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="FC Twente" id="fc-twente">
+	<PLAYERS>
+		<PLAYER id="nickmarsman">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="cucomartina">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="andreasbjelland">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="darryllachman">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="robbertschilder">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="younessmokhtar">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="kyleebecilio">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="torgeirborven">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="hakimziyech">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="jesuscorona">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="ryomiyaichi">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="dicokoppers">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="timbreukers">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>16</NUM>
+		</PLAYER>
+		<PLAYER id="rasmusbengtsson">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
+		<PLAYER id="timholscher">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="shadracheghan">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="sonnystevens">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="felipegutierrez">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="kamohelomokotjo">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="joachimandersen">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="bilalouldchikh">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="renatotapia">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="luccastaignos">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="kasperkusk">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>33</NUM>
+		</PLAYER>
+		<PLAYER id="filipbednarek">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>35</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

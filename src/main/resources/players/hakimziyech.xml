@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="hakimziyech">
+	<NAME first="Hakim" last="Ziyech" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>71</ATT>
+		<DEF>44</DEF>
+		<STA>73</STA>
+	</STATS>
+	<TPRICE>5000000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>
