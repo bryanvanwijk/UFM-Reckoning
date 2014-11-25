@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jeroenlumu">
+	<NAME first="Jeroen" last="Lumu" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FA</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>30</DEF>
+		<STA>63</STA>
+	</STATS>
+	<TPRICE>300000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

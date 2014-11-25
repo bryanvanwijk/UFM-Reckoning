@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="joeyvandenberg">
+	<NAME first="Joey" last="van den Berg" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CDM</POS>
+	<STATS>
+		<ATT>60</ATT>
+		<DEF>64</DEF>
+		<STA>83</STA>
+	</STATS>
+	<TPRICE>900000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="karimelahmadi">
+	<NAME first="Karim" last="El Ahmadi" />
+	<COUNTRY>Morocco</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>69</ATT>
+		<DEF>63</DEF>
+		<STA>84</STA>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

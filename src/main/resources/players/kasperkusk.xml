@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="kasperkusk">
 	<NAME first="Kasper" last="Kusk" />
@@ -12,3 +13,6 @@
 	<TPRICE>1500000</TPRICE>
 	<TEAM>fc-twente</TEAM>
 </PLAYER>
+=======
+Hallo!
+>>>>>>> bd04b5fc29309e895f5cde76269383f279979601

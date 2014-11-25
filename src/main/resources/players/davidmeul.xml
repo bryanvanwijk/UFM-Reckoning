@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="davidmeul">
+	<NAME first="David" last="Meul" />
+	<COUNTRY>Belgium</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>61</DIV>
+		<POS>62</POS>
+		<REV>66</REV>
+	</STATS>
+	<TPRICE>150000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

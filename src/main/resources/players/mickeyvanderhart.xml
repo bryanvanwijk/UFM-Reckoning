@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mickeyvanderhart">
+	<NAME first="Mickey" last="van der Hart" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>69</DIV>
+		<POS>62</POS>
+		<RES>70</RES>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

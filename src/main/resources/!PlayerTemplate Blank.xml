@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PLAYER id="">
-	<NAME first="" last="" />
-	<COUNTRY></COUNTRY>
+<PLAYER id="kennytete">
+	<NAME first="Kenny" last="Tete" />
+	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE></TYPE>
 	<POS></POS>
 	<STATS>
@@ -10,6 +10,5 @@
 		<STA></STA>
 	</STATS>
 	<TPRICE></TPRICE>
-	<APRICE></APRICE>
 	<TEAM></TEAM>
 </PLAYER>

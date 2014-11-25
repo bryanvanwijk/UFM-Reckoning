@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="niklasmoisander">
+	<NAME first="Niklas" last="Moisander" />
+	<COUNTRY>Finland</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>58</ATT>
+		<DEF>76</DEF>
+		<STA>72</STA>
+	</STATS>
+	<TPRICE>6500000</TPRICE>
+	<TEAM>ajax</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="deniztürüç">
+	<NAME first="Deniz" last="Türüç" />
+	<COUNTRY>Turkey</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>56</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>900000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

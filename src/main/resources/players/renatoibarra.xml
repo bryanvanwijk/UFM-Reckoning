@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="renatoibarra">
+	<NAME first="Renato" last="Ibarra" />
+	<COUNTRY>Ecuador</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>48</DEF>
+		<STA>80</STA>
+	</STATS>
+	<TPRICE>3000000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>

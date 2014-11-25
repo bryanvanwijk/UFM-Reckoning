@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="thomasdalgaard">
+	<NAME first="Thomas" last="Dalgaard" />
+	<COUNTRY>Denmark</COUNTRY>
+	<TYPE>FA</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>35</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>800000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

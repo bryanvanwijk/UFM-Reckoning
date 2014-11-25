@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="wilfriedkanon">
+	<NAME first="Wilfried" last="Kanon" />
+	<COUNTRY>Ivory Coast</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>40</ATT>
+		<DEF>64</DEF>
+		<STA>60</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>
