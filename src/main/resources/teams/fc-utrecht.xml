@@ -57,27 +57,27 @@
 			<NUM>13</NUM>
 		</PLAYER>
 		<PLAYER id="kaiheerings">
-			<ACTIVE>true</ACTIVE>
+			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>14</NUM>
 		</PLAYER>
 		<PLAYER id="markdiemers">
-			<ACTIVE>true</ACTIVE>
+			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>15</NUM>
 		</PLAYER>
 		<PLAYER id="yassineayoub">
-			<ACTIVE>true</ACTIVE>
+			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>16</NUM>
 		</PLAYER>
 		<PLAYER id="michaelzullo">
-			<ACTIVE>true</ACTIVE>
+			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>17</NUM>
 		</PLAYER>
 		<PLAYER id="fernandoquesada">
-			<ACTIVE>true</ACTIVE>
+			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>18</NUM>
 		</PLAYER>
