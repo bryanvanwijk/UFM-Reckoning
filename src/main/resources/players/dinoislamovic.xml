@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dinoislamovic">
+	<NAME first="Dino" last="Islamovic" />
+	<COUNTRY>Sweden</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>33</DEF>
+		<STA>50</STA>
+	</STATS>
+	<TPRICE>200000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

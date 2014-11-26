@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="markushenriksen">
+	<NAME first="Markus" last="Henriksen" />
+	<COUNTRY>Norway</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>73</ATT>
+		<DEF>69</DEF>
+		<STA>91</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>az</TEAM>
+</PLAYER>
