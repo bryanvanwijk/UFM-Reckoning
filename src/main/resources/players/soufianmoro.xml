@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="soufianmoro">
+	<NAME first="Soufian" last="Moro" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>RM</POS>
+	<STATS>
+		<ATT>60</ATT>
+		<DEF>29</DEF>
+		<STA>56</STA>
+	</STATS>
+	<TPRICE>200000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>
