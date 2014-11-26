@@ -52,7 +52,7 @@
 			<NUM>10</NUM>
 		</PLAYER>
 		<PLAYER id="nickbakker">
-			<ACTIVE>false</ACTIVE>
+			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>

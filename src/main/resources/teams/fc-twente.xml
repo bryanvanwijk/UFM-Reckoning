@@ -27,7 +27,7 @@
 			<NUM>5</NUM>
 		</PLAYER>
 		<PLAYER id="ryomiyaichi">
-			<ACTIVE>false</ACTIVE>
+			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>6</NUM>
 		</PLAYER>
