@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="seppderoover">
+	<NAME first="Sepp" last="de Roover" />
+	<COUNTRY>Belgium</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>65</DEF>
+		<STA>71</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>nac-breda</TEAM>
+</PLAYER>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PLAYER id="jorisvanovereem">
-	<NAME first="Joris" last="van Overeem" />
+<PLAYER id="giovannogodeken">
+	<NAME first="Giovanno" last="Godeken" />
 	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE>MF</TYPE>
-	<POS>CAM</POS>
+	<POS>CM</POS>
 	<STATS>
-		<ATT>59</ATT>
-		<DEF>55/DEF>
+		<ATT>52</ATT>
+		<DEF>52/DEF>
 		<STA>59</STA>
 	</STATS>
-	<TPRICE>350000</TPRICE>
+	<TPRICE>50000</TPRICE>
 	<TEAM>fc-dordrecht</TEAM>
 </PLAYER>

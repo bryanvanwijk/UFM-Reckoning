@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="ricktenvoorde">
+	<NAME first="Rick" last="ten Voorde" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>39</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>
