@@ -26,6 +26,11 @@
 			<TYPE>DF</TYPE>
 			<NUM>5</NUM>
 		</PLAYER>
+		<PLAYER id="ryomiyaichi">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
 		<PLAYER id="younessmokhtar">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
@@ -50,11 +55,6 @@
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>11</NUM>
-		</PLAYER>
-		<PLAYER id="ryomiyaichi">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>FW</TYPE>
-			<NUM>14</NUM>
 		</PLAYER>
 		<PLAYER id="dicokoppers">
 			<ACTIVE>false</ACTIVE>
