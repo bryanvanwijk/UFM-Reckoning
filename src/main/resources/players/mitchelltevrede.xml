@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mitchelltevrede">
+	<NAME first="Mitchell" last="te Vrede" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>32</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>1500000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

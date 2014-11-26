@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mitchellschet">
+	<NAME first="Mitchell" last="Schet" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FA</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>36</DEF>
+		<STA>67</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

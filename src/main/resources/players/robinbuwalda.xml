@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="robinbuwalda">
+	<NAME first="Robin" last="Buwalda" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>40</ATT>
+		<DEF>57</DEF>
+		<STA>48</STA>
+	</STATS>
+	<TPRICE>100000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

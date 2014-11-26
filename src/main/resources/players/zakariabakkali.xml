@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="zakariabakkali">
+	<NAME first="Zakaria" last="Bakkali" />
+	<COUNTRY>Belgium</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>29</DEF>
+		<STA>56</STA>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>psv</TEAM>
+</PLAYER>

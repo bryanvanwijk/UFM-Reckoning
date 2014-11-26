@@ -21,7 +21,7 @@
 # Exclude commitlog file, so you can keep track of your changes up for commmitting
 commitlog
 
-# Thumbs ignore
+# Exclude thumbnails
 **/Thumbs.db
 
 # --------------------------------------------------------

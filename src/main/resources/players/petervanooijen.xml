@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="petervanooijen">
+	<NAME first="Peter" last="van Ooijen" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>63</DEF>
+		<STA>62</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

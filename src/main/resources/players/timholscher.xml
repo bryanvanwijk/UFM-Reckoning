@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="timholscher">
+	<NAME first="Tim" last="Hölscher" />
+	<COUNTRY>Germany</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>45</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="woutermarinus">
+	<NAME first="Wouter" last="Marinus" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>36</DEF>
+		<STA>63</STA>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

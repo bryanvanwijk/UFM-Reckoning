@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="robbertteloeke">
+	<NAME first="Robbert" last="te Loeke" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>65</DIV>
+		<POS>59</POS>
+		<REF>62</REF>
+	</STATS>
+	<TPRICE>100000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>

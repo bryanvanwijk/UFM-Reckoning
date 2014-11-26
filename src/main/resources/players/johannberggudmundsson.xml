@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="johannberggudmundsson">
+	<NAME first="Jóhann" last="Berg Gudmundsson" />
+	<COUNTRY>Iceland</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>41</DEF>
+		<STA>67</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>az</TEAM>
+</PLAYER>

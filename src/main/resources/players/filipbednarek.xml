@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="filipbednarek">
+	<NAME first="Filip" last="Bednarek" />
+	<COUNTRY>Poland</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>64</DIV>
+		<HND>56</HND>
+		<REF>63</REF>
+	</STATS>
+	<TPRICE>150000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

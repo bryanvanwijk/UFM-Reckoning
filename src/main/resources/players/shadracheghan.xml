@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="shadracheghan">
+	<NAME first="Shadrach" last="Eghan" />
+	<COUNTRY>Ghana</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>43</DEF>
+		<STA>62</STA>
+	</STATS>
+	<TPRICE>1750000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

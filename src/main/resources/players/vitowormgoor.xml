@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="vitowormgoor">
+	<NAME first="Vito" last="Wormgoor" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>37</ATT>
+		<DEF>65</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>700000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

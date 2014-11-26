@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="zakarialabyad">
+	<NAME first="Zakaria" last="Labyad" />
+	<COUNTRY>Morocco</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>74</ATT>
+		<DEF>34</DEF>
+		<STA>72</STA>
+	</STATS>
+	<TPRICE>4000000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>

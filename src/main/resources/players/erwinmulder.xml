@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="ronaldgraafland">
+	<NAME first="Erwin" last="Mulder" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>73</DIV>
+		<POS>71</POS>
+		<REF>74</REF>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

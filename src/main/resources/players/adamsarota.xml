@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="adamsarota">
 	<NAME first="Adam" last="Sarota" />
-	<COUNTRY>AUSTRALIA</COUNTRY>
+	<COUNTRY>Australia</COUNTRY>
 	<TYPE>MF</TYPE>
 	<POS>CM</POS>
 	<STATS>
@@ -9,7 +9,6 @@
 		<DEF>60</DEF>
 		<STA>84</STA>
 	</STATS>
-	<TPRICE>700000</TPRICE>
-	<APRICE></APRICE>
+	<TPRICE>250000</TPRICE>
 	<TEAM>fc-utrecht</TEAM>
 </PLAYER>

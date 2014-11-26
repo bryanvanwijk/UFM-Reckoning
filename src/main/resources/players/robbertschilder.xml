@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="">
+	<NAME first="Robbert" last="Schilder" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>73</ATT>
+		<DEF>69</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>1750000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

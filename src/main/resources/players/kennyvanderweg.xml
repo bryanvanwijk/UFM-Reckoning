@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kennyvanderweg">
+	<NAME first="Kenny" last="van der Weg" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>37</ATT>
+		<DEF>65</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>nac-breda</TEAM>
+</PLAYER>

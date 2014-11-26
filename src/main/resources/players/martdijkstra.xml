@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="martdijkstra">
+	<NAME first="Mark" last="Dijkstra" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>51</ATT>
+		<DEF>64</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

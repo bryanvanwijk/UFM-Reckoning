@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dicokoppers">
+	<NAME first="Dico" last="Koppers" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>50</ATT>
+		<DEF>64</DEF>
+		<STA>66</STA>
+	</STATS>
+	<TPRICE>1250000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

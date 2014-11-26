@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="anouarkali">
 	<NAME first="Anouar" last="Kali" />
-	<COUNTRY>MOROCCO</COUNTRY>
+	<COUNTRY>Morocco</COUNTRY>
 	<TYPE>MF</TYPE>
 	<POS>CM</POS>
 	<STATS>
@@ -10,6 +10,5 @@
 		<STA>75</STA>
 	</STATS>
 	<TPRICE>1400000</TPRICE>
-	<APRICE></APRICE>
 	<TEAM>fc-utrecht</TEAM>
 </PLAYER>

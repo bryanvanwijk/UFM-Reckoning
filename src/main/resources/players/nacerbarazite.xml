@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="nacerbarazite">
 	<NAME first="Nacer" last="Barazite" />
-	<COUNTRY>NETHERLANDS</COUNTRY>
+	<COUNTRY>Netherlands</COUNTRY>
 	<TYPE>MF</TYPE>
 	<POS>CAM</POS>
 	<STATS>
@@ -10,6 +10,5 @@
 		<STA>67</STA>
 	</STATS>
 	<TPRICE>500000</TPRICE>
-	<APRICE></APRICE>
 	<TEAM>fc-utrecht</TEAM>
 </PLAYER>
