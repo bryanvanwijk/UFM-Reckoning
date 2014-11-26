@@ -127,7 +127,7 @@ public class SAXParser extends DefaultHandler {
 		// element)
 		if (tagstack.size() > 1) {
 			XMLTag ended = popStack();
-
+			
 			topOfStack().addElement(ended);
 		}
 	}

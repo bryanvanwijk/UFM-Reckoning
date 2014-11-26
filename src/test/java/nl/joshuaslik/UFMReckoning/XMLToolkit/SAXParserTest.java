@@ -39,12 +39,29 @@ public class SAXParserTest extends TestCase {
 	public void testSAXParser1() {
 		System.out.println("testSAXParser1()");
 		
-		XMLFile result = SAXParser.parseString("<?xml version=\"1.0\" encoding=\"UTF-8\"?><PLAYER id=\"adamsarota\"><NAME first=\"Adam\" last=\"Sarota\">thisIsMyNameValue<subtag>\n</subtag></NAME></PLAYER>");
+		/*
+		 	<?xml version="1.0" encoding="UTF-8"?>
+			<PLAYER id="wallaceoliveiradossantos">
+			<NAME first="Wallace" last="Oliveira dos Santos" 
+			alt-display= "Wallace" />
+			<COUNTRY>Netherlands</COUNTRY>
+			<TYPE>DF</TYPE>
+			<POS>RB</POS>
+			<STATS>
+			<ATT>64</ATT>
+			<DEF>65</DEF>
+			<STA>74</STA>
+			</STATS>
+			<TPRICE>4000000</TPRICE>
+			<TEAM>vitesse</TEAM>
+			</PLAYER>
+		 */
+		XMLFile result = SAXParser.parseString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<PLAYER id=\"wallaceoliveiradossantos\">\n<NAME first=\"Wallace\" last=\"Oliveira dos Santos\" \nalt-display=\"Wallace\" />\n<COUNTRY>Netherlands</COUNTRY>\n<TYPE>DF</TYPE>\n<POS>RB</POS>\n<STATS>\n<ATT>64</ATT>\n<DEF>65</DEF>\n<STA>74</STA>\n</STATS>\n<TPRICE>4000000</TPRICE>\n<TEAM>vitesse</TEAM>\n</PLAYER>");
 		System.out.println((result.toString()));
 		assertTrue(true);
 		
 		try {
-			System.out.println(result.getContent("PLAYER.NAME"));
+			System.out.println(result.getContent("PLAYER.NAME.COUNTRY"));
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block
 			System.err.println(e.getMessage());

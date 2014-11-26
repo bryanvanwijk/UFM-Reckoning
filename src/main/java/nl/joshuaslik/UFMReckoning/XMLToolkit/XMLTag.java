@@ -79,6 +79,7 @@ public class XMLTag {
 			// the '.')
 			int splitpoint = element.indexOf(".") + 1;
 			element = element.substring(splitpoint, element.length());
+			System.out.println();
 			if (elements.containsKey(element))
 				return elements.get(element).getContent(element);
 			else
