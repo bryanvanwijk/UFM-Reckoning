@@ -126,9 +126,9 @@ public class SAXParser extends DefaultHandler {
 		// Pop the current XMLTag off the stack (only if it is not the root
 		// element)
 		if (tagstack.size() > 1) {
-			XMLTag ended = popStack();
+			XMLTag ended = tagstack.remove(tagstack.size() - 1);
 			
-			topOfStack().addElement(ended);
+			tagstack.get(tagstack.size() - 1).addElement(ended);
 		}
 	}
 
@@ -163,7 +163,7 @@ public class SAXParser extends DefaultHandler {
 				break;
 			}
 		}
-		topOfStack().setContent(content);
+		tagstack.get(tagstack.size() - 1).setContent(content);
 		//System.out.print("\"\n");
 	}
 

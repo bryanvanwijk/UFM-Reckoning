@@ -79,7 +79,9 @@ public class XMLTag {
 			// the '.')
 			int splitpoint = element.indexOf(".") + 1;
 			element = element.substring(splitpoint, element.length());
-			System.out.println();
+			System.out.println(name);
+			System.out.println(elements.get("NAME").toString());
+			System.out.println(elements.get("COUNTRY").toString());
 			if (elements.containsKey(element))
 				return elements.get(element).getContent(element);
 			else
@@ -214,7 +216,7 @@ public class XMLTag {
 		if (elements.size() > 0) {
 			String[] keys = elements.keySet().toArray(new String[] {});
 			for (int i = 0; i < keys.length; i++)
-				retstr = retstr + elements.get(keys[0]).toString(indent + 4);
+				retstr = retstr + elements.get(keys[i]).toString(indent + 4);
 		}
 
 		retstr = retstr + dent + "</" + name + ">" + "\n";

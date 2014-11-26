@@ -61,7 +61,7 @@ public class SAXParserTest extends TestCase {
 		assertTrue(true);
 		
 		try {
-			System.out.println(result.getContent("PLAYER.NAME.COUNTRY"));
+			System.out.println(result.getContent("PLAYER.COUNTRY"));
 		} catch (NoSuchElementException e) {
 			// TODO Auto-generated catch block
 			System.err.println(e.getMessage());
