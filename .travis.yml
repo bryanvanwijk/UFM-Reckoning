@@ -5,7 +5,7 @@ jdk:
 before_deploy:
   - mvn package
   - cd build
-  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\*  ./surefire-reports\* ./test-classes\*
+  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\*  ./surefire-reports\* ./test-classes\* ./generated-sources\* ./generated-test-sources\*
   - ls
   - cd ..
 

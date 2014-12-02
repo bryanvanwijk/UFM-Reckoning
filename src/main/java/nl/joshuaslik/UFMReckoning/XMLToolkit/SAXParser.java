@@ -25,7 +25,8 @@ public class SAXParser extends DefaultHandler {
 
 	private XMLFile file = null;
 	private ArrayList<XMLTag> tagstack = new ArrayList<XMLTag>();
-
+	private boolean inElement = false;
+	
 	public SAXParser() {
 	}
 
@@ -40,9 +41,7 @@ public class SAXParser extends DefaultHandler {
 		xr.setContentHandler(handler);
 		xr.setErrorHandler(handler);
 
-		// Parse each file provided on the command line.
-		ClassLoader classLoader = App.class.getClassLoader();
-		InputStream is = classLoader.getResourceAsStream(filename);
+		InputStream is = Class.class.getResourceAsStream(filename);
 		try {
 			xr.parse(new InputSource(is));
 		} catch (IOException | SAXException e) {
@@ -78,17 +77,17 @@ public class SAXParser extends DefaultHandler {
 	// //////////////////////////////////////////////////////////////////
 
 	public void startDocument() {
-		//System.out.println("Start document");
+		System.out.println("Start document");
 	}
 
 	public void endDocument() {
-		//System.out.println("End document");
+		System.out.println("End document");
 		this.file = new XMLFile(tagstack.get(0));
 	}
 
 	public void startElement(String uri, String name, String qName,
 			Attributes atts) {
-		/* Default behaviour
+		// Default behaviour
 		if ("".equals(uri)) {
 			System.out.println("Start element: " + qName);
 			for (int i = 0; i < atts.getLength(); i++) {
@@ -98,10 +97,10 @@ public class SAXParser extends DefaultHandler {
 		} else {
 			System.out.println("Start element: {" + uri + "}" + name);
 		}
-		*/
+		
 
 		// My behaviour
-		
+		this.inElement = true;
 		// Generate HashMap for the attributes
 		LinkedHashMap<String, String> attributes = new LinkedHashMap<String, String>();
 		for (int i = 0; i < atts.getLength(); i++) {
@@ -114,15 +113,15 @@ public class SAXParser extends DefaultHandler {
 	}
 
 	public void endElement(String uri, String name, String qName) {
-		/* Default behaviour
+		// Default behaviour
 		if ("".equals(uri))
 			System.out.println("End element: " + qName);
 		else
 			System.out.println("End element:   {" + uri + "}" + name);
-		*/
+		
 		
 		// My behaviour
-		
+		this.inElement = false;
 		// Pop the current XMLTag off the stack (only if it is not the root
 		// element)
 		if (tagstack.size() > 1) {
@@ -133,38 +132,43 @@ public class SAXParser extends DefaultHandler {
 	}
 
 	public void characters(char ch[], int start, int length) {
-		//System.out.print("   Characters: \"");
-		String content = "";
-		for (int i = start; i < start + length; i++) {
-			switch (ch[i]) {
-			case '\\':
-				//System.out.print("\\\\");
-				//content = content + "\\\\";
-				break;
-			case '"':
-				//System.out.print("\\\"");
-				content = content + "\\\"";
-				break;
-			case '\n':
-				//System.out.print("\\n");
-				//content = content + "\\n";
-				break;
-			case '\r':
-				//System.out.print("\\r");
-				//content = content + "\\r";
-				break;
-			case '\t':
-				//System.out.print("\\t");
-				//content = content + "\\t";
-				break;
-			default:
-				//System.out.print(ch[i]);
-				content = content + ch[i];
-				break;
+		if(this.inElement == true) {
+			//System.out.print("   Characters: \"");
+			String content = "";
+			for (int i = start; i < start + length; i++) {
+				switch (ch[i]) {
+				case '\\':
+					//System.out.print("\\\\");
+					//content = content + "\\\\";
+					break;
+				case '"':
+					//System.out.print("\\\"");
+					//content = content + "\\\"";
+					break;
+				case '\n':
+					//System.out.print("\\n");
+					//content = content + "\\n";
+					break;
+				case '\r':
+					//System.out.print("\\r");
+					//content = content + "\\r";
+					break;
+				case '\t':
+					//System.out.print("\\t");
+					//content = content + "\\t";
+					break;
+				default:
+					//System.out.print(ch[i]);
+					content = content + ch[i];
+					break;
+				}
 			}
+			System.out.println("Characters: " + content);
+			System.out.println(tagstack.get(tagstack.size() - 1).getName());
+			tagstack.get(tagstack.size() - 1).setContent(content);
+			System.out.print("\n");
+	//		System.out.print("\"\n");
 		}
-		tagstack.get(tagstack.size() - 1).setContent(content);
-		//System.out.print("\"\n");
 	}
 
 	private XMLTag topOfStack() {
