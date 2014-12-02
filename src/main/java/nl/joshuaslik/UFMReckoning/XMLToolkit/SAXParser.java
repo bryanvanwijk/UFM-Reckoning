@@ -7,8 +7,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
-import nl.joshuaslik.UFMReckoning.App;
-
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.Attributes;
@@ -44,11 +42,12 @@ public class SAXParser extends DefaultHandler {
 		InputStream is = Class.class.getResourceAsStream(filename);
 		try {
 			xr.parse(new InputSource(is));
-		} catch (IOException | SAXException e) {
-			System.err.println(e.getMessage());
-			e.printStackTrace();
+		} catch (IOException | SAXException | NullPointerException e) {
+			System.err.println("File \"" + filename + "\" does not exist");
 		}
 		return handler.getXMLFile();
+		
+		
 	}
 
 	public static XMLFile parseString(String xmlstring) {
@@ -77,28 +76,27 @@ public class SAXParser extends DefaultHandler {
 	// //////////////////////////////////////////////////////////////////
 
 	public void startDocument() {
-		System.out.println("Start document");
+//		System.out.println("Start document");
 	}
 
 	public void endDocument() {
-		System.out.println("End document");
+//		System.out.println("End document");
 		this.file = new XMLFile(tagstack.get(0));
 	}
 
 	public void startElement(String uri, String name, String qName,
 			Attributes atts) {
 		// Default behaviour
-		if ("".equals(uri)) {
-			System.out.println("Start element: " + qName);
-			for (int i = 0; i < atts.getLength(); i++) {
-				System.out.println("   Attribute : " + atts.getQName(i) + "=\""
-						+ atts.getValue(i) + "\"");
-			}
-		} else {
-			System.out.println("Start element: {" + uri + "}" + name);
-		}
+//		if ("".equals(uri)) {
+//			System.out.println("Start element: " + qName);
+//			for (int i = 0; i < atts.getLength(); i++) {
+//				System.out.println("   Attribute : " + atts.getQName(i) + "=\""
+//						+ atts.getValue(i) + "\"");
+//			}
+//		} else {
+//			System.out.println("Start element: {" + uri + "}" + name);
+//		}
 		
-
 		// My behaviour
 		this.inElement = true;
 		// Generate HashMap for the attributes
@@ -114,13 +112,17 @@ public class SAXParser extends DefaultHandler {
 
 	public void endElement(String uri, String name, String qName) {
 		// Default behaviour
-		if ("".equals(uri))
-			System.out.println("End element: " + qName);
-		else
-			System.out.println("End element:   {" + uri + "}" + name);
-		
-		
+//		if ("".equals(uri))
+//			System.out.println("End element: " + qName);
+//		else 
+//			System.out.println("End element:   {" + uri + "}" + name);
+				
 		// My behaviour
+		
+		/* Element has ended, we are no longer inside an element
+		 * This has been added because after endElement is called, the parser calls
+		 * the characters() method again, and we don't want it to run, because it will override
+		 * the previous content with nothing. */
 		this.inElement = false;
 		// Pop the current XMLTag off the stack (only if it is not the root
 		// element)
@@ -163,23 +165,15 @@ public class SAXParser extends DefaultHandler {
 					break;
 				}
 			}
-			System.out.println("Characters: " + content);
-			System.out.println(tagstack.get(tagstack.size() - 1).getName());
+//			System.out.println("Characters: " + content);
+//			System.out.println(tagstack.get(tagstack.size() - 1).getName());
 			tagstack.get(tagstack.size() - 1).setContent(content);
-			System.out.print("\n");
-	//		System.out.print("\"\n");
+//			System.out.print("\n");
+//			System.out.print("\"\n");
 		}
 	}
 
-	private XMLTag topOfStack() {
-		return tagstack.get(tagstack.size() - 1);
-	}
-
-	private XMLTag popStack() {
-		return tagstack.remove(tagstack.size() - 1);
-	}
-
-	public XMLFile getXMLFile() {
+	private XMLFile getXMLFile() {
 		return file;
 	}
 

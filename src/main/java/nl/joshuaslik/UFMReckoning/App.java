@@ -50,25 +50,6 @@ public class App {
 				if(args.length < 2) {
 					System.out.println("You need to provide a filename");
 				} else {
-//					InputStream input = App.class.getResourceAsStream(args[1]);
-//					InputStreamReader inputReader = null;
-//					BufferedReader reader = null;
-//					try {
-//						inputReader = new InputStreamReader(input);
-//						reader = new BufferedReader(inputReader);
-//					} catch (NullPointerException e) {
-//						System.err.println("That file does not exist");
-//					}
-//					if(!(inputReader == null || reader == null)) {
-//						String line = null;
-//						try {
-//							while( (line = reader.readLine()) != null)
-//								System.out.println(line);
-//						} catch (IOException | NullPointerException e) {
-//							System.err.println("That file does not exist");
-//						}
-//					}
-					
 					XMLFile file = SAXParser.parseFile(args[1]);
 					System.out.println(file.toString());
 				}
