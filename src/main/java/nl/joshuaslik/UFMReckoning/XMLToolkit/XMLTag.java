@@ -32,6 +32,7 @@ public class XMLTag {
 	/**
 	 * 
 	 * @return
+	 * 				true or false depending on if the element exists
 	 */
 	public boolean hasElements() {
 		if (elements.size() == 0)
@@ -51,9 +52,11 @@ public class XMLTag {
 
 	/**
 	 * @param element
-	 *            is the index of the element to get
-	 * @return the element
+	 *				is the index of the element to get
+	 * @return
+	 * 				the element
 	 * @throws NoSuchElementException 
+	 * 				is thrown if the element is not found
 	 */
 	public XMLTag getElement(String element) throws NoSuchElementException {
 		if (element.equals(name)) {

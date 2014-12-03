@@ -57,6 +57,15 @@ public class App {
 					System.out.println(file.toString());
 				}
 			}
+			
+			if(args[0].equals("xmlsave")) {
+				if(args.length < 3) {
+					System.out.println("You need to provide two filenames");
+				} else {
+					XMLFile file = SAXParser.parseFile(args[1]);
+					file.save(args[2]);
+				}
+			}
 		}
 			
 	}
