@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="iliashaddad">
+	<NAME first="Ilias" last="Haddad" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>49</ATT>
+		<DEF>62</DEF>
+		<STA>65</STA>
+	</STATS>
+	<TPRICE>200000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>

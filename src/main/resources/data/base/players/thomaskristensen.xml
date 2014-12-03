@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="thomaskristensen">
+	<NAME first="Thomas" last="Kristensen" />
+	<COUNTRY>Denmark</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>62</DEF>
+		<STA>72</STA>
+	</STATS>
+	<TPRICE>900000</TPRICE>
+	<TEAM>ad0-den-haag</TEAM>
+</PLAYER>

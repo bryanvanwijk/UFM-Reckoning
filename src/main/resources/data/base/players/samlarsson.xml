@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="samlarsson">
+	<NAME first="Sam" last="Larsson" />
+	<COUNTRY>Sweden</COUNTRY>
+	<TYPE>FA</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>33</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>1500000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

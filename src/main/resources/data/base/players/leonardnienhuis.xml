@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="leonardnienhuis">
+	<NAME first="Leonard" last="Nienhuis" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>67</DIV>
+		<POS>63</POS>
+		<RES>70</RES>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

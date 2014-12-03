@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="robinkist">
+	<NAME first="Robin" last="Kist" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>62</DIV>
+		<POS>56</POS>
+		<REF>58</REF>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="erikbakker">
+	<NAME first="Erik" last="Bakker" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>61</ATT>
+		<DEF>51</DEF>
+		<STA>73</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

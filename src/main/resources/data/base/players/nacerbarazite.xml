@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="nacerbarazite">
+	<NAME first="Nacer" last="Barazite" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>35</DEF>
+		<STA>67</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

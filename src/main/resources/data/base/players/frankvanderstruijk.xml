@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="frankvanderstruijk">
+	<NAME first="Frank" last="van der Struijk" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>39</ATT>
+		<DEF>67</DEF>
+		<STA>82</STA>
+	</STATS>
+	<TPRICE>700000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

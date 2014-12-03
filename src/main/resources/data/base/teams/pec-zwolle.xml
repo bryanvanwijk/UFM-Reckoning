@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="PEC Zwolle" id="pec-zwolle">
+	<PLAYERS>
+		<PLAYER id="warnerhahn">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="bramvanpolen">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="trentsainsbury">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="maikelvanderwerff">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="bartvanhintum">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="mustafasaymak">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="jodylukoki">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="thanasiskaragounis">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="nikolaosioannidis">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="stefnijland">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="jesperdrost">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="joostbroerse">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="tomasnecid">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="kevinbegois">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>16</NUM>
+		</PLAYER>
+		<PLAYER id="woutermarinus">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="rickdekker">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="soufianmoro">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="benrienstra">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="stevenpereira">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="boydejong">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="thomaslam">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>28</NUM>
+		</PLAYER>
+		<PLAYER id="ryanthomas">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="leroylabylle">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>33</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

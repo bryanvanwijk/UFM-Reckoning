@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="konstantinoslamprou">
+	<NAME first="Konstantinos" last="Lamprou" />
+	<COUNTRY>Greece</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>72</DIV>
+		<POS>61</POS>
+		<REV>75</REV>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

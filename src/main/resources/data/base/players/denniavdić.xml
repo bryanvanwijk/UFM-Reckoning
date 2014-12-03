@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="denniavdić">
+	<NAME first="Denni" last="Avdić" />
+	<COUNTRY>Sweden</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>67</ATT>
+		<DEF>38</DEF>
+		<STA>62</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>

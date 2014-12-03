@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="rochdiachenteh">
+	<NAME first="Rochdi" last="Achenteh" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>63</DEF>
+		<STA>82</STA>
+	</STATS>
+	<TPRICE>900000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>

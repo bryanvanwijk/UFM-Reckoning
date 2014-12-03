@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="donnygorter">
+	<NAME first="Donny" last="Gorter" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>65</ATT>
+		<DEF>67</DEF>
+		<STA>82</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>az</TEAM>
+</PLAYER>

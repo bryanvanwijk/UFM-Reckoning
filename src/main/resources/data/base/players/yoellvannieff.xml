@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="yoellvannieff">
+	<NAME first="Yoëll" last="van Nieff" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>65</DEF>
+		<STA>71</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

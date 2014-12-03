@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="freekheerkens">
+	<NAME first="Freek" last="Heerkens" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>29</ATT>
+		<DEF>63</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

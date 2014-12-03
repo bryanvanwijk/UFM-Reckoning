@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="willemjanssen">
+	<NAME first="Willem" last="Janssen" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>71</ATT>
+		<DEF>61</DEF>
+		<STA>88</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

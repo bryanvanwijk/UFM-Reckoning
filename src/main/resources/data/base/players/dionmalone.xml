@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dionmalone">
+	<NAME first="Dion" last="Malone" />
+	<COUNTRY>Suriname</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>54</ATT>
+		<DEF>66</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>550000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

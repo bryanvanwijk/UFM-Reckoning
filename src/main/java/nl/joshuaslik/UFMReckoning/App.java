@@ -9,6 +9,8 @@ import nl.joshuaslik.UFMReckoning.XMLToolkit.NoSuchElementException;
 import nl.joshuaslik.UFMReckoning.XMLToolkit.SAXParser;
 import nl.joshuaslik.UFMReckoning.XMLToolkit.XMLFile;
 
+import nl.joshuaslik.UFMReckoning.gui.Main;
+
 public class App {
 	
 	public static void main(String[] args) throws NoSuchElementException {
@@ -17,6 +19,7 @@ public class App {
 		System.out.println("One day, this will be a cool Footbal Manager!");
 		System.out.println();
 		
+		Main.main(args);
 		
 		// Random tests
 		if(args.length > 0) {
