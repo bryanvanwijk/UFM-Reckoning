@@ -2,9 +2,6 @@ language: java
 jdk:
   - oraclejdk8
 
-before_install:
-  - mvn install -DskipTests=false -B -V
-
 install:
   - mvn install -DskipTests=false -B -V
 
@@ -29,5 +26,9 @@ notifications:
   email:
     recipients:
       - joshua.b.slik@gmail.com
+      - sabenoist5@gmail.com
+      - naomi-ah@hotmail.com
+      - bryanvanwijk@hotmail.com
+      - lisette_stella@hotmail.com
     on_success: change
     on_failure: always
