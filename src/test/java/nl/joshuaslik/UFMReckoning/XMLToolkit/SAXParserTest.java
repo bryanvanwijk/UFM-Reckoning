@@ -29,8 +29,9 @@ public class SAXParserTest extends TestCase {
 	}
 
 	/*
-	 * === *** *** ** ** *** *** === === Tests after this point === === *** ***
-	 * ** ** *** *** ===
+	 * === *** *** **  ** *** *** ===
+	 * === Tests after this point ===
+	 * === *** *** **  ** *** *** ===
 	 */
 
 	/**

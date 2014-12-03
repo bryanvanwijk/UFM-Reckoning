@@ -28,7 +28,7 @@ public class TeamTest extends TestCase {
 	 * === Tests after this point ===
 	 * === *** *** **  ** *** *** ===
 	 */
-
+	
 	public void testgetCoachName() {
 		Team team = new Team("ajax", "Frank de Boer");
 		assertEquals(team.getCoachName(), "Frank de Boer");

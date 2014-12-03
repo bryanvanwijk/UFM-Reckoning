@@ -1,9 +1,7 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 
