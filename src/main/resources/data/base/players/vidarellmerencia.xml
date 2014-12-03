@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="vidarellmerencia">
+	<NAME first="Vidarell" last="Merencia" />
+	<COUNTRY>Netherlands Antilles</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>50</ATT>
+		<DEF>59</DEF>
+		<STA>65</STA>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>ad0-den-haag</TEAM>
+</PLAYER>

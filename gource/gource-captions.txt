@@ -1,14 +1,16 @@
 1416248158|[Info] Project is created on Mon, 17 Nov 2014 18:15:58 UTC!
-1416248159|[Info] 1st contributor joins: Joshua Slik!
+1416248159|[Join] 1st contributor joins: Joshua Slik!
 1416259197|[Mile] First team completely implemented!
-1416345575|[Info] 2nd contributor joins: Sander Benoist!
+1416345575|[Join] 2nd contributor joins: Sander Benoist!
 1416403800|[Scrum] Start of Sprint #1!
-1416413887|[Info] 3rd contributor joins: Robert Haaring!
-1416516346|[Info] 4th contributor joins: Bryan van Wijk!
-1416857236|[Info] 5th contributor joins: Naomi de Ridder!
+1416413887|[Join] 3rd contributor joins: Robert Haaring!
+1416516346|[Join] 4th contributor joins: Bryan van Wijk!
+1416857236|[Join] 5th contributor joins: Naomi de Ridder!
+1416935880|[Quit] Robert Haaring leaves the team :'(
 1416944101|[Info] 6th contributor joins: Lisette Veldkamp!
-
-
 1417005000|[Scrum] End of Sprint #1!
 1417005900|[Mile] First official project meeting!
 1417008600|[Scrum] Start of Sprint #2!
+1417011409|[Mile] Naomi de Ridder makes the final entry to the player and team database.
+1417609800|[Scrum] End of Sprint #2!
+1417613400|[Scrum] Start of Sprint #3!

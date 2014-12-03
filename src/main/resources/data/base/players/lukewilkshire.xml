@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="lukewilkshire">
+	<NAME first="Luke" last="Wilkshire" />
+	<COUNTRY>Australia</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>68</DEF>
+		<STA>81</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

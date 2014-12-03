@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="bartholomewogbeche">
+	<NAME first="Bartholomew" last="Ogbeche" />
+	<COUNTRY>Nigeria</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>63</ATT>
+		<DEF>32</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

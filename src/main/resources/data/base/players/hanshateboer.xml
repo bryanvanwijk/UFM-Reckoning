@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="hanshateboer">
+	<NAME first="Hans" last="Hateboer" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>47</ATT>
+		<DEF>64</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

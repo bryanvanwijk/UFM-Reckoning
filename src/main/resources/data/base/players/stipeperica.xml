@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="stipeperica">
+	<NAME first="Stipe" last="Perica" />
+	<COUNTRY>Croatia</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>32</DEF>
+		<STA>56</STA>
+	</STATS>
+	<TPRICE>1000000</TPRICE>
+	<TEAM>nac-breda</TEAM>
+</PLAYER>

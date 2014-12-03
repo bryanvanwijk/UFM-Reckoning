@@ -32,6 +32,7 @@ public class XMLTag {
 	/**
 	 * 
 	 * @return
+	 * 				true or false depending on if the element exists
 	 */
 	public boolean hasElements() {
 		if (elements.size() == 0)
@@ -51,9 +52,11 @@ public class XMLTag {
 
 	/**
 	 * @param element
-	 *            is the index of the element to get
-	 * @return the element
+	 *				is the index of the element to get
+	 * @return
+	 * 				the element
 	 * @throws NoSuchElementException 
+	 * 				is thrown if the element is not found
 	 */
 	public XMLTag getElement(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
@@ -79,9 +82,6 @@ public class XMLTag {
 			// the '.')
 			int splitpoint = element.indexOf(".") + 1;
 			element = element.substring(splitpoint, element.length());
-			System.out.println(name);
-			System.out.println(elements.get("NAME").toString());
-			System.out.println(elements.get("COUNTRY").toString());
 			if (elements.containsKey(element))
 				return elements.get(element).getContent(element);
 			else
@@ -206,20 +206,25 @@ public class XMLTag {
 		if (elements.size() == 0 && (content == null || content.isEmpty())) {
 			return retstr + " />" + "\n";
 		} else {
-			retstr = retstr + ">" + "\n";
+			retstr = retstr + ">";
 		}
 
-		if (!(content == null))
+		if (!(content == null)) {
 			if (!(content.isEmpty()))
-				retstr = retstr + dent + "    " + content + "\n";
+				retstr = retstr + content;
+		} else
+			retstr = retstr + "\n";
 
 		if (elements.size() > 0) {
+			retstr = retstr + "\n";
 			String[] keys = elements.keySet().toArray(new String[] {});
 			for (int i = 0; i < keys.length; i++)
 				retstr = retstr + elements.get(keys[i]).toString(indent + 4);
+			retstr = retstr + dent + "</" + name + ">" + "\n";
+		} else {
+			retstr = retstr + "</" + name + ">" + "\n";
 		}
-
-		retstr = retstr + dent + "</" + name + ">" + "\n";
+		
 		return retstr;
 	}
 }

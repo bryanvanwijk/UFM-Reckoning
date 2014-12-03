@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="cucomartina">
+	<NAME first="Cuco" last="Martina" />
+	<COUNTRY>Netherlands-Antilles</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>57</ATT>
+		<DEF>68</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>700000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

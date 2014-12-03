@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dejanmeleg">
+	<NAME first="Dejan" last="Meleg" />
+	<COUNTRY>Serbia</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>33</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

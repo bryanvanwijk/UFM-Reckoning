@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="anouarkali">
+	<NAME first="Anouar" last="Kali" />
+	<COUNTRY>Morocco</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>59</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>1400000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

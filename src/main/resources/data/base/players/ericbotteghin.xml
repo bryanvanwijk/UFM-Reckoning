@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="ericbotteghin">
+	<NAME first="Eric" last="Botteghin" />
+	<COUNTRY>Brazil</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>40</ATT>
+		<DEF>76</DEF>
+		<STA>76</STA>
+	</STATS>
+	<TPRICE>1750000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

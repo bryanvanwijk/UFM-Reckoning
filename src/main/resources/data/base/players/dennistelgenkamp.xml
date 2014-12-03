@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dennistelgenkamp">
+	<NAME first="Dennis" last="Telgenkamp" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>67</DIV>
+		<POS>68</POS>
+		<RES>65</RES>
+	</STATS>
+	<TPRICE>350000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>

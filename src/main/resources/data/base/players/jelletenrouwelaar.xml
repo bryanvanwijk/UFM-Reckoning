@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jelletenrouwelaar">
+	<NAME first="Jelle" last="ten Rouwelaar" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>67</DIV>
+		<HND>69</HND>
+		<REF>73</REF>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>nac-breda</TEAM>
+</PLAYER>

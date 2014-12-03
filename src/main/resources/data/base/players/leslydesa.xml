@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="leslydesa">
+	<NAME first="Lesly" last="de Sa" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>33</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mustafasaymak">
+	<NAME first="Mustafa" last="Saymak" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>66</ATT>
+		<DEF>29</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>1000000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

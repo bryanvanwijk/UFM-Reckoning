@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="tommyoar">
+	<NAME first="Tommy" last="Oar" />
+	<COUNTRY>Australia</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>37</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

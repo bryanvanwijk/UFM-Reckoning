@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kennethotigba">
+	<NAME first="Kenneth" last="Otigba" />
+	<COUNTRY>Hungary</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>37</ATT>
+		<DEF>64</DEF>
+		<STA>65</STA>
+	</STATS>
+	<TPRICE>1000000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="aaronmeijers">
+	<NAME first="Aaron" last="Meijers" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>64</DEF>
+		<STA>78</STA>
+	</STATS>
+	<TPRICE>850000</TPRICE>
+	<TEAM>ado-den-haag</TEAM>
+</PLAYER>

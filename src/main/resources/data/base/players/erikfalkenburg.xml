@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="erikfalkenburg">
+	<NAME first="Erik" last="Falkenburg" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>69</ATT>
+		<DEF>42</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>900000</TPRICE>
+	<TEAM>nac-breda</TEAM>
+</PLAYER>
