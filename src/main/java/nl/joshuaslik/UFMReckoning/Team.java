@@ -70,7 +70,7 @@ public class Team {
 	 */
 	public void addBenchPlayer(Player player) {
 		if (!benchPlayers.contains(player)) {
-			activePlayers.add(player);
+			benchPlayers.add(player);
 		}
 	}
 
@@ -155,6 +155,10 @@ public class Team {
 
 	public ArrayList<Player> getBenchPlayers() {
 		return benchPlayers;
+	}
+	
+	public String getTeamName() {
+		return teamName;
 	}
 
 	public Player getTeamCaptain() {
