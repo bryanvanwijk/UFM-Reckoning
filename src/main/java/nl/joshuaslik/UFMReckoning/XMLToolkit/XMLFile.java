@@ -105,16 +105,11 @@ public class XMLFile {
 		String here = new File("").getAbsolutePath();
 		String apath = target.getAbsolutePath();
 		apath = apath.replace("\\", "/");
-		System.out.println(apath);
-		System.out.println(here);
 		apath = apath.substring(here.length() + 1);
-		System.out.println(apath);
-		String[] path = apath.split("/");
-		System.out.println(path.length);
-		for(int i = 0; i < path.length - 1; i++) {
-			File file = new File(path[i]);
-			file.mkdir();
-		}
+		apath = apath.substring(0, apath.lastIndexOf('/'));
+		File file = new File(apath);
+		System.out.println(file.getAbsolutePath());
+		file.mkdirs();
 	}
 
 }
