@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning;
+package nl.joshuaslik.UFMReckoning.backend;
 
 /**
  * A goalkeeper is a special kind of player with different stats. It has

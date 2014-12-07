@@ -1,6 +1,11 @@
 package nl.joshuaslik.UFMReckoning;
 
+import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
+import nl.joshuaslik.UFMReckoning.backend.Goalkeeper;
+import nl.joshuaslik.UFMReckoning.backend.Team;
+
 import org.junit.Test;
+
 import junit.framework.TestCase;
 
 public class TeamTest extends TestCase {
