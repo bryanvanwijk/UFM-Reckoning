@@ -5,7 +5,7 @@ package nl.joshuaslik.UFMReckoning.backend;
  * 
  * Fieldplayers are non-goalkeeper players.
  * 
- * @author Sander
+ * @author Sander Benoist
  */
 public class Fieldplayer extends Player {
 	private String position;

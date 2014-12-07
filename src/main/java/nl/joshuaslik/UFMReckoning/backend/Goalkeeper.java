@@ -4,7 +4,7 @@ package nl.joshuaslik.UFMReckoning.backend;
  * A goalkeeper is a special kind of player with different stats. It has
  * reflexes, diving and positioning variables.
  * 
- * @author Sander
+ * @author Sander Benoist
  *
  */
 public class Goalkeeper extends Player {
