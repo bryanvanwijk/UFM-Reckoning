@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning;
+package nl.joshuaslik.UFMReckoning.backend;
 
 import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
 import nl.joshuaslik.UFMReckoning.backend.Goalkeeper;
