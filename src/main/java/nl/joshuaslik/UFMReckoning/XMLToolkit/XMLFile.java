@@ -18,7 +18,7 @@ public class XMLFile {
 	 * Constructor
 	 * 
 	 * @param root
-	 * 				root tag of this file
+	 *            root tag of this file
 	 */
 	public XMLFile(XMLTag root) {
 		this.root = root;
@@ -27,50 +27,49 @@ public class XMLFile {
 	/**
 	 * 
 	 * @param name
-	 * 				is the name of the element to get
-	 * @return
-	 * 				the content of the element at location <b>name</b>
+	 *            is the name of the element to get
+	 * @return the content of the element at location <b>name</b>
 	 * @throws NoSuchElementException
-	 *				is thrown if element is not found
+	 *             is thrown if element is not found
 	 */
 	public String getContent(String name) throws NoSuchElementException {
 		return root.getContent(name);
 	}
-	
+
 	/**
 	 * 
 	 * @param name
-	 * 				is the name of the element to get
-	 * @return
-	 * 				the element at the location <b>name</b>
+	 *            is the name of the element to get
+	 * @return the element at the location <b>name</b>
 	 * @throws NoSuchElementException
-	 * 				is thrown if element is not found
+	 *             is thrown if element is not found
 	 */
 	public XMLTag getElement(String name) throws NoSuchElementException {
 		return root.getElement(name);
 	}
-	
+
 	/**
-	 * This method is depreciated. Please use {@link XMLTag#getAttribute(String)} until functionality has been added.
+	 * This method is depreciated. Please use
+	 * {@link XMLTag#getAttribute(String)} until functionality has been added.
 	 * 
-	 * This method will get the attribute of an element in this XMLFile.
-	 * It expects that you specify where to find the attribute like so:
+	 * This method will get the attribute of an element in this XMLFile. It
+	 * expects that you specify where to find the attribute like so:
 	 * roottag.child1.child2.targetelement.attributeX
+	 * 
 	 * @param name
-	 * 				is the name of the attribute to get
-	 * @return
-	 * 				the attribute from element <b>name</b>
+	 *            is the name of the attribute to get
+	 * @return the attribute from element <b>name</b>
 	 * @deprecated
 	 */
 	public String getAttribute(String name) {
 		String retstr = null;
 		return retstr;
 	}
-	
+
 	/**
 	 * 
 	 * @param location
-	 * 				the location to save this XMLFile
+	 *            the location to save this XMLFile
 	 */
 	public void save(String location) {
 		String retstr = root.toString();
@@ -78,28 +77,29 @@ public class XMLFile {
 		File target = new File(location);
 		makeDirs(location);
 		PrintWriter writer = null;
-		
+
 		try {
 			writer = new PrintWriter(target, encoding);
 		} catch (FileNotFoundException e) {
-			System.err.println("[ERROR] The file \"" + target + "\" was not found!");
+			System.err.println("[ERROR] The file \"" + target
+					+ "\" was not found!");
 			e.printStackTrace();
 		} catch (UnsupportedEncodingException e) {
-			System.err.println("[ERROR] The encoding \"" + encoding + "\" is not supported!");
+			System.err.println("[ERROR] The encoding \"" + encoding
+					+ "\" is not supported!");
 			e.printStackTrace();
 		}
 		writer.write(retstr);
 		writer.flush();
 	}
-	
+
 	/**
-	 * @return
-	 * 				a string representation of this object.
+	 * @return a string representation of this object.
 	 */
 	public String toString() {
 		return root.toString();
 	}
-	
+
 	public void makeDirs(String location) {
 		File target = new File(location);
 		String here = new File("").getAbsolutePath();

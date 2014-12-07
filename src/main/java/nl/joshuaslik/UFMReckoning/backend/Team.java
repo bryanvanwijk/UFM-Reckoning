@@ -156,7 +156,7 @@ public class Team {
 	public ArrayList<Player> getBenchPlayers() {
 		return benchPlayers;
 	}
-	
+
 	public String getTeamName() {
 		return teamName;
 	}

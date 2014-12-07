@@ -31,8 +31,7 @@ public class XMLTag {
 
 	/**
 	 * 
-	 * @return
-	 * 				true or false depending on if the element exists
+	 * @return true or false depending on if the element exists
 	 */
 	public boolean hasElements() {
 		if (elements.size() == 0)
@@ -52,11 +51,10 @@ public class XMLTag {
 
 	/**
 	 * @param element
-	 *				is the index of the element to get
-	 * @return
-	 * 				the element
-	 * @throws NoSuchElementException 
-	 * 				is thrown if the element is not found
+	 *            is the index of the element to get
+	 * @return the element
+	 * @throws NoSuchElementException
+	 *             is thrown if the element is not found
 	 */
 	public XMLTag getElement(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
@@ -73,7 +71,7 @@ public class XMLTag {
 						+ " does not have element " + element);
 		}
 	}
-	
+
 	public String getContent(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
 			return content;
@@ -89,20 +87,22 @@ public class XMLTag {
 						+ " does not have element " + element);
 		}
 	}
-	
+
 	public boolean hasAttribute() {
 		return !(atts.isEmpty());
 	}
-	
+
 	public boolean hasAttribute(String str) {
 		return atts.containsKey(str);
 	}
-	
-	public String getAttribute(String attribute) throws NoSuchAttributeException {
-		if(atts.containsKey(attribute)) {
+
+	public String getAttribute(String attribute)
+			throws NoSuchAttributeException {
+		if (atts.containsKey(attribute)) {
 			return atts.get(attribute);
 		} else {
-			throw new NoSuchAttributeException(this.name + " does not have attribute " + attribute + "!");
+			throw new NoSuchAttributeException(this.name
+					+ " does not have attribute " + attribute + "!");
 		}
 	}
 
@@ -162,7 +162,7 @@ public class XMLTag {
 	public void setAttributes(LinkedHashMap<String, String> atts) {
 		this.atts = atts;
 	}
-	
+
 	/**
 	 * Getter
 	 * 
@@ -224,7 +224,7 @@ public class XMLTag {
 		} else {
 			retstr = retstr + "</" + name + ">" + "\n";
 		}
-		
+
 		return retstr;
 	}
 }
