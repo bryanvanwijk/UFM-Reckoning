@@ -5,7 +5,7 @@ package nl.joshuaslik.UFMReckoning.backend;
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-abstract class User {
+public abstract class User {
 
 	private Team team;
 	private String userName;
