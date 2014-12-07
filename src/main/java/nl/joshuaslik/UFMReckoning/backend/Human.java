@@ -6,6 +6,5 @@ public class Human extends User {
 		super(team, userName, budget);
 
 	}
-	
-	
+
 }
