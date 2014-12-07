@@ -3,7 +3,7 @@ package nl.joshuaslik.UFMReckoning.backend;
 /**
  * The Player class is an abstract class.
  * 
- * @author Sander
+ * @author Sander Benoist
  */
 
 public abstract class Player {

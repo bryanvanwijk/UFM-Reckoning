@@ -11,6 +11,11 @@ import nl.joshuaslik.UFMReckoning.XMLToolkit.XMLFile;
 
 import nl.joshuaslik.UFMReckoning.gui.Main;
 
+/**
+ * 
+ * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
+ *
+ */
 public class App {
 	
 	public static void main(String[] args) throws NoSuchElementException {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * 
  * The Object also keeps track of the team statistics.
  * 
- * @author Sander
+ * @author Sander Benoist
  *
  */
 public class Team {
