@@ -14,7 +14,8 @@ public class AppTest {
 
 	@Test
 	public void testReadFileTest() {
-		App.main(new String[] { "readfiletest", "/data/base/players/adamsarota.xml" });
+		App.main(new String[] { "readfiletest",
+				"/data/base/players/adamsarota.xml" });
 	}
 
 	@Test
@@ -24,7 +25,8 @@ public class AppTest {
 
 	@Test
 	public void testXMLSave() {
-		App.main(new String[] { "xmlsave", "/data/base/players/adamsarota.xml", "build/testtarget/adamsarota.xml" });
+		App.main(new String[] { "xmlsave", "/data/base/players/adamsarota.xml",
+				"build/testtarget/adamsarota.xml" });
 	}
 
 }
