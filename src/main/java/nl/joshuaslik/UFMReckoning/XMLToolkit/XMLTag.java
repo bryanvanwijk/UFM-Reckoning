@@ -36,8 +36,7 @@ public class XMLTag {
 	public boolean hasElements() {
 		if (elements.size() == 0)
 			return false;
-		else
-			return true;
+		return true;
 	}
 
 	public boolean hasElement(String name) {
@@ -59,33 +58,29 @@ public class XMLTag {
 	public XMLTag getElement(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
 			return this;
-		} else {
-			// Get the string of the following elements (+ 1 to also chop off
-			// the '.')
-			int splitpoint = element.indexOf(".") + 1;
-			element = element.substring(splitpoint, element.length());
-			if (elements.containsKey(element))
-				return elements.get(element).getElement(element);
-			else
-				throw new NoSuchElementException(this.name
-						+ " does not have element " + element);
 		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		if (elements.containsKey(element))
+			return elements.get(element).getElement(element);
+		throw new NoSuchElementException(this.name + " does not have element "
+				+ element);
 	}
 
 	public String getContent(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
 			return content;
-		} else {
-			// Get the string of the following elements (+ 1 to also chop off
-			// the '.')
-			int splitpoint = element.indexOf(".") + 1;
-			element = element.substring(splitpoint, element.length());
-			if (elements.containsKey(element))
-				return elements.get(element).getContent(element);
-			else
-				throw new NoSuchElementException(this.name
-						+ " does not have element " + element);
 		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		if (elements.containsKey(element))
+			return elements.get(element).getContent(element);
+		throw new NoSuchElementException(this.name + " does not have element "
+				+ element);
 	}
 
 	public boolean hasAttribute() {
@@ -100,10 +95,9 @@ public class XMLTag {
 			throws NoSuchAttributeException {
 		if (atts.containsKey(attribute)) {
 			return atts.get(attribute);
-		} else {
-			throw new NoSuchAttributeException(this.name
-					+ " does not have attribute " + attribute + "!");
 		}
+		throw new NoSuchAttributeException(this.name
+				+ " does not have attribute " + attribute + "!");
 	}
 
 	/**
@@ -205,9 +199,8 @@ public class XMLTag {
 
 		if (elements.size() == 0 && (content == null || content.isEmpty())) {
 			return retstr + " />" + "\n";
-		} else {
-			retstr = retstr + ">";
 		}
+		retstr = retstr + ">";
 
 		if (!(content == null)) {
 			if (!(content.isEmpty()))
