@@ -14,6 +14,7 @@ import javafx.stage.Stage;
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
+@SuppressWarnings("restriction")
 public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
