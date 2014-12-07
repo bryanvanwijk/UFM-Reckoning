@@ -16,12 +16,12 @@ public abstract class User {
 		this.userName = userName;
 		this.budget = budget;
 	}
-	
-	public Team getTeam(){
+
+	public Team getTeam() {
 		return team;
 	}
-	
-	public String getUserName(){
+
+	public String getUserName() {
 		return userName;
 	}
 
