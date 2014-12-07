@@ -1,14 +1,11 @@
 package nl.joshuaslik.UFMReckoning.backend;
 
-import Adres;
-import KoopWoning;
-
 /**
  * @author Naomi de Ridder
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-public class User {
+abstract class User {
 
 	private Team team;
 	private String userName;
@@ -18,6 +15,14 @@ public class User {
 		this.team = team;
 		this.userName = userName;
 		this.budget = budget;
+	}
+	
+	public Team getTeam(){
+		return team;
+	}
+	
+	public String getUserName(){
+		return userName;
 	}
 
 	public int getBudget() {
@@ -38,6 +43,7 @@ public class User {
 		if (budget >= amount) {
 			return true;
 		}
+		return false;
 	}
 
 	public boolean equals() {
