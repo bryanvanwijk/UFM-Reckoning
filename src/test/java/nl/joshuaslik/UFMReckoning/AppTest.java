@@ -9,15 +9,14 @@ import static org.junit.Assert.*;
 public class AppTest {
 
 	@Test
-	public void testApp() {
-		System.out.println("App 1");
+	public void testApp1() {
+		TestToolkit.printName();
 		assertTrue(true);
 	}
 
 	@Test
 	public void testApp2() {
-		System.out.println("App 2");
+		TestToolkit.printName();
 		assertTrue(true);
 	}
-
 }
