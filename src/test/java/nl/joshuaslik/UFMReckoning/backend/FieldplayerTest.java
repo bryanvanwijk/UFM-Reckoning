@@ -2,14 +2,13 @@ package nl.joshuaslik.UFMReckoning.backend;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import nl.joshuaslik.UFMReckoning.TestToolkit;
+
 import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
 
 public class FieldplayerTest {
 
 	@Test
 	public void testgetID() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getID(), "raivloet");
@@ -17,7 +16,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetName() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getName(), "Rai Vloet");
@@ -25,7 +23,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetCountry() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getCountry(), "Netherlands");
@@ -33,7 +30,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetPrice() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getPrice(), 4000000);
@@ -41,7 +37,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetAttackPower() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getAttackPower(), 62);
@@ -49,7 +44,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetDefencePower() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getDefencePower(), 32);
@@ -57,7 +51,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetStamina() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getStamina(), 63);
@@ -65,7 +58,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testgetPosition() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertEquals(fieldplayer1.getPosition(), "CAM");
@@ -73,7 +65,6 @@ public class FieldplayerTest {
 
 	@Test
 	public void testEquals() {
-		TestToolkit.printName();
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",

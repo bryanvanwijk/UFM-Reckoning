@@ -2,7 +2,7 @@ package nl.joshuaslik.UFMReckoning.backend;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-import nl.joshuaslik.UFMReckoning.TestToolkit;
+
 import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
 import nl.joshuaslik.UFMReckoning.backend.Goalkeeper;
 import nl.joshuaslik.UFMReckoning.backend.Team;
@@ -11,21 +11,18 @@ public class TeamTest {
 
 	@Test
 	public void testgetCoachName() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		assertEquals(team.getCoachName(), "Frank de Boer");
 	}
 
 	@Test
 	public void testgetTeamName() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		assertEquals(team.getTeamName(), "ajax");
 	}
 
 	@Test
 	public void testaddActivePlayer1() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -35,7 +32,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer2() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
@@ -45,7 +41,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer3() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
@@ -58,7 +53,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer4() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -71,7 +65,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer5() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -117,7 +110,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddBenchPlayer1() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -127,7 +119,6 @@ public class TeamTest {
 
 	@Test
 	public void testaddBenchPlayer2() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -140,7 +131,6 @@ public class TeamTest {
 
 	@Test
 	public void testremoveActicePlayer1() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -155,7 +145,6 @@ public class TeamTest {
 
 	@Test
 	public void testremoveActicePlayer2() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -171,7 +160,6 @@ public class TeamTest {
 
 	@Test
 	public void testremoveBenchPlayer1() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -186,7 +174,6 @@ public class TeamTest {
 
 	@Test
 	public void testremoveBenchPlayer2() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -199,7 +186,6 @@ public class TeamTest {
 
 	@Test
 	public void testTeamCaptain() {
-		TestToolkit.printName();
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -209,7 +195,6 @@ public class TeamTest {
 
 	@Test
 	public void testEquals() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Team team2 = new Team("ado", "Ronald de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
@@ -259,7 +244,6 @@ public class TeamTest {
 
 	@Test
 	public void testEquals2() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -268,7 +252,6 @@ public class TeamTest {
 
 	@Test
 	public void testgetAttackPower() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -290,7 +273,6 @@ public class TeamTest {
 
 	@Test
 	public void testgetDefencePower() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -312,7 +294,6 @@ public class TeamTest {
 
 	@Test
 	public void testgetStamina() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 64, 4000000);
@@ -334,28 +315,24 @@ public class TeamTest {
 
 	@Test
 	public void testgetTotalDraws() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalDraws(), 0);
 	}
 
 	@Test
 	public void testgetTotalGoals() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalGoals(), 0);
 	}
 
 	@Test
 	public void testgetTotalLosses() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalLosses(), 0);
 	}
 
 	@Test
 	public void testgetTotalWins() {
-		TestToolkit.printName();
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalWins(), 0);
 	}
