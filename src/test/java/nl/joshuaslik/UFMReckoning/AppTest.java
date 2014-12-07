@@ -1,7 +1,8 @@
 package nl.joshuaslik.UFMReckoning;
 
+import nl.joshuaslik.UFMReckoning.XMLToolkit.NoSuchElementException;
+
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
@@ -9,14 +10,27 @@ import static org.junit.Assert.*;
 public class AppTest {
 
 	@Test
-	public void testApp1() {
+	public void testApp() {
 		TestToolkit.printName();
-		assertTrue(true);
+		App.main(new String[] { "" });
 	}
 
 	@Test
-	public void testApp2() {
+	public void testReadFileTest() {
 		TestToolkit.printName();
-		assertTrue(true);
+		App.main(new String[] { "readfiletest", "/data/base/players/adamsarota.xml" });
 	}
+
+	@Test
+	public void testXMLParse() {
+		TestToolkit.printName();
+		App.main(new String[] { "xmlparse", "/data/base/players/adamsarota.xml" });
+	}
+
+	@Test
+	public void testXMLSave() {
+		TestToolkit.printName();
+		App.main(new String[] { "xmlsave", "/data/base/players/adamsarota.xml", "adamsarota2.xml" });
+	}
+
 }

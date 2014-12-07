@@ -1,7 +1,6 @@
 package nl.joshuaslik.UFMReckoning.backend;
 
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 import nl.joshuaslik.UFMReckoning.TestToolkit;
 import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
