@@ -76,6 +76,7 @@ public class XMLFile {
 		String retstr = root.toString();
 		String encoding = "UTF-8";
 		File target = new File(location);
+		makeDirs(location);
 		PrintWriter writer = null;
 		
 		try {
@@ -97,6 +98,23 @@ public class XMLFile {
 	 */
 	public String toString() {
 		return root.toString();
+	}
+	
+	public void makeDirs(String location) {
+		File target = new File(location);
+		String here = new File("").getAbsolutePath();
+		String apath = target.getAbsolutePath();
+		apath = apath.replace("\\", "/");
+		System.out.println(apath);
+		System.out.println(here);
+		apath = apath.substring(here.length() + 1);
+		System.out.println(apath);
+		String[] path = apath.split("/");
+		System.out.println(path.length);
+		for(int i = 0; i < path.length - 1; i++) {
+			File file = new File(path[i]);
+			file.mkdir();
+		}
 	}
 
 }
