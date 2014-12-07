@@ -7,4 +7,21 @@ package nl.joshuaslik.UFMReckoning.backend;
  */
 public class User {
 
+	private Team team;
+	private String userName;
+	private int budget; 
+	
+	public User(Team teamIn, String userNameIn, int budgetIn) {
+		team = teamIn;
+		userName = userNameIn; 
+		budget = budgetIn;
+	}
+	
+	
+public int getBudget() {
+	return budget; 
+	}
+
+
+
 }
