@@ -72,17 +72,21 @@
                         <packageBranchRate>90</packageBranchRate>
                         <regexes>
                             <regex>
-                                <pattern>com.example.reallyimportant.*</pattern>
-                                <branchRate>90</branchRate>
-                                <lineRate>80</lineRate>
-                            </regex>
-                            <regex>
-                                <pattern>com.example.boringcode.*</pattern>
-                                <branchRate>40</branchRate>
-                                <lineRate>30</lineRate>
+                                <pattern>nl.joshuaslik.UFMReckoning.gui.*</pattern>
+                                <branchRate>0</branchRate>
+                                <lineRate>0</lineRate>
                             </regex>
                         </regexes>
                     </check>
+                    <instrumentation>
+                        <ignoreTrivial>true</ignoreTrivial>
+                        <ignores>
+                            <ignore>nl.joshuaslik.UFMReckoning.gui.*</ignore>
+                        </ignores>
+                        <excludes>
+                            <!-- <exclude>nl/joshuaslik/UFMReckoning/gui/**/*.class</exclude> -->
+                        </excludes>
+                    </instrumentation>
                 </configuration>
                 <executions>
                     <execution>

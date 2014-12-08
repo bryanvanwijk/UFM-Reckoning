@@ -13,20 +13,35 @@ public class AppTest {
 	}
 
 	@Test
-	public void testReadFileTest() {
+	public void testReadFile() {
 		App.main(new String[] { "readfiletest",
 				"/data/base/players/adamsarota.xml" });
+	}
+	
+	@Test
+	public void testReadFileNoArgument() {
+		App.main(new String[] { "readfiletest" });
 	}
 
 	@Test
 	public void testXMLParse() {
 		App.main(new String[] { "xmlparse", "/data/base/players/adamsarota.xml" });
 	}
+	
+	@Test
+	public void testXMLParseNoArgument() {
+		App.main(new String[] { "xmlparse" });
+	}
 
 	@Test
 	public void testXMLSave() {
 		App.main(new String[] { "xmlsave", "/data/base/players/adamsarota.xml",
 				"build/testtarget/adamsarota.xml" });
+	}
+	
+	@Test
+	public void testXMLSaveNoArgument() {
+		App.main(new String[] { "xmlsave" });
 	}
 
 }

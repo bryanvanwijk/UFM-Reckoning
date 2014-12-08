@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 
 import nl.joshuaslik.UFMReckoning.XMLToolkit.SAXParser;
 import nl.joshuaslik.UFMReckoning.XMLToolkit.XMLFile;
-
 import nl.joshuaslik.UFMReckoning.gui.Main;
 
 public class App {
