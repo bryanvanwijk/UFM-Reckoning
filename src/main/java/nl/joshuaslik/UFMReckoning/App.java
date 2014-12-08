@@ -21,7 +21,7 @@ public class App {
 		
 		Main.main(args);
 		
-		// Random tests
+		// Random tests 
 		if(args.length > 0) {
 			if(args[0].equals("readfiletest")) {
 				if(args.length < 2) {

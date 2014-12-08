@@ -139,6 +139,7 @@ public class Team {
 					&& this.coachName.equals(that.coachName)
 					&& this.totalWins == that.totalWins
 					&& this.totalLosses == that.totalLosses
+					&& this.totalDraws == that.totalDraws
 					&& this.totalGoals == that.totalGoals
 					&& this.attackPower == that.attackPower
 					&& this.defencePower == that.defencePower
@@ -172,28 +173,56 @@ public class Team {
 	public int getTotalWins() {
 		return totalWins;
 	}
+	
+	public void setTotalWins(int wins) {
+		this.totalWins = wins;
+	}
 
 	public int getTotalLosses() {
 		return totalLosses;
+	}
+	
+	public void setTotalLosses(int losses) {
+		this.totalLosses = losses;
 	}
 
 	public int getTotalDraws() {
 		return totalDraws;
 	}
+	
+	public void setTotalDraws(int draws){
+		this.totalDraws = draws;
+	}
 
 	public int getTotalGoals() {
 		return totalGoals;
+	}
+	
+	public void setTotalGoals(int total) {
+		this.totalGoals = total;
 	}
 
 	public int getAttackPower() {
 		return attackPower;
 	}
+	
+	public void setAttackPower(int attack){
+		this.attackPower = attack;
+	}
 
 	public int getDefencePower() {
 		return defencePower;
 	}
+	
+	public void setDefencePower(int defence){
+		this.defencePower = defence;
+	}
 
 	public int getStamina() {
 		return stamina;
+	}
+	
+	public void setStamina(int stamina){
+		this.stamina = stamina;
 	}
 }
