@@ -3,8 +3,6 @@ package nl.joshuaslik.UFMReckoning.backend;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import nl.joshuaslik.UFMReckoning.backend.Goalkeeper;
-
 public class GoalkeeperTest {
 
 	@Test
@@ -57,12 +55,80 @@ public class GoalkeeperTest {
 	}
 
 	@Test
-	public void testEquals() {
+	public void testEquals1() {
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuize", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals2() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Pie",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals3() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Belgium", 74, 72, 84, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals4() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 73, 72, 84, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals5() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 71, 84, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals6() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 83, 3000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals7() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		Goalkeeper goalkeeper2 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 4000000);
+		assertFalse(goalkeeper1.equals(goalkeeper2));
+	}
+
+	@Test
+	public void testEquals8() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
+		String name = "";
+		assertFalse(goalkeeper1.equals(name));
+	}
+
+	@Test
+	public void testEquals9() {
+		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
+				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		assertEquals(goalkeeper1, goalkeeper1);
-		assertNotSame(goalkeeper1, goalkeeper2);
 	}
 }

@@ -3,8 +3,6 @@ package nl.joshuaslik.UFMReckoning.backend;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import nl.joshuaslik.UFMReckoning.backend.Fieldplayer;
-
 public class FieldplayerTest {
 
 	@Test
@@ -64,12 +62,84 @@ public class FieldplayerTest {
 	}
 
 	@Test
-	public void testEquals() {
+	public void testEquals1() {
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 63, 32, 63, 4000000);
 		assertEquals(fieldplayer1, fieldplayer1);
 		assertNotSame(fieldplayer1, fieldplayer2);
+	}
+
+	@Test
+	public void testEquals2() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloe", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals3() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloe",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals4() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Belgium", "CAM", 62, 32, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals5() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CM", 62, 32, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals6() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 61, 32, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals7() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 31, 63, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals8() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 61, 4000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
+	}
+
+	@Test
+	public void testEquals9() {
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 3000000);
+		assertFalse(fieldplayer1.equals(fieldplayer2));
 	}
 }
