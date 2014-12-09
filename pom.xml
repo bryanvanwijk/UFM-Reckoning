@@ -70,13 +70,13 @@
                         <totalLineRate>90</totalLineRate>
                         <packageLineRate>90</packageLineRate>
                         <packageBranchRate>90</packageBranchRate>
-                        <regexes>
+                        <!-- <regexes>
                             <regex>
                                 <pattern>nl.joshuaslik.UFMReckoning.gui.*</pattern>
                                 <branchRate>0</branchRate>
                                 <lineRate>0</lineRate>
                             </regex>
-                        </regexes>
+                        </regexes> -->
                     </check>
                     <instrumentation>
                         <ignoreTrivial>true</ignoreTrivial>
@@ -84,7 +84,7 @@
                             <ignore>nl.joshuaslik.UFMReckoning.gui.*</ignore>
                         </ignores>
                         <excludes>
-                            <!-- <exclude>nl/joshuaslik/UFMReckoning/gui/**/*.class</exclude> -->
+                            <exclude>nl/joshuaslik/UFMReckoning/gui/**/*.class</exclude>
                         </excludes>
                     </instrumentation>
                 </configuration>
