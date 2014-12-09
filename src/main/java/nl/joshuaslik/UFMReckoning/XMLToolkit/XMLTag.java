@@ -202,15 +202,12 @@ public class XMLTag {
 		}
 		retstr = retstr + ">";
 
-		if (!(content == null)) {
-			if (!(content.isEmpty()))
-				retstr = retstr + content;
+		if (!(content == null) && !(content.isEmpty())) {
+			retstr = retstr + content;
 		}
-		
-		if (elements.size() > 0 || content == null)
-			retstr = retstr + "\n";
 
 		if (elements.size() > 0) {
+			retstr = retstr + "\n";
 			String[] keys = elements.keySet().toArray(new String[] {});
 			for (int i = 0; i < keys.length; i++)
 				retstr = retstr + elements.get(keys[i]).toString(indent + 4);

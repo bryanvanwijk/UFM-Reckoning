@@ -160,4 +160,30 @@ public class XMLTagTest {
 		assertTrue(tag.toString().equals(expected));
 	}
 
+	@Test
+	public void testToString3() {
+		construct();
+		tag.getElement("subname").setContent("");
+		System.out.println(tag.toString());
+		String expected = new StringBuilder()
+				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
+				.append("    <subname />\n")
+				.append("</rootname>\n")
+				.toString();
+		assertTrue(tag.toString().equals(expected));
+	}
+	
+	@Test
+	public void testToString4() {
+		construct();
+		tag.getElement("subname").setContent(null);
+		System.out.println(tag.toString());
+		String expected = new StringBuilder()
+				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
+				.append("    <subname />\n")
+				.append("</rootname>\n")
+				.toString();
+		assertTrue(tag.toString().equals(expected));
+	}
+
 }
