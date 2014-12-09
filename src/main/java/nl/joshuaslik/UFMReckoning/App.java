@@ -21,34 +21,28 @@ public class App {
 		if (args.length > 0) {
 			if (args[0].equals("readfiletest")) {
 				if (args.length < 2) {
-					System.out.println("You need to provide a filename");
+					System.err.println("You need to provide a filename");
 				} else {
 					InputStream input = Class.class
 							.getResourceAsStream(args[1]);
-					InputStreamReader inputReader = null;
-					BufferedReader reader = null;
+					InputStreamReader inputReader = new InputStreamReader(input);
+					BufferedReader reader = new BufferedReader(inputReader);
+					
+					String line = null;
 					try {
-						inputReader = new InputStreamReader(input);
-						reader = new BufferedReader(inputReader);
-					} catch (NullPointerException e) {
-						System.err.println("That file does not exist");
+						while ((line = reader.readLine()) != null)
+							System.out.println(line);
+						reader.close();
+					} catch (IOException e) {
+						System.err.println("Error reading or closing BufferedReader");
 					}
-					if (!(inputReader == null || reader == null)) {
-						String line = null;
-						try {
-							while ((line = reader.readLine()) != null)
-								System.out.println(line);
-						} catch (IOException | NullPointerException e) {
-							System.err.println("That file does not exist");
-						}
-					}
-
+					
 				}
 			}
 
 			if (args[0].equals("xmlparse")) {
 				if (args.length < 2) {
-					System.out.println("You need to provide a filename");
+					System.err.println("You need to provide a filename");
 				} else {
 					XMLFile file = SAXParser.parseFile(args[1]);
 					System.out.println(file.toString());
@@ -57,7 +51,7 @@ public class App {
 
 			if (args[0].equals("xmlsave")) {
 				if (args.length < 3) {
-					System.out.println("You need to provide two filenames");
+					System.err.println("You need to provide two filenames");
 				} else {
 					XMLFile file = SAXParser.parseFile(args[1]);
 					file.save(args[2]);

@@ -1,10 +1,14 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.LinkedHashMap;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 /**
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
@@ -12,7 +16,10 @@ import org.junit.Test;
  */
 public class XMLTagTest {
 
-	XMLTag tag;
+	private XMLTag tag;
+
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
 
 	public void construct() {
 		LinkedHashMap<String, String> atts = new LinkedHashMap<String, String>();
@@ -55,9 +62,10 @@ public class XMLTagTest {
 		assertTrue(tag.getContent("rootname.subname").equals("subcontent"));
 	}
 
-	@Test(expected = NoSuchElementException.class)
+	@Test
 	public void testGetContent4() {
 		construct();
+		thrown.expect(NoSuchElementException.class);
 		tag.getContent("rootname.falsesubname");
 	}
 
@@ -69,9 +77,10 @@ public class XMLTagTest {
 		assertTrue(sub.getContent().equals("subcontent"));
 	}
 
-	@Test(expected = NoSuchElementException.class)
+	@Test
 	public void getElement2() {
 		construct();
+		thrown.expect(NoSuchElementException.class);
 		tag.getElement("falsesubname");
 	}
 
@@ -129,9 +138,10 @@ public class XMLTagTest {
 		assertTrue(tag.getAttribute("attribute1").equals("value1"));
 	}
 
-	@Test(expected = NoSuchAttributeException.class)
+	@Test
 	public void testGetAttribute2() {
 		construct();
+		thrown.expect(NoSuchAttributeException.class);
 		tag.getAttribute("fakeattribute");
 	}
 
@@ -172,7 +182,7 @@ public class XMLTagTest {
 				.toString();
 		assertTrue(tag.toString().equals(expected));
 	}
-	
+
 	@Test
 	public void testToString4() {
 		construct();
