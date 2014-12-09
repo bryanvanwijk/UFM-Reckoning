@@ -31,14 +31,12 @@ public class XMLTag {
 
 	/**
 	 * 
-	 * @return
-	 * 				true or false depending on if the element exists
+	 * @return true or false depending on if the element exists
 	 */
 	public boolean hasElements() {
 		if (elements.size() == 0)
 			return false;
-		else
-			return true;
+		return true;
 	}
 
 	public boolean hasElement(String name) {
@@ -52,58 +50,54 @@ public class XMLTag {
 
 	/**
 	 * @param element
-	 *				is the index of the element to get
-	 * @return
-	 * 				the element
-	 * @throws NoSuchElementException 
-	 * 				is thrown if the element is not found
+	 *            is the index of the element to get
+	 * @return the element
+	 * @throws NoSuchElementException
+	 *             is thrown if the element is not found
 	 */
 	public XMLTag getElement(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
 			return this;
-		} else {
-			// Get the string of the following elements (+ 1 to also chop off
-			// the '.')
-			int splitpoint = element.indexOf(".") + 1;
-			element = element.substring(splitpoint, element.length());
-			if (elements.containsKey(element))
-				return elements.get(element).getElement(element);
-			else
-				throw new NoSuchElementException(this.name
-						+ " does not have element " + element);
 		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		if (elements.containsKey(element))
+			return elements.get(element).getElement(element);
+		throw new NoSuchElementException(this.name + " does not have element "
+				+ element);
 	}
-	
+
 	public String getContent(String element) throws NoSuchElementException {
 		if (element.equals(name)) {
 			return content;
-		} else {
-			// Get the string of the following elements (+ 1 to also chop off
-			// the '.')
-			int splitpoint = element.indexOf(".") + 1;
-			element = element.substring(splitpoint, element.length());
-			if (elements.containsKey(element))
-				return elements.get(element).getContent(element);
-			else
-				throw new NoSuchElementException(this.name
-						+ " does not have element " + element);
 		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		if (elements.containsKey(element))
+			return elements.get(element).getContent(element);
+		throw new NoSuchElementException(this.name + " does not have element "
+				+ element);
 	}
-	
+
 	public boolean hasAttribute() {
 		return !(atts.isEmpty());
 	}
-	
+
 	public boolean hasAttribute(String str) {
 		return atts.containsKey(str);
 	}
-	
-	public String getAttribute(String attribute) throws NoSuchAttributeException {
-		if(atts.containsKey(attribute)) {
+
+	public String getAttribute(String attribute)
+			throws NoSuchAttributeException {
+		if (atts.containsKey(attribute)) {
 			return atts.get(attribute);
-		} else {
-			throw new NoSuchAttributeException(this.name + " does not have attribute " + attribute + "!");
 		}
+		throw new NoSuchAttributeException(this.name
+				+ " does not have attribute " + attribute + "!");
 	}
 
 	/**
@@ -162,7 +156,7 @@ public class XMLTag {
 	public void setAttributes(LinkedHashMap<String, String> atts) {
 		this.atts = atts;
 	}
-	
+
 	/**
 	 * Getter
 	 * 
@@ -205,9 +199,8 @@ public class XMLTag {
 
 		if (elements.size() == 0 && (content == null || content.isEmpty())) {
 			return retstr + " />" + "\n";
-		} else {
-			retstr = retstr + ">";
 		}
+		retstr = retstr + ">";
 
 		if (!(content == null)) {
 			if (!(content.isEmpty()))
@@ -224,7 +217,7 @@ public class XMLTag {
 		} else {
 			retstr = retstr + "</" + name + ">" + "\n";
 		}
-		
+
 		return retstr;
 	}
 }

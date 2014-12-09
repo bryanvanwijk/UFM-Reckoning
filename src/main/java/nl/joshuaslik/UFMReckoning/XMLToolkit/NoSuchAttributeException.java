@@ -19,5 +19,5 @@ public class NoSuchAttributeException extends Exception {
 	public NoSuchAttributeException(String s) {
 		super(s);
 	}
-	
+
 }

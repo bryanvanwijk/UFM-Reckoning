@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning;
+package nl.joshuaslik.UFMReckoning.backend;
 
 import java.util.ArrayList;
 
@@ -157,7 +157,7 @@ public class Team {
 	public ArrayList<Player> getBenchPlayers() {
 		return benchPlayers;
 	}
-	
+
 	public String getTeamName() {
 		return teamName;
 	}

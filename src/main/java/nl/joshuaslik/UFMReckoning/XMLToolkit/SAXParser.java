@@ -24,7 +24,7 @@ public class SAXParser extends DefaultHandler {
 	private XMLFile file = null;
 	private ArrayList<XMLTag> tagstack = new ArrayList<XMLTag>();
 	private boolean inElement = false;
-	
+
 	public SAXParser() {
 	}
 
@@ -46,8 +46,7 @@ public class SAXParser extends DefaultHandler {
 			System.err.println("File \"" + filename + "\" does not exist");
 		}
 		return handler.getXMLFile();
-		
-		
+
 	}
 
 	public static XMLFile parseString(String xmlstring) {
@@ -76,27 +75,27 @@ public class SAXParser extends DefaultHandler {
 	// //////////////////////////////////////////////////////////////////
 
 	public void startDocument() {
-//		System.out.println("Start document");
+		// System.out.println("Start document");
 	}
 
 	public void endDocument() {
-//		System.out.println("End document");
+		// System.out.println("End document");
 		this.file = new XMLFile(tagstack.get(0));
 	}
 
 	public void startElement(String uri, String name, String qName,
 			Attributes atts) {
 		// Default behaviour
-//		if ("".equals(uri)) {
-//			System.out.println("Start element: " + qName);
-//			for (int i = 0; i < atts.getLength(); i++) {
-//				System.out.println("   Attribute : " + atts.getQName(i) + "=\""
-//						+ atts.getValue(i) + "\"");
-//			}
-//		} else {
-//			System.out.println("Start element: {" + uri + "}" + name);
-//		}
-		
+		// if ("".equals(uri)) {
+		// System.out.println("Start element: " + qName);
+		// for (int i = 0; i < atts.getLength(); i++) {
+		// System.out.println("   Attribute : " + atts.getQName(i) + "=\""
+		// + atts.getValue(i) + "\"");
+		// }
+		// } else {
+		// System.out.println("Start element: {" + uri + "}" + name);
+		// }
+
 		// My behaviour
 		this.inElement = true;
 		// Generate HashMap for the attributes
@@ -112,64 +111,66 @@ public class SAXParser extends DefaultHandler {
 
 	public void endElement(String uri, String name, String qName) {
 		// Default behaviour
-//		if ("".equals(uri))
-//			System.out.println("End element: " + qName);
-//		else 
-//			System.out.println("End element:   {" + uri + "}" + name);
-				
+		// if ("".equals(uri))
+		// System.out.println("End element: " + qName);
+		// else
+		// System.out.println("End element:   {" + uri + "}" + name);
+
 		// My behaviour
-		
-		/* Element has ended, we are no longer inside an element
-		 * This has been added because after endElement is called, the parser calls
-		 * the characters() method again, and we don't want it to run, because it will override
-		 * the previous content with nothing. */
+
+		/*
+		 * Element has ended, we are no longer inside an element This has been
+		 * added because after endElement is called, the parser calls the
+		 * characters() method again, and we don't want it to run, because it
+		 * will override the previous content with nothing.
+		 */
 		this.inElement = false;
 		// Pop the current XMLTag off the stack (only if it is not the root
 		// element)
 		if (tagstack.size() > 1) {
 			XMLTag ended = tagstack.remove(tagstack.size() - 1);
-			
+
 			tagstack.get(tagstack.size() - 1).addElement(ended);
 		}
 	}
 
 	public void characters(char ch[], int start, int length) {
-		if(this.inElement == true) {
-			//System.out.print("   Characters: \"");
+		if (this.inElement == true) {
+			// System.out.print("   Characters: \"");
 			String content = "";
 			for (int i = start; i < start + length; i++) {
 				switch (ch[i]) {
 				case '\\':
-					//System.out.print("\\\\");
-					//content = content + "\\\\";
+					// System.out.print("\\\\");
+					// content = content + "\\\\";
 					break;
 				case '"':
-					//System.out.print("\\\"");
-					//content = content + "\\\"";
+					// System.out.print("\\\"");
+					// content = content + "\\\"";
 					break;
 				case '\n':
-					//System.out.print("\\n");
-					//content = content + "\\n";
+					// System.out.print("\\n");
+					// content = content + "\\n";
 					break;
 				case '\r':
-					//System.out.print("\\r");
-					//content = content + "\\r";
+					// System.out.print("\\r");
+					// content = content + "\\r";
 					break;
 				case '\t':
-					//System.out.print("\\t");
-					//content = content + "\\t";
+					// System.out.print("\\t");
+					// content = content + "\\t";
 					break;
 				default:
-					//System.out.print(ch[i]);
+					// System.out.print(ch[i]);
 					content = content + ch[i];
 					break;
 				}
 			}
-//			System.out.println("Characters: " + content);
-//			System.out.println(tagstack.get(tagstack.size() - 1).getName());
+			// System.out.println("Characters: " + content);
+			// System.out.println(tagstack.get(tagstack.size() - 1).getName());
 			tagstack.get(tagstack.size() - 1).setContent(content);
-//			System.out.print("\n");
-//			System.out.print("\"\n");
+			// System.out.print("\n");
+			// System.out.print("\"\n");
 		}
 	}
 

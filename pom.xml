@@ -6,8 +6,8 @@
     <version>0.2.0</version>
     <packaging>jar</packaging>
 
-    <name>UFM-Reckoning</name>
-    <url>http://maven.apache.org</url>
+    <name>Ultimate Football Manager: RECKONING</name>
+    <url>http://ijoshftw.github.io/UFM-Reckoning/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -126,6 +126,7 @@
                     <show>public</show>
                 </configuration>
             </plugin>
+
             <!-- Normally, we take off the dependency report, saves time. -->
             <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -144,4 +145,78 @@
             </plugin>
         </plugins>
     </reporting>
+
+    <!-- Stuff for site generation -->
+    <description>A game project from a bunch of first year students at the Technical University of Delft.</description>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/IJoshFTW/UFM-Reckoning/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>Travis CI</system>
+        <url>https://travis-ci.org/IJoshFTW/UFM-Reckoning</url>
+    </ciManagement>
+    <developers>
+        <developer>
+            <id>IJoshFTW</id>
+            <name>Joshua Slik</name>
+            <email>IJoshFTW@users.noreply.github.com</email>
+            <roles>
+                <role>Repository Manager</role>
+                <role>Git Master</role>
+            </roles>
+            <organization>//noComment</organization>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>sabenoist</id>
+            <name>Sander Benoist</name>
+            <email>sabenoist@users.noreply.github.com</email>
+            <roles>
+                <role>Project Manager</role>
+            </roles>
+            <organization>//noComment</organization>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>NaomidR</id>
+            <name>Naomi de Ridder</name>
+            <email>naomidr@users.noreply.github.com</email>
+            <roles>
+                <role>Secretary</role>
+            </roles>
+            <organization>//noComment</organization>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>lisv</id>
+            <name>Lisette Veltkamp</name>
+            <email>lisv@users.noreply.github.com</email>
+            <roles>
+                <role>Chairwoman</role>
+            </roles>
+            <organization>//noComment</organization>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>bvanwijk</id>
+            <name>Bryan van Wijk</name>
+            <email>bvanwijk@users.noreply.github.com</email>
+            <roles>
+                <role>Bryan Extraordinaire</role>
+            </roles>
+            <organization>//noComment</organization>
+            <timezone>+1</timezone>
+        </developer>
+        <developer>
+            <id>javto</id>
+            <name>Jaap van Touw</name>
+            <email>javto@users.noreply.github.com</email>
+            <roles>
+                <role>Proverbial Customer</role>
+                <role>Assistant</role>
+            </roles>
+            <timezone>+1</timezone>
+        </developer>
+    </developers>
 </project>
