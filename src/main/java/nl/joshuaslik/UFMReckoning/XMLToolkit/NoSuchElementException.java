@@ -1,11 +1,10 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
 /**
- * @author Joshua Slik<br>
- *         http://www.joshuaslik.nl/
+ * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-public class NoSuchElementException extends Exception {
+public class NoSuchElementException extends RuntimeException {
 
 	/**
 	 * 

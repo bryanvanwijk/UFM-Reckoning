@@ -15,8 +15,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
- * @author Joshua Slik<br>
- *         http://www.joshuaslik.nl/
+ * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
 public class SAXParser extends DefaultHandler {

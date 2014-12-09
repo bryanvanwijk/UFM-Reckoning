@@ -21,8 +21,6 @@ public class XMLTagTest {
 		tag = new XMLTag("rootname", atts);
 		tag.setContent("rootcontent");
 		atts = new LinkedHashMap<String, String>();
-		atts.put("subattribute1", "subvalue1");
-		atts.put("subattribute2", "subvalue2");
 		XMLTag sub = new XMLTag("subname", atts);
 		sub.setContent("subcontent");
 		tag.addElement(sub);
@@ -38,32 +36,128 @@ public class XMLTagTest {
 		construct();
 		assertTrue(tag.getName().equals("rootname"));
 	}
-	
+
 	@Test
-	public void testGetContent() {
+	public void testGetContent1() {
 		construct();
 		assertTrue(tag.getContent().equals("rootcontent"));
-		try {
-			assertTrue(tag.getContent("rootname.subname").equals("subcontent"));
-		} catch (NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
 	}
-	
+
 	@Test
-	public void getElement() {
+	public void testGetContent2() {
+		construct();
+		assertTrue(tag.getContent("rootname").equals("rootcontent"));
+	}
+
+	@Test
+	public void testGetContent3() {
+		construct();
+		assertTrue(tag.getContent("rootname.subname").equals("subcontent"));
+	}
+
+	@Test(expected = NoSuchElementException.class)
+	public void testGetContent4() {
+		construct();
+		tag.getContent("rootname.falsesubname");
+	}
+
+	@Test
+	public void getElement1() {
 		construct();
 		XMLTag sub = null;
-		try {
-			sub = tag.getElement("subname");
-		} catch (NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
+		sub = tag.getElement("subname");
 		assertTrue(sub.getContent().equals("subcontent"));
+	}
+
+	@Test(expected = NoSuchElementException.class)
+	public void getElement2() {
+		construct();
+		tag.getElement("falsesubname");
+	}
+
+	@Test
+	public void testHasElements1() {
+		construct();
+		assertTrue(tag.hasElements());
+	}
+
+	@Test
+	public void testHasElements2() {
+		construct();
+		assertFalse(tag.getElement("subname").hasElements());
+	}
+
+	@Test
+	public void testHasElement() {
+		construct();
+		assertTrue(tag.hasElement("subname"));
+	}
+
+	@Test
+	public void testElements() {
+		construct();
+		assertEquals(tag.elements(), 1);
+	}
+
+	@Test
+	public void testHasAttribute1() {
+		construct();
+		assertTrue(tag.hasAttribute());
+	}
+
+	@Test
+	public void testHasAttribute2() {
+		construct();
+		assertFalse(tag.getElement("rootname.subname").hasAttribute());
+	}
+
+	@Test
+	public void testHasAttribute3() {
+		construct();
+		assertTrue(tag.hasAttribute("attribute1"));
+	}
+
+	@Test
+	public void testHasAttribute4() {
+		construct();
+		assertFalse(tag.hasAttribute("fakeattribute"));
+	}
+
+	@Test
+	public void testGetAttribute1() {
+		construct();
+		assertTrue(tag.getAttribute("attribute1").equals("value1"));
+	}
+
+	@Test(expected = NoSuchAttributeException.class)
+	public void testGetAttribute2() {
+		construct();
+		tag.getAttribute("fakeattribute");
+	}
+
+	@Test
+	public void testToString1() {
+		construct();
+		String expected = new StringBuilder()
+				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
+				.append("    <subname>subcontent</subname>\n")
+				.append("</rootname>\n")
+				.toString();
+		assertTrue(tag.toString().equals(expected));
+
+	}
+
+	@Test
+	public void testToString2() {
+		construct();
+		tag.setContent(null);
+		System.out.println(tag.toString());
+		String expected = new StringBuilder()
+				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">\n")
+				.append("    <subname>subcontent</subname>\n")
+				.append("</rootname>\n")
+				.toString();
+		assertTrue(tag.toString().equals(expected));
 	}
 
 }
