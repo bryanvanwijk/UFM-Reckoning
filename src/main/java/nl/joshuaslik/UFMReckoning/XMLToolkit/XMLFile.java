@@ -48,49 +48,54 @@ public class XMLFile {
 		return root.getElement(name);
 	}
 
-	/**
-	 * This method is depreciated. Please use
-	 * {@link XMLTag#getAttribute(String)} until functionality has been added.
-	 * 
-	 * This method will get the attribute of an element in this XMLFile. It
-	 * expects that you specify where to find the attribute like so:
-	 * roottag.child1.child2.targetelement.attributeX
-	 * 
-	 * @param name
-	 *            is the name of the attribute to get
-	 * @return the attribute from element <b>name</b>
-	 * @deprecated
-	 */
-	public String getAttribute(String name) {
-		String retstr = null;
-		return retstr;
-	}
+//	/**
+//	 * This method is depreciated. Please use
+//	 * {@link XMLTag#getAttribute(String)} until functionality has been added.
+//	 * 
+//	 * This method will get the attribute of an element in this XMLFile. It
+//	 * expects that you specify where to find the attribute like so:
+//	 * roottag.child1.child2.targetelement.attributeX
+//	 * 
+//	 * @param name
+//	 *            is the name of the attribute to get
+//	 * @return the attribute from element <b>name</b>
+//	 * @deprecated
+//	 */
+//	public String getAttribute(String name) {
+//		String retstr = null;
+//		return retstr;
+//	}
 
 	/**
 	 * 
 	 * @param location
-	 *            the location to save this XMLFile
+	 *            location to save the file
+	 * @param args
+	 *            optional encoding to use (Default: UTF-8)
 	 */
-	public void save(String location) {
+	public void save(String location, String... args) {
 		String retstr = root.toString();
-		String encoding = "UTF-8";
+		String encoding;
+		if (args.length > 0)
+			encoding = args[0];
+		else
+			encoding = "UTF-8";
 		File target = new File(location);
 		makeDirs(location);
 		PrintWriter writer = null;
-
+		
 		try {
-			writer = new PrintWriter(target, encoding);
+			writer = new PrintWriter(location, encoding);
 		} catch (FileNotFoundException e) {
 			System.err.println("[ERROR] The file \"" + target
-					+ "\" was not found!");
-			e.printStackTrace();
+					+ "\" is not writable or not acceptable!");
 		} catch (UnsupportedEncodingException e) {
 			System.err.println("[ERROR] The encoding \"" + encoding
 					+ "\" is not supported!");
-			e.printStackTrace();
 		}
 		writer.write(retstr);
 		writer.flush();
+		writer.close();
 	}
 
 	/**
@@ -100,7 +105,7 @@ public class XMLFile {
 		return root.toString();
 	}
 
-	public void makeDirs(String location) {
+	private void makeDirs(String location) {
 		File target = new File(location);
 		String here = new File("").getAbsolutePath();
 		String apath = target.getAbsolutePath();
@@ -108,7 +113,6 @@ public class XMLFile {
 		apath = apath.substring(here.length() + 1);
 		apath = apath.substring(0, apath.lastIndexOf('/'));
 		File file = new File(apath);
-		System.out.println(file.getAbsolutePath());
 		file.mkdirs();
 	}
 

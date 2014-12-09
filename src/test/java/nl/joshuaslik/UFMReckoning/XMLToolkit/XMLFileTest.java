@@ -12,9 +12,9 @@ import org.junit.rules.ExpectedException;
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-public class XMLTagTest {
+public class XMLFileTest {
 
-	private XMLTag tag;
+	private XMLFile file;
 
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
@@ -23,12 +23,13 @@ public class XMLTagTest {
 		LinkedHashMap<String, String> atts = new LinkedHashMap<String, String>();
 		atts.put("attribute1", "value1");
 		atts.put("attribute2", "value2");
-		tag = new XMLTag("rootname", atts);
+		XMLTag tag = new XMLTag("rootname", atts);
 		tag.setContent("rootcontent");
 		atts = new LinkedHashMap<String, String>();
 		XMLTag sub = new XMLTag("subname", atts);
 		sub.setContent("subcontent");
 		tag.addElement(sub);
+		file = new XMLFile(tag);
 	}
 
 	@Test
@@ -37,110 +38,70 @@ public class XMLTagTest {
 	}
 
 	@Test
-	public void testGetName() {
-		construct();
-		assertTrue(tag.getName().equals("rootname"));
-	}
-
-	@Test
-	public void testGetContent1() {
-		construct();
-		assertTrue(tag.getContent().equals("rootcontent"));
-	}
-
-	@Test
 	public void testGetContent2() {
 		construct();
-		assertTrue(tag.getContent("rootname").equals("rootcontent"));
+		assertTrue(file.getContent("rootname").equals("rootcontent"));
 	}
 
 	@Test
 	public void testGetContent3() {
 		construct();
-		assertTrue(tag.getContent("rootname.subname").equals("subcontent"));
+		assertTrue(file.getContent("rootname.subname").equals("subcontent"));
 	}
 
 	@Test
 	public void testGetContent4() {
 		construct();
 		thrown.expect(NoSuchElementException.class);
-		tag.getContent("rootname.falsesubname");
+		file.getContent("rootname.falsesubname");
 	}
 
 	@Test
-	public void getElement1() {
-		construct();
-		XMLTag sub = null;
-		sub = tag.getElement("subname");
-		assertTrue(sub.getContent().equals("subcontent"));
-	}
-
-	@Test
-	public void getElement2() {
+	public void testGetContent5() {
 		construct();
 		thrown.expect(NoSuchElementException.class);
-		tag.getElement("falsesubname");
+		file.getContent("rootname.fakename");
 	}
 
 	@Test
-	public void testHasElements1() {
+	public void testGetElement1() {
 		construct();
-		assertTrue(tag.hasElements());
+		assertTrue(file.getElement("rootname").getName().equals("rootname"));
+		assertTrue(file.getElement("rootname").getContent()
+				.equals("rootcontent"));
 	}
 
 	@Test
-	public void testHasElements2() {
+	public void testGetElement2() {
 		construct();
-		assertFalse(tag.getElement("subname").hasElements());
+		thrown.expect(NoSuchElementException.class);
+		file.getElement("rootname.fakename");
 	}
-
+	
 	@Test
-	public void testHasElement() {
+	public void testSave1() {
 		construct();
-		assertTrue(tag.hasElement("subname"));
+		file.save("build/testtarget/XMLFileTest/testSave1.xml");
 	}
-
+	
 	@Test
-	public void testElements() {
+	public void testSave2() {
 		construct();
-		assertEquals(tag.elements(), 1);
+		file.save("build/testtarget/XMLFileTest/testSave2.xml", "UTF-16");
 	}
-
+	
 	@Test
-	public void testHasAttribute1() {
+	public void testSave3() {
 		construct();
-		assertTrue(tag.hasAttribute());
+		thrown.expect(NullPointerException.class);
+		file.save("build/testtarget/XMLFileTest/testSave3.xml", "NOAH-16");
 	}
-
+	
 	@Test
-	public void testHasAttribute2() {
+	public void testSave4() {
 		construct();
-		assertFalse(tag.getElement("rootname.subname").hasAttribute());
-	}
-
-	@Test
-	public void testHasAttribute3() {
-		construct();
-		assertTrue(tag.hasAttribute("attribute1"));
-	}
-
-	@Test
-	public void testHasAttribute4() {
-		construct();
-		assertFalse(tag.hasAttribute("fakeattribute"));
-	}
-
-	@Test
-	public void testGetAttribute1() {
-		construct();
-		assertTrue(tag.getAttribute("attribute1").equals("value1"));
-	}
-
-	@Test
-	public void testGetAttribute2() {
-		construct();
-		thrown.expect(NoSuchAttributeException.class);
-		tag.getAttribute("fakeattribute");
+		thrown.expect(NullPointerException.class);
+		file.save("build/testtarget/XMLFileTest/Hal?lo.txt");
 	}
 
 	@Test
@@ -151,44 +112,43 @@ public class XMLTagTest {
 				.append("    <subname>subcontent</subname>\n")
 				.append("</rootname>\n")
 				.toString();
-		assertTrue(tag.toString().equals(expected));
-
+		assertTrue(file.toString().equals(expected));
 	}
 
 	@Test
 	public void testToString2() {
 		construct();
-		tag.setContent(null);
+		file.getElement("rootname").setContent(null);
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">\n")
 				.append("    <subname>subcontent</subname>\n")
 				.append("</rootname>\n")
 				.toString();
-		assertTrue(tag.toString().equals(expected));
+		assertTrue(file.toString().equals(expected));
 	}
 
 	@Test
 	public void testToString3() {
 		construct();
-		tag.getElement("subname").setContent("");
+		file.getElement("rootname.subname").setContent("");
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
 				.append("</rootname>\n")
 				.toString();
-		assertTrue(tag.toString().equals(expected));
+		assertTrue(file.toString().equals(expected));
 	}
 
 	@Test
 	public void testToString4() {
 		construct();
-		tag.getElement("subname").setContent(null);
+		file.getElement("rootname.subname").setContent(null);
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
 				.append("</rootname>\n")
 				.toString();
-		assertTrue(tag.toString().equals(expected));
+		assertTrue(file.toString().equals(expected));
 	}
 
 }

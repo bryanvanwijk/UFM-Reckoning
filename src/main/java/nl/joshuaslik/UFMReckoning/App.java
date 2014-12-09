@@ -13,9 +13,8 @@ public class App {
 
 	public static void main(String[] args) {
 
-		System.out.println("Hello World!");
-		System.out.println("One day, this will be a cool Footbal Manager!");
-		System.out.println();
+		System.out.println("Ultimate Football Manager");
+		System.out.println("(c) 2014 - Sander Benoist, Naomi de Ridder, Joshua Slik, Lisette Veldkamp, Bryan van Wijk");
 
 		// Random tests
 		if (args.length > 0) {

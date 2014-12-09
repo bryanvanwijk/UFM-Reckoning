@@ -47,7 +47,7 @@ public class AppTest {
 	@Test
 	public void testXMLSave() {
 		App.main(new String[] { "xmlsave", "/data/base/players/adamsarota.xml",
-				"build/testtarget/adamsarota.xml" });
+				"build/testtarget/AppTest/adamsarota.xml" });
 	}
 
 	@Test
