@@ -1,47 +1,5 @@
 package nl.joshuaslik.UFMReckoning.backend;
 
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-
-public class TeamTest extends TestCase {
-	
-	/**
-	 * Create the test case
-	 *
-	 * @param testName name of the test case
-	 */
-	public TeamTest( String testName )
-	{
-    	super(testName);
-	}
-
-	/**
-	 * @return the suite of tests being tested
-	 */
-	public static Test suite()
-	{
-    	return new TestSuite(TeamTest.class);
-	}
-	
-	/* === *** *** **  ** *** *** ===
-	 * === Tests after this point ===
-	 * === *** *** **  ** *** *** ===
-	 */
-	
-	public void testgetCoachName(){
-		Team team = new Team("ajax", "Frank de Boer");
-		assertEquals(team.getCoachName(), "Frank de Boer");
-	}
-	
-	public void testgetTeamName(){
-		Team team = new Team("ajax", "Frank de Boer");
-		assertEquals(team.getTeamName(), "ajax");
-	}
-	
-	public void testaddActivePlayer1(){
-=======
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -65,35 +23,24 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer1() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.addActivePlayer(fieldplayer1);
 		assertTrue(team.getActivePlayers().contains(fieldplayer1));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testaddActivePlayer2(){
-=======
 
 	@Test
 	public void testaddActivePlayer2() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		team.addActivePlayer(goalkeeper1);
 		assertTrue(team.getActivePlayers().contains(goalkeeper1));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testaddActivePlayer3(){
-=======
 
 	@Test
 	public void testaddActivePlayer3() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
@@ -103,14 +50,9 @@ public class TeamTest {
 		team.addActivePlayer(goalkeeper2);
 		assertEquals(team.getActivePlayers().size(), 1);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
 	
-	public void testaddActivePlayer4(){
-=======
-
 	@Test
 	public void testaddActivePlayer4() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -120,14 +62,9 @@ public class TeamTest {
 		team.addActivePlayer(fieldplayer2);
 		assertEquals(team.getActivePlayers().size(), 1);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testaddActivePlayer5(){
-=======
 
 	@Test
 	public void testaddActivePlayer5() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -170,28 +107,18 @@ public class TeamTest {
 		team.addActivePlayer(goalkeeper1);
 		assertEquals(team.getActivePlayers().size(), 11);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testaddBenchPlayer1(){
-=======
 
 	@Test
 	public void testaddBenchPlayer1() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.addBenchPlayer(fieldplayer1);
 		assertTrue(team.getBenchPlayers().contains(fieldplayer1));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testaddBenchPlayer2(){
-=======
 
 	@Test
 	public void testaddBenchPlayer2() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -201,14 +128,9 @@ public class TeamTest {
 		team.addBenchPlayer(fieldplayer2);
 		assertEquals(team.getBenchPlayers().size(), 1);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testremoveActicePlayer1(){
-=======
 
 	@Test
-	public void testremoveActicePlayer1() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
+	public void testremoveActivePlayer1() {
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -220,14 +142,9 @@ public class TeamTest {
 		team.removeActivePlayer(fieldplayer2);
 		assertFalse(team.getActivePlayers().contains(fieldplayer2));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testremoveActicePlayer2(){
-=======
 
 	@Test
-	public void testremoveActicePlayer2() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
+	public void testremoveActivePlayer2() {
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -240,12 +157,10 @@ public class TeamTest {
 		team.removeActivePlayer(fieldplayer2);
 		assertEquals(team.getActivePlayers().size(), 2);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
 	
-	public void testremoveActicePlayer3(){
+	public void testremoveActivePlayer3(){
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet", "Netherlands", "CAM", 62, 32, 63, 4000000);
-		Fieldplayer fieldplayer2 = new Fieldplayer("piet", "Rai", "Vloet", "Netherlands", "CAM", 62, 32, 63, 4000000);
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet", "Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		team.addActivePlayer(fieldplayer1);
 		team.addActivePlayer(goalkeeper1);
@@ -253,12 +168,8 @@ public class TeamTest {
 		assertEquals(team.getActivePlayers().size(), 1);
 	}
 	
-	public void testremoveBenchPlayer1(){
-=======
-
 	@Test
 	public void testremoveBenchPlayer1() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -270,14 +181,9 @@ public class TeamTest {
 		team.removeBenchPlayer(fieldplayer2);
 		assertFalse(team.getBenchPlayers().contains(fieldplayer2));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testremoveBenchPlayer2(){
-=======
 
 	@Test
 	public void testremoveBenchPlayer2() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -287,28 +193,18 @@ public class TeamTest {
 		team.removeBenchPlayer(fieldplayer2);
 		assertEquals(team.getBenchPlayers().size(), 1);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testTeamCaptain(){
-=======
 
 	@Test
 	public void testTeamCaptain() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.setTeamCaptain(fieldplayer1);
 		assertEquals(team.getTeamCaptain(), fieldplayer1);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testEquals(){
-=======
 
 	@Test
 	public void testEquals() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Team team2 = new Team("ado", "Ronald de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
@@ -355,7 +251,6 @@ public class TeamTest {
 		assertEquals(team1, team1);
 		assertFalse(team1.equals(team2));
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
 	
 	public void testEquals2(){
 		Team team1 = new Team("ajax", "Frank de Boer");
@@ -473,20 +368,8 @@ public class TeamTest {
 		assertFalse(team1.equals(team2));
 	}
 	
-	public void testgetAttackPower(){
-=======
-
-	@Test
-	public void testEquals2() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
-				"Netherlands", "CAM", 62, 32, 63, 4000000);
-		assertNotSame(team1, fieldplayer1);
-	}
-
 	@Test
 	public void testgetAttackPower() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -505,14 +388,9 @@ public class TeamTest {
 		team1.addActivePlayer(fieldplayer5);
 		assertEquals(team1.getAttackPower(), 311);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testgetDefencePower(){
-=======
 
 	@Test
 	public void testgetDefencePower() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
@@ -531,14 +409,9 @@ public class TeamTest {
 		team1.addActivePlayer(fieldplayer5);
 		assertEquals(team1.getDefencePower(), 161);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testgetStamina(){
-=======
 
 	@Test
 	public void testgetStamina() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team1 = new Team("ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 64, 4000000);
@@ -557,25 +430,6 @@ public class TeamTest {
 		team1.addActivePlayer(fieldplayer5);
 		assertEquals(team1.getStamina(), 316);
 	}
-<<<<<<< HEAD:src/test/java/nl/joshuaslik/UFMReckoning/TeamTest.java
-	
-	public void testgetTotalDraws(){
-		Team team1 = new Team("ajax", "Frank de Boer");
-		assertEquals(team1.getTotalDraws(), 0);
-	}
-	
-	public void testgetTotalGoals(){
-		Team team1 = new Team("ajax", "Frank de Boer");
-		assertEquals(team1.getTotalGoals(), 0);
-	}
-	
-	public void testgetTotalLosses(){
-		Team team1 = new Team("ajax", "Frank de Boer");
-		assertEquals(team1.getTotalLosses(), 0);
-	}
-	
-	public void testgetTotalWins(){
-=======
 
 	@Test
 	public void testgetTotalDraws() {
@@ -597,7 +451,6 @@ public class TeamTest {
 
 	@Test
 	public void testgetTotalWins() {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad:src/test/java/nl/joshuaslik/UFMReckoning/backend/TeamTest.java
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalWins(), 0);
 	}

@@ -17,22 +17,11 @@ public class App {
 		System.out.println("Hello World!");
 		System.out.println("One day, this will be a cool Footbal Manager!");
 		System.out.println();
-<<<<<<< HEAD
-		
-		Main.main(args);
-		
-		// Random tests
-		// Random tests 
-		if(args.length > 0) {
-			if(args[0].equals("readfiletest")) {
-				if(args.length < 2) {
-=======
 
 		// Random tests
 		if (args.length > 0) {
 			if (args[0].equals("readfiletest")) {
 				if (args.length < 2) {
->>>>>>> 770421dd11fbe547f9ad32b0bc5cbee6deeedbad
 					System.out.println("You need to provide a filename");
 				} else {
 					InputStream input = Class.class
