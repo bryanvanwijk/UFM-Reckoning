@@ -41,7 +41,7 @@
 			<TYPE>FW</TYPE>
 			<NUM>9</NUM>
 		</PLAYER>
-		<PLAYER id="davypröpper">
+		<PLAYER id="davypropper">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>10</NUM>
@@ -86,7 +86,7 @@
 			<TYPE>MF</TYPE>
 			<NUM>25</NUM>
 		</PLAYER>
-		<PLAYER id="bertrandtraoré">
+		<PLAYER id="bertrandtraore">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>27</NUM>
