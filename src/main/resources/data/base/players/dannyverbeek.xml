@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="dannyverbeek">
+	<NAME first="Danny" last="Verbeek" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>61</ATT>
+		<DEF>29</DEF>
+		<STA>73</STA>
+	</STATS>
+	<TPRICE>800000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

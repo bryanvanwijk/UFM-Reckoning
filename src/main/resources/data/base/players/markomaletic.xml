@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="markomaletic">
+	<NAME first="Marko" last="Maletić" />
+	<COUNTRY>Bosnia Herzegovina</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>61</ATT>
+		<DEF>33</DEF>
+		<STA>63</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>excelsior</TEAM>
+</PLAYER>

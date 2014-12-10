@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="michaelbrouwer">
+	<NAME first="Michael" last="Brouwer" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>63</DIV>
+		<POS>55</POS>
+		<RES>60</RES>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>

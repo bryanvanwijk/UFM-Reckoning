@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="terencekongolo">
+	<NAME first="Terence" last="Kongolo" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>50</ATT>
+		<DEF>72</DEF>
+		<STA>71</STA>
+	</STATS>
+	<TPRICE>3000000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

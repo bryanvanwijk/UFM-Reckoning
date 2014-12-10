@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="elibabalj">
+	<NAME first="Eli" last="Babalj" />
+	<COUNTRY>Australia</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>43</DEF>
+		<STA>64</STA>
+	</STATS>
+	<TPRICE>300000</TPRICE>
+	<TEAM>az</TEAM>
+</PLAYER>

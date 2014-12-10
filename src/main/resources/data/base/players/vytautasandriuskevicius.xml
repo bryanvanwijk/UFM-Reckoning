@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="vytautasandriuskevicius">
+	<NAME first="Vytautas" last="Andriuškevičius" />
+	<COUNTRY>Lithuania</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>47</ATT>
+		<DEF>63</DEF>
+		<STA>65</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

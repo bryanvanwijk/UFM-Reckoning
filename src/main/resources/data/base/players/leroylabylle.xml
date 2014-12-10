@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="leroylabylle">
+	<NAME first="Leroy" last="Labille" />
+	<COUNTRY>Belgium</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>LM</POS>
+	<STATS>
+		<ATT>58</ATT>
+		<DEF>53</DEF>
+		<STA>55</STA>
+	</STATS>
+	<TPRICE>300000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

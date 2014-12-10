@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mohamedhamdaoui">
+	<NAME first="Mohamed" last="Hamdaoui" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>27/DEF>
+		<STA>57</STA>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>

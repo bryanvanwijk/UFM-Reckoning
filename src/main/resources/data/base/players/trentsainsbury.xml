@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="trentsainsbury">
+	<NAME first="Trent" last="Sainsbury" />
+	<COUNTRY>Australia</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>55</ATT>
+		<DEF>68</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>650000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

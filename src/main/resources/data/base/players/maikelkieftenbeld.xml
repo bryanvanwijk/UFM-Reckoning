@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="maikelkieftenbeld">
+	<NAME first="Maikel" last="Kieftenbeld" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>62</DEF>
+		<STA>81</STA>
+	</STATS>
+	<TPRICE>1250000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

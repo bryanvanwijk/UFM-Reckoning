@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Vitesse" id="vitesse">
+	<PLAYERS>
+		<PLAYER id="eloyroom">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="wallace">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="danmori">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="kelvinleerdam">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="joshmceachran">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="markovejinovic">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="valerikazaishvili">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="urosdurdevic">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="davypropper">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="denysoliynyk">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="abioladauda">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="arnoldkruiswijk">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="marvelousnakamba">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="zakarialabyad">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="pietvelthuizen">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="jan-arievanderheijden">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="ginobosz">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="bertrandtraore">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>27</NUM>
+		</PLAYER>
+		<PLAYER id="renatoibarra">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="rochdiachenteh">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>35</NUM>
+		</PLAYER>
+		<PLAYER id="guramkashia">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>37</NUM>
+		</PLAYER>
+		<PLAYER id="kevindiks">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>40</NUM>
+		</PLAYER>
+		<PLAYER id="jeroenhouwen">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>48</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

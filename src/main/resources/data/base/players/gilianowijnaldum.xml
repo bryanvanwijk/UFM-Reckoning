@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="gilianowijnaldum">
+	<NAME first="Giliano" last="Wijnaldum" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>65</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>700000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

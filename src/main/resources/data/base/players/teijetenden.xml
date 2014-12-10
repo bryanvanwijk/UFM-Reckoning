@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="teijetenden">
+	<NAME first="Teije" last="ten Den" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>47</ATT>
+		<DEF>44</DEF>
+		<STA>67</STA>
+	</STATS>
+	<TPRICE>50000</TPRICE>
+	<TEAM>go-ahead-eagles</TEAM>
+</PLAYER>

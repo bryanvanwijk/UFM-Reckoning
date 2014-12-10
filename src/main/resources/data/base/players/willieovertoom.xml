@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="willieovertoom">
+	<NAME first="Willie" last="Overtoom" />
+	<COUNTRY>Cameroon</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>73</ATT>
+		<DEF>49</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>1000000</TPRICE>
+	<TEAM>az</TEAM>
+</PLAYER>

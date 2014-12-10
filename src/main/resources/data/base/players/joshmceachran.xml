@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="joshmceachran">
+	<NAME first="Josh" last="McEachran" />
+	<COUNTRY>England</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>68</ATT>
+		<DEF>60</DEF>
+		<STA>68</STA>
+	</STATS>
+	<TPRICE>4000000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>

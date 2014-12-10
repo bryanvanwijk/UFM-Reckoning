@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kristofferpeterson">
+	<NAME first="Kristoffer" last="Peterson" />
+	<COUNTRY>Sweden</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>60</ATT>
+		<DEF>37</DEF>
+		<STA>47</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

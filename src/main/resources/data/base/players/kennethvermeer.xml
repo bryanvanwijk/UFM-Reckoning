@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kennethvermeer">
+	<NAME first="Kenneth" last="Vermeer" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>82</DIV>
+		<POS>76</POS>
+		<REF>84</REF>
+	</STATS>
+	<TPRICE>4000000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

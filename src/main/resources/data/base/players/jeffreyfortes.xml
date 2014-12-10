@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jeffreyfortes">
+	<NAME first="Jeffrey" last="Fortes" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>51</ATT>
+		<DEF>61</DEF>
+		<STA>70</STA>
+	</STATS>
+	<TPRICE>250000</TPRICE>
+	<TEAM>fc-dordrecht</TEAM>
+</PLAYER>

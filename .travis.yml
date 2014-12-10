@@ -2,10 +2,13 @@ language: java
 jdk:
   - oraclejdk8
 
+install:
+  - mvn install -DskipTests=false -B -V
+
 before_deploy:
   - mvn package
   - cd build
-  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\*  ./surefire-reports\* ./test-classes\*
+  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\* ./surefire-reports\* ./test-classes\* ./generated-sources\* ./generated-test-sources\*
   - ls
   - cd ..
 
@@ -23,5 +26,9 @@ notifications:
   email:
     recipients:
       - joshua.b.slik@gmail.com
+      - sabenoist5@gmail.com
+      - naomi-ah@hotmail.com
+      - bryanvanwijk@hotmail.com
+      - lisette_stella@hotmail.com
     on_success: change
     on_failure: always

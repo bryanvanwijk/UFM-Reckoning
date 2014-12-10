@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="calvinmac-intosh">
+	<NAME first="Calvin" last="Mac-Intosh" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>43</ATT>
+		<DEF>64</DEF>
+		<STA>63</STA>
+	</STATS>
+	<TPRICE>150000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

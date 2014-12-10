@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="ryomiyaichi">
+	<NAME first="Ryo" last="Miyaichi" />
+	<COUNTRY>Japan</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>RM</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>27</DEF>
+		<STA>62</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

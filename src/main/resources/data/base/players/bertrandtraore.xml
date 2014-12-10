@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="bertrandtraore">
+	<NAME first="Bertrand" last="Traoré" />
+	<COUNTRY>Burkina Faso</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>67</ATT>
+		<DEF>34</DEF>
+		<STA>73</STA>
+	</STATS>
+	<TPRICE>1500000</TPRICE>
+	<TEAM>vitesse</TEAM>
+</PLAYER>

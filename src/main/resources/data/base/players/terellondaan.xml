@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="terellondaan">
+	<NAME first="Terell" last="Ondaan" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>RW</POS>
+	<STATS>
+		<ATT>64</ATT>
+		<DEF>31</DEF>
+		<STA>66</STA>
+	</STATS>
+	<TPRICE>650000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

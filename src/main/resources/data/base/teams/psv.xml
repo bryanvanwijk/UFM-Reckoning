@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="PSV" id="psv">
+	<PLAYERS>
+		<PLAYER id="jeroenzoet">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="nicolasisimat-mirin">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="karimrekik">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="santiagoarias">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="jeffreybruma">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="adammaher">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="memphisdepay">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>7</NUM>
+		</PLAYER>
+		<PLAYER id="stijnschaars">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="luukdejong">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="georginiowijnaldum">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="lucianonarsingh">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="florianjozefzoon">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="jetrowillems">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="jurgenlocadia">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
+		<PLAYER id="andresguardado">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="joshuabrenet">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="remkopasveer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="raivloet">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="marcelritzmaier">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="mennokoch">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="clintleemans">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="oscarhiljemark">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>27</NUM>
+		</PLAYER>
+		<PLAYER id="abeltamata">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>28</NUM>
+		</PLAYER>
+		<PLAYER id="jorrithendrix">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>29</NUM>
+		</PLAYER>
+		<PLAYER id="jordydewijs">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="nigelbertrams">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>31</NUM>
+		</PLAYER>
+		<PLAYER id="aleksandarboljevic">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>32</NUM>
+		</PLAYER>
+		<PLAYER id="zakariabakkali">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>39</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

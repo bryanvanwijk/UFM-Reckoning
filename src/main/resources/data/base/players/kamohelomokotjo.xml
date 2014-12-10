@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kamohelomokotjo">
+	<NAME first="Kamohelo" last="Mokotjo" />
+	<COUNTRY>South-Africa</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>60</ATT>
+		<DEF>69</DEF>
+		<STA>81</STA>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

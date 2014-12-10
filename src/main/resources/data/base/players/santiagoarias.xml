@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="santiagoarias">
+	<NAME first="Santiago" last="Arias" />
+	<COUNTRY>Colombia</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>RB</POS>
+	<STATS>
+		<ATT>53</ATT>
+		<DEF>69</DEF>
+		<STA>85</STA>
+	</STATS>
+	<TPRICE>2500000</TPRICE>
+	<TEAM>psv</TEAM>
+</PLAYER>

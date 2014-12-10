@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="aleksandarboljevic">
+	<NAME first="Aleksandar" last="Boljević" />
+	<COUNTRY>Montenegro</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>29</DEF>
+		<STA>30</STA>
+	</STATS>
+	<TPRICE>200000</TPRICE>
+	<TEAM>psv</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="bartvanhintum">
+	<NAME first="Bart" last="van Hintum" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>55</ATT>
+		<DEF>63</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>450000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

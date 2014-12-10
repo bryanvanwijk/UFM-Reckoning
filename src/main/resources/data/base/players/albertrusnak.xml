@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="albertrusnak">
+	<NAME first="Albert" last="Rusnák" />
+	<COUNTRY>Slovakia</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>35</DEF>
+		<STA>69</STA>
+	</STATS>
+	<TPRICE>750000</TPRICE>
+	<TEAM>sc-cambuur</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="geveromarkiet">
+	<NAME first="Gévero" last="Markiet" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>36</ATT>
+		<DEF>64</DEF>
+		<STA>65</STA>
+	</STATS>
+	<TPRICE>500000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

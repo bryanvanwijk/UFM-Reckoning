@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="yassineayoub">
+	<NAME first="Yassine" last="Ayoub" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>62</ATT>
+		<DEF>68</DEF>
+		<STA>72</STA>
+	</STATS>
+	<TPRICE>1250000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

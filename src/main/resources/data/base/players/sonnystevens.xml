@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="sonnystevens">
+	<NAME first="Sonny" last="Stevens" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>GK</TYPE>
+	<POS>GK</POS>
+	<STATS>
+		<DIV>69</DIV>
+		<HND>70</HND>
+		<REF>71</REF>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="leondekogel">
+	<NAME first="Leon" last="de Kogel" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>65</ATT>
+		<DEF>54</DEF>
+		<STA>53</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>fc-utrecht</TEAM>
+</PLAYER>

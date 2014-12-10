@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="andresguardado">
+	<NAME first="Andrés" last="Guardado" />
+	<COUNTRY>Mexico</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>69</ATT>
+		<DEF>76</DEF>
+		<STA>81</STA>
+	</STATS>
+	<TPRICE>6000000</TPRICE>
+	<TEAM>psv</TEAM>
+</PLAYER>

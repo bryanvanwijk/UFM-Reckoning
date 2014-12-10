@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kolbeinnsigporsson">
+	<NAME first="Kolbeinn" last="Sigþórsson" />
+	<COUNTRY>Iceland</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>ST</POS>
+	<STATS>
+		<ATT>71</ATT>
+		<DEF>43</DEF>
+		<STA>77</STA>
+	</STATS>
+	<TPRICE>5000000</TPRICE>
+	<TEAM>ajax</TEAM>
+</PLAYER>

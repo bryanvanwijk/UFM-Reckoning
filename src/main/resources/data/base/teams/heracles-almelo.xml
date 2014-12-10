@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEAM name="Heracles Almelo" id="heracles-almelo">
+	<PLAYERS>
+		<PLAYER id="dennistelgenkamp">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>1</NUM>
+		</PLAYER>
+		<PLAYER id="milanokoenders">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>2</NUM>
+		</PLAYER>
+		<PLAYER id="bartschenkeveld">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>3</NUM>
+		</PLAYER>
+		<PLAYER id="jeroenveldmate">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>4</NUM>
+		</PLAYER>
+		<PLAYER id="fahdaktaou">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>5</NUM>
+		</PLAYER>
+		<PLAYER id="bassibum">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>6</NUM>
+		</PLAYER>
+		<PLAYER id="illiassbelhassani">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>8</NUM>
+		</PLAYER>
+		<PLAYER id="denniavdic">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>9</NUM>
+		</PLAYER>
+		<PLAYER id="thomasbruns">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>10</NUM>
+		</PLAYER>
+		<PLAYER id="bryanlinssen">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>11</NUM>
+		</PLAYER>
+		<PLAYER id="alekseikangaskolkka">
+			<ACTIVE>true</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>12</NUM>
+		</PLAYER>
+		<PLAYER id="draganpaljic">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>13</NUM>
+		</PLAYER>
+		<PLAYER id="joeypelupessy">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>14</NUM>
+		</PLAYER>
+		<PLAYER id="jaroslavnavratil">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>15</NUM>
+		</PLAYER>
+		<PLAYER id="bramcastro">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>16</NUM>
+		</PLAYER>
+		<PLAYER id="dariovujicevic">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>17</NUM>
+		</PLAYER>
+		<PLAYER id="ramonzomer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>18</NUM>
+		</PLAYER>
+		<PLAYER id="woutweghorst">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>19</NUM>
+		</PLAYER>
+		<PLAYER id="edwingyasi">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>20</NUM>
+		</PLAYER>
+		<PLAYER id="simoncziommer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>21</NUM>
+		</PLAYER>
+		<PLAYER id="oussamatannane">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>FW</TYPE>
+			<NUM>22</NUM>
+		</PLAYER>
+		<PLAYER id="mark-janfledderus">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>23</NUM>
+		</PLAYER>
+		<PLAYER id="mennoheerkes">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>24</NUM>
+		</PLAYER>
+		<PLAYER id="renzefij">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>25</NUM>
+		</PLAYER>
+		<PLAYER id="michaelbrouwer">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>26</NUM>
+		</PLAYER>
+		<PLAYER id="coengortemaker">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>29</NUM>
+		</PLAYER>
+		<PLAYER id="markengberink">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>30</NUM>
+		</PLAYER>
+		<PLAYER id="daanrienstra">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>31</NUM>
+		</PLAYER>
+		<PLAYER id="miketewierik">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>DF</TYPE>
+			<NUM>32</NUM>
+		</PLAYER>
+		<PLAYER id="rickhemmink">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>MF</TYPE>
+			<NUM>35</NUM>
+		</PLAYER>
+	</PLAYERS>
+</TEAM>

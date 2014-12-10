@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="benrienstra">
+	<NAME first="Ben" last="Rienstra" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CDM</POS>
+	<STATS>
+		<ATT>59</ATT>
+		<DEF>68</DEF>
+		<STA>73</STA>
+	</STATS>
+	<TPRICE>800000</TPRICE>
+	<TEAM>pec-zwolle</TEAM>
+</PLAYER>

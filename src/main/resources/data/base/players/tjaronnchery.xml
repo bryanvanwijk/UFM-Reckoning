@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="tjaronnchery">
+	<NAME first="Tjaronn" last="Chery" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>73</ATT>
+		<DEF>35</DEF>
+		<STA>72</STA>
+	</STATS>
+	<TPRICE>2000000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

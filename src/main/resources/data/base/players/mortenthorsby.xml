@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="mortenthorsby">
+	<NAME first="Morten" last="Thorsby" />
+	<COUNTRY>Norway</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>50</ATT>
+		<DEF>42</DEF>
+		<STA>60</STA>
+	</STATS>
+	<TPRICE>750000</TPRICE>
+	<TEAM>sc-heerenveen</TEAM>
+</PLAYER>

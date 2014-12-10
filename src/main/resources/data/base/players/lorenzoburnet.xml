@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="lorenzoburnet">
+	<NAME first="Lorenzo" last="Burnet" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>47</ATT>
+		<DEF>63</DEF>
+		<STA>74</STA>
+	</STATS>
+	<TPRICE>600000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

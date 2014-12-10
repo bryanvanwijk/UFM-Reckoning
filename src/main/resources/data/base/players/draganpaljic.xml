@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="draganpaljic">
+	<NAME first="Dragan" last="Paljić" />
+	<COUNTRY>Germany</COUNTRY>
+	<TYPE>FW</TYPE>
+	<POS>LW</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>62</DEF>
+		<STA>75</STA>
+	</STATS>
+	<TPRICE>400000</TPRICE>
+	<TEAM>heracles-almelo</TEAM>
+</PLAYER>

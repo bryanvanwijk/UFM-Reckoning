@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="jordenspeters">
+	<NAME first="Jordens" last="Peters" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>CB</POS>
+	<STATS>
+		<ATT>42</ATT>
+		<DEF>65</DEF>
+		<STA>63</STA>
+	</STATS>
+	<TPRICE>350000</TPRICE>
+	<TEAM>willem-ii</TEAM>
+</PLAYER>

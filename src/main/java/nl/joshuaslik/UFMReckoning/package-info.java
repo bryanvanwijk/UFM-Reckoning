@@ -3,10 +3,9 @@
  * a game designed by TU Delft Students
  * 
  * @author Sander Benoist
- * @author Robert Haaring
  * @author Naomi de Ridder
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
- * @author Lisette Veltkamp
+ * @author Lisette Veldkamp
  * @author Bryan van Wijk
  *
  */

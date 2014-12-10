@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="lucaswoudenberg">
+	<NAME first="Lucas" last="Woudenberg" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>DF</TYPE>
+	<POS>LB</POS>
+	<STATS>
+		<ATT>40</ATT>
+		<DEF>61</DEF>
+		<STA>93</STA>
+	</STATS>
+	<TPRICE>300000</TPRICE>
+	<TEAM>feyenoord</TEAM>
+</PLAYER>

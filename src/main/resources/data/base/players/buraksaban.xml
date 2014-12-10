@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="buraksaban">
+	<NAME first="Burak" last="Saban" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>56</ATT>
+		<DEF>46</DEF>
+		<STA>39</STA>
+	</STATS>
+	<TPRICE>25000</TPRICE>
+	<TEAM>fc-groningen</TEAM>
+</PLAYER>

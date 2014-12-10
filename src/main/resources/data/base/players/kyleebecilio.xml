@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="kyleebecilio">
+	<NAME first="Kyle" last="Ebecilio" />
+	<COUNTRY>Netherlands</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CM</POS>
+	<STATS>
+		<ATT>65</ATT>
+		<DEF>68</DEF>
+		<STA>83</STA>
+	</STATS>
+	<TPRICE>3500000</TPRICE>
+	<TEAM>fc-twente</TEAM>
+</PLAYER>

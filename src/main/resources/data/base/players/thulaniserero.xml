@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PLAYER id="thulaniserero">
+	<NAME first="Thulani" last="Serero" />
+	<COUNTRY>South Africa</COUNTRY>
+	<TYPE>MF</TYPE>
+	<POS>CAM</POS>
+	<STATS>
+		<ATT>61</ATT>
+		<DEF>48</DEF>
+		<STA>87</STA>
+	</STATS>
+	<TPRICE>3000000</TPRICE>
+	<TEAM>ajax</TEAM>
+</PLAYER>
