@@ -101,7 +101,7 @@ public class XMLFileTest {
 	public void testSave4() {
 		construct();
 		thrown.expect(NullPointerException.class);
-		file.save("build/testtarget/XMLFileTest/Hal?lo.txt");
+		file.save("build/testtarget/XMLFileTest/Hal\0lo.txt");
 	}
 
 	@Test
