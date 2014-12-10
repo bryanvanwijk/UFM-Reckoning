@@ -2,6 +2,9 @@ package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
 import java.io.File;
 
+import nl.joshuaslik.UFMReckoning.xml.SAXParser;
+import nl.joshuaslik.UFMReckoning.xml.XMLFile;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

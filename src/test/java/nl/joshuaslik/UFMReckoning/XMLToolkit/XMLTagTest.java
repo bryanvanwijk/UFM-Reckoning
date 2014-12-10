@@ -4,6 +4,10 @@ import static org.junit.Assert.*;
 
 import java.util.LinkedHashMap;
 
+import nl.joshuaslik.UFMReckoning.xml.NoSuchAttributeException;
+import nl.joshuaslik.UFMReckoning.xml.NoSuchElementException;
+import nl.joshuaslik.UFMReckoning.xml.XMLTag;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;

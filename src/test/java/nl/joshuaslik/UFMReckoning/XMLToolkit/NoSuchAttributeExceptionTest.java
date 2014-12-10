@@ -1,5 +1,7 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
+import nl.joshuaslik.UFMReckoning.xml.NoSuchAttributeException;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
