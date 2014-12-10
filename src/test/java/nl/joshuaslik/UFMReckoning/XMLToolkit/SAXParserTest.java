@@ -21,6 +21,7 @@ public class SAXParserTest {
 
 	@Test
 	public void testParseFile1() {
+		// TODO Properly integrate this
 		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarota.xml");
 	}
 	
