@@ -1,12 +1,8 @@
-package nl.joshuaslik.UFMReckoning.XMLToolkit;
+package nl.joshuaslik.UFMReckoning.util.xml;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 import java.util.LinkedHashMap;
-
-import nl.joshuaslik.UFMReckoning.xml.NoSuchElementException;
-import nl.joshuaslik.UFMReckoning.xml.XMLFile;
-import nl.joshuaslik.UFMReckoning.xml.XMLTag;
 
 import org.junit.Rule;
 import org.junit.Test;

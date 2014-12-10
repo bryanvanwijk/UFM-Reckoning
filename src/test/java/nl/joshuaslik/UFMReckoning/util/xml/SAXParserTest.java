@@ -1,9 +1,6 @@
-package nl.joshuaslik.UFMReckoning.XMLToolkit;
+package nl.joshuaslik.UFMReckoning.util.xml;
 
 import java.io.File;
-
-import nl.joshuaslik.UFMReckoning.xml.SAXParser;
-import nl.joshuaslik.UFMReckoning.xml.XMLFile;
 
 import org.junit.Rule;
 import org.junit.Test;

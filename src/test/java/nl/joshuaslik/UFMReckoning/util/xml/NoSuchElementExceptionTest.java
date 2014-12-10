@@ -1,6 +1,4 @@
-package nl.joshuaslik.UFMReckoning.XMLToolkit;
-
-import nl.joshuaslik.UFMReckoning.xml.NoSuchElementException;
+package nl.joshuaslik.UFMReckoning.util.xml;
 
 import org.junit.Rule;
 import org.junit.Test;
