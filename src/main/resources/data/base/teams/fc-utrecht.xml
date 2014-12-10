@@ -26,7 +26,7 @@
 			<TYPE>MF</TYPE>
 			<NUM>6</NUM>
 		</PLAYER>
-		<PLAYER id="édouardduplan">
+		<PLAYER id="edouardduplan">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>7</NUM>
@@ -51,7 +51,7 @@
 			<TYPE>FW</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>
-		<PLAYER id="géveromarkiet">
+		<PLAYER id="geveromarkiet">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>13</NUM>

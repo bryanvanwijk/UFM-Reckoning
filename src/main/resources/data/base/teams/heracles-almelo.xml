@@ -36,7 +36,7 @@
 			<TYPE>MF</TYPE>
 			<NUM>8</NUM>
 		</PLAYER>
-		<PLAYER id="denniavdić">
+		<PLAYER id="denniavdic">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>9</NUM>
@@ -56,7 +56,7 @@
 			<TYPE>FW</TYPE>
 			<NUM>12</NUM>
 		</PLAYER>
-		<PLAYER id="draganpaljić">
+		<PLAYER id="draganpaljic">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>13</NUM>
@@ -76,7 +76,7 @@
 			<TYPE>GK</TYPE>
 			<NUM>16</NUM>
 		</PLAYER>
-		<PLAYER id="dariovujičević">
+		<PLAYER id="dariovujicevic">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>17</NUM>
