@@ -1,6 +1,7 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
@@ -39,10 +40,15 @@ public class SAXParser extends DefaultHandler {
 		xr.setErrorHandler(handler);
 
 		InputStream is = Class.class.getResourceAsStream(filename);
+
 		try {
 			xr.parse(new InputSource(is));
-		} catch (IOException | SAXException | NullPointerException e) {
+		} catch (IOException | NullPointerException e) {
 			System.err.println("File \"" + filename + "\" does not exist");
+		} catch (SAXException e) {
+			System.err.println("Something went wrong parsing the file: \""
+					+ filename + "\"");
+			System.err.println(e.getMessage());
 		}
 		return handler.getXMLFile();
 
@@ -62,9 +68,11 @@ public class SAXParser extends DefaultHandler {
 				xmlstring.getBytes(StandardCharsets.UTF_8));
 		try {
 			xr.parse(new InputSource(is));
-		} catch (IOException | SAXException e) {
+		} catch (IOException e) {
 			System.err.println(e.getMessage());
-			e.printStackTrace();
+		} catch (SAXException e) {
+			System.err.println("Something went wrong parsing your string.");
+			System.err.println(e.getMessage());
 		}
 		return handler.getXMLFile();
 	}
@@ -139,26 +147,26 @@ public class SAXParser extends DefaultHandler {
 			String content = "";
 			for (int i = start; i < start + length; i++) {
 				switch (ch[i]) {
-				case '\\':
-					// System.out.print("\\\\");
-					// content = content + "\\\\";
-					break;
-				case '"':
-					// System.out.print("\\\"");
-					// content = content + "\\\"";
-					break;
-				case '\n':
-					// System.out.print("\\n");
-					// content = content + "\\n";
-					break;
-				case '\r':
-					// System.out.print("\\r");
-					// content = content + "\\r";
-					break;
-				case '\t':
-					// System.out.print("\\t");
-					// content = content + "\\t";
-					break;
+				// case '\\':
+				// System.out.print("\\\\");
+				// content = content + "\\\\";
+				// break;
+				// case '"':
+				// System.out.print("\\\"");
+				// content = content + "\\\"";
+				// break;
+				// case '\n':
+				// System.out.print("\\n");
+				// content = content + "\\n";
+				// break;
+				// case '\r':
+				// System.out.print("\\r");
+				// content = content + "\\r";
+				// break;
+				// case '\t':
+				// System.out.print("\\t");
+				// content = content + "\\t";
+				// break;
 				default:
 					// System.out.print(ch[i]);
 					content = content + ch[i];
