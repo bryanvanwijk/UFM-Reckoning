@@ -1,127 +1,122 @@
 package nl.joshuaslik.UFMReckoning.XMLToolkit;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
+import java.io.File;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 /**
- * Unit test for simple App.
+ * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
+ *
  */
-public class SAXParserTest extends TestCase {
-	/**
-	 * Create the test case
-	 *
-	 * @param testName
-	 *            name of the test case
-	 */
-	public SAXParserTest(String testName) {
-		super(testName);
+public class SAXParserTest {
+
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+
+	public void constructFile() {
+
 	}
 
-	/**
-	 * @return the suite of tests being tested
-	 */
-	public static Test suite() {
-		return new TestSuite(SAXParserTest.class);
-	}
-
-	/*
-	 * === *** *** **  ** *** *** ===
-	 * === Tests after this point ===
-	 * === *** *** **  ** *** *** ===
-	 */
-
-	/**
-	 * Rigourous Test :-)
-	 */
-	public void testSAXParser1() {
-		System.out.println("testSAXParser1()");
-		
-		/*
-		 	<?xml version="1.0" encoding="UTF-8"?>
-			<PLAYER id="wallaceoliveiradossantos">
-			<NAME first="Wallace" last="Oliveira dos Santos" 
-			alt-display= "Wallace" />
-			<COUNTRY>Netherlands</COUNTRY>
-			<TYPE>DF</TYPE>
-			<POS>RB</POS>
-			<STATS>
-			<ATT>64</ATT>
-			<DEF>65</DEF>
-			<STA>74</STA>
-			</STATS>
-			<TPRICE>4000000</TPRICE>
-			<TEAM>vitesse</TEAM>
-			</PLAYER>
-		 */
-		XMLFile result = SAXParser.parseString("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<PLAYER id=\"wallaceoliveiradossantos\">\n<NAME first=\"Wallace\" last=\"Oliveira dos Santos\" \nalt-display=\"Wallace\" />\n<COUNTRY>Netherlands</COUNTRY>\n<TYPE>DF</TYPE>\n<POS>RB</POS>\n<STATS>\n<ATT>64</ATT>\n<DEF>65</DEF>\n<STA>74</STA>\n</STATS>\n<TPRICE>4000000</TPRICE>\n<TEAM>vitesse</TEAM>\n</PLAYER>");
-		System.out.println((result.toString()));
-		assertTrue(true);
-		
-		try {
-			System.out.println(result.getContent("PLAYER.COUNTRY"));
-		} catch (NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
-		
-		try {
-			System.out.println(result.getElement("PLAYER.NAME").getAttribute("first"));
-		} catch (NoSuchAttributeException | NoSuchElementException e) {
-			// TODO Auto-generated catch block
-			System.err.println(e.getMessage());
-			e.printStackTrace();
-		}
-		
-		System.out.println();
-	}
-
-	/**
-	 * Rigourous Test :-)
-	 */
-	public void testSAXParser2() {
-		System.out.println("testSAXParser2()");
-
-		ArrayList<XMLTag> tagstack = new ArrayList<XMLTag>();
-		LinkedHashMap<String, String> atts1 = new LinkedHashMap<String, String>();
-		atts1.put("name", "rootele");
-		XMLTag tag1 = new XMLTag("rootelement", atts1);
-		tagstack.add(tag1);
-
-		LinkedHashMap<String, String> atts2 = new LinkedHashMap<String, String>();
-		atts2.put("aname", "zelement");
-		atts2.put("zname", "aelement");
-		XMLTag tag2 = new XMLTag("childelement", atts2);
-		tag2.setContent("1");
-		tagstack.add(tag2);
-
-		XMLTag currenttag = tagstack.get(tagstack.size() - 1);
-		tagstack.remove(tagstack.size() - 1);
-		tagstack.get(tagstack.size() - 1).addElement(currenttag);
-
-		XMLTag returntag = tagstack.get(tagstack.size() - 1);
-		// System.out.println(returntag.hasElement("childelement"));
-		System.out.println(returntag.toString(0));
-		assertTrue(true);
+	@Test
+	public void testParseFile1() {
+		// TODO Properly integrate this
+		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarota.xml");
 	}
 	
-	public void indentOut(String str) {
-		
+	@Test
+	public void testParseFile2() {
+		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarotaasdfasdf.xml");
 	}
+
+	@Test
+	public void testParseString() {
+		String xmlstring = new StringBuilder()
+				.append("<PLAYER id=\"adamsarota\">")
+				.append("    <NAME first=\"Adam\" last=\"Sarota\" />")
+				.append("    <COUNTRY>Australia</COUNTRY>")
+				.append("    <TYPE>MF</TYPE>")
+				.append("    <POS>CM</POS>")
+				.append("    <STATS>")
+				.append("        <ATT>62</ATT>")
+				.append("        <DEF>60</DEF>")
+				.append("        <STA>84</STA>")
+				.append("    </STATS>")
+				.append("    <TPRICE>250000</TPRICE>")
+				.append("    <TEAM>fc-utrecht</TEAM>")
+				.append("</PLAYER>")
+				.toString();
+		XMLFile file = SAXParser.parseString(xmlstring);
+	}
+
+	@Test
+	public void testParseStringBreak1() {
+		String xmlstring = new StringBuilder()
+				.append("<PLAYER id=\"adamsarota\">")
+				.append("    <NAME first=\"Adam\" last=\"Sarota\" />")
+				.append("    <COUNTRY>Australia</COUNTRY>")
+				.append("    <TYPE>MF</TYPE>")
+				.append("    <POS>CM</POS>")
+				.append("    <STATS>")
+				.append("        <ATT>62</ATT>")
+				.append("        <DEF>60</DEF>")
+				.append("        <STA>84</STA>")
+				.append("    </STATS>")
+				.append("    <TPRICE>250000</TPRICE>")
+				.append("    <TEAM>fc-utrecht</TEAM>")
+				.append("</PLAYER>")
+				.append("<ILLEGALTAG>")
+				.toString();
+		XMLFile file = SAXParser.parseString(xmlstring);
+	}
+
+//	@Test
+//	public void testParseStringBreak2() {
+//		String xmlstring = new StringBuilder()
+//				.append("<PLAYER id=\"adamsarota\">\n")
+//				.append("    <NAME first=\"Adam\" last=\"Sarota\" />\n")
+//				.append("    <COUNTRY>Australia</COUNTRY>\n")
+//				.append("    <TYPE>MF</TYPE>\n")
+//				.append("    <POS>CM</POS>\n")
+//				.append("    <STATS>\n")
+//				.append("        <ATT>62</ATT>\n")
+//				.append("        <DEF>60</DEF>\n")
+//				.append("        <STA>84</STA>\n")
+//				.append("    </STATS>\n")
+//				.append("    <TPRICE>250000</TPRICE>\n")
+//				.append("    <TEAM>fc-utrecht</TEAM>\n")
+//				.append("</PLAYER>\n")
+//				.append("<ILLEGALTAG>\n")
+//				.toString();
+//		File save = new File("build/testtarget/SAXParserTest/invalidxml.xml");
+//		makeDirs("build/testtarget/SAXParserTest/invalidxml.xml");
+//		PrintWriter pw = null;
+//		try {
+//			pw = new PrintWriter(save, "UTF-8");
+//		} catch (FileNotFoundException e) {
+//			System.err.println(e.getMessage());
+//			e.printStackTrace();
+//		} catch (UnsupportedEncodingException e) {
+//			System.err.println(e.getMessage());
+//			e.printStackTrace();
+//		}
+//		pw.write(xmlstring);
+//		pw.flush();
+//		pw.close();
+//		XMLFile file = SAXParser.parseFile("/build/testtarget/SAXParserTest/invalidxml.xml");
+//		System.out.println(file.getContent("PLAYER.STATS.ATT"));
+//	}
 	
-	public static String unEscapeString(String s){
-	    StringBuilder sb = new StringBuilder();
-	    for (int i=0; i<s.length(); i++)
-	        switch (s.charAt(i)){
-	            case '\n': sb.append("\\n"); break;
-	            case '\t': sb.append("\\t"); break;
-	            // ... rest of escape characters
-	            default: sb.append(s.charAt(i));
-	        }
-	    return sb.toString();
+	private void makeDirs(String location) {
+		File target = new File(location);
+		String here = new File("").getAbsolutePath();
+		String apath = target.getAbsolutePath();
+		apath = apath.replace("\\", "/");
+		apath = apath.substring(here.length() + 1);
+		apath = apath.substring(0, apath.lastIndexOf('/'));
+		File file = new File(apath);
+		file.mkdirs();
 	}
+
 }

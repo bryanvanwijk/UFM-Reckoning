@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Game {
 
-	ArrayList<User> users;
+	private ArrayList<User> users;
 
 	/**
 	 * Constructor
@@ -18,11 +18,54 @@ public class Game {
 		users = null;
 	}
 
+	public void sellPlayer(String id) {
+		getUser().getTeam();
+		throw new UnableToSellException("Not yet possible");
+	}
+
+	public void sellPlayer(String id, User user) {
+		getUser().getTeam();
+		throw new UnableToSellException("Not yet possible");
+	}
+
+	public void buyPlayer(String id) {
+		throw new UnableToSellException("Not yet possible");
+	}
+
+	public void buyPlayer(String id, User user) {
+		throw new UnableToSellException("Not yet possible");
+	}
+
 	/**
+	 * Let the PC buy and sell players
+	 */
+	public void PCBuy() {
+
+	}
+
+	/**
+	 * Get the Human user
 	 * 
-	 * @return
+	 * @return the Human player
 	 */
 	public User getUser() {
+		for (int i = 0; i < users.size(); i++)
+			if (users.get(i) instanceof Human)
+				return users.get(i);
+		return null;
+	}
+
+	/**
+	 * Get a User by username
+	 * 
+	 * @param userName
+	 *            the name of the User to get
+	 * @return
+	 */
+	public User getUser(String userName) {
+		for (int i = 0; i < users.size(); i++)
+			if (users.get(i).getUserName().equals(userName))
+				return users.get(i);
 		return null;
 	}
 
@@ -32,7 +75,6 @@ public class Game {
 	 */
 	public Team getTeam() {
 		return null;
-
 	}
 
 	/**
