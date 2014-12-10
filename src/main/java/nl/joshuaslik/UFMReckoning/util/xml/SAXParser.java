@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning.XMLToolkit;
+package nl.joshuaslik.UFMReckoning.util.xml;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

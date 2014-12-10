@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning.XMLToolkit;
+package nl.joshuaslik.UFMReckoning.util.xml;
 
 /**
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
