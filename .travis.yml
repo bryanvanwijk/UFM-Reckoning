@@ -8,7 +8,7 @@ install:
 before_deploy:
   - mvn package
   - cd build
-  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\* ./surefire-reports\* ./test-classes\* ./generated-sources\* ./generated-test-sources\*
+  - zip -r UFM-Reckoning ./* -x ./maven-archiver\* ./maven-status\* ./classes\* ./surefire-reports\* ./test-classes\* ./generated-sources\* ./generated-test-sources\* ./generated-classes\* ./cobertura\* ./testtarget\*
   - ls
   - cd ..
 
