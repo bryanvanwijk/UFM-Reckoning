@@ -29,7 +29,6 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/mainmenu.fxml"));
-		stage.initStyle(StageStyle.UNDECORATED);
 		stage.setWidth(1920);
 		stage.setHeight(1080);
 		stage.setFullScreen(true);
@@ -47,6 +46,7 @@ public class Main extends Application {
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
+		stage.setFullScreen(true);
 	}
 	
 	public FlowPane addFlowPane() {
