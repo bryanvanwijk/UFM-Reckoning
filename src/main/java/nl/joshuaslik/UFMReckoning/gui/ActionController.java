@@ -15,15 +15,15 @@ import javafx.scene.Scene;
 public class ActionController {
 
 	@FXML
-	protected void handleNewGame(ActionEvent event) throws IOException {
-		System.out.println("Handle [New Game] event yo! Do it nao!");
+	protected void handleStartGame(ActionEvent event) throws IOException {
+		System.out.println("Handle [Start game] event yo! Do it nao!");
 		System.out.println(event.getSource());
 		Main.showNewGame();
 	}
 
 	@FXML
-	protected void handleLoadGame(ActionEvent event) {
-		System.out.println("Handle [Load Game] event yo! Do it nao!");
+	protected void handleOptions(ActionEvent event) {
+		System.out.println("Handle [Options] event yo! Do it nao!");
 		System.out.println(event.getSource());
 	}
 
@@ -35,8 +35,8 @@ public class ActionController {
 	}
 
 	@FXML
-	protected void handleExitGame(ActionEvent event) {
-		System.out.println("Handle [Exit Game] event yo! Do it nao!");
+	protected void handleQuitGame(ActionEvent event) {
+		System.out.println("Handle [Quit Game] event yo! Do it nao!");
 		System.out.println(event.getSource());
 	}
 
