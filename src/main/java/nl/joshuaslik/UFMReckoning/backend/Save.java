@@ -16,6 +16,14 @@ import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
  */
 public class Save {
 	
+	public static void loadTeam(){
+		String current = System.getProperty("user.dir");
+		File folder = new File(current + "/src/main/resources/data/base/teams/");
+		File[] listofFiles = folder.listFiles();
+		XMLFile file = SAXParser.parseFile("/data/base/teams/" + listofFiles[0].getName());
+		System.out.println(file);
+	}
+	
 	public static ArrayList<Player> loadplayers(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/players/");

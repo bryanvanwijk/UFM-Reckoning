@@ -9,6 +9,6 @@ import org.junit.Test;
 public class SaveTest {
 	@Test
 	public void testSave() throws IOException {
-		System.out.println(Save.loadplayers().get(399).getName());
+		System.out.println(Save.loadplayers().get(63).getID());
 	}
 }
