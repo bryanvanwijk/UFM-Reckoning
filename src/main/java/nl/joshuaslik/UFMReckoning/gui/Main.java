@@ -26,10 +26,12 @@ public class Main extends Application {
 		Parent root = FXMLLoader.load(Class.class
 				.getResource("/data/gui/mainmenu.fxml"));
 
-		Scene scene = new Scene(root, 1600, 900);
+		Scene scene = new Scene(root, 1680, 1920);
 
 		stage.setTitle("UFM Reckoning");
 		stage.setScene(scene);
+		stage.setHeight(1680);
+		stage.setWidth(1920);
 		stage.show();
 	}
 }
