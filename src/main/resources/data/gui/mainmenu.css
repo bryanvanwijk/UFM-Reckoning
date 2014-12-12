@@ -1,15 +1,19 @@
+@import url("fonts.css");
+
 .pane {
 	-fx-background-image: url("img/background.png");
 	 -fx-background-size: 100%;
 	 -fx-background-repeat: stretch;
-	}
+}
 
 .button {
-   	 -fx-background-color: #101010;
+   	-fx-background-color: #101010;
 	-fx-text-fill: white;
+	-fx-font-size: 57.95px;
+	-fx-font-family: Quicksand;
 	-fx-opacity: 80%;
 	-fx-border-width: 1px;
-	-fx-border-color: white; 
+	-fx-border-color: #cecece;
 }
 
 .button: hover{
