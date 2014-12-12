@@ -19,4 +19,5 @@
 .button: hover{
 	-fx-background-color: #000000;
 	-fx-opacity: 90%;
+	-fx-cursor: hand;
 }
