@@ -17,15 +17,16 @@ import javafx.stage.Stage;
  */
 @SuppressWarnings("restriction")
 public class Main extends Application {
+	public static Stage stage;
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/mainmenu.fxml"));
-
+		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/mainmenu.fxml"));
+		this.stage = stage;
 		Scene scene = new Scene(root, 1680, 1920);
 
 		stage.setTitle("UFM Reckoning");
@@ -33,5 +34,11 @@ public class Main extends Application {
 		stage.setHeight(1680);
 		stage.setWidth(1920);
 		stage.show();
+	}
+	
+	public static void showNewGame() throws IOException{
+		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
+		Scene scene = new Scene(root, 1680, 1920);
+		stage.setScene(scene);
 	}
 }

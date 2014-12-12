@@ -1,7 +1,10 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Scene;
 
 /**
  * @author Sander Benoist
@@ -12,9 +15,10 @@ import javafx.fxml.FXML;
 public class ActionController {
 
 	@FXML
-	protected void handleNewGame(ActionEvent event) {
+	protected void handleNewGame(ActionEvent event) throws IOException {
 		System.out.println("Handle [New Game] event yo! Do it nao!");
 		System.out.println(event.getSource());
+		Main.showNewGame();
 	}
 
 	@FXML
@@ -26,6 +30,7 @@ public class ActionController {
 	@FXML
 	protected void handleHighscores(ActionEvent event) {
 		System.out.println("Handle [Highscore] event yo! Do it nao!");
+		
 		System.out.println(event.getSource());
 	}
 

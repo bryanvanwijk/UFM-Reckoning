@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@mainmenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button id="btn_NewGame" layoutX="105.0" layoutY="233.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_NewGame" text="New Game" onAction="#handleNewGame"/>
+		<Button id="btn_LoadGame" layoutX="105.0" layoutY="308.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_LoadGame" text="Load Game" onAction="#handleLoadGame"/>
+		<Button id="btn_Highscore" layoutX="105.0" layoutY="383.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_Highscore" text="Highscore" onAction="#handleHighscores"/>
+		<Button id="btn_ExitGame" layoutX="105.0" layoutY="458.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_ExitGame" text="Exit Game" onAction="#handleExitGame"/>
+	</children>
+</Pane>
