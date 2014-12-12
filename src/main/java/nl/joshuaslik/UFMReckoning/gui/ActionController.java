@@ -38,6 +38,7 @@ public class ActionController {
 	protected void handleQuitGame(ActionEvent event) {
 		System.out.println("Handle [Quit Game] event yo! Do it nao!");
 		System.out.println(event.getSource());
+		System.exit(0);
 	}
 
 }
