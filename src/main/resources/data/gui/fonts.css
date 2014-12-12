@@ -1,20 +1,4 @@
 @font-face {
   font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Quicksand Light'), local('Quicksand-Light'), url(../fonts/Quicksand-Light.otf) format('otf');
-}
-
-@font-face {
-  font-family: 'Quicksand';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Quicksand Regular'), local('Quicksand-Regular'), url(../fonts/Quicksand-Regular.otf) format('otf');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url(../fonts/OpenSans.otf) format('otf');
+  src: url(fonts/Quicksand.otf);
 }

@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 /**
  * Main Class of the GUI. This one will be called when the application starts
@@ -26,21 +27,23 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) throws IOException {
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/mainmenu.fxml"));
-		this.stage = stage;
-
-		Scene scene = new Scene(root, 1080, 1920);
-
-		stage.setTitle("Ultimate Football Manager");
-		stage.setScene(scene);
+		stage.initStyle(StageStyle.UNDECORATED);
 		stage.setWidth(1920);
 		stage.setHeight(1080);
-		stage.setFullScreen(false);
-		stage.show();
+		stage.setFullScreen(true);
+		stage.setTitle("Ultimate Football Manager");
+		
+		Main.stage = stage;
+		
+		Scene scene = new Scene(root, 1080, 1920);
+		
+		Main.stage.setScene(scene);
+		Main.stage.show();
 	}
 	
 	public static void showNewGame() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
 		Scene scene = new Scene(root, 1680, 1920);
-		stage.setScene(scene);
+		Main.stage.setScene(scene);
 	}
 }
