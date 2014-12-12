@@ -27,12 +27,14 @@ public class Main extends Application {
 	public void start(Stage stage) throws IOException {
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/mainmenu.fxml"));
 		this.stage = stage;
-		Scene scene = new Scene(root, 1680, 1920);
 
-		stage.setTitle("UFM Reckoning");
+		Scene scene = new Scene(root, 1080, 1920);
+
+		stage.setTitle("Ultimate Football Manager");
 		stage.setScene(scene);
-		stage.setHeight(1680);
 		stage.setWidth(1920);
+		stage.setHeight(1080);
+		stage.setFullScreen(false);
 		stage.show();
 	}
 	
