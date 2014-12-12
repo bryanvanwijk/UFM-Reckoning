@@ -9,8 +9,7 @@
 .button {
    	-fx-background-color: #101010;
 	-fx-text-fill: white;
-	-fx-font-size: 57.95px;
-	-fx-font-family: Quicksand;
+	-fx-font: 57.95pt Quicksand;
 	-fx-opacity: 80%;
 	-fx-border-width: 1px;
 	-fx-border-color: #cecece;
