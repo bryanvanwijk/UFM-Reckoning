@@ -1,11 +1,13 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
+import java.awt.Insets;
 import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
 /**
@@ -40,7 +42,17 @@ public class Main extends Application {
 	
 	public static void showNewGame() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
-		Scene scene = new Scene(root, 1680, 1920);
+		Scene scene = new Scene(root, 1080, 1920);
 		stage.setScene(scene);
+	}
+	
+	public FlowPane addFlowPane() {
+	    FlowPane flow = new FlowPane();
+	    flow.setVgap(4);
+	    flow.setHgap(4);
+	    flow.setPrefWrapLength(170); 
+	    flow.setStyle("-fx-background-color: DAE6F3;");
+
+	    return flow;
 	}
 }
