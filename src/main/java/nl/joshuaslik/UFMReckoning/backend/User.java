@@ -46,10 +46,12 @@ public abstract class User {
 		return false;
 	}
 
-	public boolean equals() {
+	public boolean isHuman() {
 		if (this instanceof Human) {
 			return true;
 		}
 		return false;
 	}
+
+
 }
