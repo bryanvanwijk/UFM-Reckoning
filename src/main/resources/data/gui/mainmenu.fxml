@@ -15,9 +15,9 @@
 				<Image url="@img/background.png" />
 			</image>
 		</ImageView>
-		<Button id="btn_NewGame" layoutX="105.0" layoutY="233.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_NewGame" stylesheets="@mainmenu.css" text="New Game" onAction="#handleNewGame"/>
-		<Button id="btn_LoadGame" layoutX="105.0" layoutY="371.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_LoadGame" stylesheets="@mainmenu.css" text="Load Game" onAction="#handleLoadGame"/>
-		<Button id="btn_Highscore" layoutX="105.0" layoutY="505.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_Highscore" stylesheets="@mainmenu.css" text="Highscore" onAction="#handleHighscores"/>
-		<Button id="btn_ExitGame" layoutX="105.0" layoutY="642.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_ExitGame" stylesheets="@mainmenu.css" text="Exit Game" onAction="#handleExitGame"/>
+		<Button id="btn_NewGame" layoutX="105.0" layoutY="233.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_NewGame" text="New Game" onAction="#handleNewGame"/>
+		<Button id="btn_LoadGame" layoutX="105.0" layoutY="308.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_LoadGame" text="Load Game" onAction="#handleLoadGame"/>
+		<Button id="btn_Highscore" layoutX="105.0" layoutY="383.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_Highscore" text="Highscore" onAction="#handleHighscores"/>
+		<Button id="btn_ExitGame" layoutX="105.0" layoutY="458.0" mnemonicParsing="false" prefHeight="75.0" prefWidth="250.0" styleClass="btn_ExitGame" text="Exit Game" onAction="#handleExitGame"/>
 	</children>
 </Pane>
