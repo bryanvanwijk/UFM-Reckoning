@@ -21,7 +21,10 @@ public class Save {
 		File folder = new File(current + "/src/main/resources/data/base/teams/");
 		File[] listofFiles = folder.listFiles();
 		XMLFile file = SAXParser.parseFile("/data/base/teams/" + listofFiles[0].getName());
-		System.out.println(file);
+		System.out.println(file.getElement("TEAM.PLAYERS").elements());
+		for (int i = 1; i < file.getElement("TEAM.PLAYERS").elements(); i++ ){
+			System.out.println(file.getElement("TEAM.PLAYERS.PLAYER", i));
+		}
 	}
 	
 	public static ArrayList<Player> loadplayers(){

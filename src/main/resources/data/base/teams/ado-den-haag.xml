@@ -66,8 +66,6 @@
 			<TYPE>FA</TYPE>
 			<NUM>19</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="robertzwinkels">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
