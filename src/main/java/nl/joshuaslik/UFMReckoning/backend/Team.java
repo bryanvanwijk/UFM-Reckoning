@@ -129,6 +129,57 @@ public class Team {
 		teamCaptain = player;
 	}
 
+	/**
+	 * Adds the player to the active player list and removes him from the bench
+	 * player list.
+	 * 
+	 * @param player
+	 *            is a Player Object.
+	 */
+	public void setPlayerActive(Player player) {
+		if (!activePlayers.contains(player) && activePlayers.size() < 11) {
+
+			if (player instanceof Goalkeeper && !checkActiveGoalkeeper()) {
+				activePlayers.add(player);
+			}
+
+			if (player instanceof Fieldplayer) {
+				activePlayers.add(player);
+
+				attackPower += ((Fieldplayer) player).getAttackPower();
+				defencePower += ((Fieldplayer) player).getDefencePower();
+				stamina += ((Fieldplayer) player).getStamina();
+			}
+
+			if (benchPlayers.contains(player)) {
+				benchPlayers.remove(benchPlayers.indexOf(player));
+			}
+		}
+	}
+
+	/**
+	 * Removes the Player from the active playerlist and adds him to the bench
+	 * playerlist.
+	 * 
+	 * @param player
+	 *            is a Player Object
+	 */
+	public void setPlayerBench(Player player) {
+		if (!benchPlayers.contains(player)) {
+			benchPlayers.add(player);
+
+			if (activePlayers.contains(player)) {
+				activePlayers.remove(activePlayers.indexOf(player));
+
+				if (player instanceof Fieldplayer) {
+					attackPower -= ((Fieldplayer) player).getAttackPower();
+					defencePower -= ((Fieldplayer) player).getDefencePower();
+					stamina -= ((Fieldplayer) player).getStamina();
+				}
+			}
+		}
+	}
+
 	public boolean equals(Object other) {
 		if (other instanceof Team) {
 			Team that = (Team) other;
