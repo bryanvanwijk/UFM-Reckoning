@@ -132,7 +132,8 @@ public class Team {
 	public boolean equals(Object other) {
 		if (other instanceof Team) {
 			Team that = (Team) other;
-			if (this.activePlayers.equals(that.activePlayers)
+			if(this.teamCaptain != null && that.teamCaptain != null){
+				if (this.activePlayers.equals(that.activePlayers)
 					&& this.benchPlayers.equals(that.benchPlayers)
 					&& this.teamCaptain.equals(that.teamCaptain)
 					&& this.teamName.equals(that.teamName)
@@ -143,7 +144,28 @@ public class Team {
 					&& (this.totalGoals == that.totalGoals)
 					&& (this.attackPower == that.attackPower)
 					&& (this.defencePower == that.defencePower)
-					&& (this.stamina == that.stamina)) {
+					&& (this.stamina == that.stamina)
+					&& (this.points == that.points)
+					&& (this.ranking == that.ranking)
+					&& (this.goalsagaints == that.goalsagaints)) {
+				return true;
+				}
+			}
+			else if(this.activePlayers.equals(that.activePlayers)
+					&& this.benchPlayers.equals(that.benchPlayers)
+					&& (this.teamCaptain == null && that.teamCaptain == null)
+					&& this.teamName.equals(that.teamName)
+					&& this.coachName.equals(that.coachName)
+					&& (this.totalWins == that.totalWins)
+					&& (this.totalLosses == that.totalLosses)
+					&& (this.totalDraws == that.totalDraws)
+					&& (this.totalGoals == that.totalGoals)
+					&& (this.attackPower == that.attackPower)
+					&& (this.defencePower == that.defencePower)
+					&& (this.stamina == that.stamina)
+					&& (this.points == that.points)
+					&& (this.ranking == that.ranking)
+					&& (this.goalsagaints == that.goalsagaints)){
 				return true;
 			}
 		}

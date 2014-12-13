@@ -10,14 +10,14 @@ import java.util.ArrayList;
  */
 public class Game {
 
-	private ArrayList<User> users;
+	private ArrayList<User> users = new ArrayList<User>();
 	private Competition competition;
 
 	/**
 	 * Constructor
 	 */
 	public Game() {
-		users = null;
+		
 	}
 
 	public void sellPlayer(String id) {
@@ -36,6 +36,12 @@ public class Game {
 
 	public void buyPlayer(String id, User user) {
 		throw new UnableToSellException("Not yet possible");
+	}
+	
+	public void addUser(User user){
+		if ((!users.contains(user)) ){
+			users.add(user);
+		}
 	}
 
 	/**

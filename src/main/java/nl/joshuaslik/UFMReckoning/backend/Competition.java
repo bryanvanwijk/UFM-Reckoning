@@ -16,7 +16,6 @@ public class Competition {
 	public Competition(Game game){
 		this.game = game;
 		users  = game.getUsers();
-		DefinePlayrounds();
 	}
 	
 	public void ComputeStandings(){
@@ -37,7 +36,7 @@ public class Competition {
 	/**
 	 * add all matches of this competition to random playrounds
 	 */
-	private void DefinePlayrounds(){
+	public void DefinePlayrounds(){
 		ArrayList<Match> matches = new ArrayList<Match>();
 		for (int i = 0; i < users.size(); i++){
 			for (int j = 0; j < users.size(); j++){
@@ -47,20 +46,24 @@ public class Competition {
 			}
 		}
 		Collections.shuffle(matches);
+		
 		Playround newplayround = new Playround();
 		
-		for (int i = 0; i < matches.size(); i++){
-			if (newplayround.getMatches().size() != (users.size()/2)){
-				playrounds.add(newplayround);
-				newplayround = new Playround();
+		while(!matches.isEmpty()){
+			newplayround = new Playround();	
+			while(newplayround.getMatches().size() != (users.size()/2)){
+				for(int i = 0; i < matches.size(); i++){
+					if (!(newplayround.contains(matches.get(i).getHomeTeam()) || newplayround.contains(matches.get(i).getAwayTeam()))) {
+						newplayround.addmatch(matches.remove(i));
+					}
+				}
 			}
-			if (matches.get(i).get)
-			newplayround.addmatch(matches.get(i));
+			playrounds.add(newplayround);
 		}
 		
 	}
 	
-	public void getPlayrounds(){
-		
+	public ArrayList<Playround> getPlayrounds(){
+		return playrounds;
 	}
 }
