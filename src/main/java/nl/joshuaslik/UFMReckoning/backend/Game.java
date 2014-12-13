@@ -5,11 +5,13 @@ import java.util.ArrayList;
 /**
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  * @author Naomi de Ridder
+ * @autor <a href="http://www.bryangouldsnl/" target="_blank">Bryan van Wijk</a>
  *
  */
 public class Game {
 
 	private ArrayList<User> users;
+	private Competition competition;
 
 	/**
 	 * Constructor
@@ -95,29 +97,21 @@ public class Game {
 		return null;
 
 	}
-
+	
 	/**
 	 * 
-	 * @param home
-	 *            the team playing home
-	 * @param away
-	 *            the team playing away
-	 * @return
+	 * @return gives the users in this game back
 	 */
-	public String playMatch(User home, User away) {
-		return null;
+	public ArrayList<User> getUsers(){
+		return users;
 	}
-
+	
+	
 	/**
-	 * 
-	 * @param home
-	 *            the team playing home
-	 * @param away
-	 *            the team playing away
-	 * @return
+	 * Starts a new competition for this game
 	 */
-	public String playMatch(Team home, Team away) {
-		return null;
+	public void newCompetition(){
+		competition = new Competition(this);
 	}
 
 }
