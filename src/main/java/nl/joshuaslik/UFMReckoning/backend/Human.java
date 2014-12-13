@@ -6,5 +6,11 @@ public class Human extends User {
 		super(team, userName, budget);
 
 	}
-
+	/*  boolean equals(Object obj) {
+		if (obj instanceof Human) {
+			if(){
+			return true; }
+		}
+		return false;
+	}*/
 }

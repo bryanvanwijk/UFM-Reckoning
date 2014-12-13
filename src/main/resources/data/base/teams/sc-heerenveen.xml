@@ -6,183 +6,131 @@
 			<TYPE>GK</TYPE>
 			<NUM>1</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="kennethotigba">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>2</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="pelevananholt">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>5</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="stefanomarzo">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>6</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="mortenthorsby">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>8</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="thomasdalgaard">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FA</TYPE>
 			<NUM>9</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="samlarsson">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>FA</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="dokeschmidt">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>12</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="joostvanaken">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>14</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="martenderoon">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>15</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="daleysinkgraven">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>16</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="lucianoslagveer">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FA</TYPE>
 			<NUM>17</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="jensjurnstreutker">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>18</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="markuth">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FA</TYPE>
 			<NUM>19</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="jukkaraitala">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>20</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="joeyvandenberg">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>21</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="stephenwarmolts">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>22</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="jordybuijs">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>23</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="willemhuizing">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>25</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="janiobikel">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>26</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="michaelchacon">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>27</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="pascalhuser">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FA</TYPE>
 			<NUM>28</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="robinkist">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>30</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="viktornoring">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>31</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="jorisvoest">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>32</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="maartendefockert">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>33</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="jeroenlumu">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FA</TYPE>

@@ -14,3 +14,5 @@
 1417011409|[Mile] Naomi de Ridder makes the final entry to the player and team database.
 1417609800|[Scrum] End of Sprint #2!
 1417613400|[Scrum] Start of Sprint #3!
+1418214600|[Scrum] End of Sprint #3!
+1418218200|[Scrum] Start of Sprint #4!

@@ -146,26 +146,26 @@ public class SAXParser extends DefaultHandler {
 			String content = "";
 			for (int i = start; i < start + length; i++) {
 				switch (ch[i]) {
-				// case '\\':
-				// System.out.print("\\\\");
-				// content = content + "\\\\";
-				// break;
-				// case '"':
-				// System.out.print("\\\"");
-				// content = content + "\\\"";
-				// break;
-				// case '\n':
-				// System.out.print("\\n");
-				// content = content + "\\n";
-				// break;
-				// case '\r':
-				// System.out.print("\\r");
-				// content = content + "\\r";
-				// break;
-				// case '\t':
-				// System.out.print("\\t");
-				// content = content + "\\t";
-				// break;
+				case '\\':
+					// System.out.print("\\\\");
+					// content = content + "\\\\";
+					break;
+				case '"':
+					// System.out.print("\\\"");
+					// content = content + "\\\"";
+					break;
+				case '\n':
+					// System.out.print("\\n");
+					// content = content + "\\n";
+					break;
+				case '\r':
+					// System.out.print("\\r");
+					// content = content + "\\r";
+					break;
+				case '\t':
+					// System.out.print("\\t");
+					// content = content + "\\t";
+					break;
 				default:
 					// System.out.print(ch[i]);
 					content = content + ch[i];

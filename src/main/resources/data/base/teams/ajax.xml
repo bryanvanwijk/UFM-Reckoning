@@ -22,7 +22,7 @@
 			<TYPE>DF</TYPE>
 			<NUM>2</NUM>
 		</PLAYER>
-		<PLAYER id="joëlveltman">
+		<PLAYER id="joelveltman">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>3</NUM>
@@ -67,7 +67,7 @@
 			<TYPE>FW</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>
-		<PLAYER id="jaïroriedewald">
+		<PLAYER id="jairoriedewald">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>12</NUM>
@@ -87,7 +87,7 @@
 			<TYPE>FW</TYPE>
 			<NUM>19</NUM>
 		</PLAYER>
-		<PLAYER id="lasseschöne">
+		<PLAYER id="lasseschone">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>20</NUM>

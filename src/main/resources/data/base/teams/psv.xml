@@ -66,12 +66,12 @@
 			<TYPE>DF</TYPE>
 			<NUM>15</NUM>
 		</PLAYER>
-		<PLAYER id="jürgenlocadia">
+		<PLAYER id="jurgenlocadia">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>17</NUM>
 		</PLAYER>
-		<PLAYER id="andrésguardado">
+		<PLAYER id="andresguardado">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>18</NUM>
