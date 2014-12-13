@@ -50,6 +50,7 @@ public class App {
 				} else {
 					XMLFile file = SAXParser.parseFile(args[1]);
 					System.out.println(file.toString());
+					System.out.println(file.getContent("PLAYER.STATS.STA"));
 				}
 			}
 

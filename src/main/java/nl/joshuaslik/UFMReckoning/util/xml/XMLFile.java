@@ -102,7 +102,8 @@ public class XMLFile {
 	 * @return a string representation of this object.
 	 */
 	public String toString() {
-		return root.toString();
+		String retstr = root.toString();
+		return retstr.substring(0, retstr.length() - 1);
 	}
 
 	private void makeDirs(String location) {
