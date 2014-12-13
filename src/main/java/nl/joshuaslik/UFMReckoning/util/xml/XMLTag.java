@@ -31,6 +31,14 @@ public class XMLTag {
 	public int elements() {
 		return elements.size();
 	}
+	
+	public int elements(String name) {
+		int count = 0;
+		for (int i = 0; i < elements.size(); i++)
+			if (elements.get(i).getName().equals(name))
+				count++;
+		return count;
+	}
 
 	/**
 	 * 
@@ -44,6 +52,10 @@ public class XMLTag {
 
 	public boolean hasElement(String name) {
 		return elementnames.contains(name);
+	}
+
+	public boolean hasMoreThanOneElement(String name) {
+		return (Collections.frequency(elementnames, name) > 1);
 	}
 
 	public void addElement(XMLTag element) {
@@ -66,11 +78,38 @@ public class XMLTag {
 		// the '.')
 		int splitpoint = element.indexOf(".") + 1;
 		element = element.substring(splitpoint, element.length());
-		if (elementnames.contains(element))
-			return elements.get(elementnames.indexOf(element)).getElement(
+		String subelement = element.split("\\.")[0];
+		if (Collections.frequency(elementnames, subelement) > 1)
+			throw new ElementNotUniqueException(this.name
+					+ " contains more than one element called '" + subelement
+					+ "'");
+		if (elementnames.contains(subelement))
+			return elements.get(elementnames.indexOf(subelement)).getElement(
 					element);
-		throw new NoSuchElementException(this.name + " does not have element "
-				+ element);
+		throw new NoSuchElementException(this.name + " does not have element '"
+				+ element + "'");
+	}
+
+	public XMLTag getElement(String element, int iteration)
+			throws NoSuchElementException {
+		if (element.equals(name)) {
+			return this;
+		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		String[] subelements = element.split("\\.");
+		String subelement = subelements[0];
+		if (elementnames.contains(subelement)) {
+			if (subelements.length > 1)
+				return elements.get(elementnames.indexOf(subelement))
+						.getElement(element, iteration);
+			return elements.get(indexOfIteration(subelement, iteration))
+					.getElement(element, iteration);
+		}
+		throw new NoSuchElementException(this.name + " does not have element '"
+				+ element + "'");
 	}
 
 	public String getContent(String element) throws NoSuchElementException {
@@ -84,10 +123,33 @@ public class XMLTag {
 		String subelement = element.split("\\.")[0];
 		if (Collections.frequency(elementnames, subelement) > 1)
 			throw new ElementNotUniqueException(this.name
-					+ " contains more than one element called '" + subelement + "'");
+					+ " contains more than one element called '" + subelement
+					+ "'");
 		if (elementnames.contains(subelement))
 			return elements.get(elementnames.indexOf(subelement)).getContent(
 					element);
+		throw new NoSuchElementException(this.name + " does not have element '"
+				+ element + "'");
+	}
+
+	public String getContent(String element, int iteration)
+			throws NoSuchElementException {
+		if (element.equals(name)) {
+			return content;
+		}
+		// Get the string of the following elements (+ 1 to also chop off
+		// the '.')
+		int splitpoint = element.indexOf(".") + 1;
+		element = element.substring(splitpoint, element.length());
+		String[] subelements = element.split("\\.");
+		String subelement = subelements[0];
+		if (elementnames.contains(subelement)) {
+			if (subelements.length > 1)
+				return elements.get(elementnames.indexOf(subelement))
+						.getContent(element, iteration);
+			return elements.get(indexOfIteration(subelement, iteration))
+					.getContent(element, iteration);
+		}
 		throw new NoSuchElementException(this.name + " does not have element '"
 				+ element + "'");
 	}
@@ -133,9 +195,9 @@ public class XMLTag {
 	 * 
 	 * @return the elements
 	 */
-	// public LinkedHashMap<String, XMLTag> getElements() {
-	// return elements;
-	// }
+	public ArrayList<XMLTag> getElements() {
+		return elements;
+	}
 
 	/**
 	 * Setter
@@ -186,7 +248,8 @@ public class XMLTag {
 	}
 
 	public String toString() {
-		return toString(0);
+		String retstr = toString(0);
+		return retstr.substring(0, retstr.length() - 1);
 	}
 
 	public String toString(int indent) {
@@ -225,5 +288,17 @@ public class XMLTag {
 		}
 
 		return retstr;
+	}
+
+	private int indexOfIteration(String str, int it) {
+		int count = 0;
+		for (int i = 0; i < elementnames.size(); i++) {
+			if (elementnames.get(i).equals(str)) {
+				count++;
+				if (count == it)
+					return i;
+			}
+		}
+		throw new NoSuchElementException();
 	}
 }

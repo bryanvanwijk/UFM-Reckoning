@@ -68,6 +68,52 @@ public class XMLTagTest {
 		thrown.expect(NoSuchElementException.class);
 		tag.getContent("rootname.falsesubname");
 	}
+	
+	@Test
+	public void testGetContentAdvanced1() {
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getElement("TEAM.PLAYERS.PLAYER", 1).getContent("ACTIVE").equals("true"));
+	}
+	
+	@Test
+	public void testGetContentAdvanced2() {
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getElement("TEAM.PLAYERS").elements("PLAYER") == 30);
+	}
+	
+	@Test
+	public void testGetContentAdvanced3() {
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getElement("TEAM.PLAYERS").hasMoreThanOneElement("PLAYER"));
+	}
+	
+	@Test
+	public void testGetContentAdvanced4() {
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getContent("TEAM.PLAYERS.PLAYER", 1).equals(""));
+	}
+	
+	@Test
+	public void testGetContentAdvanced5() {
+		thrown.expect(NoSuchElementException.class);
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getContent("TEAM.PLAYERS.PLAYERS", 1).equals(""));
+	}
+	
+	@Test
+	public void testGetContentAdvanced6() {
+		thrown.expect(NoSuchElementException.class);
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		assertTrue(testfile.getContent("TEAM.PLAYERS.PLAYER", 100).equals(""));
+	}
+	
+	@Test
+	public void testGetContentAdvanced7() {
+		thrown.expect(NoSuchElementException.class);
+		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
+		testfile.getElement("TEAM.PLAYERS").addElement(new XMLTag("asdf", null));
+		testfile.getElement("TEAM.PLAYERS.PLAYER", 100);
+	}
 
 	@Test
 	public void getElement1() {
@@ -151,7 +197,7 @@ public class XMLTagTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname>subcontent</subname>\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(tag.toString().equals(expected));
 
@@ -164,7 +210,7 @@ public class XMLTagTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">\n")
 				.append("    <subname>subcontent</subname>\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(tag.toString().equals(expected));
 	}
@@ -176,7 +222,7 @@ public class XMLTagTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(tag.toString().equals(expected));
 	}
@@ -188,7 +234,7 @@ public class XMLTagTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(tag.toString().equals(expected));
 	}

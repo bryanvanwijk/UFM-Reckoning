@@ -35,6 +35,18 @@ public class XMLFile {
 	public String getContent(String name) throws NoSuchElementException {
 		return root.getContent(name);
 	}
+	
+	/**
+	 * 
+	 * @param name
+	 *            is the name of the element to get
+	 * @return the content of the element at location <b>name</b>
+	 * @throws NoSuchElementException
+	 *             is thrown if element is not found
+	 */
+	public String getContent(String name, int iteration) throws NoSuchElementException {
+		return root.getContent(name, iteration);
+	}
 
 	/**
 	 * 
@@ -46,6 +58,18 @@ public class XMLFile {
 	 */
 	public XMLTag getElement(String name) throws NoSuchElementException {
 		return root.getElement(name);
+	}
+	
+	/**
+	 * 
+	 * @param name
+	 *            is the name of the element to get
+	 * @return the element at the location <b>name</b>
+	 * @throws NoSuchElementException
+	 *             is thrown if element is not found
+	 */
+	public XMLTag getElement(String name, int iteration) throws NoSuchElementException {
+		return root.getElement(name, iteration);
 	}
 
 //	/**
@@ -102,8 +126,7 @@ public class XMLFile {
 	 * @return a string representation of this object.
 	 */
 	public String toString() {
-		String retstr = root.toString();
-		return retstr.substring(0, retstr.length() - 1);
+		return root.toString();
 	}
 
 	private void makeDirs(String location) {

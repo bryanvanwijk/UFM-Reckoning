@@ -62,7 +62,7 @@ public class XMLFileTest {
 		thrown.expect(NoSuchElementException.class);
 		file.getContent("rootname.fakename");
 	}
-
+	
 	@Test
 	public void testGetElement1() {
 		construct();
