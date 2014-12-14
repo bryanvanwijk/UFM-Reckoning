@@ -78,7 +78,7 @@ public class XMLTagTest {
 	@Test
 	public void testGetContentAdvanced2() {
 		XMLFile testfile = SAXParser.parseFile("/data/base/teams/ajax.xml");
-		assertTrue(testfile.getElement("TEAM.PLAYERS").elements("PLAYER") == 30);
+		assertTrue(testfile.getElement("TEAM.PLAYERS").elements("PLAYER") == 28);
 	}
 	
 	@Test
