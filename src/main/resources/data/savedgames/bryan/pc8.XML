@@ -1,0 +1,80 @@
+<TEAM id="feyenoord" name="Feyenoord" coach="Fred Rutten">
+    <PLAYER id="erwinmulder">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lukewilkshire">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jorismathijsen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="terencekongolo">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jordyclasie">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jean-paulboetius">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="karimelahmadi">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="leximmers">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="wesleyverhoek">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bilalbasacikoglu">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="colinkazim-richards">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ronaldgraafland">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kennethvermeer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="elvismanu">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="miquelnelom">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mitchelltevrede">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tonnyvilhena">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="svenvanbeek">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="khalidboulahrouz">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="matthewsteenvoorden">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lucaswoudenberg">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rickkarsdorp">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rubenschaken">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jenstoornstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="anassachahbar">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="wesseldammers">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

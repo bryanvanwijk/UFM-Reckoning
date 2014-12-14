@@ -1,0 +1,74 @@
+<TEAM id="sc-cambuur" name="SC Cambuur" coach="Henk de Jong">
+    <PLAYER id="woutdroste">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="etiennereijnen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="vytautasandriuskevicius">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="marlonpereira">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="erikbakker">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="furdjelnarsingh">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="danielderidder">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="martijnbarto">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dejanmeleg">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="albertrusnak">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="leonardnienhuis">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="michielhemmen">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="oebeleschokker">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="martdijkstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lucasbijker">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bartholomewogbeche">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="sandervandestreek">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mohamedelmakrini">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ronjanzen">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="sebastiansteblecki">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="berendschootstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="harmzeinstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bobschepers">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jurjanwouda">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

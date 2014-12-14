@@ -9,6 +9,7 @@ import java.util.LinkedHashMap;
 
 import nl.joshuaslik.UFMReckoning.util.xml.SAXParser;
 import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
+import nl.joshuaslik.UFMReckoning.util.xml.XMLTag;
 
 /**
  * @author Bryan van Wijk
@@ -69,6 +70,7 @@ public class Save {
 		return teams;
 		
 	}
+		
 	
 	public static LinkedHashMap<String, Player> loadplayers(){
 		String current = System.getProperty("user.dir");
@@ -104,7 +106,42 @@ public class Save {
 			}
 		}
 		return playerslist;
-		
+	}
+	
+	public static void SaveGame(Game game){
+		ArrayList<User> users = game.getUsers();
+		String current = System.getProperty("user.dir");
+		new File(current + "/src/main/resources/data/savedgames/"+game.getUser().getUserName()+"/").mkdir();
+		File folder = new File(current + "/src/main/resources/data/savedgames/"+game.getUser().getUserName()+"/");
+		LinkedHashMap<String, String> emptyatts = new LinkedHashMap<String, String>();
+		for(int i=0; i < users.size(); i++){
+			Team team = users.get(i).getTeam();
+			LinkedHashMap<String, String> atts = new LinkedHashMap<String, String>();
+			atts.put("id", team.getid());
+			atts.put("name", team.getTeamName());
+			atts.put("coach", team.getCoachName());
+			XMLTag root = new XMLTag("TEAM", atts);
+			for(int j =0; j < team.getActivePlayers().size(); j++){
+				LinkedHashMap<String, String> playeratts = new LinkedHashMap<String, String>();
+				playeratts.put("id", team.getActivePlayers().get(j).getID());
+				XMLTag player = new XMLTag("PLAYER", playeratts);
+				XMLTag active = new XMLTag("ACTIVE", emptyatts);
+				active.setContent("true");
+				player.addElement(active);
+				root.addElement(player);
+			}
+			for(int j =0; j < team.getBenchPlayers().size(); j++){
+				LinkedHashMap<String, String> playeratts = new LinkedHashMap<String, String>();
+				playeratts.put("id", team.getBenchPlayers().get(j).getID());
+				XMLTag player = new XMLTag("PLAYER", playeratts);
+				XMLTag active = new XMLTag("ACTIVE", emptyatts);
+				active.setContent("false");
+				player.addElement(active);
+				root.addElement(player);
+			}
+			XMLFile teamfile = new XMLFile(root);
+			teamfile.save(current + "/src/main/resources/data/savedgames/"+game.getUser().getUserName()+"/"+users.get(i).getUserName()+".XML");
+		}
 	}
 
 }

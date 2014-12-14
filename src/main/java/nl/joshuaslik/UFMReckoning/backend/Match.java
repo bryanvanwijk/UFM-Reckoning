@@ -17,7 +17,7 @@ public class Match {
 			this.awayteam = awayteam;
 		}
 	}
-	public int determinegoals(int goalchance){
+	private int determinegoals(int goalchance){
 		if(goalchance >= 0 && goalchance <= 810){
 			return 0;
 		}
@@ -148,6 +148,34 @@ public class Match {
 	
 	/**
 	 * 
+	 */
+	public void setawaygoals(int goals){
+		awaygoals = goals;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setWinner(Team team){
+		winner = team;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setLoser(Team team){
+		loser = team;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setHomegoals(int goals){
+		homegoals = goals;
+	}
+	
+	/**
+	 * 
 	 * @return
 	 */
 	public Team getHomeTeam(){
@@ -171,22 +199,22 @@ public class Match {
 	}
 	
 	public boolean equals(Object other) {
-		if (other instanceof Match && (other != null)) {
+		if (other instanceof Match & (other != null)) {
 			Match that = (Match) other;
-			if(this.winner != null && this.loser != null && that.winner != null && that.loser != null  ) {
-				if (this.hometeam.equals(that.hometeam) &&
-					this.awayteam.equals(that.awayteam) && 
-					this.awaygoals == that.awaygoals &&
-					this.homegoals == that.homegoals &&
-					this.loser == that.loser &&
+			if(this.winner != null & this.loser != null & that.winner != null & that.loser != null  ) {
+				if (this.hometeam.equals(that.hometeam) &
+					this.awayteam.equals(that.awayteam) & 
+					this.awaygoals == that.awaygoals &
+					this.homegoals == that.homegoals &
+					this.loser == that.loser &
 					this.winner == that.winner){
 				return true;
 				}
 			}
-			else if(this.winner == null && that.winner == null &&
-					this.hometeam.equals(that.hometeam) &&
-					this.awayteam.equals(that.awayteam) && 
-					this.awaygoals == that.awaygoals &&
+			else if(this.winner == null & that.winner == null &
+					this.hometeam.equals(that.hometeam) &
+					this.awayteam.equals(that.awayteam) & 
+					this.awaygoals == that.awaygoals &
 					this.homegoals == that.homegoals){
 				return true;
 			}

@@ -1,0 +1,68 @@
+<TEAM id="fc-dordrecht" name="fc Dordrecht" coach="Ernie Brandts">
+    <PLAYER id="filipkurto">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jeffreyfortes">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="iliashaddad">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="williamtroost-ekong">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="marvinpeersman">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="funsoojo">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rihairomeulens">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="robingosens">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="martlieder">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="adnanalisic">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="giovannikorte">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ricktenvoorde">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="robbertteloeke">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jorisvanovereem">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="javiervet">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nandowormgoor">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mohamedhamdaoui">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jordyvandeelen">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="everonpisas">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rickyvanhaaren">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="virgildeen">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="semdewit">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

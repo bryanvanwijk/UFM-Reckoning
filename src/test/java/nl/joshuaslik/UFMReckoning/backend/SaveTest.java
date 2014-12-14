@@ -3,6 +3,7 @@ package nl.joshuaslik.UFMReckoning.backend;
 import static org.junit.Assert.assertEquals;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
 import org.junit.Test;
@@ -29,7 +30,7 @@ public class SaveTest {
 			}
 			System.out.println("");
 		}
-		*/
+		
 		Game game = Save.newGame(teams.get("ado-den-haag"), "bryan");
 		game.getCompetition().DefinePlayrounds();
 		game.getCompetition().computeresultCompetition();
@@ -37,6 +38,9 @@ public class SaveTest {
 		for(int i = 0; i<game.getUsers().size(); i++){
 			System.out.println(game.getUsers().get(i).getTeam().getTeamName()+"-"+game.getUsers().get(i).getTeam().getRanking());
 		}
+		*/
+		Game game = Save.newGame(teams.get("ado-den-haag"), "bryan");
+		Save.SaveGame(game);
 	}
 	
 }

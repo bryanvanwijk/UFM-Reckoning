@@ -1,0 +1,83 @@
+<TEAM id="ajax" name="Ajax" coach="Frank de Boer">
+    <PLAYER id="jaspercillessen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ricardovanrhijn">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joelveltman">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="niklasmoisander">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nicolaiboilesen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mikevanderhoorn">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="viktorfischer">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lerinduarte">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kolbeinnsigporsson">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="davyklaassen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ricardokishna">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jairoriedewald">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lucasandersen">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="robertmuric">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="arkadiuszmilik">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lasseschone">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="anwarelghazi">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kennytete">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stefanodenswil">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thulaniserero">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nickviergever">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="riechedlybazoer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tobiassana">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rubenligeon">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="richairozivkovic">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nikizimling">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="peterleeuwenburgh">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

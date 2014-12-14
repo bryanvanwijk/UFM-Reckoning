@@ -78,4 +78,15 @@ public class Competition {
 	public ArrayList<Playround> getPlayrounds(){
 		return playrounds;
 	}
+	
+	public boolean equals(Object other) {
+		if (other instanceof Competition) {
+			Competition that = (Competition) other;
+			if (this.game.equals(that.game)&
+					this.playrounds.equals(that.playrounds)){
+				return true;
+			}
+		}
+		return false;
+	}
 }

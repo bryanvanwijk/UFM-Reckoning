@@ -1,0 +1,68 @@
+<TEAM id="pec-zwolle" name="PEC Zwolle" coach="Ron Jans">
+    <PLAYER id="warnerhahn">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bramvanpolen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="trentsainsbury">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="maikelvanderwerff">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bartvanhintum">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mustafasaymak">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jodylukoki">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thanasiskaragounis">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nikolaosioannidis">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stefnijland">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jesperdrost">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joostbroerse">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tomasnecid">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kevinbegois">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="woutermarinus">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rickdekker">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="soufianmoro">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="benrienstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stevenpereira">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="boydejong">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thomaslam">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ryanthomas">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

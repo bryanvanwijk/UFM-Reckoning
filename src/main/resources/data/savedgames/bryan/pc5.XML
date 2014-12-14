@@ -1,0 +1,62 @@
+<TEAM id="fc-groningen" name="FC-Groningen" coach="Erwin van de Looi">
+    <PLAYER id="sergiopadt">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="johankappelhof">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ericbotteghin">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="martijnvanderlaan">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lorenzoburnet">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="maikelkieftenbeld">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jarchinioantonia">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="michaeldeleeuw">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dannyhoesen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tjaronnchery">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nickbakker">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="hilalbenmoussa">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="henkbos">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dinoislamovic">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="yoellvannieff">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rasmuslindgren">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nickvandervelden">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tomhiariej">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="buraksaban">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="hanshateboer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

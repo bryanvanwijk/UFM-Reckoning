@@ -293,4 +293,8 @@ public class Team {
 	public String getid(){
 		return id;
 	}
+	
+	public int getPlayers(){
+		return getActivePlayers().size()+getBenchPlayers().size();
+	}
 }

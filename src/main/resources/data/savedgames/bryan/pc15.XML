@@ -1,0 +1,80 @@
+<TEAM id="sc-heerenveen" name="sc-Heerenveen" coach="Dwight Lodeweges">
+    <PLAYER id="kristoffernordfeldt">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kennethotigba">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="pelevananholt">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stefanomarzo">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mortenthorsby">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thomasdalgaard">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="samlarsson">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dokeschmidt">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joostvanaken">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="martenderoon">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="daleysinkgraven">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lucianoslagveer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jensjurnstreutker">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="markuth">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jukkaraitala">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joeyvandenberg">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stephenwarmolts">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jordybuijs">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="willemhuizing">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="janiobikel">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="michaelchacon">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="pascalhuser">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="robinkist">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="viktornoring">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jorisvoest">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="maartendefockert">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>
