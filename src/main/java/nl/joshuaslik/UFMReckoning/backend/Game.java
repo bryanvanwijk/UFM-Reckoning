@@ -115,6 +115,14 @@ public class Game {
 		return users;
 	}
 	
+	/**
+	 * Starts a new competition for this game
+	 */
+	public Competition getCompetition(){
+		return competition;
+	}
+	
+	
 	
 	/**
 	 * Starts a new competition for this game

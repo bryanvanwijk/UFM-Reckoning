@@ -18,6 +18,10 @@ public class Competition {
 		users  = game.getUsers();
 	}
 	
+	public ArrayList<User> getusers(){
+		return users;
+	}
+	
 	public void ComputeStandings(){
 		int ranking=1;
 		for (int i = 0; i < users.size(); i++){
@@ -39,6 +43,7 @@ public class Competition {
 	public void DefinePlayrounds(){
 		ArrayList<Match> matches = new ArrayList<Match>();
 		for (int i = 0; i < users.size(); i++){
+			
 			for (int j = 0; j < users.size(); j++){
 				if (users.get(i) != users.get(j)){
 					matches.add(new Match(users.get(i).getTeam(), users.get(j).getTeam()));
@@ -46,19 +51,28 @@ public class Competition {
 			}
 		}
 		Collections.shuffle(matches);
-		Playround newplayround = new Playround();
-		while(!matches.isEmpty()){
-			newplayround = new Playround();	
+		int i =0;
+		while(playrounds.size() != (users.size()*(users.size()-1)/(users.size()/2))){
+			Playround newplayround = new Playround();
+			i = 0;	
 			while(newplayround.getMatches().size() != (users.size()/2)){
-				for(int i = 0; i < matches.size(); i++){
-					if (!(newplayround.contains(matches.get(i).getHomeTeam()) || newplayround.contains(matches.get(i).getAwayTeam()))) {
-						newplayround.addmatch(matches.remove(i));
+					if (!(newplayround.contains(matches.get(i).getHomeTeam())) && !(newplayround.contains(matches.get(i).getAwayTeam()))) {
+						newplayround.addmatch(matches.get(i));
 					}
+					i = i+1;
 				}
-			}
 			playrounds.add(newplayround);
 		}
 		
+	}
+	
+	public void computeresultCompetition(){
+		for(int i =0; i<playrounds.size(); i++){
+			playrounds.get(i).determineResultPlayround();
+		}
+	}
+	public Playround getPlayround(int i){
+		return playrounds.get(i);
 	}
 	
 	public ArrayList<Playround> getPlayrounds(){

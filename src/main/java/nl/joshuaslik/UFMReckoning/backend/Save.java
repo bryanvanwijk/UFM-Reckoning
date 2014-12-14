@@ -17,6 +17,25 @@ import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
  */
 public class Save {
 	
+	/**
+	 * 
+	 * @param team
+	 */
+	public static Game newGame(Team team, String username){
+		Human human = new Human(team, username, 50000 );
+		LinkedHashMap<String, Team> teams = loadTeam();
+		ArrayList<User> users = new ArrayList<User>();
+		users.add(human);
+		teams.remove(team.getid());
+		int i =1;
+		for(String key : teams.keySet()){
+			users.add(new PC(teams.get(key), "pc"+i, 50000));
+			i = i+1;
+		}
+		Game game = new Game(users);
+		return game;
+	}
+	
 	public static LinkedHashMap<String, Team> loadTeam(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/teams/");
