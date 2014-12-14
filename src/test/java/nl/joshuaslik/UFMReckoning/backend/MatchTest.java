@@ -13,7 +13,7 @@ public class MatchTest {
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Team team1 = new Team("ajax", "Frank de Boer");
 		team1.setTeamCaptain(fieldplayer1);
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "Frank de Boer");
 		team2.setTeamCaptain(fieldplayer1);
 		Match match = new Match(team1, team2);
 		assertEquals(match, match);
@@ -61,7 +61,17 @@ public class MatchTest {
 		assertEquals(match.getAwayTeam(), team2);
 	}
 	
-	
-	
-
+	@Test
+	public void testdetermineResult() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "Ronald de Boer");
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet","Netherlands", "CAM", 0, 0, 0, 4000000);
+		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet","Netherlands", "CAM", 80, 80, 90, 4000000);
+		team1.addActivePlayer(fieldplayer1);
+		team2.addActivePlayer(fieldplayer2);
+		Match match = new Match(team1, team2);
+		match.determineResult();
+	}
 }
+	
+	

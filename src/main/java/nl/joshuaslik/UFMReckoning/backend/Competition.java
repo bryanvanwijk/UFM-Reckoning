@@ -46,9 +46,7 @@ public class Competition {
 			}
 		}
 		Collections.shuffle(matches);
-		
 		Playround newplayround = new Playround();
-		
 		while(!matches.isEmpty()){
 			newplayround = new Playround();	
 			while(newplayround.getMatches().size() != (users.size()/2)){

@@ -16,9 +16,12 @@ public class Game {
 	/**
 	 * Constructor
 	 */
-	public Game() {
-		
+	public Game( ArrayList<User> users) {
+			this.users = users;
+			newCompetition();
 	}
+	
+	
 
 	public void sellPlayer(String id) {
 		getUser().getTeam();

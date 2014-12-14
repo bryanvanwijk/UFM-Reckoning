@@ -8,12 +8,51 @@ package nl.joshuaslik.UFMReckoning.backend;
 public class Match {
 	private Team hometeam, awayteam;
 	private Team winner, loser;
+	private boolean draw = false;
 	private int homegoals = -1, awaygoals = -1;
 	
 	public Match(Team hometeam, Team awayteam){
 		if(!hometeam.equals(awayteam)){
 			this.hometeam = hometeam;
 			this.awayteam = awayteam;
+		}
+	}
+	public int determinegoals(int goalchance){
+		if(goalchance >= 0 && goalchance <= 810){
+			return 0;
+		}
+		else if(goalchance < 1530) {
+			return 1;
+		}
+		else if(goalchance < 2130){
+			return 2;
+		}
+		else if(goalchance < 2430){
+			return 3;
+		}
+		else if(goalchance < 2640){
+			return 4;
+		}
+		else if(goalchance < 2850){
+			return 5;
+		}
+		else if(goalchance < 2910){
+			return 6;
+		}
+		else if(goalchance < 2940){
+			return 7;
+		}
+		else if(goalchance < 2970){
+			return 8;
+		}
+		else if(goalchance < 2985){
+			return 9;
+		}
+		else if(goalchance <= 3000){
+			return 10;
+		}
+		else{
+			return -1;
 		}
 	}
 	
@@ -29,11 +68,48 @@ public class Match {
 		int defenceaway = awayteam.getDefencePower();
 		int staminaaway = awayteam.getStamina();
 		
-		if (attackhome > attackaway) {
+		int attackpowerhome = (attackhome-defenceaway+1000);
+		int homechance = (int) (Math.random()*3000);
+		int homegoalschance = ((homechance*40) + ((attackpowerhome + staminahome)*60))/200;
+		
+		int attackpoweraway = (attackaway-defencehome+1000);
+		int awaychance = (int) (Math.random()*3000);
+		int awaygoalschance = ((awaychance*40) + ((attackpoweraway + staminaaway)*60))/200;
+		
+		homegoals = determinegoals(homegoalschance);
+		awaygoals = determinegoals(awaygoalschance);
+		if (homegoals > awaygoals) {
 			winner = hometeam;
 			loser = awayteam;
-			homegoals = 2;
-			awaygoals = 1;
+			hometeam.addGoals(homegoals);
+			hometeam.addGoalsAgainst(awaygoals);
+			awayteam.addGoalsAgainst(homegoals);
+			awayteam.addGoals(awaygoals);
+			hometeam.addPoints(3);
+			hometeam.incTotalWins();
+			awayteam.incTotalLosses();
+		}
+		else if(homegoals == awaygoals){
+			hometeam.addGoals(homegoals);
+			hometeam.addGoalsAgainst(awaygoals);
+			awayteam.addGoalsAgainst(homegoals);
+			awayteam.addGoals(awaygoals);
+			hometeam.addPoints(1);
+			awayteam.addPoints(1);
+			hometeam.incTotalDraws();
+			awayteam.incTotalDraws();
+			draw = true;
+		}
+		else{
+			winner = awayteam;
+			loser = hometeam;
+			hometeam.addGoals(homegoals);
+			hometeam.addGoalsAgainst(awaygoals);
+			awayteam.addGoalsAgainst(homegoals);
+			awayteam.addGoals(awaygoals);
+			awayteam.addPoints(3);
+			hometeam.incTotalLosses();
+			awayteam.incTotalWins();
 		}
 	
 	}
@@ -76,6 +152,14 @@ public class Match {
 	 */
 	public Team getHomeTeam(){
 			return hometeam;
+	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public boolean getDraw(){
+			return draw;
 	}
 	
 	/**
