@@ -15,7 +15,7 @@ public class Team {
 	private ArrayList<Player> activePlayers = new ArrayList<Player>();
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
-	private String teamName, coachName;
+	private String teamName, coachName, id;
 	int totalWins, totalLosses, totalDraws, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
 
@@ -27,7 +27,8 @@ public class Team {
 	 * @param cchName
 	 *            is the coach name.
 	 */
-	public Team(String tmName, String cchName) {
+	public Team(String id, String tmName, String cchName) {
+		this.id = id;
 		teamName = tmName;
 		coachName = cchName;
 	}
@@ -224,5 +225,9 @@ public class Team {
 
 	public void setStamina(int stamina) {
 		this.stamina = stamina;
+	}
+	
+	public String getid(){
+		return id;
 	}
 }

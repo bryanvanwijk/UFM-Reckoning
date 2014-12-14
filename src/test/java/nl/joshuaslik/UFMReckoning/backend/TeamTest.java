@@ -11,19 +11,19 @@ public class TeamTest {
 
 	@Test
 	public void testgetCoachName() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team.getCoachName(), "Frank de Boer");
 	}
 
 	@Test
 	public void testgetTeamName() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team.getTeamName(), "ajax");
 	}
 
 	@Test
 	public void testaddActivePlayer1() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.addActivePlayer(fieldplayer1);
@@ -32,7 +32,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer2() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		team.addActivePlayer(goalkeeper1);
@@ -41,7 +41,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer3() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
 				"Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		Goalkeeper goalkeeper2 = new Goalkeeper("piet", "Jan", "Velthuizen",
@@ -53,7 +53,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer4() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
@@ -65,7 +65,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddActivePlayer5() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("klaassen", "Davy", "Vloet",
@@ -110,7 +110,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddBenchPlayer1() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.addBenchPlayer(fieldplayer1);
@@ -119,7 +119,7 @@ public class TeamTest {
 
 	@Test
 	public void testaddBenchPlayer2() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("raivloet", "Rai", "Vloet",
@@ -131,7 +131,7 @@ public class TeamTest {
 
 	@Test
 	public void testremoveActivePlayer1() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("piet", "Rai", "Vloet",
@@ -145,7 +145,7 @@ public class TeamTest {
 
 	@Test
 	public void testremoveActivePlayer2() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("piet", "Rai", "Vloet",
@@ -160,7 +160,7 @@ public class TeamTest {
 
 	@Test
 	public void testremoveActivePlayer3() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet",
@@ -173,7 +173,7 @@ public class TeamTest {
 
 	@Test
 	public void testremoveBenchPlayer1() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("piet", "Rai", "Vloet",
@@ -187,7 +187,7 @@ public class TeamTest {
 
 	@Test
 	public void testremoveBenchPlayer2() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("piet", "Rai", "Vloet",
@@ -199,7 +199,7 @@ public class TeamTest {
 
 	@Test
 	public void testTeamCaptain() {
-		Team team = new Team("ajax", "Frank de Boer");
+		Team team = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team.setTeamCaptain(fieldplayer1);
@@ -208,8 +208,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ado", "Ronald de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("klaassen", "Davy", "Vloet",
@@ -257,7 +257,7 @@ public class TeamTest {
 
 	@Test
 	public void testEquals2() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertFalse(team1.equals(fieldplayer1));
@@ -265,7 +265,7 @@ public class TeamTest {
 
 	@Test
 	public void testEquals3() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		assertNotSame(fieldplayer1, team1);
@@ -273,8 +273,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals4() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.addBenchPlayer(fieldplayer1);
@@ -283,8 +283,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals5() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -293,8 +293,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals6() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ado", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -304,8 +304,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals7() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Ronald de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Ronald de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -315,8 +315,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals8() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -327,8 +327,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals9() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -339,8 +339,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals10() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -351,8 +351,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals11() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -363,8 +363,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals12() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -375,8 +375,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals13() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -387,8 +387,8 @@ public class TeamTest {
 
 	@Test
 	public void testEquals14() {
-		Team team1 = new Team("ajax", "Frank de Boer");
-		Team team2 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
@@ -399,7 +399,7 @@ public class TeamTest {
 
 	@Test
 	public void testgetAttackPower() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("klaassen", "Davy", "Vloet",
@@ -420,7 +420,7 @@ public class TeamTest {
 
 	@Test
 	public void testgetDefencePower() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("klaassen", "Davy", "Vloet",
@@ -441,7 +441,7 @@ public class TeamTest {
 
 	@Test
 	public void testgetStamina() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
 				"Netherlands", "CAM", 62, 32, 64, 4000000);
 		Fieldplayer fieldplayer2 = new Fieldplayer("klaassen", "Davy", "Vloet",
@@ -462,25 +462,25 @@ public class TeamTest {
 
 	@Test
 	public void testgetTotalDraws() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team1.getTotalDraws(), 0);
 	}
 
 	@Test
 	public void testgetTotalGoals() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team1.getTotalGoals(), 0);
 	}
 
 	@Test
 	public void testgetTotalLosses() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team1.getTotalLosses(), 0);
 	}
 
 	@Test
 	public void testgetTotalWins() {
-		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		assertEquals(team1.getTotalWins(), 0);
 	}
 

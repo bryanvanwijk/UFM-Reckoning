@@ -11,7 +11,7 @@ public class HumanTest {
 	
 	@Before
 	public void construct() {
-		user = new PC(new Team("tmname", "cchname"), "username", 1000000);
+		user = new PC(new Team("id", "tmname", "cchname"), "username", 1000000);
 	}
 	
 	public void testConstructor() {
