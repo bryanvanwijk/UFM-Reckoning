@@ -29,7 +29,6 @@ public class NewGame {
 		txt.setMaxWidth(250);
 		
 		but.setOnAction(new EventHandler<ActionEvent>() {
-
 			@Override
 			public void handle(ActionEvent arg0) {
 				t.setText("Loading...");

@@ -4,10 +4,13 @@ import java.util.ArrayList;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
@@ -38,8 +41,17 @@ public class NewGame3 {
 
 	public static void start() {
 		init();
+		
+		Button but = new Button("Choose this team");
+		but.setOnAction(new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent arg0) {
+			}
+		});
+		
 		VBox root = new VBox();
-		root.getChildren().addAll(playertable);
+		root.getChildren().addAll(playertable, but);
 
 		Scene scene = new Scene(root, 1600, 900);
 		Main.setScene(scene);

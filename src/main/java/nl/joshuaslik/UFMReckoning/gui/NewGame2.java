@@ -109,4 +109,10 @@ public class NewGame2 {
 		ObservableList<Team> data = FXCollections.observableArrayList(Save.loadTeams());
 		return data;
 	}
+	
+	public static void holdUsername(String name) {
+		String username = name;
+	}
+	
+	
 }
