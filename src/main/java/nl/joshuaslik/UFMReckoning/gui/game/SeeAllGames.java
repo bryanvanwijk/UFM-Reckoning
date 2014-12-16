@@ -1,16 +1,13 @@
-package nl.joshuaslik.UFMReckoning.gui;
+package nl.joshuaslik.UFMReckoning.gui.game;
 
 import java.io.IOException;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.Text;
+import nl.joshuaslik.UFMReckoning.gui.Main;
 
-public class ShowNextGame {
+public class SeeAllGames {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
@@ -19,5 +16,4 @@ public class ShowNextGame {
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 	}
-	// show the next game to be played. Competition -> Next game to be played. 
 }

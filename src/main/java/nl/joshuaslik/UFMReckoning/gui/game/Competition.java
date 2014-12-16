@@ -7,15 +7,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
-import javafx.scene.text.Text;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 import nl.joshuaslik.UFMReckoning.gui.Ranking;
-import nl.joshuaslik.UFMReckoning.gui.SeeAllGames;
-import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
 
 /**5
  * @author Naomi de Ridder
@@ -23,6 +17,7 @@ import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
  *
  */
 public class Competition {
+
 
 	@SuppressWarnings("restriction")
 	public static void start() throws IOException {

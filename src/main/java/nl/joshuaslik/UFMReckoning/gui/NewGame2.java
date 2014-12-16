@@ -51,8 +51,9 @@ public class NewGame2 {
 		VBox root = new VBox();
 		root.getChildren().addAll(t, t2, teamtable);
 
-		Scene scene = new Scene(root, 1600, 900);
-		Main.setScene(scene);
+		Scene scene = new Scene(root, 1080, 1920);
+		Main.stage.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 	
 	public static ArrayList<TableColumn<Team, ?>> getColumn(
