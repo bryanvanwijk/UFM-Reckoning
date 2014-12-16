@@ -16,7 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName, id;
-	int totalWins, totalLosses, totalDraws, points, goalsagaints, ranking, totalGoals = 0;
+	int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
 
 	/**
@@ -199,7 +199,7 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)) {
+					&& (this.goalsagainst == that.goalsagainst)) {
 				return true;
 				}
 			}
@@ -217,7 +217,7 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)){
+					&& (this.goalsagainst == that.goalsagainst)){
 				return true;
 			}
 		}
@@ -264,11 +264,11 @@ public class Team {
 	}
 	
 	public void addGoalsAgainst(int goals){
-		goalsagaints = goalsagaints + goals;
+		goalsagainst = goalsagainst + goals;
 	}
 	
 	public int getGoalsAgainst(){
-		return goalsagaints;
+		return goalsagainst;
 	}
 	
 	public int getRanking(){
