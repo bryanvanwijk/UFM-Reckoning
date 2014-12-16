@@ -12,8 +12,6 @@ import javafx.scene.text.Text;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 import nl.joshuaslik.UFMReckoning.gui.Ranking;
-import nl.joshuaslik.UFMReckoning.gui.SeeAllGames;
-import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
 
 /**5
  * @author Naomi de Ridder
