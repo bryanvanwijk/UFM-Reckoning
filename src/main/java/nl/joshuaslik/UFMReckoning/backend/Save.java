@@ -19,8 +19,9 @@ import nl.joshuaslik.UFMReckoning.util.xml.XMLTag;
 public class Save {
 	
 	/**
-	 * 
+	 * Creates new Game object where team is the human and a username of the person who is playing the game
 	 * @param team
+	 * @return a game object with the user and pc teams
 	 */
 	public static Game newGame(Team team, String username){
 		Human human = new Human(team, username, 50000 );
@@ -37,6 +38,10 @@ public class Save {
 		return game;
 	}
 	
+	/**
+	 * load all the basic teams
+	 * @return a LinkedHashMap with as key String the team names and as value a Team Object
+	 */
 	public static LinkedHashMap<String, Team> loadTeam(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/teams/");
@@ -71,6 +76,10 @@ public class Save {
 		
 	}
 	
+	/**
+	 * load all the basic teams
+	 * @return a arralist with all the teams objects
+	 */
 	public static ArrayList<Team> loadTeams(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/teams/");
@@ -105,7 +114,10 @@ public class Save {
 		
 	}
 		
-	
+	/**
+	 * method to load all the players of the game
+	 * @return linkedHashmap with all the players as value and their id as key
+	 */
 	public static LinkedHashMap<String, Player> loadplayers(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/players/");
@@ -142,6 +154,10 @@ public class Save {
 		return playerslist;
 	}
 	
+	/**
+	 * load all the players 
+	 * @return Arraylist with all the players
+	 */
 	public static ArrayList<Player> loadplayersArrayList(){
 		String current = System.getProperty("user.dir");
 		File folder = new File(current + "/src/main/resources/data/base/players/");
@@ -178,6 +194,10 @@ public class Save {
 		return players;
 	}
 	
+	/**
+	 * 
+	 * @param game
+	 */
 	public static void SaveGame(Game game){
 		ArrayList<User> users = game.getUsers();
 		String current = System.getProperty("user.dir");

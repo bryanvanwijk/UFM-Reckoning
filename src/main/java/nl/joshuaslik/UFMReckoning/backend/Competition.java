@@ -18,10 +18,17 @@ public class Competition {
 		users  = game.getUsers();
 	}
 	
+	/**
+	 * 
+	 * @return users in this competition
+	 */
 	public ArrayList<User> getusers(){
 		return users;
 	}
 	
+	/**
+	 * Compute the current standings of all the teams in this competition
+	 */
 	public void ComputeStandings(){
 		int ranking=1;
 		for (int i = 0; i < users.size(); i++){
@@ -86,19 +93,35 @@ public class Competition {
 		}
 	}
 	
+	/**
+	 * Compte the result of the total competition
+	 */
 	public void computeresultCompetition(){
 		for(int i =0; i<playrounds.size(); i++){
 			playrounds.get(i).determineResultPlayround();
 		}
 	}
+	
+	/**
+	 * 
+	 * @param i between 0 and total playrounds
+	 * @return playround i of this competition stating from 0
+	 */
 	public Playround getPlayround(int i){
 		return playrounds.get(i);
 	}
 	
+	/**
+	 * 
+	 * @return arraylist of all the playrounds in this competition
+	 */
 	public ArrayList<Playround> getPlayrounds(){
 		return playrounds;
 	}
 	
+	/**
+	 * checks of two competition are equal
+	 */
 	public boolean equals(Object other) {
 		if (other instanceof Competition) {
 			Competition that = (Competition) other;
