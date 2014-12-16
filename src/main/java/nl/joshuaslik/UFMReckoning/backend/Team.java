@@ -224,6 +224,10 @@ public class Team {
 		return false;
 	}
 
+	public int getTotalPlayers() {
+		return activePlayers.size() + benchPlayers.size();
+	}
+	
 	public ArrayList<Player> getActivePlayers() {
 		return activePlayers;
 	}
@@ -316,15 +320,57 @@ public class Team {
 	public void addGoals(int goals) {
 		this.totalGoals = this.totalGoals + goals;
 	}
+	
+	public int getTotalAverageAttackPower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}
 
 	public int getAttackPower() {
 		return attackPower;
 	}
-
+	
 	public void setAttackPower(int attack) {
 		this.attackPower = attack;
 	}
 
+	public int getTotalAverageDefencePower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}	
+	
 	public int getDefencePower() {
 		return defencePower;
 	}
@@ -333,6 +379,27 @@ public class Team {
 		this.defencePower = defence;
 	}
 
+	public int getTotalAverageStamina() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}	
+	
 	public int getStamina() {
 		return stamina;
 	}
