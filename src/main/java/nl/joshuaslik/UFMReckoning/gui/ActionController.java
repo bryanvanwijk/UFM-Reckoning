@@ -62,7 +62,6 @@ public class ActionController {
 		System.exit(0);
 	}
 	
-	@SuppressWarnings("unused")
 	@FXML
 	protected void handleQuitGame(ActionEvent event) throws IOException {
 		MainMenu.start();

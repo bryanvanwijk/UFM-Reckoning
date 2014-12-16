@@ -19,7 +19,6 @@ import nl.joshuaslik.UFMReckoning.gui.Ranking;
 public class Competition {
 
 
-	@SuppressWarnings("restriction")
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
 				.getResource("/data/gui/Competition.fxml"));
