@@ -2,12 +2,9 @@ package nl.joshuaslik.UFMReckoning.gui;
 
 import java.io.IOException;
 
-import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.FlowPane;
-import javafx.stage.Stage;
 
 /**
  * Main Class of the GUI. This one will be called when the application starts
@@ -16,54 +13,29 @@ import javafx.stage.Stage;
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
+public class MainMenu {
 
-
-@SuppressWarnings("restriction")
-public class MainMenu extends Application {
-	public static Stage stage;
-	
-	public static void main(String[] args) {
-		launch(args);
-	}
-
-	@Override
-	public void start(Stage stage) throws IOException {
-		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/mainmenu.fxml"));
-		stage.setWidth(1920);
-		stage.setHeight(1080);
-		stage.setFullScreen(true);
-		stage.setTitle("Ultimate Football Manager");
-		
-		MainMenu.stage = stage;
-		
+	public static void start() throws IOException {
+		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/MainMenu.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		
-		MainMenu.stage.setScene(scene);
-		MainMenu.stage.show();
+		Main.setScene(scene);
+		Main.stage().show();
 	}
  
 	public static void showNewGame() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
-		MainMenu.stage.setScene(scene);
-		stage.setFullScreen(true);
+		Main.stage.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 	
 	//Just to test if the competition page is working
 	public static void showCompetition() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/Competition.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
-		MainMenu.stage.setScene(scene);
-		stage.setFullScreen(true);
+		Main.stage.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 	
-	public FlowPane addFlowPane() {
-	    FlowPane flow = new FlowPane();
-	    flow.setVgap(4);
-	    flow.setHgap(4);
-	    flow.setPrefWrapLength(170); 
-	    flow.setStyle("-fx-background-color: DAE6F3;");
-
-	    return flow;
-	}
 }

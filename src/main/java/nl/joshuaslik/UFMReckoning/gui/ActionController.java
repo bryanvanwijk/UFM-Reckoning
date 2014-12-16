@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-@SuppressWarnings("restriction")
 public class ActionController {
 
 	@FXML

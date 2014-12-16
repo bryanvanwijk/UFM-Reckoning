@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import nl.joshuaslik.UFMReckoning.gui.MainMenu;
+import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.util.xml.SAXParser;
 import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
 
@@ -62,7 +62,7 @@ public class App {
 				}
 			}
 		} else {
-			MainMenu.main(args);
+			Main.main(args);
 		}
 
 	}
