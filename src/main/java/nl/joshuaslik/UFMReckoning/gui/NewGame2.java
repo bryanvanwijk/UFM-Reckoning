@@ -55,6 +55,7 @@ public class NewGame2 {
 				if (teamtable.getSelectionModel().getSelectedIndex() >= 0) {
 					Team chosenTeam = teamtable.getSelectionModel().getSelectedItem();
 					Game Game1 = Save.newGame(chosenTeam, username);
+					// Nee, niet dit uitvoeren, je moet MainGame.setGame(game1) en MainGame.start() hebben, dank.
 					// Competition.start(game1);
 				}
 			}
