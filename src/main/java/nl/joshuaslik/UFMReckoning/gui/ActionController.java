@@ -63,11 +63,6 @@ public class ActionController {
 	}
 	
 	@FXML
-	protected void handleQuitGame(ActionEvent event) throws IOException {
-		MainMenu.start();
-	}
-
-	@FXML
 	protected void handleMainGame(ActionEvent event) throws IOException {
 		System.out.println(event.getSource());
 		MainGame.start();
