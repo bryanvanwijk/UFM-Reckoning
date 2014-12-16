@@ -1,5 +1,12 @@
 package nl.joshuaslik.UFMReckoning.backend;
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+
+import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
+import nl.joshuaslik.UFMReckoning.util.xml.XMLTag;
+
 /**
  * @author Bryan van Wijk
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
