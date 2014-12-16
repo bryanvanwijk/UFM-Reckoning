@@ -35,7 +35,8 @@ public class NewGame {
 		VBox root = new VBox();
 		root.getChildren().addAll(t, txt, but);
 
-		Scene scene = new Scene(root, 1920, 1080);
-		Main.setScene(scene);
+		Scene scene = new Scene(root, 1080, 1920);
+		Main.stage.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 }
