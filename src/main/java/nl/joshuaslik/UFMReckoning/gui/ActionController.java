@@ -2,7 +2,6 @@ package nl.joshuaslik.UFMReckoning.gui;
 
 import java.io.IOException;
 
-import nl.joshuaslik.UFMReckoning.gui.game.Competition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
