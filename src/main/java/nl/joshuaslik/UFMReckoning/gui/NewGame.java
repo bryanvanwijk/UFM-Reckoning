@@ -11,8 +11,6 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
 public class NewGame {
-	static String username;
-
 	/*
 	 * Start
 	 * Text, buttons en textfield + events die bij de scene horen
@@ -29,8 +27,8 @@ public class NewGame {
 			@Override
 			public void handle(ActionEvent arg0) {
 				t.setText("Loading...");
-				String user = txt.getText();
-				username = user;
+				String username = txt.getText();
+				NewGame2.start(username);
 			}
 		});
 
@@ -40,12 +38,5 @@ public class NewGame {
 		Scene scene = new Scene(root, 1920, 1080);
 		Main.setScene(scene);
 	}
-	
-	public String getUsername() {
-		return username;
-	}
 
-	public void setUsername(String username) {
-		NewGame.username = username;
-	}
 }

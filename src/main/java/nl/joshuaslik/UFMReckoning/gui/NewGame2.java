@@ -40,7 +40,7 @@ public class NewGame2 {
 		});
 	}
 		
-	public static void start() {
+	public static void start(String username) {
 		init();
 		//Label lab = new Label("Choose your team");
 		Text t = new Text(400, 300, "Choose your team");
