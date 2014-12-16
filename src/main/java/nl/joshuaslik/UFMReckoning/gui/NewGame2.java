@@ -1,5 +1,6 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javafx.collections.FXCollections;
@@ -19,6 +20,7 @@ import javafx.scene.text.Text;
 import nl.joshuaslik.UFMReckoning.backend.Game;
 import nl.joshuaslik.UFMReckoning.backend.Save;
 import nl.joshuaslik.UFMReckoning.backend.Team;
+import nl.joshuaslik.UFMReckoning.gui.game.MainGame;
 
 public class NewGame2 {
 	private static TableView<Team> teamtable;
@@ -55,8 +57,12 @@ public class NewGame2 {
 				if (teamtable.getSelectionModel().getSelectedIndex() >= 0) {
 					Team chosenTeam = teamtable.getSelectionModel().getSelectedItem();
 					Game Game1 = Save.newGame(chosenTeam, username);
-					// Nee, niet dit uitvoeren, je moet MainGame.setGame(game1) en MainGame.start() hebben, dank.
-					// Competition.start(game1);
+					MainGame.setGame(Game1);
+					try {
+						MainGame.start();
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		});
