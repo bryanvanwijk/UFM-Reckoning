@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -23,25 +25,23 @@ import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
 public class Competition {
 
 	@SuppressWarnings("restriction")
-	public static void start() {
-		Text t = new Text(90,130, "Games Played:");
-		t.setFont(Font.font("Verdana", FontWeight.BOLD, 60));
-		VBox root = new VBox();
-		root.getChildren().addAll(t);
+	public static void start() throws IOException {
+		Parent root = FXMLLoader.load(Class.class
+				.getResource("/data/gui/Competition.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 	}
 	
 	@FXML
-	protected void handleShowNextGame(ActionEvent event) {
+	protected void handleShowNextGame(ActionEvent event) throws IOException {
 		System.out.println("btn_ShowNextGame pressed");
 		System.out.println(event.getSource());
 		ShowNextGame.start();
 	}
 	
 	@FXML
-	protected void handleRanking(ActionEvent event) {
+	protected void handleRanking(ActionEvent event) throws IOException {
 		System.out.println("btn_Ranking pressed");
 		System.out.println(event.getSource());
 		Ranking.start();
