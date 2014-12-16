@@ -34,7 +34,8 @@ public class NewGame2 {
 					@Override
 					public void handle(MouseEvent event) {
 						if (event.getClickCount() > 0) {
-							if (teamtable.getSelectionModel().getSelectedIndex() >= 1) {
+							if (teamtable.getSelectionModel().getSelectedIndex() >= 0) {
+								teamtable.getSelectionModel().getSelectedItem();
 							}
 						}
 					}
@@ -53,7 +54,7 @@ public class NewGame2 {
 		but.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
-				if (teamtable.getSelectionModel().getSelectedIndex() >= 1) {
+				if (teamtable.getSelectionModel().getSelectedIndex() >= 0) {
 					Team chosenTeam = teamtable.getSelectionModel().getSelectedItem();
 					Game Game1 = Save.newGame(chosenTeam, username);
 					MainGame.setGame(Game1);
