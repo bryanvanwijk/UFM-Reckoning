@@ -28,14 +28,11 @@ public class NewGame2 {
 		teamtable.getColumns().addAll(getColumn(teamtable));
 		teamtable.setItems(getTeamlist());
 
-		teamtable
-				.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() {
-
+		teamtable.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() {
 					@Override
 					public void handle(MouseEvent event) {
-						if (event.getClickCount() > 1) {
-							if (teamtable.getSelectionModel()
-									.getSelectedIndex() >= 0) {
+						if (event.getClickCount() > 0) {
+							if (teamtable.getSelectionModel().getSelectedIndex() >= 1) {
 
 							}
 						}
@@ -45,19 +42,18 @@ public class NewGame2 {
 
 	public static void start(String username) {
 		init();
-		// Label lab = new Label("Choose your team");
+
 		Text t = new Text(400, 300, "Choose your team");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Text t2 = new Text(400, 300, " ");
 		t2.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
-
 		Button but = new Button("Choose this team");
+		
 		but.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
 				if (teamtable.getSelectionModel().getSelectedIndex() >= 0) {
-					Team chosenTeam = teamtable.getSelectionModel()
-							.getSelectedItem();
+					Team chosenTeam = teamtable.getSelectionModel().getSelectedItem();
 					Game Game1 = Save.newGame(chosenTeam, username);
 					// Competition.start(game1);
 				}
@@ -136,5 +132,4 @@ public class NewGame2 {
 				.loadTeams());
 		return data;
 	}
-
 }
