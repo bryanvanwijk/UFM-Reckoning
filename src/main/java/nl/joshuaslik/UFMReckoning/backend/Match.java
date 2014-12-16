@@ -17,6 +17,11 @@ public class Match {
 			this.awayteam = awayteam;
 		}
 	}
+	/**
+	 * Method to determine the amount of goals
+	 * @param goalchance chance to have a goal
+	 * @return amount of goals
+	 */
 	private int determinegoals(int goalchance){
 
 		if(goalchance >= 0 && goalchance <= 810){
