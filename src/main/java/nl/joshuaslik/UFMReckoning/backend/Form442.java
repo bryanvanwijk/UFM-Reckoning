@@ -26,8 +26,8 @@ public class Form442 extends Formation {
 	private Fieldplayer LW;
 	private Fieldplayer RW;
 	
-	public Form442(){
-		
+	public Form442(Team team){
+		super(team);
 	}
 	
 	/**
@@ -37,7 +37,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setCB1(Fieldplayer CB1){
 		Fieldplayer tmp = this.CB1;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.CB1 = CB1;
+		team.setPlayerActive(CB1);
 		return tmp;
 	}
 	
@@ -48,7 +52,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setCB2(Fieldplayer CB2){
 		Fieldplayer tmp = this.CB2;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.CB1 = CB2;
+		team.setPlayerActive(CB2);
 		return tmp;
 	}
 	
@@ -59,7 +67,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setRB(Fieldplayer RB){
 		Fieldplayer tmp = this.RB;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.RB = RB;
+		team.setPlayerActive(RB);
 		return tmp;
 	}
 	
@@ -70,7 +82,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer seLB1(Fieldplayer LB){
 		Fieldplayer tmp = this.LB;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.LB = LB;
+		team.setPlayerActive(LB);
 		return tmp;
 	}
 	
@@ -81,7 +97,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setCM1(Fieldplayer CM1){
 		Fieldplayer tmp = this.CM1;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.CM1 = CM1;
+		team.setPlayerActive(CM1);
 		return tmp;
 	}
 	
@@ -92,7 +112,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setCM2(Fieldplayer CM2){
 		Fieldplayer tmp = this.CM2;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.CM2 = CM2;
+		team.setPlayerActive(CM2);
 		return tmp;
 	}
 	
@@ -103,7 +127,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setLM(Fieldplayer LM){
 		Fieldplayer tmp = this.LM;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.LM = LM;
+		team.setPlayerActive(LM);
 		return tmp;
 	}
 	
@@ -114,7 +142,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setRM(Fieldplayer RM){
 		Fieldplayer tmp = this.RM;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.RM = RM;
+		team.setPlayerActive(RM);
 		return tmp;
 	}
 	
@@ -125,7 +157,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setLW(Fieldplayer LW){
 		Fieldplayer tmp = this.LW;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.LW = LW;
+		team.setPlayerActive(LW);
 		return tmp;
 	}
 	
@@ -136,7 +172,11 @@ public class Form442 extends Formation {
 	 */
 	public Fieldplayer setRW(Fieldplayer RW){
 		Fieldplayer tmp = this.RW;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
 		this.RW = RW;
+		team.setPlayerActive(RW);
 		return tmp;
 	}
 	
