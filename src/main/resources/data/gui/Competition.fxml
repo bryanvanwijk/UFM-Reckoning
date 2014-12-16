@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<ScrollPane> fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@mainmenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button id="btn_NextGames" layoutX="90" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_NextGames" text="Next Games" onAction="#handleOptions"/>
+		<Button id="btn_PlayedGames" layoutX="900" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_PlayedGames" text="Games played" onAction="#handleOptions"/>
+		</children>
+</ScrollPane>
+

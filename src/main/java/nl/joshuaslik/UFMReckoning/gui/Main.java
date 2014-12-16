@@ -49,6 +49,14 @@ public class Main extends Application {
 		stage.setFullScreen(true);
 	}
 	
+	//Just to test if the competition page is working
+	public static void showCompetition() throws IOException{
+		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/Competition.fxml"));
+		Scene scene = new Scene(root, 1080, 1920);
+		Main.stage.setScene(scene);
+		stage.setFullScreen(true);
+	}
+	
 	public FlowPane addFlowPane() {
 	    FlowPane flow = new FlowPane();
 	    flow.setVgap(4);

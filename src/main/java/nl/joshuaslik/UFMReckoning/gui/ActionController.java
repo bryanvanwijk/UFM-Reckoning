@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
 
 /**
  * @author Sander Benoist
@@ -22,9 +21,10 @@ public class ActionController {
 	}
 
 	@FXML
-	protected void handleOptions(ActionEvent event) {
+	protected void handleOptions(ActionEvent event) throws IOException {
 		System.out.println("Handle [Options] event yo! Do it nao!");
 		System.out.println(event.getSource());
+		Main.showCompetition();
 	}
 
 	@FXML
