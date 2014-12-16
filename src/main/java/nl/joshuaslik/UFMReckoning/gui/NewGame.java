@@ -1,8 +1,5 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
-import java.io.IOException;
-import java.util.ArrayList;
-
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -16,17 +13,16 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class NewGame extends Application {
-	String username;
 
 	public static void main(String[] args) {
 		launch(args);
 	}
 
 	@Override
-	public void start(Stage stage) throws IOException {		
+	public void start(Stage stage) throws Exception {
 
 		Text t = new Text(400, 300, "Enter your name");
-		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
+		t.setFont(Font.font("Maiandra", FontWeight.BOLD, 60));
 		//Label lab = new Label("Enter your name");
 		Button but = new Button("Continue");
 
@@ -51,13 +47,5 @@ public class NewGame extends Application {
 
 	public static void PickUserName() {
 		String Username;
-	}
-	
-	public String getUsername() {
-		return username;
-	}
-	
-	public void setUsername(String username) {
-		this.username = username;
 	}
 }
