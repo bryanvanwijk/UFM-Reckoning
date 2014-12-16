@@ -2,17 +2,10 @@ package nl.joshuaslik.UFMReckoning.gui;
 
 import java.util.ArrayList;
 
-import nl.joshuaslik.UFMReckoning.backend.Player;
-import nl.joshuaslik.UFMReckoning.backend.Save;
-import nl.joshuaslik.UFMReckoning.backend.Team;
-import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -21,7 +14,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
+import nl.joshuaslik.UFMReckoning.backend.Save;
+import nl.joshuaslik.UFMReckoning.backend.Team;
 
 public class NewGame2 {
 	private static TableView<Team> teamtable;
@@ -62,7 +56,7 @@ public class NewGame2 {
 	}
 	
 	public static ArrayList<TableColumn<Team, ?>> getColumn(
-			TableView teamtable) {
+			TableView<Team> teamtable) {
 		int i;
 
 		ArrayList<TableColumn<Team, ?>> columns = new ArrayList<TableColumn<Team, ?>>();

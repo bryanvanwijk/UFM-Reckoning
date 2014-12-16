@@ -13,10 +13,11 @@
 		<Button id="btn_NextGames" layoutX="90" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_NextGames" text="Next Games" onAction="#handleOptions"/>
 		<Button id="btn_PlayedGames" layoutX="900" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_PlayedGames" text="Games played" onAction="#handleOptions"/>
 		
-		<Button id="btn_Competition" layoutX="290" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Competition" text="Competition" onAction="#handleOptions"/>
-		<Button id="btn_Teambuilder" layoutX="490" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Teambuilder" text="Teambuilder" onAction="#handleOptions"/>
-		<Button id="btn_Highscore" layoutX="690" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Highscore" text="Highscores" onAction="#handleOptions"/>
-		<Button id="btn_QuitGame" layoutX="890" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_QuitGame" text="Quit Game" onAction="#handleOptions"/>
+		<Button id="btn_ShowNextGame" layoutX="290" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_ShowNextGame" text="Next game to be played" onAction="#handleCompetition"/>
+		<Button id="btn_AllGames" layoutX="490" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_AllGames" text="See all games" onAction="#handleCompetition"/>
+		<Button id="btn_Ranking" layoutX="690" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Ranking" text="Ranking" onAction="#handleCompetition"/>
+		<Button id="btn_PlayNextRound" layoutX="890" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_PlayNextRound" text="Play next round" onAction="#handleCompetition"/>
+		<Button id="btn_Return" layoutX="1090" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Return" text="Return" onAction="#handleCompetition"/>
 	</children>
 </Pane>
 

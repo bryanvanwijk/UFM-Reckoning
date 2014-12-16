@@ -1,17 +1,14 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
-import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 
 public class NewGame {
 	static String username;
@@ -48,7 +45,7 @@ public class NewGame {
 		return username;
 	}
 
-	public void setUsername(String Username) {
-		this.username = username;
+	public void setUsername(String username) {
+		NewGame.username = username;
 	}
 }
