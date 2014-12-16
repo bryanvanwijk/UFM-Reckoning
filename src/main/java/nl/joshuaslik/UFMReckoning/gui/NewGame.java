@@ -1,5 +1,6 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import javafx.application.Application;
@@ -22,7 +23,7 @@ public class NewGame extends Application {
 	}
 
 	@Override
-	public void start(Stage stage) throws Exception {		
+	public void start(Stage stage) throws IOException {		
 
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));

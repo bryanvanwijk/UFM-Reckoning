@@ -7,6 +7,7 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.StackPane;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 
@@ -17,7 +18,7 @@ import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 public class MainGame {
 
 	public static void start() {
-		Pane root = new Pane();
+		StackPane root = new StackPane();
 		optionbar(root);
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.setScene(scene);
@@ -41,13 +42,7 @@ public class MainGame {
 
 			@Override
 			public void handle(ActionEvent event) {
-				try {
-					Competition.start();
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					System.err.println(e.getMessage());
-					e.printStackTrace();
-				}
+				Competition.start();
 			}
 		});
 		root.getChildren().add(btn);
@@ -80,3 +75,4 @@ public class MainGame {
 	}
 
 }
+

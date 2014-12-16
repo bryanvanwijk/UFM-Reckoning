@@ -21,14 +21,14 @@ public class ActionController {
 	}
 	
 	@FXML
-	protected void handleNewGame(ActionEvent event) throws IOException {
+	protected void handleNewGame(ActionEvent event) {
 		System.out.println("btn_NewGame pressed");
 		System.out.println(event.getSource());
 		
 	}
 	
 	@FXML
-	protected void handleLoadGame(ActionEvent event) throws IOException {
+	protected void handleLoadGame(ActionEvent event) {
 		System.out.println("btn_LoadGame pressed");
 		System.out.println(event.getSource());
 		
@@ -60,6 +60,11 @@ public class ActionController {
 		System.out.println("Handle [Quit Game] event yo! Do it nao!");
 		System.out.println(event.getSource());
 		System.exit(0);
+	}
+	
+	@FXML
+	protected void handleMainGame(ActionEvent event) {
+		MainGame.start();
 	}
 
 }
