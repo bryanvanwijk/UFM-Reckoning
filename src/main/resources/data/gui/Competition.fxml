@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@mainmenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Button id="btn_NextGames" layoutX="90" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_NextGames" text="Next Games" onAction="#handleOptions"/>
+		<Button id="btn_PlayedGames" layoutX="900" layoutY="130" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_PlayedGames" text="Games played" onAction="#handleOptions"/>
+		
+		<Button id="btn_ShowNextGame" layoutX="290" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_ShowNextGame" text="Next game to be played" />
+		<Button id="btn_AllGames" layoutX="490" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_AllGames" text="See all games" />
+		<Button id="btn_Ranking" layoutX="690" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Ranking" text="Ranking"/>
+		<Button id="btn_PlayNextRound" layoutX="890" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_PlayNextRound" text="Play next round"/>
+		<Button id="btn_Return" layoutX="1090" layoutY="665" mnemonicParsing="false" prefHeight="25" prefWidth="200" styleClass="btn_Return" text="Return" />
+	</children>
+</Pane>
+

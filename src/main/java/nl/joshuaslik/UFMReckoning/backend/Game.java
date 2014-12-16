@@ -26,24 +26,46 @@ public class Game {
 		newCompetition();
 	}
 
+	/**
+	 * 
+	 * @param id
+	 */
 	public void sellPlayer(String id) {
 		getUser().getTeam();
 		throw new UnableToSellException("Not yet possible");
 	}
 
+	/**
+	 * 
+	 * @param id
+	 * @param user
+	 */
 	public void sellPlayer(String id, User user) {
 		getUser().getTeam();
 		throw new UnableToSellException("Not yet possible");
 	}
 
+	/**
+	 * 
+	 * @param id
+	 */
 	public void buyPlayer(String id) {
 		throw new UnableToSellException("Not yet possible");
 	}
 
+	/**
+	 * 
+	 * @param id
+	 * @param user
+	 */
 	public void buyPlayer(String id, User user) {
 		throw new UnableToSellException("Not yet possible");
 	}
 
+	/**
+	 * 
+	 * @param user
+	 */
 	public void addUser(User user) {
 		if ((!users.contains(user))) {
 			users.add(user);

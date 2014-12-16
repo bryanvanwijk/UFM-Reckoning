@@ -68,13 +68,11 @@ public class Save {
 							.getContent("ACTIVE").equals("true")) {
 						team.addActivePlayer(players.get(file.getElement(
 								"TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
-					}
-					else if (file.getElement("TEAM.PLAYERS.PLAYER", i)
+					} else if (file.getElement("TEAM.PLAYERS.PLAYER", i)
 							.getContent("ACTIVE").equals("false")) {
 						team.addBenchPlayer(players.get(file.getElement(
 								"TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
-					}
-					else {
+					} else {
 						System.out.println("er is een fout in palyers");
 					}
 				}
@@ -115,13 +113,11 @@ public class Save {
 							.getContent("ACTIVE").equals("true")) {
 						team.addActivePlayer(players.get(file.getElement(
 								"TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
-					}
-					else if (file.getElement("TEAM.PLAYERS.PLAYER", i)
+					} else if (file.getElement("TEAM.PLAYERS.PLAYER", i)
 							.getContent("ACTIVE").equals("false")) {
 						team.addBenchPlayer(players.get(file.getElement(
 								"TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
-					}
-					else {
+					} else {
 						System.out.println("er is een fout in palyers");
 					}
 				}
@@ -280,8 +276,7 @@ public class Save {
 				root.addElement(player);
 			}
 			XMLFile teamfile = new XMLFile(root);
-			teamfile.save(location
-					+ game.getUser().getUserName() + "/"
+			teamfile.save(location + game.getUser().getUserName() + "/"
 					+ users.get(i).getUserName() + ".XML");
 		}
 	}

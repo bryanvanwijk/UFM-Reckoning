@@ -16,7 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName, id;
-	int totalWins, totalLosses, totalDraws, points, goalsagaints, ranking, totalGoals = 0;
+	int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
 
 	/**
@@ -130,6 +130,57 @@ public class Team {
 		teamCaptain = player;
 	}
 
+	/**
+	 * Adds the player to the active player list and removes him from the bench
+	 * player list.
+	 * 
+	 * @param player
+	 *            is a Player Object.
+	 */
+	public void setPlayerActive(Player player) {
+		if (!activePlayers.contains(player) && activePlayers.size() < 11) {
+
+			if (player instanceof Goalkeeper && !checkActiveGoalkeeper()) {
+				activePlayers.add(player);
+			}
+
+			if (player instanceof Fieldplayer) {
+				activePlayers.add(player);
+
+				attackPower += ((Fieldplayer) player).getAttackPower();
+				defencePower += ((Fieldplayer) player).getDefencePower();
+				stamina += ((Fieldplayer) player).getStamina();
+			}
+
+			if (benchPlayers.contains(player)) {
+				benchPlayers.remove(benchPlayers.indexOf(player));
+			}
+		}
+	}
+
+	/**
+	 * Removes the Player from the active playerlist and adds him to the bench
+	 * playerlist.
+	 * 
+	 * @param player
+	 *            is a Player Object
+	 */
+	public void setPlayerBench(Player player) {
+		if (!benchPlayers.contains(player)) {
+			benchPlayers.add(player);
+
+			if (activePlayers.contains(player)) {
+				activePlayers.remove(activePlayers.indexOf(player));
+
+				if (player instanceof Fieldplayer) {
+					attackPower -= ((Fieldplayer) player).getAttackPower();
+					defencePower -= ((Fieldplayer) player).getDefencePower();
+					stamina -= ((Fieldplayer) player).getStamina();
+				}
+			}
+		}
+	}
+
 	public boolean equals(Object other) {
 		if (other instanceof Team) {
 			Team that = (Team) other;
@@ -148,7 +199,7 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)) {
+					&& (this.goalsagainst == that.goalsagainst)) {
 				return true;
 				}
 			}
@@ -166,13 +217,17 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)){
+					&& (this.goalsagainst == that.goalsagainst)){
 				return true;
 			}
 		}
 		return false;
 	}
 
+	public int getTotalPlayers() {
+		return activePlayers.size() + benchPlayers.size();
+	}
+	
 	public ArrayList<Player> getActivePlayers() {
 		return activePlayers;
 	}
@@ -209,11 +264,11 @@ public class Team {
 	}
 	
 	public void addGoalsAgainst(int goals){
-		goalsagaints = goalsagaints + goals;
+		goalsagainst = goalsagainst + goals;
 	}
 	
 	public int getGoalsAgainst(){
-		return goalsagaints;
+		return goalsagainst;
 	}
 	
 	public int getRanking(){
@@ -265,15 +320,57 @@ public class Team {
 	public void addGoals(int goals) {
 		this.totalGoals = this.totalGoals + goals;
 	}
+	
+	public int getTotalAverageAttackPower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}
 
 	public int getAttackPower() {
 		return attackPower;
 	}
-
+	
 	public void setAttackPower(int attack) {
 		this.attackPower = attack;
 	}
 
+	public int getTotalAverageDefencePower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}	
+	
 	public int getDefencePower() {
 		return defencePower;
 	}
@@ -282,6 +379,27 @@ public class Team {
 		this.defencePower = defence;
 	}
 
+	public int getTotalAverageStamina() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		return result;
+	}	
+	
 	public int getStamina() {
 		return stamina;
 	}
