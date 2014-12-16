@@ -18,7 +18,7 @@ public class Match {
 		}
 	}
 	private int determinegoals(int goalchance){
-		System.out.println(goalchance);
+
 		if(goalchance >= 0 && goalchance <= 810){
 			return 0;
 		}

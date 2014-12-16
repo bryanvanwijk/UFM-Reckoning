@@ -201,17 +201,7 @@ public class MatchTest {
 		assertFalse(match1.equals(match2));
 	}
 	
-	@Test
-	public void testdetermineResult() {
-		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
-		Team team2 = new Team("ado", "ado", "Ronald de Boer");
-		team1.addActivePlayer(new Fieldplayer("raivloet", "Rai", "Vloet","Netherlands", "CAM", 3000, 3000, 3000, 4000000));
-		team2.addActivePlayer(new Fieldplayer("raivloet", "Rai", "Vloet","Netherlands", "CAM", 0, 0, 0, 4000000));
-		Match match = new Match(team1, team2);
-		match.determineResult();
-		assertEquals(match.getWinner(), team1);
-	}
-	
+
 
 	
 	
