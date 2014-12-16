@@ -35,7 +35,7 @@ public class Competition {
 	
 	@FXML
 	protected void handleShowNextGame(ActionEvent event) {
-		System.out.println("btn_NextGame pressed");
+		System.out.println("btn_ShowNextGame pressed");
 		System.out.println(event.getSource());
 		ShowNextGame.start();
 	}
