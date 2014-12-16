@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
+import nl.joshuaslik.UFMReckoning.backend.Game;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 
@@ -17,6 +18,8 @@ import nl.joshuaslik.UFMReckoning.gui.MainMenu;
  *
  */
 public class MainGame {
+	
+	public static Game game = null;
 
 	public static void start() throws IOException {
 //		StackPane root = new StackPane();
@@ -75,6 +78,10 @@ public class MainGame {
 			}
 		});
 		root.getChildren().add(btn);
+	}
+	
+	public static void setGame(Game game) {
+		MainGame.game = game;
 	}
 
 }
