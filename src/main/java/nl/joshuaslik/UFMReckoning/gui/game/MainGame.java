@@ -1,4 +1,4 @@
-package nl.joshuaslik.UFMReckoning.gui;
+package nl.joshuaslik.UFMReckoning.gui.game;
 
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,7 +12,7 @@ public class MainGame {
 
 	public void start() {
 		Parent root = new Pane();
-		
+
 		Scene scene = new Scene(root, 1080, 1920);
 	}
 

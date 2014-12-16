@@ -7,21 +7,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 /**
- * Main Class of the GUI. This one will be called when the application starts
- * 
- * @author Sander Benoist
+ * @author Bryan van Wijk
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-public class MainMenu {
+public class NewGame {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/MainMenu.fxml"));
+				.getResource("/data/gui/NewGame.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
-
-		Main.setScene(scene);
-		Main.stage().show();
+		Main.stage.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 
 }

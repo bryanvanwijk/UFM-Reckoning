@@ -2,6 +2,7 @@ package nl.joshuaslik.UFMReckoning.gui;
 
 import java.io.IOException;
 
+import nl.joshuaslik.UFMReckoning.gui.game.Competition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
@@ -16,20 +17,19 @@ public class ActionController {
 	protected void handleStartGame(ActionEvent event) throws IOException {
 		System.out.println("Handle [Start game] event yo! Do it nao!");
 		System.out.println(event.getSource());
-		MainMenu.showNewGame();
+		NewGame.start();
 	}
 
 	@FXML
 	protected void handleOptions(ActionEvent event) throws IOException {
 		System.out.println("Handle [Options] event yo! Do it nao!");
 		System.out.println(event.getSource());
-		MainMenu.showCompetition();
+		Competition.start();
 	}
 
 	@FXML
 	protected void handleHighscores(ActionEvent event) {
 		System.out.println("Handle [Highscore] event yo! Do it nao!");
-		
 		System.out.println(event.getSource());
 	}
 
