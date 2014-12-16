@@ -14,9 +14,13 @@ public abstract class Formation {
 	/**
 	 * Set the goalkeeper of the formation
 	 * @param goalkeeper
+	 * @return old goalkeeper
 	 */
-	public void setGoalkeeper(Goalkeeper goalkeeper){
+	public Goalkeeper setGoalkeeper(Goalkeeper goalkeeper){
+		Goalkeeper tmp = this.goalkeeper;
 		this.goalkeeper = goalkeeper;
+		return tmp;
 	}
+	
 
 }
