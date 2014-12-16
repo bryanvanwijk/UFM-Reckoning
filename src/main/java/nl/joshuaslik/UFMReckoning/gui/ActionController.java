@@ -24,7 +24,7 @@ public class ActionController {
 	protected void handleNewGame(ActionEvent event) {
 		System.out.println("btn_NewGame pressed");
 		System.out.println(event.getSource());
-		
+		NewGame.start();		
 	}
 	
 	@FXML
