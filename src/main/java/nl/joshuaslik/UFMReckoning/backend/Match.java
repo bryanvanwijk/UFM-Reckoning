@@ -69,13 +69,13 @@ public class Match {
 		int defenceaway = awayteam.getDefencePower();
 		int staminaaway = awayteam.getStamina();
 		
-		int attackpowerhome = (attackhome-defenceaway+1000);
+		int attackpowerhome = ((attackhome-defenceaway)*4);
 		int homechance = (int) (Math.random()*3000);
-		int homegoalschance = ((homechance*80) + ((attackpowerhome + staminahome)*20))/200;
+		int homegoalschance = ((homechance*100) + ((attackpowerhome + staminahome)*0))/100;
 		
-		int attackpoweraway = (attackaway-defencehome+1000);
+		int attackpoweraway = ((attackaway-defencehome)*4);
 		int awaychance = (int) (Math.random()*3000);
-		int awaygoalschance = ((awaychance*80) + ((attackpoweraway + staminaaway)*20))/200;
+		int awaygoalschance = ((awaychance*100) + ((attackpoweraway + staminaaway)*0))/100;
 		
 		homegoals = determinegoals(homegoalschance);
 		awaygoals = determinegoals(awaygoalschance);
