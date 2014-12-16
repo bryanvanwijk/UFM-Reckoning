@@ -26,7 +26,7 @@ public class Main extends Application {
 		primaryStage.setHeight(1080);
 		primaryStage.setFullScreen(true);
 		primaryStage.setTitle("Ultimate Football Manager");
-		primaryStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);;
+		primaryStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
 		stage = primaryStage;
 		MainMenu.start();
 	}

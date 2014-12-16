@@ -57,7 +57,7 @@ public class ActionController {
 
 	@FXML
 	protected void handleQuitMenu(ActionEvent event) {
-		System.out.println("btn_Quitgame pressed");
+		System.out.println("btn_QuitMenu pressed");
 		System.out.println(event.getSource());
 		System.exit(0);
 	}
