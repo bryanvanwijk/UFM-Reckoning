@@ -38,5 +38,4 @@ public class NewGame {
 		Scene scene = new Scene(root, 1920, 1080);
 		Main.setScene(scene);
 	}
-
 }
