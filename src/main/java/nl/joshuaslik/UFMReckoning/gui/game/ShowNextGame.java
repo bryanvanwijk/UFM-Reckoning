@@ -12,7 +12,7 @@ public class ShowNextGame {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/Competition.fxml"));
+				.getResource("/data/gui/pages-game/Competition.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);

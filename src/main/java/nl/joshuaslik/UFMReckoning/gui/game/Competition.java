@@ -9,7 +9,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
-import nl.joshuaslik.UFMReckoning.gui.Ranking;
 
 /**5
  * @author Naomi de Ridder
@@ -21,7 +20,7 @@ public class Competition {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/Competition.fxml"));
+				.getResource("/data/gui/pages-game/Competition.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);

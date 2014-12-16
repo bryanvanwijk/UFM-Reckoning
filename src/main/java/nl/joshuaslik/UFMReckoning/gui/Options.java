@@ -14,7 +14,7 @@ public class Options {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/Options.fxml"));
+				.getResource("/data/gui/pages-menu/Options.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);

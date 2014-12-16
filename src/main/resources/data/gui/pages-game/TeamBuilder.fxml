@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController" id="pane" styleClass="pane" stylesheets="@MainGame.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController" id="pane" styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
 		<Pane>
 			<children>
