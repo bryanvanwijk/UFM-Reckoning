@@ -19,21 +19,21 @@ public class ActionController {
 		System.out.println(event.getSource());
 		StartGame.start();
 	}
-	
+
 	@FXML
 	protected void handleNewGame(ActionEvent event) {
 		System.out.println("btn_NewGame pressed");
 		System.out.println(event.getSource());
-		NewGame.start();		
+		NewGame.start();
 	}
-	
+
 	@FXML
 	protected void handleLoadGame(ActionEvent event) {
 		System.out.println("btn_LoadGame pressed");
 		System.out.println(event.getSource());
-		
+
 	}
-	
+
 	@FXML
 	protected void handleReturnMainMenu(ActionEvent event) throws IOException {
 		System.out.println("btn_ReturnMainMenu pressed");
@@ -49,7 +49,7 @@ public class ActionController {
 	}
 
 	@FXML
-	protected void handleHighscores(ActionEvent event) throws IOException{
+	protected void handleHighscores(ActionEvent event) throws IOException {
 		System.out.println("btn_Highscores pressed");
 		System.out.println(event.getSource());
 		Highscores.start();
@@ -61,9 +61,10 @@ public class ActionController {
 		System.out.println(event.getSource());
 		System.exit(0);
 	}
-	
+
 	@FXML
 	protected void handleMainGame(ActionEvent event) {
+		System.out.println(event.getSource());
 		MainGame.start();
 	}
 
