@@ -23,15 +23,10 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class NewGame2 extends Application {
-	TableView<Team> teamtable;
+public class NewGame2 {
+	private static TableView<Team> teamtable;
 
-	public static void main(String[] args) {
-		launch(args);
-	}
-
-	@Override
-	public void init() {
+	public static void init() {
 		teamtable = new TableView<Team>();
 		teamtable.getColumns().addAll(getColumn(teamtable));
 		teamtable.setItems(getTeamlist());
@@ -51,8 +46,8 @@ public class NewGame2 extends Application {
 		});
 	}
 		
-	@Override
-	public void start(Stage stage) throws Exception {
+	public static void start() {
+		init();
 		//Label lab = new Label("Choose your team");
 		Text t = new Text(400, 300, "Choose your team");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
@@ -63,11 +58,7 @@ public class NewGame2 extends Application {
 		root.getChildren().addAll(t, t2, teamtable);
 
 		Scene scene = new Scene(root, 1600, 900);
-		stage.setScene(scene);
-
-		stage.setTitle("UFM Reckoning");
-		stage.setFullScreen(true);
-		stage.show();
+		Main.setScene(scene);
 	}
 	
 	public static ArrayList<TableColumn<Team, ?>> getColumn(

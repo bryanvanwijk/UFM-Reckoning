@@ -12,14 +12,9 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class NewGame extends Application {
+public class NewGame {
 
-	public static void main(String[] args) {
-		launch(args);
-	}
-
-	@Override
-	public void start(Stage stage) throws Exception {
+	public static void start() {		
 
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra", FontWeight.BOLD, 60));
@@ -38,11 +33,7 @@ public class NewGame extends Application {
 		root.getChildren().addAll(t, but);
 
 		Scene scene = new Scene(root, 1920, 1080);
-		stage.setScene(scene);
-
-		stage.setTitle("UFM Reckoning");
-		stage.setFullScreen(true);
-		stage.show();
+		Main.setScene(scene);
 	}
 
 	public static void PickUserName() {
