@@ -19,7 +19,7 @@ import javafx.stage.Stage;
 
 
 @SuppressWarnings("restriction")
-public class Main extends Application {
+public class MainMenu extends Application {
 	public static Stage stage;
 	
 	public static void main(String[] args) {
@@ -34,18 +34,18 @@ public class Main extends Application {
 		stage.setFullScreen(true);
 		stage.setTitle("Ultimate Football Manager");
 		
-		Main.stage = stage;
+		MainMenu.stage = stage;
 		
 		Scene scene = new Scene(root, 1080, 1920);
 		
-		Main.stage.setScene(scene);
-		Main.stage.show();
+		MainMenu.stage.setScene(scene);
+		MainMenu.stage.show();
 	}
  
 	public static void showNewGame() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/NewGame.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
-		Main.stage.setScene(scene);
+		MainMenu.stage.setScene(scene);
 		stage.setFullScreen(true);
 	}
 	
@@ -53,7 +53,7 @@ public class Main extends Application {
 	public static void showCompetition() throws IOException{
 		Parent root = FXMLLoader.load(Class.class.getResource("/data/gui/Competition.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
-		Main.stage.setScene(scene);
+		MainMenu.stage.setScene(scene);
 		stage.setFullScreen(true);
 	}
 	

@@ -17,14 +17,14 @@ public class ActionController {
 	protected void handleStartGame(ActionEvent event) throws IOException {
 		System.out.println("Handle [Start game] event yo! Do it nao!");
 		System.out.println(event.getSource());
-		Main.showNewGame();
+		MainMenu.showNewGame();
 	}
 
 	@FXML
 	protected void handleOptions(ActionEvent event) throws IOException {
 		System.out.println("Handle [Options] event yo! Do it nao!");
 		System.out.println(event.getSource());
-		Main.showCompetition();
+		MainMenu.showCompetition();
 	}
 
 	@FXML
