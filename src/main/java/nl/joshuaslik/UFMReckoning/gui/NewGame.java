@@ -26,7 +26,7 @@ public class NewGame {
 		Button but = new Button("Submit");
 		
 		TextField txt = new TextField();
-		txt.setPrefWidth(300);
+		txt.setMaxWidth(250);
 		
 		but.setOnAction(new EventHandler<ActionEvent>() {
 
