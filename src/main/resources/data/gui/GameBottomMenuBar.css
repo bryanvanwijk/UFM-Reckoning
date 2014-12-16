@@ -1,12 +1,6 @@
 @import url("fonts.css");
 
-.pane {
-	-fx-background-image: url("img/background.png");
-	-fx-background-size: 100%;
-	-fx-background-repeat: stretch;
-}
-
-.bottom {
+.bottombarbutton {
 	-fx-padding: 0;
 	-fx-margin: 0;
 	-fx-background-color: #101010;
@@ -19,7 +13,7 @@
 	-fx-border-style: solid;
 }
 
-.bottom hover{
+.bottombarbutton: hover{
 	-fx-background-color: #000000;
 	-fx-opacity: 90%;
 	-fx-cursor: hand;
