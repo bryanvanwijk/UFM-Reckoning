@@ -15,7 +15,7 @@ public class ActionController {
 
 	@FXML
 	protected void handleStartGame(ActionEvent event) throws IOException {
-		System.out.println("Handle [Start game] event yo! Do it nao!");
+		System.out.println("btn_StartGame pressed");
 		System.out.println(event.getSource());
 		StartGame.start();
 	}
@@ -43,21 +43,21 @@ public class ActionController {
 
 	@FXML
 	protected void handleOptions(ActionEvent event) throws IOException {
-		System.out.println("Handle [Options] event yo! Do it nao!");
+		System.out.println("btn_Options pressed");
 		System.out.println(event.getSource());
 		Options.start();
 	}
 
 	@FXML
 	protected void handleHighscores(ActionEvent event) throws IOException{
-		System.out.println("Handle [Highscore] event yo! Do it nao!");
+		System.out.println("btn_Highscores pressed");
 		System.out.println(event.getSource());
 		Highscores.start();
 	}
 
 	@FXML
 	protected void handleQuitGame(ActionEvent event) {
-		System.out.println("Handle [Quit Game] event yo! Do it nao!");
+		System.out.println("btn_Quitgame pressed");
 		System.out.println(event.getSource());
 		System.exit(0);
 	}
