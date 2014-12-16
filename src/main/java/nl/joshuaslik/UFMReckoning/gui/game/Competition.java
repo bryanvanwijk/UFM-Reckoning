@@ -6,6 +6,7 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.VBox;
 
 import javax.xml.soap.Text;
 
@@ -23,7 +24,8 @@ public class Competition {
 				.getResource("/data/gui/Competition.fxml"));
 		Text t = new Text(90,130, "Games Played:");
 		t.setFont(Font.font("Verdana", Fontweight.BOLD, 60));
-		root.getChildren().add(t);
+		VBox root = new VBox();
+		root.getChildren().addAll(t, but);
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
