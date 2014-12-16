@@ -22,7 +22,6 @@ import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
  */
 public class Competition {
 
-	@SuppressWarnings("restriction")
 	public static void start() {
 		Text t = new Text(90,130, "Games Played:");
 		t.setFont(Font.font("Verdana", FontWeight.BOLD, 60));
