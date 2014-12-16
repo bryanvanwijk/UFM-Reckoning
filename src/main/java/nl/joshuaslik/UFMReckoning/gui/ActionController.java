@@ -56,14 +56,20 @@ public class ActionController {
 	}
 
 	@FXML
-	protected void handleQuitGame(ActionEvent event) {
+	protected void handleQuitMenu(ActionEvent event) {
 		System.out.println("btn_Quitgame pressed");
 		System.out.println(event.getSource());
 		System.exit(0);
 	}
+	
+	@SuppressWarnings("unused")
+	@FXML
+	protected void handleQuitGame(ActionEvent event) throws IOException {
+		MainMenu.start();
+	}
 
 	@FXML
-	protected void handleMainGame(ActionEvent event) {
+	protected void handleMainGame(ActionEvent event) throws IOException {
 		System.out.println(event.getSource());
 		MainGame.start();
 	}

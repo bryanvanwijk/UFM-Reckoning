@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
@@ -25,7 +26,7 @@ public class Main extends Application {
 		primaryStage.setHeight(1080);
 		primaryStage.setFullScreen(true);
 		primaryStage.setTitle("Ultimate Football Manager");
-
+		primaryStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);;
 		stage = primaryStage;
 		MainMenu.start();
 	}
