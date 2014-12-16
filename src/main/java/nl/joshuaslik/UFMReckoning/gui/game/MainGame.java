@@ -48,7 +48,12 @@ public class MainGame {
 
 			@Override
 			public void handle(ActionEvent event) {
-				Competition.start();
+				try {
+					Competition.start();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 		});
 		root.getChildren().add(btn);
