@@ -7,15 +7,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 /**
- * @author Bryan van Wijk
- * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
+ * @author Sander Benoist
  *
  */
-public class NewGame {
+public class Options {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/NewGame.fxml"));
+				.getResource("/data/gui/Options.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
