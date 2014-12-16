@@ -8,11 +8,11 @@
 <?import javafx.scene.layout.*?>
 
 
-<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@mainmenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@MainGame.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
-		<Button id="btn_StartGame" layoutX="90" layoutY="330" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_StartGame" text="Start game" onAction="#handleStartGame"/>
-		<Button id="btn_Options" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Options" text="Options" onAction="#handleOptions"/>
-		<Button id="btn_Highscore" layoutX="90" layoutY="530" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Highscore" text="Highscore" onAction="#handleHighscores"/>
-		<Button id="btn_QuitGame" layoutX="90" layoutY="630" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_QuitGame" text="Quit game" onAction="#handleQuitGame"/>
+		<Button id="btn_StartGame" layoutX="560" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Team" />
+		<Button id="btn_Options" layoutX="760" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Competition" />
+		<Button id="btn_Highscore" layoutX="960" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Save" />
+		<Button id="btn_Highscore" layoutX="1160" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Quit" onAction="#handleQuitGame" />
 	</children>
 </Pane>

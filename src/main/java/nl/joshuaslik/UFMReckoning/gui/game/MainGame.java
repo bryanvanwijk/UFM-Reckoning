@@ -4,10 +4,11 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 
@@ -17,11 +18,13 @@ import nl.joshuaslik.UFMReckoning.gui.MainMenu;
  */
 public class MainGame {
 
-	public static void start() {
-		StackPane root = new StackPane();
-		optionbar(root);
+	public static void start() throws IOException {
+//		StackPane root = new StackPane();
+		Parent root = FXMLLoader.load(Class.class
+				.getResource("/data/gui/MainGame.fxml"));
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.setScene(scene);
+		Main.stage.setFullScreen(true);
 	}
 
 	public static void optionbar(Pane root) {
