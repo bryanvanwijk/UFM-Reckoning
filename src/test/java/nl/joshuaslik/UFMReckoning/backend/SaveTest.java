@@ -34,15 +34,12 @@ public class SaveTest {
 		
 		Game game = Save.newGame(teams.get("ado-den-haag"), "bryan");
 		game.getCompetition().DefinePlayrounds();
-		game.getCompetition().computeresultCompetition();
-		game.getCompetition().ComputeStandings();
+		
 		for(int i = 0; i<game.getTeams().size(); i++){
 			System.out.println(game.getTeams().get(i).getTeamName()+"  "+game.getTeams().get(i).getDefencePower()+"--"+ game.getTeams().get(i).getAttackPower()+"--"+game.getTeams().get(i).getStamina());
 		}
 		System.out.println();
-		for(int i = 0; i<game.getUsers().size(); i++){
-			System.out.println(game.getUsers().get(i).getTeam().getTeamName()+"-"+game.getUsers().get(i).getTeam().getRanking());
-		}
+		
 		System.out.println();
 		game.getCompetition().check();
 		int j=0;
@@ -55,6 +52,10 @@ public class SaveTest {
 		}
 		System.out.println(j-1);
 		System.out.println();
+		game.getCompetition().ComputeStandings();
+		for(int i = 0; i<game.getUsers().size(); i++){
+			System.out.println(game.getUsers().get(i).getTeam().getTeamName()+"-"+game.getUsers().get(i).getTeam().getRanking());
+		}
 	}
 	
 }
