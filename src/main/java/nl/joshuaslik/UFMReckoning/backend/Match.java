@@ -18,6 +18,7 @@ public class Match {
 		}
 	}
 	private int determinegoals(int goalchance){
+		System.out.println(goalchance);
 		if(goalchance >= 0 && goalchance <= 810){
 			return 0;
 		}
@@ -70,11 +71,11 @@ public class Match {
 		
 		int attackpowerhome = (attackhome-defenceaway+1000);
 		int homechance = (int) (Math.random()*3000);
-		int homegoalschance = ((homechance*40) + ((attackpowerhome + staminahome)*60))/200;
+		int homegoalschance = ((homechance*80) + ((attackpowerhome + staminahome)*20))/200;
 		
 		int attackpoweraway = (attackaway-defencehome+1000);
 		int awaychance = (int) (Math.random()*3000);
-		int awaygoalschance = ((awaychance*40) + ((attackpoweraway + staminaaway)*60))/200;
+		int awaygoalschance = ((awaychance*80) + ((attackpoweraway + staminaaway)*20))/200;
 		
 		homegoals = determinegoals(homegoalschance);
 		awaygoals = determinegoals(awaygoalschance);

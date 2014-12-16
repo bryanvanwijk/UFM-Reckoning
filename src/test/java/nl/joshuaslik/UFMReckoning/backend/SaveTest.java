@@ -16,20 +16,13 @@ public class SaveTest {
 		/**
 		 * 
 
-		for(String key : teams.keySet()){
-			System.out.println(teams.get(key).getDefencePower()+"--"+ teams.get(key).getAttackPower()+"--"+teams.get(key).getStamina());
-		}
+		
 		
 		for(String key : teams.keySet()){
 			System.out.println(teams.get(key).getTeamName() + "--"+teams.get(key).getActivePlayers().size()+"--"+ teams.get(key).getBenchPlayers().size()+"--");
 		}
 		
-				for(int j = 0; j< game.getCompetition().getPlayrounds().size(); j++){
-			for(int i=0; i < game.getCompetition().getPlayrounds().get(j).getMatches().size(); i++){
-				System.out.println(game.getCompetition().getPlayrounds().get(j).getMatches().get(i).getHomeTeam().getTeamName()+"-"+game.getCompetition().getPlayrounds().get(j).getMatches().get(i).getAwayTeam().getTeamName());
-			}
-			System.out.println("");
-		}
+		
 		
 		
 		
@@ -43,10 +36,25 @@ public class SaveTest {
 		game.getCompetition().DefinePlayrounds();
 		game.getCompetition().computeresultCompetition();
 		game.getCompetition().ComputeStandings();
+		for(int i = 0; i<game.getTeams().size(); i++){
+			System.out.println(game.getTeams().get(i).getTeamName()+"  "+game.getTeams().get(i).getDefencePower()+"--"+ game.getTeams().get(i).getAttackPower()+"--"+game.getTeams().get(i).getStamina());
+		}
+		System.out.println();
 		for(int i = 0; i<game.getUsers().size(); i++){
 			System.out.println(game.getUsers().get(i).getTeam().getTeamName()+"-"+game.getUsers().get(i).getTeam().getRanking());
 		}
+		System.out.println();
 		game.getCompetition().check();
+		int j=0;
+		for(j = 1; j<= game.getCompetition().getPlayrounds().size(); j++){
+			LinkedHashMap<String, String> result = game.resultplayround(j);
+			for(String key : result.keySet()){
+				System.out.println(key+"    "+result.get(key));
+			}
+			System.out.println("");
+		}
+		System.out.println(j-1);
+		System.out.println();
 	}
 	
 }

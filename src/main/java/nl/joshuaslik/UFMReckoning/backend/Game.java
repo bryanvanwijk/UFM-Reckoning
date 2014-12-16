@@ -83,6 +83,18 @@ public class Game {
 				return users.get(i);
 		return null;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
+	public ArrayList<Team> getTeams() {
+		ArrayList<Team> result = new ArrayList<Team>();
+		for (int i = 0; i < users.size(); i++){
+			result.add(users.get(i).getTeam());
+		}
+		return result;
+	}
 
 	/**
 	 * 
@@ -180,6 +192,20 @@ public class Game {
 			result.put(match.getHomeTeam().getTeamName()+" - " + match.getAwayTeam().getTeamName(), match.gethomegoals()+" - " + match.getawaygoals());
 		}
 		currentround = currentround +1;
+		return result;
+	}
+	
+	/**
+	 * determine the result of the currentround and returns the result of the currentround
+	 */
+	public LinkedHashMap<String, String> resultplayround(int round){
+		ArrayList<Match> matches = getPlayround(round-1).getMatches();
+		getPlayround(round-1).determineResultPlayround();
+		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
+		for(int i=0; i < matches.size(); i++){
+			Match match = matches.get(i);
+			result.put(match.getHomeTeam().getTeamName()+" - " + match.getAwayTeam().getTeamName(), match.gethomegoals()+" - " + match.getawaygoals());
+		}
 		return result;
 	}
 

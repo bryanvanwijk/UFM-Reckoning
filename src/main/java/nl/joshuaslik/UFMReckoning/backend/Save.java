@@ -70,6 +70,40 @@ public class Save {
 		return teams;
 		
 	}
+	
+	public static ArrayList<Team> loadTeams(){
+		String current = System.getProperty("user.dir");
+		File folder = new File(current + "/src/main/resources/data/base/teams/");
+		File[] listofFiles = folder.listFiles();
+		LinkedHashMap<String, Player> players = loadplayers();
+		ArrayList<Team> teams = new ArrayList<Team>();
+		for (int j = 0; j < listofFiles.length; j++){
+			if (listofFiles[j].isFile()){
+				XMLFile file = SAXParser.parseFile("/data/base/teams/" + listofFiles[j].getName());
+				String id = file.getElement("TEAM").getAttribute("id");
+				String name = file.getElement("TEAM").getAttribute("name");
+				String coach = file.getElement("TEAM").getAttribute("coach");
+				Team team = new Team(id, name, coach);
+				for (int i = 1; i < file.getElement("TEAM.PLAYERS").elements(); i++ ){
+					if(players.get(file.getElement("TEAM.PLAYERS.PLAYER", i).getAttribute("id")) == null){
+						System.out.println(file.getElement("TEAM.PLAYERS.PLAYER", i).getAttribute("id")+" is niet in the file");
+					}
+					if(file.getElement("TEAM.PLAYERS.PLAYER", i).getContent("ACTIVE").equals("true")){
+						team.addActivePlayer(players.get(file.getElement("TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
+					}
+					else if(file.getElement("TEAM.PLAYERS.PLAYER", i).getContent("ACTIVE").equals("false")){
+						team.addBenchPlayer(players.get(file.getElement("TEAM.PLAYERS.PLAYER", i).getAttribute("id")));
+					}
+					else{
+						System.out.println("er is een fout in palyers");
+					}
+				}
+				teams.add(team);
+			}
+		}
+		return teams;
+		
+	}
 		
 	
 	public static LinkedHashMap<String, Player> loadplayers(){
