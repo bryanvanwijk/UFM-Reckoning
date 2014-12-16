@@ -6,7 +6,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 
-public class Ranking {
+public class SeeAllGames {
 
 	public static void start() {
 		Text t = new Text(90,130, "Ranking:");

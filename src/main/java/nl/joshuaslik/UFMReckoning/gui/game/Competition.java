@@ -1,5 +1,7 @@
 package nl.joshuaslik.UFMReckoning.gui.game;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Scene;
@@ -8,6 +10,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import nl.joshuaslik.UFMReckoning.gui.Main;
+import nl.joshuaslik.UFMReckoning.gui.MainMenu;
+import nl.joshuaslik.UFMReckoning.gui.Ranking;
+import nl.joshuaslik.UFMReckoning.gui.SeeAllGames;
 import nl.joshuaslik.UFMReckoning.gui.ShowNextGame;
 
 /**5
@@ -28,7 +33,6 @@ public class Competition {
 		Main.stage.setFullScreen(true);
 	}
 	
-	
 	@FXML
 	protected void handleShowNextGame(ActionEvent event) {
 		System.out.println("btn_NextGame pressed");
@@ -42,4 +46,27 @@ public class Competition {
 		System.out.println(event.getSource());
 		Ranking.start();
 	}
+	
+	@FXML
+	protected void handleReturnMainMenu(ActionEvent event) throws IOException {
+		System.out.println("btn_Return pressed");
+		System.out.println(event.getSource());
+		MainMenu.start();
+	}
+	
+	@FXML
+	protected void handleAllGames(ActionEvent event) throws IOException {
+		System.out.println("btn_AllGames pressed");
+		System.out.println(event.getSource());
+		SeeAllGames.start();
+	}
+	
+	/*When pushing this button a new game has to start. 
+	 * 
+	 * @FXML
+	protected void handlePlayNextRound(ActionEvent event) throws IOException {
+		System.out.println("btn_PlayNextRound pressed");
+		System.out.println(event.getSource());
+		PlayNextRound.start();
+	}*/
 }
