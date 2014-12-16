@@ -1,0 +1,89 @@
+<TEAM id="heracles-almelo" name="Heracles Almelo" coach="John Stegeman">
+    <PLAYER id="dennistelgenkamp">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="milanokoenders">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bartschenkeveld">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jeroenveldmate">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="fahdaktaou">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bassibum">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="illiassbelhassani">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="denniavdic">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thomasbruns">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bryanlinssen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="alekseikangaskolkka">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="draganpaljic">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joeypelupessy">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jaroslavnavratil">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="bramcastro">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dariovujicevic">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="ramonzomer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="woutweghorst">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="edwingyasi">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="simoncziommer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="oussamatannane">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mark-janfledderus">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mennoheerkes">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="renzefij">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="michaelbrouwer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="coengortemaker">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="markengberink">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="daanrienstra">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="miketewierik">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

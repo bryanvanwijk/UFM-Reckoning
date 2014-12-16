@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import nl.joshuaslik.UFMReckoning.backend.Save;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.util.xml.SAXParser;
 import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
@@ -52,6 +53,7 @@ public class App {
 				} else {
 					XMLFile file = SAXParser.parseFile(args[1]);
 					System.out.println(file.toString());
+					System.out.println(file.getContent("PLAYER.STATS.STA"));
 				}
 			}
 
@@ -63,6 +65,21 @@ public class App {
 					file.save(args[2]);
 				}
 			}
+
+			if (args[0].equals("xmlsave")) {
+				if (args.length < 3) {
+					System.err.println("You need to provide two filenames");
+				} else {
+					XMLFile file = SAXParser.parseFile(args[1]);
+					file.save(args[2]);
+				}
+			}
+
+			if (args[0].equals("loadtest")) {
+				System.out.println(Save.loadplayers().get(63).getID());
+				Save.loadTeam();
+			}
+
 		} else {
 			Main.main(args);
 		}

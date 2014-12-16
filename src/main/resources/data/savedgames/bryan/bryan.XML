@@ -1,0 +1,68 @@
+<TEAM id="ado-den-haag" name="ADO Den Haag" coach="Henk Fraser">
+    <PLAYER id="martinhansen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dionmalone">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="vitowormgoor">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="timothyderijck">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="wilfriedkanon">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="thomaskristensen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="kevinjansen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="aaronmeijers">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mikevanduinen">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mathiasgehrt">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="dannybakker">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="timcoremans">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mitchellschet">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="robertzwinkels">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="rolandalberg">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mitchelldevlugt">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="xanderhoutkoop">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="richelofecunda">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="tyronneebuehi">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="michielkramer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="vidarellmerencia">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="aaronmeijers">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

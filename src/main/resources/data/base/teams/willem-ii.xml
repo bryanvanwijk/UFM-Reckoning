@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="Willem II" id="willem-ii">
+<TEAM name="Willem II" id="willem-ii" coach="Jurgen Streppel">
 	<PLAYERS>
 		<PLAYER id="konstantinoslamprou">
 			<ACTIVE>true</ACTIVE>

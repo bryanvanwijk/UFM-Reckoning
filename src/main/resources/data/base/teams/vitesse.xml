@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="Vitesse" id="vitesse">
+<TEAM name="Vitesse" id="vitesse" coach="Peter Bosz">
 	<PLAYERS>
 		<PLAYER id="eloyroom">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>1</NUM>
 		</PLAYER>
-		<PLAYER id="wallace">
+		<PLAYER id="wallaceoliveiradossantos">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>2</NUM>
@@ -31,7 +31,7 @@
 			<TYPE>MF</TYPE>
 			<NUM>7</NUM>
 		</PLAYER>
-		<PLAYER id="valerikazaishvili">
+		<PLAYER id="valeriqazaishvili">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>8</NUM>
@@ -51,20 +51,10 @@
 			<TYPE>MF</TYPE>
 			<NUM>11</NUM>
 		</PLAYER>
-		<PLAYER id="abioladauda">
-			<ACTIVE>true</ACTIVE>
-			<TYPE>FW</TYPE>
-			<NUM>14</NUM>
-		</PLAYER>
 		<PLAYER id="arnoldkruiswijk">
-			<ACTIVE>false</ACTIVE>
+			<ACTIVE>true</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>15</NUM>
-		</PLAYER>
-		<PLAYER id="marvelousnakamba">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>MF</TYPE>
-			<NUM>18</NUM>
 		</PLAYER>
 		<PLAYER id="zakarialabyad">
 			<ACTIVE>false</ACTIVE>

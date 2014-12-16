@@ -62,7 +62,7 @@ public class XMLFileTest {
 		thrown.expect(NoSuchElementException.class);
 		file.getContent("rootname.fakename");
 	}
-
+	
 	@Test
 	public void testGetElement1() {
 		construct();
@@ -110,7 +110,7 @@ public class XMLFileTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname>subcontent</subname>\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(file.toString().equals(expected));
 	}
@@ -122,7 +122,7 @@ public class XMLFileTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">\n")
 				.append("    <subname>subcontent</subname>\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(file.toString().equals(expected));
 	}
@@ -134,7 +134,7 @@ public class XMLFileTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(file.toString().equals(expected));
 	}
@@ -146,7 +146,7 @@ public class XMLFileTest {
 		String expected = new StringBuilder()
 				.append("<rootname attribute1=\"value1\" attribute2=\"value2\">rootcontent\n")
 				.append("    <subname />\n")
-				.append("</rootname>\n")
+				.append("</rootname>")
 				.toString();
 		assertTrue(file.toString().equals(expected));
 	}

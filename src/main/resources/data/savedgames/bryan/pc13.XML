@@ -1,0 +1,80 @@
+<TEAM id="psv" name="PSV" coach="Phillip Cocu">
+    <PLAYER id="jeroenzoet">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nicolasisimat-mirin">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="karimrekik">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="santiagoarias">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jeffreybruma">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="adammaher">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="memphisdepay">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="stijnschaars">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="luukdejong">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="georginiowijnaldum">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="lucianonarsingh">
+        <ACTIVE>true</ACTIVE>
+    </PLAYER>
+    <PLAYER id="florianjozefzoon">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jetrowillems">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jurgenlocadia">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="andresguardado">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="joshuabrenet">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="remkopasveer">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="raivloet">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="marcelritzmaier">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="mennokoch">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="clintleemans">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="oscarhiljemark">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="abeltamata">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="jorrithendrix">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="nigelbertrams">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+    <PLAYER id="aleksandarboljevic">
+        <ACTIVE>false</ACTIVE>
+    </PLAYER>
+</TEAM>

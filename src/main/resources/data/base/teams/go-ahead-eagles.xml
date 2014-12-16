@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="Go Ahead Eagles" id="go-ahead-eagles">
+<TEAM name="Go Ahead Eagles" id="go-ahead-eagles" coach="Foeke Booy">
 	<PLAYERS>
 		<PLAYER id="mickeyvanderhart">
 			<ACTIVE>true</ACTIVE>

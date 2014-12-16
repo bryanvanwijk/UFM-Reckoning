@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="fc Dordrecht" id="fc-dordrecht">
+<TEAM name="fc Dordrecht" id="fc-dordrecht" coach="Ernie Brandts">
 	<PLAYERS>
 		<PLAYER id="filipkurto">
 			<ACTIVE>true</ACTIVE>
@@ -76,17 +76,12 @@
 			<TYPE>MF</TYPE>
 			<NUM>15</NUM>
 		</PLAYER>
-		<PLAYER id="erixondanso">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>FW</TYPE>
-			<NUM>16</NUM>
-		</PLAYER>
 		<PLAYER id="nandowormgoor">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>17</NUM>
 		</PLAYER>
-		<PLAYER id="mohamdaoui">
+		<PLAYER id="mohamedhamdaoui">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>FW</TYPE>
 			<NUM>18</NUM>
@@ -105,21 +100,6 @@
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>21</NUM>
-		</PLAYER>
-		<PLAYER id="ryankoolwijk">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>MF</TYPE>
-			<NUM>22</NUM>
-		</PLAYER>
-		<PLAYER id="josimarlima">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>DF</TYPE>
-			<NUM>23</NUM>
-		</PLAYER>
-		<PLAYER id="ibrahimatoure">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>FW</TYPE>
-			<NUM>24</NUM>
 		</PLAYER>
 		<PLAYER id="virgildeen">
 			<ACTIVE>false</ACTIVE>

@@ -39,7 +39,7 @@ public class SAXParserTest {
 				.append("    <TYPE>MF</TYPE>")
 				.append("    <POS>CM</POS>")
 				.append("    <STATS>")
-				.append("        <ATT>62</ATT>")
+				.append("        <ATT>62\"  \" \\ \\\" \r</ATT>\r\n")	// How much can one irritate an XML Parser
 				.append("        <DEF>60</DEF>")
 				.append("        <STA>84</STA>")
 				.append("    </STATS>")
@@ -51,7 +51,7 @@ public class SAXParserTest {
 	}
 
 	@Test
-	public void testParseStringBreak1() {
+	public void testParseStringMalformed1() {
 		String xmlstring = new StringBuilder()
 				.append("<PLAYER id=\"adamsarota\">")
 				.append("    <NAME first=\"Adam\" last=\"Sarota\" />")
