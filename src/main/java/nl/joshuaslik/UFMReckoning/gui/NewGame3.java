@@ -11,7 +11,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 import nl.joshuaslik.UFMReckoning.backend.Player;
 import nl.joshuaslik.UFMReckoning.backend.Save;
 
@@ -46,7 +45,7 @@ public class NewGame3 {
 	}
 
 	public static ArrayList<TableColumn<Player, ?>> getColumn(
-			TableView playertable) {
+			TableView<Player> playertable) {
 		int i;
 
 		ArrayList<TableColumn<Player, ?>> columns = new ArrayList<TableColumn<Player, ?>>();

@@ -22,12 +22,12 @@ public class SAXParserTest {
 	@Test
 	public void testParseFile1() {
 		// TODO Properly integrate this
-		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarota.xml");
+		SAXParser.parseFile("/data/base/players/adamsarota.xml");
 	}
 	
 	@Test
 	public void testParseFile2() {
-		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarotaasdfasdf.xml");
+		SAXParser.parseFile("/data/base/players/adamsarotaasdfasdf.xml");
 	}
 
 	@Test
@@ -47,7 +47,7 @@ public class SAXParserTest {
 				.append("    <TEAM>fc-utrecht</TEAM>")
 				.append("</PLAYER>")
 				.toString();
-		XMLFile file = SAXParser.parseString(xmlstring);
+		SAXParser.parseString(xmlstring);
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class SAXParserTest {
 				.append("</PLAYER>")
 				.append("<ILLEGALTAG>")
 				.toString();
-		XMLFile file = SAXParser.parseString(xmlstring);
+		SAXParser.parseString(xmlstring);
 	}
 
 //	@Test
@@ -108,6 +108,7 @@ public class SAXParserTest {
 //		System.out.println(file.getContent("PLAYER.STATS.ATT"));
 //	}
 	
+	@SuppressWarnings("unused")
 	private void makeDirs(String location) {
 		File target = new File(location);
 		String here = new File("").getAbsolutePath();
