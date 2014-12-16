@@ -41,29 +41,49 @@ public class Competition {
 	 * add all matches of this competition to random playrounds
 	 */
 	public void DefinePlayrounds(){
-		ArrayList<Match> matches = new ArrayList<Match>();
-		for (int i = 0; i < users.size(); i++){
+		playrounds = new ArrayList<Playround>();
+
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		ArrayList<User> usersindelen = users;
+		Collections.shuffle(usersindelen);
+		User user = usersindelen.get(0);
+		usersindelen.remove(0);
+		usersindelen.add(user);
+		
+		for(i=0; i < (users.size()*(users.size()-1)/(users.size()/2)); i++){
+			Playround newplayround = new Playround();
 			
-			for (int j = 0; j < users.size(); j++){
-				if (users.get(i) != users.get(j)){
-					matches.add(new Match(users.get(i).getTeam(), users.get(j).getTeam()));
+			for(j=0; j < (users.size()/2); j++){
+				if(k == users.size()){
+					usersindelen.remove(user);
+					Collections.rotate(usersindelen, 1);
+					usersindelen.add(user);
+					k = 0;
+				}
+				newplayround.addmatch(new Match(usersindelen.get(k).getTeam(), usersindelen.get(users.size()-1-k).getTeam()));
+				k = k+1;
+				
+				
+			}
+			playrounds.add(newplayround);
+			Collections.shuffle(playrounds);
+		}
+	}
+	
+	/**
+	 * check for dublicates in playrounds
+	 */
+	public void check(){
+		int k = 0;
+		for(int i = 0; i<users.size(); i++){
+			for(int j =0; j<playrounds.size(); j++){
+				if(playrounds.get(i).contains(users.get(i).getTeam())!= 1){
+					System.out.println("fout neeeee " + users.get(i).getTeam().getTeamName()+k);
 				}
 			}
 		}
-		Collections.shuffle(matches);
-		int i =0;
-		while(playrounds.size() != (users.size()*(users.size()-1)/(users.size()/2))){
-			Playround newplayround = new Playround();
-			i = 0;	
-			while(newplayround.getMatches().size() != (users.size()/2)){
-					if (!(newplayround.contains(matches.get(i).getHomeTeam())) && !(newplayround.contains(matches.get(i).getAwayTeam()))) {
-						newplayround.addmatch(matches.get(i));
-					}
-					i = i+1;
-				}
-			playrounds.add(newplayround);
-		}
-		
 	}
 	
 	public void computeresultCompetition(){

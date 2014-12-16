@@ -177,8 +177,9 @@ public class Game {
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		for(int i=0; i < matches.size(); i++){
 			Match match = matches.get(i);
-			result.put(match.getHomeTeam()+" - " + match.getAwayTeam(), match.gethomegoals()+" - " + match.getawaygoals());
+			result.put(match.getHomeTeam().getTeamName()+" - " + match.getAwayTeam().getTeamName(), match.gethomegoals()+" - " + match.getawaygoals());
 		}
+		currentround = currentround +1;
 		return result;
 	}
 

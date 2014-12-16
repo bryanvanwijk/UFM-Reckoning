@@ -35,14 +35,16 @@ public class Playround {
 	 * @param team
 	 * @return
 	 */
-	public boolean contains(Team team){
+	public int contains(Team team){
+		int result = 0;
 		for (int i = 0; i < matches.size(); i++){
 			if(matches.get(i).getHomeTeam().equals(team) || matches.get(i).getAwayTeam().equals(team)){
-				return true;
+				result = result+1;
 			}
 		}
-		return false;
+		return result;
 	}
+	
 	
 	public boolean equals(Object other) {
 		if (other instanceof Playround) {
