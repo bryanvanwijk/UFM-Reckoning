@@ -6,7 +6,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class CompetitionController {
-
 	
 	@SuppressWarnings("unused")
 	@FXML
