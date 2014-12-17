@@ -10,7 +10,7 @@
 
 <Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController" stylesheets="@GameBottomMenuBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
-		<Button id="btn_StartGame" layoutX="560" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Team" />
+		<Button id="btn_StartGame" layoutX="560" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Team" onAction="#handleTeamBuilder" />
 		<Button id="btn_Options" layoutX="760" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Competition" onAction="#handleCompetition" />
 		<Button id="btn_Highscore" layoutX="960" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Save" />
 		<Button id="btn_Highscore" layoutX="1160" layoutY="1020" mnemonicParsing="false" prefWidth="200" prefHeight="60" styleClass="bottombarbutton" text="Quit" onAction="#handleQuitGame" />

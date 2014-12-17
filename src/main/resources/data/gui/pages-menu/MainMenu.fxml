@@ -14,6 +14,5 @@
 		<Button id="btn_Options" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Options" text="Options" onAction="#handleOptions"/>
 		<Button id="btn_Highscore" layoutX="90" layoutY="530" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Highscore" text="Highscore" onAction="#handleHighscores"/>
 		<Button id="btn_QuitMenu" layoutX="90" layoutY="630" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_QuitMenu" text="Quit game" onAction="#handleQuitMenu"/>
-		<Button id="btn_MainGame" layoutX="1000" layoutY="630" mnemonicParsing="false" prefHeight="100" styleClass="btn_MainGame" text="Main game (Debug)" onAction="#handleMainGame"/>
 	</children>
 </Pane>

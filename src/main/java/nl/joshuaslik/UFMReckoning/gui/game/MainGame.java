@@ -13,10 +13,19 @@ public class MainGame {
 	public static Game game = null;
 
 	public static void start() throws IOException {
+		System.out.println("I HAVE A GAME OBJECT!");
+		System.out.println("USERNAME: " + game.getUser().getUserName());
+		System.out.println("MY TEAM NAME: "
+				+ game.getUser().getTeam().getTeamName());
+		System.out.println("COACH NAME OF MY TEAM: "
+				+ game.getUser().getTeam().getCoachName());
+		System.out.println("COACH NAME OF MY TEAM: "
+				+ game.getUser().getTeam().getTeamCaptain().getName());
 		TeamBuilder.start();
 	}
 
 	public static void setGame(Game game) {
+		System.out.println("GAME OBJECT SET!");
 		MainGame.game = game;
 	}
 
