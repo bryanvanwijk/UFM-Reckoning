@@ -93,12 +93,12 @@ public class NewGame2 {
 
 		ArrayList<TableColumn<Team, ?>> columns = new ArrayList<TableColumn<Team, ?>>();
 
-		String[] columnNames = { "Team", "Average Attack", "Average Defence",
-				"Average Stamina", "Player total", "Team value" };
-		String[] variableNames = { "teamName", "averageStamina", "averageStamina",
-				"averageStamina", "coachName", "averageStamina" };
+		String[] columnNames = { "Team", "Coach", "Average Attack", "Average Defence",
+				"Average Stamina", "Team value" };
+		String[] variableNames = { "teamName", "coachName", "averageStamina", "averageStamina",
+				"averageStamina",  "teamValue" };
 		Integer[] column_width = { 25, 11, 11, 11, 20, 20 };		
-		
+	
 		i = 0;
 		TableColumn<Team, String> teamname = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> attack = new TableColumn<>(columnNames[i++]);
