@@ -47,9 +47,12 @@ public class Games {
 		Pane root = FXMLLoader.load(Class.class
 				.getResource("/data/gui/pages-game/Games.fxml"));
 
-		VBox vbox = new VBox();
-		vbox.getChildren().add(competitionTable);
-		root.getChildren().add(vbox);
+		Pane pane = new Pane();
+		pane.setPrefSize(1600, 900);
+		pane.setLayoutX(300);
+		pane.setLayoutY(50);
+		pane.getChildren().add(competitionTable);
+		root.getChildren().add(pane);
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
