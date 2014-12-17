@@ -16,7 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName;
-	int totalWins, totalLosses, totalDraws, totalGoals = 0;
+	int totalWins, totalLosses, totalDraws, points, goalsagaints, ranking, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
 
 	/**
@@ -132,7 +132,8 @@ public class Team {
 	public boolean equals(Object other) {
 		if (other instanceof Team) {
 			Team that = (Team) other;
-			if (this.activePlayers.equals(that.activePlayers)
+			if(this.teamCaptain != null && that.teamCaptain != null){
+				if (this.activePlayers.equals(that.activePlayers)
 					&& this.benchPlayers.equals(that.benchPlayers)
 					&& this.teamCaptain.equals(that.teamCaptain)
 					&& this.teamName.equals(that.teamName)
@@ -143,7 +144,28 @@ public class Team {
 					&& (this.totalGoals == that.totalGoals)
 					&& (this.attackPower == that.attackPower)
 					&& (this.defencePower == that.defencePower)
-					&& (this.stamina == that.stamina)) {
+					&& (this.stamina == that.stamina)
+					&& (this.points == that.points)
+					&& (this.ranking == that.ranking)
+					&& (this.goalsagaints == that.goalsagaints)) {
+				return true;
+				}
+			}
+			else if(this.activePlayers.equals(that.activePlayers)
+					&& this.benchPlayers.equals(that.benchPlayers)
+					&& (this.teamCaptain == null && that.teamCaptain == null)
+					&& this.teamName.equals(that.teamName)
+					&& this.coachName.equals(that.coachName)
+					&& (this.totalWins == that.totalWins)
+					&& (this.totalLosses == that.totalLosses)
+					&& (this.totalDraws == that.totalDraws)
+					&& (this.totalGoals == that.totalGoals)
+					&& (this.attackPower == that.attackPower)
+					&& (this.defencePower == that.defencePower)
+					&& (this.stamina == that.stamina)
+					&& (this.points == that.points)
+					&& (this.ranking == that.ranking)
+					&& (this.goalsagaints == that.goalsagaints)){
 				return true;
 			}
 		}
@@ -174,32 +196,73 @@ public class Team {
 		return totalWins;
 	}
 
-	public void setTotalWins(int wins) {
-		this.totalWins = wins;
+	/**
+	 * increments totalwins with 1
+	 */
+	public void incTotalWins() {
+		this.totalWins = this.totalWins + 1;
 	}
 
 	public int getTotalLosses() {
 		return totalLosses;
 	}
-
-	public void setTotalLosses(int losses) {
-		this.totalLosses = losses;
+	
+	public void addGoalsAgainst(int goals){
+		goalsagaints = goalsagaints + goals;
+	}
+	
+	public int getGoalsAgainst(){
+		return goalsagaints;
+	}
+	
+	public int getRanking(){
+		return ranking;
+	}
+	
+	public void setRanking(int ranking){
+		this.ranking = ranking;
+	}
+	
+	/**
+	 * add points 
+	 * @param points to add
+	 */
+	public void addPoints(int points){
+		this.points = points + this.points;
+	}
+	
+	public int getPoints(){
+		return points;
+	}
+	
+	/**
+	 * increments totalLosses with 1
+	 */
+	public void incTotalLosses() {
+		this.totalLosses = this.totalLosses + 1;
 	}
 
 	public int getTotalDraws() {
 		return totalDraws;
 	}
-
-	public void setTotalDraws(int draws) {
-		this.totalDraws = draws;
+	
+	/**
+	 * increments totalDraws with 1
+	 */
+	public void incTotalDraws() {
+		this.totalDraws = this.totalDraws + 1;
 	}
 
 	public int getTotalGoals() {
 		return totalGoals;
 	}
-
-	public void setTotalGoals(int total) {
-		this.totalGoals = total;
+	
+	/**
+	 * add goals to totalgoals
+	 * @param goals to add
+	 */
+	public void addGoals(int goals) {
+		this.totalGoals = this.totalGoals + goals;
 	}
 
 	public int getAttackPower() {

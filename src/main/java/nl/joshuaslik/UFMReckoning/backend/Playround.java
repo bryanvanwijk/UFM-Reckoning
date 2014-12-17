@@ -1,0 +1,57 @@
+package nl.joshuaslik.UFMReckoning.backend;
+
+import java.util.ArrayList;
+
+/**
+ * @author Bryan van Wijk
+ * 
+ *
+ */
+public class Playround {
+	
+	ArrayList<Match> matches = new ArrayList<Match>();
+	
+	public Playround(){
+		
+	}
+	
+	public void determineResultPlayround(){
+		for(int i = 0; i < matches.size(); i++){
+			matches.get(i).determineResult();
+		}
+	}
+	
+	
+	public void addmatch(Match match){
+		matches.add(match);
+	}
+	
+	public ArrayList<Match> getMatches(){
+		return matches;
+	}
+	
+	/**
+	 * checks of a team is already in this playround
+	 * @param team
+	 * @return
+	 */
+	public boolean contains(Team team){
+		for (int i = 0; i < matches.size(); i++){
+			if(matches.get(i).getHomeTeam().equals(team) || matches.get(i).getAwayTeam().equals(team)){
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public boolean equals(Object other) {
+		if (other instanceof Playround) {
+			Playround that = (Playround) other;
+			if (this.matches.equals(that.matches)){
+				return true;
+			}
+		}
+		return false;
+	}
+
+}

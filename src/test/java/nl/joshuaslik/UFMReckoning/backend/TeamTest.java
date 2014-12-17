@@ -357,7 +357,7 @@ public class TeamTest {
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
 		team2.setTeamCaptain(fieldplayer1);
-		team1.setTotalDraws(6);
+		team1.incTotalDraws();
 		assertFalse(team1.equals(team2));
 	}
 
@@ -369,7 +369,7 @@ public class TeamTest {
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
 		team2.setTeamCaptain(fieldplayer1);
-		team1.setTotalGoals(5);
+		team1.addGoals(5);
 		assertFalse(team1.equals(team2));
 	}
 
@@ -381,7 +381,7 @@ public class TeamTest {
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
 		team2.setTeamCaptain(fieldplayer1);
-		team1.setTotalLosses(8);
+		team1.incTotalLosses();
 		assertFalse(team1.equals(team2));
 	}
 
@@ -393,7 +393,43 @@ public class TeamTest {
 				"Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.setTeamCaptain(fieldplayer1);
 		team2.setTeamCaptain(fieldplayer1);
-		team1.setTotalWins(9);
+		team1.incTotalWins();
+		assertFalse(team1.equals(team2));
+	}
+	
+	@Test
+	public void testEquals15() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "Frank de Boer");
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		team1.setTeamCaptain(fieldplayer1);
+		team2.setTeamCaptain(fieldplayer1);
+		team1.setRanking(5);
+		assertFalse(team1.equals(team2));
+	}
+	
+	@Test
+	public void testEquals16() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "Frank de Boer");
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		team1.setTeamCaptain(fieldplayer1);
+		team2.setTeamCaptain(fieldplayer1);
+		team1.addGoalsAgainst(4);
+		assertFalse(team1.equals(team2));
+	}
+	
+	@Test
+	public void testEquals17() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		Team team2 = new Team("ajax", "Frank de Boer");
+		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet",
+				"Netherlands", "CAM", 62, 32, 63, 4000000);
+		team1.setTeamCaptain(fieldplayer1);
+		team2.setTeamCaptain(fieldplayer1);
+		team1.addPoints(3);
 		assertFalse(team1.equals(team2));
 	}
 
@@ -471,6 +507,25 @@ public class TeamTest {
 		Team team1 = new Team("ajax", "Frank de Boer");
 		assertEquals(team1.getTotalGoals(), 0);
 	}
+	
+	@Test
+	public void testgetPoints() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		assertEquals(team1.getPoints(), 0);
+	}
+	
+	@Test
+	public void testgetRanking() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		assertEquals(team1.getRanking(), 0);
+	}
+	
+	@Test
+	public void testgetGoalsAgainst() {
+		Team team1 = new Team("ajax", "Frank de Boer");
+		assertEquals(team1.getGoalsAgainst(), 0);
+	}
+	
 
 	@Test
 	public void testgetTotalLosses() {
