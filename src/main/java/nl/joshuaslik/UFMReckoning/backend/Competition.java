@@ -47,7 +47,7 @@ public class Competition {
 	/**
 	 * add all matches of this competition to random playrounds
 	 */
-	public void DefinePlayrounds(){
+	public void definePlayrounds(){
 		playrounds = new ArrayList<Playround>();
 
 		int i = 0;

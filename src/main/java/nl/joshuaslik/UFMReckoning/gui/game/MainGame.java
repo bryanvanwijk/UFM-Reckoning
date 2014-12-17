@@ -26,5 +26,9 @@ public class MainGame {
 		System.out.println("GAME OBJECT SET!");
 		MainGame.game = game;
 	}
+	
+	public static void initialize() {
+		MainGame.game.getCompetition().definePlayrounds();
+	}
 
 }

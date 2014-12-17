@@ -58,6 +58,7 @@ public class NewGame2 {
 					Team chosenTeam = teamtable.getSelectionModel().getSelectedItem();
 					Game Game1 = Save.newGame(chosenTeam, username);
 					MainGame.setGame(Game1);
+					MainGame.initialize();
 					try {
 						MainGame.start();
 					} catch (IOException e) {
