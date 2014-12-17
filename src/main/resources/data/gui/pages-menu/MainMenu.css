@@ -1,4 +1,9 @@
-@import url("../fonts.css");
+/*@import url("../fonts.css");*/
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url(fonts/Quicksand.otf);
+}
 
 .pane {
 	-fx-background-image: url("../img/background.png");
@@ -12,7 +17,7 @@
 	-fx-background-color: #101010;
 	-fx-text-fill: white;
 	-fx-font-size: 60;
-	-fx-font-family: 'Quicksand Book';
+	-fx-font-family: 'Quicksand';
 	-fx-opacity: 80%;
 	-fx-border-width: 1px;
 	-fx-border-color: #cecece;
