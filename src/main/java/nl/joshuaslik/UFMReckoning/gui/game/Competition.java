@@ -40,12 +40,7 @@ public class Competition {
 		Ranking.start();
 	}
 	
-	@FXML
-	protected void handleReturnMainMenu(ActionEvent event) throws IOException {
-		System.out.println("btn_Return pressed");
-		System.out.println(event.getSource());
-		MainMenu.start();
-	}
+	
 	
 	@FXML
 	protected void handleAllGames(ActionEvent event) throws IOException {
@@ -54,7 +49,7 @@ public class Competition {
 		SeeAllGames.start();
 	}
 	
-	/*When pushing this button a new game has to start. 
+	/*When pushing this button a new game has to start. In page shownextgame!!
 	 * 
 	 * @FXML
 	protected void handlePlayNextRound(ActionEvent event) throws IOException {
