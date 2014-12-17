@@ -101,23 +101,25 @@ public class NewGame2 {
 
 		ArrayList<TableColumn<Team, ?>> columns = new ArrayList<TableColumn<Team, ?>>();
 
-		String[] columnNames = { "Team", "Coach", "Total Attack", "Total Defence",
-				"Average Stamina", "Team value" };
-		String[] variableNames = { "teamName", "coachName", "attackPower", "defencePower",
-				"averageStamina",  "teamValue" };
-		Integer[] column_width = { 25, 11, 11, 11, 20, 20 };		
+		String[] columnNames = { "Team", "Coach", "Average Attack", "Average Defence",
+				"Average Stamina", "Total Players", "Team value" };
+		String[] variableNames = { "teamName", "coachName", "averageAttackPower", "averageDefencePower",
+				"averageStamina", "", "teamValue" };
+		Integer[] column_width = { 20, 20, 11, 11, 11, 10, 15 };		
 	
 		i = 0;
 		TableColumn<Team, String> teamname = new TableColumn<>(columnNames[i++]);
+		TableColumn<Team, String> coach = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> attack = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> defence = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> stamina = new TableColumn<>(columnNames[i++]);
-		TableColumn<Team, Integer> players = new TableColumn<>(columnNames[i++]);
-		TableColumn<Team, Integer> teamvalue = new TableColumn<>(
-				columnNames[i++]);
+		TableColumn<Team, Integer> totalplayers = new TableColumn<>(columnNames[i++]);	
+		TableColumn<Team, Integer> teamvalue = new TableColumn<>(columnNames[i++]);
 
 		i = 0;
 		teamname.prefWidthProperty().bind(
+				teamtable.widthProperty().divide(100 / column_width[i++]));
+		coach.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
 		attack.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
@@ -125,7 +127,7 @@ public class NewGame2 {
 				teamtable.widthProperty().divide(100 / column_width[i++]));
 		stamina.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
-		players.prefWidthProperty().bind(
+		totalplayers.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
 		teamvalue.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
@@ -133,22 +135,25 @@ public class NewGame2 {
 		i = 0;
 		teamname.setCellValueFactory(new PropertyValueFactory<Team, String>(
 				variableNames[i++]));
+		coach.setCellValueFactory(new PropertyValueFactory<Team, String>(
+				variableNames[i++]));
 		attack.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
 		defence.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
 		stamina.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
-		players.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
+		totalplayers.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
 		teamvalue.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
 
 		columns.add(teamname);
+		columns.add(coach);
 		columns.add(attack);
 		columns.add(defence);
 		columns.add(stamina);
-		columns.add(players);
+		columns.add(totalplayers);
 		columns.add(teamvalue);
 
 		return columns;

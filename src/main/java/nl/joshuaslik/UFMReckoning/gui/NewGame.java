@@ -21,6 +21,8 @@ public class NewGame {
 		
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
+		Text t2 = new Text(500, 500, " ");
+		t2.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Button btn_Submit = new Button("Submit");
 		btn_Submit.setPrefHeight(100);
 		btn_Submit.setPrefWidth(400);
@@ -32,9 +34,14 @@ public class NewGame {
 		btn_Submit.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
-				t.setText("Loading...");
+				//t.setText("Loading...");
 				String username = txt.getText();
-				NewGame2.start(username);
+				if (username.length()>0) {
+					NewGame2.start(username);
+				}
+				else {
+					t2.setText("Your name should at least have one character!");
+				}
 			}
 		});
 		
@@ -56,7 +63,7 @@ public class NewGame {
 		});
 
 		VBox root = new VBox();
-		root.getChildren().addAll(t, txt, btn_Submit, btn_Return);
+		root.getChildren().addAll(t, txt, btn_Submit, btn_Return, t2);
 
 		Scene scene = new Scene(root, 1080, 1920);
 		scene.getStylesheets().add("/data/GUI/pages-menu/NewGame.css");
