@@ -12,8 +12,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
@@ -46,10 +48,7 @@ public class NewGame2 {
 
 	public static void start(String username) {
 		init();
-
-		//Pane pane = new Pane();
-		//Background background = new Background(0)
-		//pane.setBackground(background);
+		
 		Text t = new Text(400, 300, "Choose your team");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Text t2 = new Text(400, 300, " ");
