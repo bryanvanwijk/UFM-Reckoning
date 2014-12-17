@@ -82,6 +82,7 @@ public class NewGame2 {
 		root.getChildren().addAll(t, t2, teamtable, but, btn_Return);
 
 		Scene scene = new Scene(root, 1080, 1920);
+		scene.getStylesheets().add("/data/GUI/pages-menu/NewGame2.css");
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 	}
