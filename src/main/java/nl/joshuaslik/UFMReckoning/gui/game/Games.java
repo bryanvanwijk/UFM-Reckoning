@@ -25,7 +25,7 @@ public class Games {
 	public static void init() {
 		competitionTable = new TableView<Match>();
 		competitionTable.getColumns().addAll(getColumn(competitionTable));
-		competitionTable.setItems(getTeamlist());
+		competitionTable.setItems(getMatchList());
 
 		competitionTable
 				.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() {
@@ -109,7 +109,7 @@ public class Games {
 		return columns;
 	}
 
-	public static ObservableList<Match> getTeamlist() {
+	public static ObservableList<Match> getMatchList() {
 		ArrayList<Playround> pr = MainGame.game.getCompetition()
 				.getPlayrounds();
 		ArrayList<Match> matches = new ArrayList<Match>();
