@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import nl.joshuaslik.UFMReckoning.backend.Save;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 import nl.joshuaslik.UFMReckoning.util.xml.SAXParser;
 import nl.joshuaslik.UFMReckoning.util.xml.XMLFile;
@@ -19,7 +20,8 @@ public class App {
 	public static void main(String[] args) {
 
 		System.out.println("Ultimate Football Manager");
-		System.out.println("(c) 2014 - Sander Benoist, Naomi de Ridder, Joshua Slik, Lisette Veldkamp, Bryan van Wijk");
+		System.out
+				.println("(c) 2014 - Sander Benoist, Naomi de Ridder, Joshua Slik, Lisette Veldkamp, Bryan van Wijk");
 
 		// Random tests
 		if (args.length > 0) {
@@ -31,16 +33,17 @@ public class App {
 							.getResourceAsStream(args[1]);
 					InputStreamReader inputReader = new InputStreamReader(input);
 					BufferedReader reader = new BufferedReader(inputReader);
-					
+
 					String line = null;
 					try {
 						while ((line = reader.readLine()) != null)
 							System.out.println(line);
 						reader.close();
 					} catch (IOException e) {
-						System.err.println("Error reading or closing BufferedReader");
+						System.err
+								.println("Error reading or closing BufferedReader");
 					}
-					
+
 				}
 			}
 
@@ -50,6 +53,7 @@ public class App {
 				} else {
 					XMLFile file = SAXParser.parseFile(args[1]);
 					System.out.println(file.toString());
+					System.out.println(file.getContent("PLAYER.STATS.STA"));
 				}
 			}
 
@@ -61,6 +65,21 @@ public class App {
 					file.save(args[2]);
 				}
 			}
+
+			if (args[0].equals("xmlsave")) {
+				if (args.length < 3) {
+					System.err.println("You need to provide two filenames");
+				} else {
+					XMLFile file = SAXParser.parseFile(args[1]);
+					file.save(args[2]);
+				}
+			}
+
+			if (args[0].equals("loadtest")) {
+				System.out.println(Save.loadplayers().get(63).getID());
+				Save.loadTeam();
+			}
+
 		} else {
 			Main.main(args);
 		}

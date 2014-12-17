@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PLAYER id="maartenmartens">
 	<NAME first="Maarten" last="Martens" />
-	<COUNTRY>BELGIUM</COUNTRY>
+	<COUNTRY>Belgium</COUNTRY>
 	<TYPE>MF</TYPE>
 	<POS>CAM</POS>
 	<STATS>

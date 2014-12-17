@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="NAC Breda" id="nac-breda">
+<TEAM name="NAC Breda" id="nac-breda" coach="Eric Hellemons">
 	<PLAYERS>
 		<PLAYER id="jelletenrouwelaar">
 			<ACTIVE>true</ACTIVE>
