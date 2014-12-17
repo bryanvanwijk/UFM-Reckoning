@@ -66,9 +66,19 @@ public class NewGame2 {
 				}
 			}
 		});
+		
+		//return button
+		Button btn_Return = new Button("Return");
+		btn_Return.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent arg0) {
+				t.setText("Loading...");
+				NewGame.start();
+			}
+		});
 
 		VBox root = new VBox();
-		root.getChildren().addAll(t, t2, teamtable, but);
+		root.getChildren().addAll(t, t2, teamtable, but, btn_Return);
 
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
