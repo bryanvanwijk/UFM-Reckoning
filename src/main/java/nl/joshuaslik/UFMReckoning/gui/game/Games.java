@@ -25,7 +25,7 @@ public class Games {
 	public static void init() {
 		competitionTable = new TableView<Match>();
 		competitionTable.getColumns().addAll(getColumn(competitionTable));
-		competitionTable.setItems(getTeamlist());
+		competitionTable.setItems(getMatchList());
 
 		competitionTable
 				.setOnMouseClicked(new EventHandler<javafx.scene.input.MouseEvent>() {
@@ -66,14 +66,14 @@ public class Games {
 		ArrayList<TableColumn<Match, ?>> columns = new ArrayList<TableColumn<Match, ?>>();
 
 		String[] columnNames = { "Playround", "Home", "Away", "Result" };
-		String[] variableNames = {"playround", "teamname1", "teamname2", "result" };
+		String[] variableNames = {"playround", "hometeam", "awayteam", "result" };
 		Integer[] column_width = { 10, 40, 40, 10};
 
 		i = 0;
 		TableColumn<Match, Integer> playround = new TableColumn<>(columnNames[i++]);
-		TableColumn<Match, String> teamname1 = new TableColumn<>(
+		TableColumn<Match, String> hometeam = new TableColumn<>(
 				columnNames[i++]);
-		TableColumn<Match, String> teamname2 = new TableColumn<>(
+		TableColumn<Match, String> awayteam = new TableColumn<>(
 				columnNames[i++]);
 		TableColumn<Match, String> result = new TableColumn<>(columnNames[i++]);
 
@@ -81,10 +81,10 @@ public class Games {
 		playround.prefWidthProperty().bind(
 				competitionTable.widthProperty()
 						.divide(100 / column_width[i++]));
-		teamname1.prefWidthProperty().bind(
+		hometeam.prefWidthProperty().bind(
 				competitionTable.widthProperty()
 						.divide(100 / column_width[i++]));
-		teamname2.prefWidthProperty().bind(
+		awayteam.prefWidthProperty().bind(
 				competitionTable.widthProperty()
 						.divide(100 / column_width[i++]));
 		result.prefWidthProperty().bind(
@@ -94,22 +94,22 @@ public class Games {
 		i = 0;
 		playround.setCellValueFactory(new PropertyValueFactory<Match, Integer>(
 				variableNames[i++]));
-		teamname1.setCellValueFactory(new PropertyValueFactory<Match, String>(
+		hometeam.setCellValueFactory(new PropertyValueFactory<Match, String>(
 				variableNames[i++]));
-		teamname2.setCellValueFactory(new PropertyValueFactory<Match, String>(
+		awayteam.setCellValueFactory(new PropertyValueFactory<Match, String>(
 				variableNames[i++]));
 		result.setCellValueFactory(new PropertyValueFactory<Match, String>(
 				variableNames[i++]));
 
 		columns.add(playround);
-		columns.add(teamname1);
-		columns.add(teamname2);
+		columns.add(hometeam);
+		columns.add(awayteam);
 		columns.add(result);
 
 		return columns;
 	}
 
-	public static ObservableList<Match> getTeamlist() {
+	public static ObservableList<Match> getMatchList() {
 		ArrayList<Playround> pr = MainGame.game.getCompetition()
 				.getPlayrounds();
 		ArrayList<Match> matches = new ArrayList<Match>();
