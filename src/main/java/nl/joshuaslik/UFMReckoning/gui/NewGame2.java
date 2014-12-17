@@ -93,7 +93,7 @@ public class NewGame2 {
 
 		ArrayList<TableColumn<Team, ?>> columns = new ArrayList<TableColumn<Team, ?>>();
 
-		String[] columnNames = { "Team", "Coach", "Average Attack", "Average Defence",
+		String[] columnNames = { "Team", "Coach", "Total Attack", "Total Defence",
 				"Average Stamina", "Team value" };
 		String[] variableNames = { "teamName", "coachName", "attackPower", "defencePower",
 				"averageStamina",  "teamValue" };
