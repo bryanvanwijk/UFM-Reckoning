@@ -12,7 +12,7 @@
 	<children>
 		<Pane>
 			<children>
-				<Button id="btn_SeeAllGames" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_SeeAllGames" text="See all games" onAction="#handleSeeAllGames"/>
+				<Button id="btn_SeeAllGames" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_SeeAllGames" text="Games" onAction="#handleSeeAllGames"/>
 				<Button id="btn_Ranking" layoutX="90" layoutY="530" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Ranking" text="Ranking" onAction="#handleRanking"/>			
 				<Button id="btn_ShowNextGame" layoutX="90" layoutY="630" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_ShowNextGame" text="Next Game" onAction="#handleShowNextGame"/>
 			</children>
