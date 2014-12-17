@@ -7,7 +7,6 @@ import javafx.fxml.FXML;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 
 /**
- * @author Sander Benoist
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
