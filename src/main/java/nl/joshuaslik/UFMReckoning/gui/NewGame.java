@@ -18,6 +18,7 @@ public class NewGame {
 	 * Text, buttons en textfield + events die bij de scene horen
 	 */
 	public static void start() {
+		
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Button btn_Submit = new Button("Submit");
@@ -54,6 +55,7 @@ public class NewGame {
 		root.getChildren().addAll(t, txt, btn_Submit, btn_Return);
 
 		Scene scene = new Scene(root, 1080, 1920);
+		scene.getStylesheets().add("/data/GUI/pages-menu/NewGame.css");
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 	}
