@@ -18,6 +18,8 @@ public class Team {
 	private String teamName, coachName, id;
 	int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
+	int averageAttackPower, averageDefencePower, averageStamina;
+	int teamValue;
 
 	/**
 	 * Initialises the Object
@@ -59,6 +61,8 @@ public class Team {
 				defencePower += ((Fieldplayer) player).getDefencePower();
 				stamina += ((Fieldplayer) player).getStamina();
 			}
+			
+			calcAverageStats();
 		}
 	}
 
@@ -72,6 +76,8 @@ public class Team {
 	public void addBenchPlayer(Player player) {
 		if (!benchPlayers.contains(player)) {
 			benchPlayers.add(player);
+			
+			calcAverageStats();
 		}
 	}
 
@@ -105,6 +111,8 @@ public class Team {
 				defencePower -= ((Fieldplayer) player).getDefencePower();
 				stamina -= ((Fieldplayer) player).getStamina();
 			}
+			
+			calcAverageStats();
 		}
 	}
 
@@ -118,6 +126,8 @@ public class Team {
 		if (benchPlayers.contains(player)) {
 			benchPlayers.remove(benchPlayers.indexOf(player));
 		}
+		
+		calcAverageStats();
 	}
 
 	/**
@@ -155,6 +165,8 @@ public class Team {
 			if (benchPlayers.contains(player)) {
 				benchPlayers.remove(benchPlayers.indexOf(player));
 			}
+			
+			calcAverageStats();
 		}
 	}
 
@@ -179,6 +191,8 @@ public class Team {
 				}
 			}
 		}
+		
+		calcAverageStats();
 	}
 
 	public boolean equals(Object other) {
@@ -321,7 +335,19 @@ public class Team {
 		this.totalGoals = this.totalGoals + goals;
 	}
 	
-	public int getTotalAverageAttackPower() {
+	/**
+	 * Calculates the total average stats and stores it
+	 */
+	public void calcAverageStats() {
+		calcTotalAverageAttackPower();
+		calcTotalAverageDefencePower();
+		calcTotalAverageStamina();
+	}
+	
+	/**
+	 * Calculates the total average attackpower and stores it.
+	 */
+	public void calcTotalAverageAttackPower() {
 		int result = 0;
 		
 		for(int i = 0; i < activePlayers.size(); i++) {
@@ -339,7 +365,11 @@ public class Team {
 		}
 		
 		result = result/getTotalPlayers();
-		return result;
+		averageAttackPower = result;
+	}
+	
+	public int getTotalAverageAttackPower() {
+		return averageAttackPower;
 	}
 
 	public int getAttackPower() {
@@ -350,7 +380,10 @@ public class Team {
 		this.attackPower = attack;
 	}
 
-	public int getTotalAverageDefencePower() {
+	/**
+	 * Calculates the average defencepower and stores it
+	 */
+	public void calcTotalAverageDefencePower() {
 		int result = 0;
 		
 		for(int i = 0; i < activePlayers.size(); i++) {
@@ -368,8 +401,12 @@ public class Team {
 		}
 		
 		result = result/getTotalPlayers();
-		return result;
+		averageDefencePower = result;
 	}	
+	
+	public int getTotalAverageDefencePower() {
+		return averageDefencePower;
+	}
 	
 	public int getDefencePower() {
 		return defencePower;
@@ -379,7 +416,10 @@ public class Team {
 		this.defencePower = defence;
 	}
 
-	public int getTotalAverageStamina() {
+	/**
+	 * Calculates the total average stamina and stores it
+	 */
+	public void calcTotalAverageStamina() {
 		int result = 0;
 		
 		for(int i = 0; i < activePlayers.size(); i++) {
@@ -397,8 +437,12 @@ public class Team {
 		}
 		
 		result = result/getTotalPlayers();
-		return result;
+		averageStamina = result;
 	}	
+	
+	public int getAverageStamina() {
+		return averageStamina;
+	}
 	
 	public int getStamina() {
 		return stamina;
