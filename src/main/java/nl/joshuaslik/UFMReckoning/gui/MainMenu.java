@@ -22,7 +22,7 @@ public class MainMenu {
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 		Main.setScene(scene);
-		Main.stage().show();
+		Main.stage.show();
 	}
 
 }
