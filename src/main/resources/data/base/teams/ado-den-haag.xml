@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="ADO Den Haag" id="ado-den-haag">
+<TEAM name="ADO Den Haag" id="ado-den-haag" coach="Henk Fraser">
 	<PLAYERS>
 		<PLAYER id="martinhansen">
 			<ACTIVE>true</ACTIVE>
@@ -66,8 +66,6 @@
 			<TYPE>FA</TYPE>
 			<NUM>19</NUM>
 		</PLAYER>
-	</PLAYERS>
-	<PLAYERS>
 		<PLAYER id="robertzwinkels">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
@@ -104,7 +102,7 @@
 			<TYPE>FA</TYPE>
 			<NUM>29</NUM>
 		</PLAYER>
-		<PLAYER id="papitomerencia">
+		<PLAYER id="vidarellmerencia">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>DF</TYPE>
 			<NUM>37</NUM>

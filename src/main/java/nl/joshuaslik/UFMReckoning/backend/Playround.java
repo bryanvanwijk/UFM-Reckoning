@@ -15,17 +15,27 @@ public class Playround {
 		
 	}
 	
+	/**
+	 * Determines the result of this playround
+	 */
 	public void determineResultPlayround(){
 		for(int i = 0; i < matches.size(); i++){
 			matches.get(i).determineResult();
 		}
 	}
 	
-	
+	/**
+	 * add a match to this playround
+	 * @param match
+	 */
 	public void addmatch(Match match){
 		matches.add(match);
 	}
 	
+	/**
+	 * 
+	 * @return matches of this playround in arrayList
+	 */
 	public ArrayList<Match> getMatches(){
 		return matches;
 	}
@@ -35,15 +45,19 @@ public class Playround {
 	 * @param team
 	 * @return
 	 */
-	public boolean contains(Team team){
+	public int contains(Team team){
+		int result = 0;
 		for (int i = 0; i < matches.size(); i++){
 			if(matches.get(i).getHomeTeam().equals(team) || matches.get(i).getAwayTeam().equals(team)){
-				return true;
+				result = result+1;
 			}
 		}
-		return false;
+		return result;
 	}
 	
+	/**
+	 * returns true if two playrounds are equal
+	 */
 	public boolean equals(Object other) {
 		if (other instanceof Playround) {
 			Playround that = (Playround) other;

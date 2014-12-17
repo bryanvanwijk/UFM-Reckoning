@@ -17,7 +17,13 @@ public class Match {
 			this.awayteam = awayteam;
 		}
 	}
-	public int determinegoals(int goalchance){
+	/**
+	 * Method to determine the amount of goals
+	 * @param goalchance chance to have a goal
+	 * @return amount of goals
+	 */
+	private int determinegoals(int goalchance){
+
 		if(goalchance >= 0 && goalchance <= 810){
 			return 0;
 		}
@@ -68,13 +74,13 @@ public class Match {
 		int defenceaway = awayteam.getDefencePower();
 		int staminaaway = awayteam.getStamina();
 		
-		int attackpowerhome = (attackhome-defenceaway+1000);
+		int attackpowerhome = ((attackhome-defenceaway)*4);
 		int homechance = (int) (Math.random()*3000);
-		int homegoalschance = ((homechance*40) + ((attackpowerhome + staminahome)*60))/200;
+		int homegoalschance = ((homechance*70) + ((attackpowerhome + staminahome)*30))/100;
 		
-		int attackpoweraway = (attackaway-defencehome+1000);
+		int attackpoweraway = ((attackaway-defencehome)*4);
 		int awaychance = (int) (Math.random()*3000);
-		int awaygoalschance = ((awaychance*40) + ((attackpoweraway + staminaaway)*60))/200;
+		int awaygoalschance = ((awaychance*70) + ((attackpoweraway + staminaaway)*30))/100;
 		
 		homegoals = determinegoals(homegoalschance);
 		awaygoals = determinegoals(awaygoalschance);
@@ -148,6 +154,34 @@ public class Match {
 	
 	/**
 	 * 
+	 */
+	public void setawaygoals(int goals){
+		awaygoals = goals;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setWinner(Team team){
+		winner = team;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setLoser(Team team){
+		loser = team;
+	}
+	
+	/**
+	 * 
+	 */
+	public void setHomegoals(int goals){
+		homegoals = goals;
+	}
+	
+	/**
+	 * 
 	 * @return
 	 */
 	public Team getHomeTeam(){
@@ -171,22 +205,22 @@ public class Match {
 	}
 	
 	public boolean equals(Object other) {
-		if (other instanceof Match && (other != null)) {
+		if (other instanceof Match & (other != null)) {
 			Match that = (Match) other;
-			if(this.winner != null && this.loser != null && that.winner != null && that.loser != null  ) {
-				if (this.hometeam.equals(that.hometeam) &&
-					this.awayteam.equals(that.awayteam) && 
-					this.awaygoals == that.awaygoals &&
-					this.homegoals == that.homegoals &&
-					this.loser == that.loser &&
+			if(this.winner != null & this.loser != null & that.winner != null & that.loser != null  ) {
+				if (this.hometeam.equals(that.hometeam) &
+					this.awayteam.equals(that.awayteam) & 
+					this.awaygoals == that.awaygoals &
+					this.homegoals == that.homegoals &
+					this.loser == that.loser &
 					this.winner == that.winner){
 				return true;
 				}
 			}
-			else if(this.winner == null && that.winner == null &&
-					this.hometeam.equals(that.hometeam) &&
-					this.awayteam.equals(that.awayteam) && 
-					this.awaygoals == that.awaygoals &&
+			else if(this.winner == null & that.winner == null &
+					this.hometeam.equals(that.hometeam) &
+					this.awayteam.equals(that.awayteam) & 
+					this.awaygoals == that.awaygoals &
 					this.homegoals == that.homegoals){
 				return true;
 			}

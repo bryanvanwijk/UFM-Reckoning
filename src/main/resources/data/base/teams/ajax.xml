@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<TEAM name="Ajax" id="ajax">
+<TEAM name="Ajax" id="ajax" coach="Frank de Boer">
 	<PLAYERS>
 		
 		<PLAYER id="jaspercillessen">
 			<ACTIVE>true</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>22</NUM>
-		</PLAYER>
-		<PLAYER id="peterleeuwenburgh">
-			<ACTIVE>true</ACTIVE>
-			<TYPE>GK</TYPE>
-			<NUM>31</NUM>
-		</PLAYER>
-		<PLAYER id="diederikboer">
-			<ACTIVE>true</ACTIVE>
-			<TYPE>GK</TYPE>
-			<NUM>33</NUM>
 		</PLAYER>
 		<PLAYER id="ricardovanrhijn">
 			<ACTIVE>true</ACTIVE>
@@ -137,16 +127,17 @@
 			<TYPE>FW</TYPE>
 			<NUM>30</NUM>
 		</PLAYER>
-		<PLAYER id="peterleeuwenburgh">
-			<ACTIVE>false</ACTIVE>
-			<TYPE>GK</TYPE>
-			<NUM>31</NUM>
-		</PLAYER>
 		<PLAYER id="nikizimling">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>MF</TYPE>
 			<NUM>32</NUM>
-		</PLAYER><PLAYER id="diederikboer">
+		</PLAYER>
+			<PLAYER id="peterleeuwenburgh">
+			<ACTIVE>false</ACTIVE>
+			<TYPE>GK</TYPE>
+			<NUM>31</NUM>
+		</PLAYER>
+		<PLAYER id="diederikboer">
 			<ACTIVE>false</ACTIVE>
 			<TYPE>GK</TYPE>
 			<NUM>33</NUM>

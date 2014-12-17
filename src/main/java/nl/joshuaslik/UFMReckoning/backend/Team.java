@@ -15,9 +15,12 @@ public class Team {
 	private ArrayList<Player> activePlayers = new ArrayList<Player>();
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
-	private String teamName, coachName;
-	int totalWins, totalLosses, totalDraws, points, goalsagaints, ranking, totalGoals = 0;
-	int attackPower, defencePower, stamina = 0;
+	private String teamName, coachName, id;
+	//private Formation formation;
+	private int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
+	private int attackPower, defencePower, stamina = 0;
+	private int averageAttackPower, averageDefencePower, averageStamina;
+	private int teamValue;
 
 	/**
 	 * Initialises the Object
@@ -27,7 +30,8 @@ public class Team {
 	 * @param cchName
 	 *            is the coach name.
 	 */
-	public Team(String tmName, String cchName) {
+	public Team(String id, String tmName, String cchName) {
+		this.id = id;
 		teamName = tmName;
 		coachName = cchName;
 	}
@@ -58,6 +62,8 @@ public class Team {
 				defencePower += ((Fieldplayer) player).getDefencePower();
 				stamina += ((Fieldplayer) player).getStamina();
 			}
+			
+			calcAverageStats();
 		}
 	}
 
@@ -71,6 +77,8 @@ public class Team {
 	public void addBenchPlayer(Player player) {
 		if (!benchPlayers.contains(player)) {
 			benchPlayers.add(player);
+			
+			calcAverageStats();
 		}
 	}
 
@@ -104,6 +112,8 @@ public class Team {
 				defencePower -= ((Fieldplayer) player).getDefencePower();
 				stamina -= ((Fieldplayer) player).getStamina();
 			}
+			
+			calcAverageStats();
 		}
 	}
 
@@ -117,6 +127,8 @@ public class Team {
 		if (benchPlayers.contains(player)) {
 			benchPlayers.remove(benchPlayers.indexOf(player));
 		}
+		
+		calcAverageStats();
 	}
 
 	/**
@@ -127,6 +139,61 @@ public class Team {
 	 */
 	public void setTeamCaptain(Player player) {
 		teamCaptain = player;
+	}
+
+	/**
+	 * Adds the player to the active player list and removes him from the bench
+	 * player list.
+	 * 
+	 * @param player
+	 *            is a Player Object.
+	 */
+	public void setPlayerActive(Player player) {
+		if (!activePlayers.contains(player) && activePlayers.size() < 11) {
+
+			if (player instanceof Goalkeeper && !checkActiveGoalkeeper()) {
+				activePlayers.add(player);
+			}
+
+			if (player instanceof Fieldplayer) {
+				activePlayers.add(player);
+
+				attackPower += ((Fieldplayer) player).getAttackPower();
+				defencePower += ((Fieldplayer) player).getDefencePower();
+				stamina += ((Fieldplayer) player).getStamina();
+			}
+
+			if (benchPlayers.contains(player)) {
+				benchPlayers.remove(benchPlayers.indexOf(player));
+			}
+			
+			calcAverageStats();
+		}
+	}
+
+	/**
+	 * Removes the Player from the active playerlist and adds him to the bench
+	 * playerlist.
+	 * 
+	 * @param player
+	 *            is a Player Object
+	 */
+	public void setPlayerBench(Player player) {
+		if (!benchPlayers.contains(player)) {
+			benchPlayers.add(player);
+
+			if (activePlayers.contains(player)) {
+				activePlayers.remove(activePlayers.indexOf(player));
+
+				if (player instanceof Fieldplayer) {
+					attackPower -= ((Fieldplayer) player).getAttackPower();
+					defencePower -= ((Fieldplayer) player).getDefencePower();
+					stamina -= ((Fieldplayer) player).getStamina();
+				}
+			}
+		}
+		
+		calcAverageStats();
 	}
 
 	public boolean equals(Object other) {
@@ -147,7 +214,7 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)) {
+					&& (this.goalsagainst == that.goalsagainst)) {
 				return true;
 				}
 			}
@@ -165,13 +232,17 @@ public class Team {
 					&& (this.stamina == that.stamina)
 					&& (this.points == that.points)
 					&& (this.ranking == that.ranking)
-					&& (this.goalsagaints == that.goalsagaints)){
+					&& (this.goalsagainst == that.goalsagainst)){
 				return true;
 			}
 		}
 		return false;
 	}
 
+	public int getTotalPlayers() {
+		return activePlayers.size() + benchPlayers.size();
+	}
+	
 	public ArrayList<Player> getActivePlayers() {
 		return activePlayers;
 	}
@@ -208,11 +279,11 @@ public class Team {
 	}
 	
 	public void addGoalsAgainst(int goals){
-		goalsagaints = goalsagaints + goals;
+		goalsagainst = goalsagainst + goals;
 	}
 	
 	public int getGoalsAgainst(){
-		return goalsagaints;
+		return goalsagainst;
 	}
 	
 	public int getRanking(){
@@ -264,15 +335,97 @@ public class Team {
 	public void addGoals(int goals) {
 		this.totalGoals = this.totalGoals + goals;
 	}
+	
+	/**
+	 * Calculates the total average stats and stores it
+	 */
+	public void calcAverageStats() {
+		calcTotalAverageAttackPower();
+		calcTotalAverageDefencePower();
+		calcTotalAverageStamina();
+	}
+	
+	/**
+	 * Calculates the total average attackpower and stores it.
+	 */
+	public void calcTotalAverageAttackPower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getAttackPower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		averageAttackPower = result;
+	}
+	
+	public int getTotalAverageAttackPower() {
+		return averageAttackPower;
+	}
+	
+	/**
+	 * Change the type of formation of the team
+	 * choos out 442
+	 */
+//	public void changeFormationType(int type){
+//		if(type ==442){
+//			for(int i =0; i < activePlayers.size(); i++){
+//				setPlayerBench(activePlayers.get(i));
+//			}
+//			formation = new Form442(this);
+//		}
+//	}
+	
+//	public Formation getFormation(){
+//		return formation;
+//	}
 
 	public int getAttackPower() {
 		return attackPower;
 	}
-
+	
 	public void setAttackPower(int attack) {
 		this.attackPower = attack;
 	}
 
+	/**
+	 * Calculates the average defencepower and stores it
+	 */
+	public void calcTotalAverageDefencePower() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getDefencePower();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		averageDefencePower = result;
+	}	
+	
+	public int getTotalAverageDefencePower() {
+		return averageDefencePower;
+	}
+	
 	public int getDefencePower() {
 		return defencePower;
 	}
@@ -281,11 +434,47 @@ public class Team {
 		this.defencePower = defence;
 	}
 
+	/**
+	 * Calculates the total average stamina and stores it
+	 */
+	public void calcTotalAverageStamina() {
+		int result = 0;
+		
+		for(int i = 0; i < activePlayers.size(); i++) {
+			if(activePlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)activePlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		for(int i = 0; i < benchPlayers.size(); i++) {
+			if(benchPlayers.get(i) instanceof Fieldplayer) {
+				Fieldplayer player = (Fieldplayer)benchPlayers.get(i);
+				result += player.getStamina();
+			}
+		}
+		
+		result = result/getTotalPlayers();
+		averageStamina = result;
+	}	
+	
+	public int getAverageStamina() {
+		return averageStamina;
+	}
+	
 	public int getStamina() {
 		return stamina;
 	}
 
 	public void setStamina(int stamina) {
 		this.stamina = stamina;
+	}
+	
+	public String getid(){
+		return id;
+	}
+	
+	public int getPlayers(){
+		return getActivePlayers().size()+getBenchPlayers().size();
 	}
 }

@@ -18,6 +18,17 @@ public class Competition {
 		users  = game.getUsers();
 	}
 	
+	/**
+	 * 
+	 * @return users in this competition
+	 */
+	public ArrayList<User> getusers(){
+		return users;
+	}
+	
+	/**
+	 * Compute the current standings of all the teams in this competition
+	 */
 	public void ComputeStandings(){
 		int ranking=1;
 		for (int i = 0; i < users.size(); i++){
@@ -36,32 +47,89 @@ public class Competition {
 	/**
 	 * add all matches of this competition to random playrounds
 	 */
-	public void DefinePlayrounds(){
-		ArrayList<Match> matches = new ArrayList<Match>();
-		for (int i = 0; i < users.size(); i++){
-			for (int j = 0; j < users.size(); j++){
-				if (users.get(i) != users.get(j)){
-					matches.add(new Match(users.get(i).getTeam(), users.get(j).getTeam()));
+	public void definePlayrounds(){
+		playrounds = new ArrayList<Playround>();
+
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		ArrayList<User> usersindelen = users;
+		Collections.shuffle(usersindelen);
+		User user = usersindelen.get(0);
+		usersindelen.remove(0);
+		usersindelen.add(user);
+		
+		for(i=0; i < (users.size()*(users.size()-1)/(users.size()/2)); i++){
+			Playround newplayround = new Playround();
+			
+			for(j=0; j < (users.size()/2); j++){
+				if(k == users.size()){
+					usersindelen.remove(user);
+					Collections.rotate(usersindelen, 1);
+					usersindelen.add(user);
+					k = 0;
 				}
-			}
-		}
-		Collections.shuffle(matches);
-		Playround newplayround = new Playround();
-		while(!matches.isEmpty()){
-			newplayround = new Playround();	
-			while(newplayround.getMatches().size() != (users.size()/2)){
-				for(int i = 0; i < matches.size(); i++){
-					if (!(newplayround.contains(matches.get(i).getHomeTeam()) || newplayround.contains(matches.get(i).getAwayTeam()))) {
-						newplayround.addmatch(matches.remove(i));
-					}
-				}
+				newplayround.addmatch(new Match(usersindelen.get(k).getTeam(), usersindelen.get(users.size()-1-k).getTeam()));
+				k = k+1;
+				
+				
 			}
 			playrounds.add(newplayround);
+			Collections.shuffle(playrounds);
 		}
-		
 	}
 	
+	/**
+	 * check for dublicates in playrounds
+	 */
+	public void check(){
+		int k = 0;
+		for(int i = 0; i<users.size(); i++){
+			for(int j =0; j<playrounds.size(); j++){
+				if(playrounds.get(i).contains(users.get(i).getTeam())!= 1){
+					System.out.println("fout neeeee " + users.get(i).getTeam().getTeamName()+k);
+				}
+			}
+		}
+	}
+	
+	/**
+	 * Compte the result of the total competition
+	 */
+	public void computeresultCompetition(){
+		for(int i =0; i<playrounds.size(); i++){
+			playrounds.get(i).determineResultPlayround();
+		}
+	}
+	
+	/**
+	 * 
+	 * @param i between 0 and total playrounds
+	 * @return playround i of this competition stating from 0
+	 */
+	public Playround getPlayround(int i){
+		return playrounds.get(i);
+	}
+	
+	/**
+	 * 
+	 * @return arraylist of all the playrounds in this competition
+	 */
 	public ArrayList<Playround> getPlayrounds(){
 		return playrounds;
+	}
+	
+	/**
+	 * checks of two competition are equal
+	 */
+	public boolean equals(Object other) {
+		if (other instanceof Competition) {
+			Competition that = (Competition) other;
+			if (this.game.equals(that.game)&
+					this.playrounds.equals(that.playrounds)){
+				return true;
+			}
+		}
+		return false;
 	}
 }

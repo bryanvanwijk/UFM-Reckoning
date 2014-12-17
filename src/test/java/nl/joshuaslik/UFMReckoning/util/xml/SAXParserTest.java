@@ -22,12 +22,12 @@ public class SAXParserTest {
 	@Test
 	public void testParseFile1() {
 		// TODO Properly integrate this
-		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarota.xml");
+		SAXParser.parseFile("/data/base/players/adamsarota.xml");
 	}
 	
 	@Test
 	public void testParseFile2() {
-		XMLFile file = SAXParser.parseFile("/data/base/players/adamsarotaasdfasdf.xml");
+		SAXParser.parseFile("/data/base/players/adamsarotaasdfasdf.xml");
 	}
 
 	@Test
@@ -39,7 +39,7 @@ public class SAXParserTest {
 				.append("    <TYPE>MF</TYPE>")
 				.append("    <POS>CM</POS>")
 				.append("    <STATS>")
-				.append("        <ATT>62</ATT>")
+				.append("        <ATT>62\"  \" \\ \\\" \r</ATT>\r\n")	// How much can one irritate an XML Parser
 				.append("        <DEF>60</DEF>")
 				.append("        <STA>84</STA>")
 				.append("    </STATS>")
@@ -47,11 +47,11 @@ public class SAXParserTest {
 				.append("    <TEAM>fc-utrecht</TEAM>")
 				.append("</PLAYER>")
 				.toString();
-		XMLFile file = SAXParser.parseString(xmlstring);
+		SAXParser.parseString(xmlstring);
 	}
 
 	@Test
-	public void testParseStringBreak1() {
+	public void testParseStringMalformed1() {
 		String xmlstring = new StringBuilder()
 				.append("<PLAYER id=\"adamsarota\">")
 				.append("    <NAME first=\"Adam\" last=\"Sarota\" />")
@@ -68,7 +68,7 @@ public class SAXParserTest {
 				.append("</PLAYER>")
 				.append("<ILLEGALTAG>")
 				.toString();
-		XMLFile file = SAXParser.parseString(xmlstring);
+		SAXParser.parseString(xmlstring);
 	}
 
 //	@Test
@@ -108,6 +108,7 @@ public class SAXParserTest {
 //		System.out.println(file.getContent("PLAYER.STATS.ATT"));
 //	}
 	
+	@SuppressWarnings("unused")
 	private void makeDirs(String location) {
 		File target = new File(location);
 		String here = new File("").getAbsolutePath();

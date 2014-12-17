@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController" id="pane" styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Pane>
+			<children>
+			</children>
+		</Pane>
+		<!-- Bottom bar -->
+		<fx:include fx:id="bottommenubar" source="GameBottomMenuBar.fxml" />
+	</children>
+</Pane>
