@@ -115,6 +115,8 @@ public class Games {
 		ArrayList<Match> matches = new ArrayList<Match>();
 		for (int i = 0; i < pr.size(); i++)
 			matches.addAll(pr.get(i).getMatches());
+		
+		System.out.println(matches.toString());
 
 		ObservableList<Match> data = FXCollections.observableArrayList(matches);
 		return data;
