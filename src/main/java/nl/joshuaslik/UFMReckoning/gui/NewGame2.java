@@ -95,7 +95,7 @@ public class NewGame2 {
 
 		String[] columnNames = { "Team", "Coach", "Average Attack", "Average Defence",
 				"Average Stamina", "Team value" };
-		String[] variableNames = { "teamName", "coachName", "averageStamina", "averageStamina",
+		String[] variableNames = { "teamName", "coachName", "attackPower", "defencePower",
 				"averageStamina",  "teamValue" };
 		Integer[] column_width = { 25, 11, 11, 11, 20, 20 };		
 	
