@@ -103,10 +103,10 @@ public class NewGame2 {
 		ArrayList<TableColumn<Team, ?>> columns = new ArrayList<TableColumn<Team, ?>>();
 
 		String[] columnNames = { "Team", "Coach", "Average Attack", "Average Defence",
-				"Average Stamina", "Team value" };
+				"Average Stamina", "Total Players", "Team value" };
 		String[] variableNames = { "teamName", "coachName", "averageAttackPower", "averageDefencePower",
-				"averageStamina",  "teamValue" };
-		Integer[] column_width = { 25, 20, 11, 11, 11, 20 };		
+				"averageStamina", "", "teamValue" };
+		Integer[] column_width = { 20, 20, 11, 11, 11, 10, 15 };		
 	
 		i = 0;
 		TableColumn<Team, String> teamname = new TableColumn<>(columnNames[i++]);
@@ -114,6 +114,7 @@ public class NewGame2 {
 		TableColumn<Team, Integer> attack = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> defence = new TableColumn<>(columnNames[i++]);
 		TableColumn<Team, Integer> stamina = new TableColumn<>(columnNames[i++]);
+		TableColumn<Team, Integer> totalplayers = new TableColumn<>(columnNames[i++]);	
 		TableColumn<Team, Integer> teamvalue = new TableColumn<>(columnNames[i++]);
 
 		i = 0;
@@ -126,6 +127,8 @@ public class NewGame2 {
 		defence.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
 		stamina.prefWidthProperty().bind(
+				teamtable.widthProperty().divide(100 / column_width[i++]));
+		totalplayers.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
 		teamvalue.prefWidthProperty().bind(
 				teamtable.widthProperty().divide(100 / column_width[i++]));
@@ -141,6 +144,8 @@ public class NewGame2 {
 				variableNames[i++]));
 		stamina.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
+		totalplayers.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
+				variableNames[i++]));
 		teamvalue.setCellValueFactory(new PropertyValueFactory<Team, Integer>(
 				variableNames[i++]));
 
@@ -149,6 +154,7 @@ public class NewGame2 {
 		columns.add(attack);
 		columns.add(defence);
 		columns.add(stamina);
+		columns.add(totalplayers);
 		columns.add(teamvalue);
 
 		return columns;
