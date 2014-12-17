@@ -1,5 +1,7 @@
 package nl.joshuaslik.UFMReckoning.gui;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -18,12 +20,13 @@ public class NewGame {
 	public static void start() {
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
-		Button but = new Button("Submit");
+		Button btn_Submit = new Button("Submit");
 		
 		TextField txt = new TextField();
 		txt.setMaxWidth(250);
 		
-		but.setOnAction(new EventHandler<ActionEvent>() {
+		//submit button
+		btn_Submit.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
 				t.setText("Loading...");
@@ -31,9 +34,24 @@ public class NewGame {
 				NewGame2.start(username);
 			}
 		});
+		
+		//return button
+		Button btn_Return = new Button("Return");
+		btn_Return.setOnAction(new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent arg0) {
+				t.setText("Loading...");
+				try {
+					MainMenu.start();
+				}
+				catch(IOException e) {
+					e.printStackTrace();
+				}
+			}
+		});
 
 		VBox root = new VBox();
-		root.getChildren().addAll(t, txt, but);
+		root.getChildren().addAll(t, txt, btn_Submit, btn_Return);
 
 		Scene scene = new Scene(root, 1080, 1920);
 		Main.stage.setScene(scene);
