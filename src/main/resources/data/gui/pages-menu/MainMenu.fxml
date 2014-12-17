@@ -7,12 +7,11 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController" id="pane" maxHeight="-Infinity" styleClass="pane" stylesheets="@MainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<Pane id="pane" maxHeight="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="pane" stylesheets="@MainMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController">
 	<children>
-		<Button id="btn_StartGame" layoutX="90" layoutY="330" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_StartGame" text="Start game" onAction="#handleStartGame"/>
-		<Button id="btn_Options" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Options" text="Options" onAction="#handleOptions"/>
-		<Button id="btn_Highscore" layoutX="90" layoutY="530" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Highscore" text="Highscore" onAction="#handleHighscores"/>
-		<Button id="btn_QuitMenu" layoutX="90" layoutY="630" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_QuitMenu" text="Quit game" onAction="#handleQuitMenu"/>
+		<Button id="btn_StartGame" layoutX="90" layoutY="330" mnemonicParsing="false" onAction="#handleStartGame" prefHeight="100" prefWidth="400" styleClass="btn_StartGame" text="Start game" />
+		<Button id="btn_Options" layoutX="90" layoutY="430" mnemonicParsing="false" onAction="#handleOptions" prefHeight="100" prefWidth="400" styleClass="btn_Options" text="Options" />
+		<Button id="btn_Highscore" layoutX="90" layoutY="530" mnemonicParsing="false" onAction="#handleHighscores" prefHeight="100" prefWidth="400" styleClass="btn_Highscore" text="Highscore" />
+		<Button id="btn_QuitMenu" layoutX="90" layoutY="630" mnemonicParsing="false" onAction="#handleQuitMenu" prefHeight="100" prefWidth="400" styleClass="btn_QuitMenu" text="Quit game" />
 	</children>
 </Pane>
