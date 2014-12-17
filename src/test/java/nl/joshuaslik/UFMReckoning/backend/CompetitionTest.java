@@ -40,7 +40,7 @@ public class CompetitionTest {
 		users.add(new PC(team7, "pc7", 500));
 		users.add(new PC(team8, "pc8", 5000));
 		Game game1 = new Game(users);
-		game1.getCompetition().DefinePlayrounds();
+		game1.getCompetition().definePlayrounds();
 		for(int k =0; k  < 14; k++){
 			for(int j = 0; j< 4;j++){
 				System.out.println(game1.getCompetition().getPlayrounds().get(k).getMatches().get(j).getHomeTeam().getTeamName()+"-"+game1.getCompetition().getPlayrounds().get(k).getMatches().get(j).getAwayTeam().getTeamName());

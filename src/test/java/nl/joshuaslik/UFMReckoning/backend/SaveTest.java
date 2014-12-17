@@ -19,7 +19,7 @@ public class SaveTest {
 //		Save.SaveGame(game);
 
 		Game game = Save.newGame(teams.get("ado-den-haag"), "bryan");
-		game.getCompetition().DefinePlayrounds();
+		game.getCompetition().definePlayrounds();
 
 		for (int i = 0; i < game.getTeams().size(); i++) {
 			System.out.println(game.getTeams().get(i).getTeamName() + "  "

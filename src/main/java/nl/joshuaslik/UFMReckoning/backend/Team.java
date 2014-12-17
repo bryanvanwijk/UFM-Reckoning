@@ -16,6 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName, id;
+	private Formation formation;
 	int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	int attackPower, defencePower, stamina = 0;
 
@@ -340,6 +341,23 @@ public class Team {
 		
 		result = result/getTotalPlayers();
 		return result;
+	}
+	
+	/**
+	 * Change the type of formation of the team
+	 * choos out 442
+	 */
+	public void changeFormationType(int type){
+		if(type ==442){
+			for(int i =0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form442(this);
+		}
+	}
+	
+	public Formation getFormation(){
+		return formation;
 	}
 
 	public int getAttackPower() {

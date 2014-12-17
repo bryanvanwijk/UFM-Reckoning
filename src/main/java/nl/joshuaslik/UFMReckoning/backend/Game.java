@@ -107,7 +107,7 @@ public class Game {
 
 	/**
 	 * 
-	 * @return
+	 * @return arraylist with all teams in this game
 	 */
 	public ArrayList<Team> getTeams() {
 		ArrayList<Team> result = new ArrayList<Team>();
@@ -119,7 +119,7 @@ public class Game {
 
 	/**
 	 * 
-	 * @return
+	 * @return Team object where id is teamid
 	 */
 	public Team getTeam(String teamid) {
 		for (int i = 0; i < users.size(); i++) {
@@ -131,7 +131,7 @@ public class Game {
 
 	/**
 	 * 
-	 * @return
+	 * @return returns the player with id
 	 */
 	public Player getPlayer(String id) {
 		return players.get(id);
@@ -140,10 +140,15 @@ public class Game {
 
 	/**
 	 * 
-	 * @param name
-	 * @return
+	 * @param name of the player
+	 * @return player with that name
 	 */
 	public Player getPlayerByName(String name) {
+		for(String key: players.keySet()){
+			if(players.get(key).getName().equals(name)){
+				return players.get(key);
+			}
+		}
 		return null;
 
 	}
@@ -157,7 +162,7 @@ public class Game {
 	}
 
 	/**
-	 * Starts a new competition for this game
+	 * @return competition of this game
 	 */
 	public Competition getCompetition() {
 		return competition;
@@ -172,7 +177,7 @@ public class Game {
 	}
 
 	/**
-	 * determine the current ranking of the teams
+	 * determine the current ranking of the teams in this game
 	 * 
 	 * @return linkedHashmap with ranking and team name
 	 */
@@ -221,8 +226,8 @@ public class Game {
 	}
 
 	/**
-	 * determine the result of the currentround and returns the result of the
-	 * currentround
+	 * determine the result of the specified round and returns the result of the
+	 *
 	 */
 	public LinkedHashMap<String, String> resultplayround(int round) {
 		ArrayList<Match> matches = getPlayround(round - 1).getMatches();
