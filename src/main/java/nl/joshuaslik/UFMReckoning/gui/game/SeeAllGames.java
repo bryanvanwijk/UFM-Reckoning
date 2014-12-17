@@ -16,4 +16,6 @@ public class SeeAllGames {
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
 	}
+
+
 }
