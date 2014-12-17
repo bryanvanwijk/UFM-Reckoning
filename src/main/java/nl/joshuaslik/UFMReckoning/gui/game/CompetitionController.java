@@ -9,8 +9,8 @@ public class CompetitionController {
 	
 	@SuppressWarnings("unused")
 	@FXML
-	protected void handleSeeAllGames(ActionEvent event) throws IOException {
-		SeeAllGames.start();
+	protected void handleGames(ActionEvent event) throws IOException {
+		Games.start();
 	}
 
 	@SuppressWarnings("unused")

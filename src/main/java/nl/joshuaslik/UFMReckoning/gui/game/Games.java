@@ -7,7 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 
-public class SeeAllGames {
+public class Games {
 
 	public static void start() throws IOException {
 		Parent root = FXMLLoader.load(Class.class

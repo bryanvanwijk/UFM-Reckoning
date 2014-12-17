@@ -13,7 +13,7 @@
 	-fx-border-style: solid;
 }
 
-.bottombarbutton: hover{
+.bottombarbutton: hover {
 	-fx-background-color: #000000;
 	-fx-opacity: 90%;
 	-fx-cursor: hand;
