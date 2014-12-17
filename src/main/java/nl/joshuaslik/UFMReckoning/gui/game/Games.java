@@ -55,17 +55,18 @@ public class Games {
 		Main.stage.setFullScreen(true);
 	}
 
-	public static ArrayList<TableColumn<Match, String>> getColumn(
+	public static ArrayList<TableColumn<Match, ?>> getColumn(
 			TableView<Match> competitionTable) {
 		int i;
 
-		ArrayList<TableColumn<Match, String>> columns = new ArrayList<TableColumn<Match, String>>();
+		ArrayList<TableColumn<Match, ?>> columns = new ArrayList<TableColumn<Match, ?>>();
 
-		String[] columnNames = { "Home", "Away", "Result" };
-		String[] variableNames = { "teamname1", "teamname2", "result" };
-		Integer[] column_width = { 40, 40, 5 };
+		String[] columnNames = { "Playround", "Home", "Away", "Result" };
+		String[] variableNames = {"playround", "teamname1", "teamname2", "result" };
+		Integer[] column_width = { 10, 40, 40, 10};
 
 		i = 0;
+		TableColumn<Match, Integer> playround = new TableColumn<>(columnNames[i++]);
 		TableColumn<Match, String> teamname1 = new TableColumn<>(
 				columnNames[i++]);
 		TableColumn<Match, String> teamname2 = new TableColumn<>(
@@ -73,6 +74,9 @@ public class Games {
 		TableColumn<Match, String> result = new TableColumn<>(columnNames[i++]);
 
 		i = 0;
+		playround.prefWidthProperty().bind(
+				competitionTable.widthProperty()
+						.divide(100 / column_width[i++]));
 		teamname1.prefWidthProperty().bind(
 				competitionTable.widthProperty()
 						.divide(100 / column_width[i++]));
@@ -84,6 +88,8 @@ public class Games {
 						.divide(100 / column_width[i++]));
 
 		i = 0;
+		playround.setCellValueFactory(new PropertyValueFactory<Match, Integer>(
+				variableNames[i++]));
 		teamname1.setCellValueFactory(new PropertyValueFactory<Match, String>(
 				variableNames[i++]));
 		teamname2.setCellValueFactory(new PropertyValueFactory<Match, String>(
@@ -91,6 +97,7 @@ public class Games {
 		result.setCellValueFactory(new PropertyValueFactory<Match, String>(
 				variableNames[i++]));
 
+		columns.add(playround);
 		columns.add(teamname1);
 		columns.add(teamname2);
 		columns.add(result);
