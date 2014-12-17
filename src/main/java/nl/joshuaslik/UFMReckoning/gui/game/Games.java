@@ -48,9 +48,10 @@ public class Games {
 				.getResource("/data/gui/pages-game/Games.fxml"));
 
 		Pane pane = new Pane();
-		pane.setPrefSize(1600, 900);
-		pane.setLayoutX(300);
-		pane.setLayoutY(50);
+		pane.setPrefSize(1300, 800);
+		pane.setLayoutX(600);
+		pane.setLayoutY(150);
+		competitionTable.setPrefSize(1300, 800);
 		pane.getChildren().add(competitionTable);
 		root.getChildren().add(pane);
 		Scene scene = new Scene(root, 1080, 1920);
