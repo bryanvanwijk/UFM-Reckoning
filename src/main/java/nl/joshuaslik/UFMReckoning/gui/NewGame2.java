@@ -13,6 +13,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -45,11 +47,16 @@ public class NewGame2 {
 	public static void start(String username) {
 		init();
 
+		//Pane pane = new Pane();
+		//Background background = new Background(0)
+		//pane.setBackground(background);
 		Text t = new Text(400, 300, "Choose your team");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Text t2 = new Text(400, 300, " ");
 		t2.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Button but = new Button("Choose this team");
+		but.setPrefHeight(100);
+		but.setPrefWidth(600);
 		
 		but.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
@@ -70,6 +77,8 @@ public class NewGame2 {
 		
 		//return button
 		Button btn_Return = new Button("Return");
+		btn_Return.setPrefHeight(100);
+		btn_Return.setPrefWidth(400);
 		btn_Return.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
