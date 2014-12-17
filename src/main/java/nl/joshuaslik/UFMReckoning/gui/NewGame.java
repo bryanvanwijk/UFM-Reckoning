@@ -22,6 +22,8 @@ public class NewGame {
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
 		Button btn_Submit = new Button("Submit");
+		btn_Submit.setPrefHeight(100);
+		btn_Submit.setPrefWidth(400);
 		
 		TextField txt = new TextField();
 		txt.setMaxWidth(250);
@@ -38,6 +40,8 @@ public class NewGame {
 		
 		//return button
 		Button btn_Return = new Button("Return");
+		btn_Return.setPrefHeight(100);
+		btn_Return.setPrefWidth(400);
 		btn_Return.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent arg0) {
@@ -58,5 +62,6 @@ public class NewGame {
 		scene.getStylesheets().add("/data/GUI/pages-menu/NewGame.css");
 		Main.stage.setScene(scene);
 		Main.stage.setFullScreen(true);
+		
 	}
 }
