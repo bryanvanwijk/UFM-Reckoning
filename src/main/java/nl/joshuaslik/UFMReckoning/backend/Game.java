@@ -145,7 +145,7 @@ public class Game {
 	 */
 	public Player getPlayerByName(String name) {
 		for(String key: players.keySet()){
-			if(players.get(key).getName().equals(name)){
+			if(players.get(key).getfullName().equals(name)){
 				return players.get(key);
 			}
 		}

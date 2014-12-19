@@ -5,20 +5,19 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 
 /**
  * @author Bryan van Wijk
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  *
  */
-public class StartGame {
+public class LoadGame {
 
 	public static void start() throws IOException {
-		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/pages-menu/StartGame.fxml"));
-		Scene scene = new Scene(root, 1080, 1920);
-		Main.stage.setScene(scene);
-		Main.stage.setFullScreen(true);
+		AnchorPane scene = (AnchorPane) FXMLLoader.load(Class.class.getResource(""));
+		Main.setCenter(scene);
+		Main.setTop(null);
 	}
 
 }

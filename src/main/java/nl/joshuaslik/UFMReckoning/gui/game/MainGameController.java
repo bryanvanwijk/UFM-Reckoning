@@ -27,7 +27,7 @@ public class MainGameController {
 	@SuppressWarnings("unused")
 	@FXML
 	protected void handleTeamBuilder(ActionEvent event) throws IOException {
-		TeamBuilder.start();
+	
 	}
 	
 	@SuppressWarnings("unused")

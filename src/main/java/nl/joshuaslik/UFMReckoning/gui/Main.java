@@ -3,8 +3,13 @@ package nl.joshuaslik.UFMReckoning.gui;
 import java.io.IOException;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 
@@ -15,6 +20,7 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
 	public static Stage stage;
+	private static BorderPane rootLayout;
 
 	public static void main(String[] args) {
 		launch(args);
@@ -22,28 +28,33 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws IOException {
-		primaryStage.setWidth(1920);
-		primaryStage.setHeight(1080);
+		rootLayout = (BorderPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-menu/RootLayout.fxml"));
 		primaryStage.setFullScreen(true);
+		primaryStage.getIcons().add(new Image("file:recources/images/Address_book.png"));
 		primaryStage.setTitle("Ultimate Football Manager");
-		primaryStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
+	
+		Scene scene = new Scene(rootLayout);
+        primaryStage.setScene(scene);
+        primaryStage.show();
 		stage = primaryStage;
 		MainMenu.start();
-	}
-
-	public FlowPane addFlowPane() {
-		FlowPane flow = new FlowPane();
-		flow.setVgap(4);
-		flow.setHgap(4);
-		flow.setPrefWrapLength(170);
-		flow.setStyle("-fx-background-color: DAE6F3;");
-
-		return flow;
 	}
 
 	public static void setScene(Scene scn) {
 		stage.setScene(scn);
 	}
+	
+	public static void setCenter(AnchorPane pane){
+		rootLayout.setCenter(pane);
+	}
+	
+	public static void setTop(AnchorPane pane){
+			rootLayout.setTop(pane);
+	}
+	
+	public static void setBottom(AnchorPane pane){
+		rootLayout.setBottom(pane);
+}
 
 	public static Stage stage() {
 		return stage;

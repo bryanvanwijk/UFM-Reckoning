@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Quicksand';
-  src: url(fonts/Quicksand.otf);
+  src: url(../fonts/Quicksand.otf);
 }
 
 .pane {
@@ -23,6 +23,8 @@
 	-fx-border-color: #cecece;
 	-fx-border-style: solid;
 }
+
+
 
 .button: hover{
 	-fx-background-color: #000000;
