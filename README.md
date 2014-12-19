@@ -1,5 +1,5 @@
-Unreal Football Manager: Reckoning
-==================================
+Ultimate Football Manager
+=========================
 
 ### Branch Build Status
 
