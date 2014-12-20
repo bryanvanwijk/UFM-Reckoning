@@ -59,12 +59,10 @@ public class TeamBuilderControl {
     	players = FXCollections.observableArrayList(playerslist);
     	playertable.setItems(players);
     	
-    	fullname.setCellValueFactory(new PropertyValueFactory<Player, String>(
-				"position"));
-		country.setCellValueFactory(new PropertyValueFactory<Player, String>(
-				"country"));
-		price.setCellValueFactory(new PropertyValueFactory<Player, String>(
-				"price"));
+    	
+		country.setCellValueFactory(new PropertyValueFactory<Player, String>("country"));
+		price.setCellValueFactory(new PropertyValueFactory<Player, String>("price"));
+		fullname.setCellValueFactory(new PropertyValueFactory<Player, String>("fullName"));
     
         // Listen for selection changes 
 		playertable.getSelectionModel().selectedItemProperty().addListener(
@@ -75,7 +73,7 @@ public class TeamBuilderControl {
     
     public void selectedPlayer(Player player){
     	selectedplayer = player;
-    	playerlabel.setText(selectedplayer.getfullName());
+    	playerlabel.setText(selectedplayer.getFullName());
     }
     
     public static void start(Game game) throws IOException {

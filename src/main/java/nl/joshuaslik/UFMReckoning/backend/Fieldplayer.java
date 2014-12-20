@@ -48,7 +48,7 @@ public class Fieldplayer extends Player {
 		if (other instanceof Fieldplayer) {
 			Fieldplayer that = (Fieldplayer) other;
 			if (this.getID().equals(that.getID())
-					&& this.getfullName().equals(that.getfullName())
+					&& this.getFullName().equals(that.getFullName())
 					&& this.getCountry().equals(that.getCountry())
 					&& this.getPrice() == that.getPrice()
 					&& this.attackPower == that.attackPower

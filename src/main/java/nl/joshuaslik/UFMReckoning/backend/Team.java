@@ -369,7 +369,7 @@ public class Team {
 		averageAttackPower = result;
 	}
 	
-	public int getTotalAverageAttackPower() {
+	public int getAverageAttackPower() {
 		return averageAttackPower;
 	}
 	
@@ -422,7 +422,7 @@ public class Team {
 		averageDefencePower = result;
 	}	
 	
-	public int getTotalAverageDefencePower() {
+	public int getAverageDefencePower() {
 		return averageDefencePower;
 	}
 	

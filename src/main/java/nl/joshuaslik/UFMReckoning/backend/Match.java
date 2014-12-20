@@ -10,6 +10,7 @@ public class Match {
 	private Team winner, loser;
 	private boolean draw = false;
 	private int homegoals = -1, awaygoals = -1;
+	private int playround;
 	
 	public Match(Team hometeam, Team awayteam){
 		if(!hometeam.equals(awayteam)){
@@ -140,16 +141,42 @@ public class Match {
 	 * 
 	 * @return gives the amount of goals from the hometeam back or if the match isn't played yet it gives -1 back
 	 */
-	public int gethomegoals(){
+	public Integer getHomegoals(){
+		if(homegoals != -1){
 			return homegoals;
+		}
+		else{
+			return null; 
+		}
 	}
 	
 	/**
 	 * 
 	 * @return gives the amount of goals from the awayteam back or if the match isn't played yet it gives -1 back
 	 */
-	public int getawaygoals(){
-		return awaygoals;
+	public Integer getAwaygoals(){
+		if(awaygoals != -1){
+			return awaygoals;
+		}
+		else{
+			return null; 
+		}
+	}
+	
+	/**
+	 * 
+	 * @return gives the hometeam
+	 */
+	public String getHometeam(){
+		return hometeam.getTeamName();
+	}
+	
+	/**
+	 * 
+	 * @return gives the awayteam
+	 */
+	public String getAwayteam(){
+		return awayteam.getTeamName();
 	}
 	
 	/**
@@ -226,5 +253,11 @@ public class Match {
 			}
 		}
 		return false;
+	}
+	public int getPlayround() {
+		return playround;
+	}
+	public void setPlayround(int playround) {
+		this.playround = playround;
 	}
 }

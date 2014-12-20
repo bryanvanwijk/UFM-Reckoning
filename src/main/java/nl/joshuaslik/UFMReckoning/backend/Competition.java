@@ -61,7 +61,7 @@ public class Competition {
 		
 		for(i=0; i < (users.size()*(users.size()-1)/(users.size()/2)); i++){
 			Playround newplayround = new Playround();
-			
+			newplayround.setPlayroundnr(i+1);
 			for(j=0; j < (users.size()/2); j++){
 				if(k == users.size()){
 					usersindelen.remove(user);
@@ -69,7 +69,9 @@ public class Competition {
 					usersindelen.add(user);
 					k = 0;
 				}
-				newplayround.addmatch(new Match(usersindelen.get(k).getTeam(), usersindelen.get(users.size()-1-k).getTeam()));
+				Match newmatch = new Match(usersindelen.get(k).getTeam(), usersindelen.get(users.size()-1-k).getTeam());
+				newmatch.setPlayround(i+1);
+				newplayround.addmatch(newmatch);
 				k = k+1;
 				
 				
@@ -107,8 +109,13 @@ public class Competition {
 	 * @param i between 0 and total playrounds
 	 * @return playround i of this competition stating from 0
 	 */
-	public Playround getPlayround(int i){
-		return playrounds.get(i);
+	public Playround getPlayround(int nr){
+		for(int i =0; i<playrounds.size(); i++){
+			if(playrounds.get(i).getPlayroundnr() == nr){
+				return playrounds.get(i);	
+			}
+		}
+		return null;
 	}
 	
 	/**

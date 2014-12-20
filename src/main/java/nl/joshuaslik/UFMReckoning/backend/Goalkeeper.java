@@ -44,7 +44,7 @@ public class Goalkeeper extends Player {
 		if (other instanceof Goalkeeper) {
 			Goalkeeper that = (Goalkeeper) other;
 			if (this.getID().equals(that.getID())
-					&& this.getfullName().equals(that.getfullName())
+					&& this.getFullName().equals(that.getFullName())
 					&& this.getCountry().equals(that.getCountry())
 					&& this.getPrice() == that.getPrice()
 					&& this.reflexes == that.reflexes

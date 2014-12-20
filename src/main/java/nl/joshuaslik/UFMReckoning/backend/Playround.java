@@ -10,10 +10,22 @@ import java.util.ArrayList;
 public class Playround {
 	
 	ArrayList<Match> matches = new ArrayList<Match>();
+	int playroundnr;
 	
 	public Playround(){
 		
 	}
+	
+	public void setPlayroundnr(int nr){
+		playroundnr = nr;
+	}
+	
+	public int getPlayroundnr(){
+		return playroundnr;
+	}
+	
+	
+	
 	
 	/**
 	 * Determines the result of this playround

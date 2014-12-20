@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.canvas.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
 
-<Pane fx:controller="nl.joshuaslik.UFMReckoning.gui.game.CompetitionController" id="pane" styleClass="pane" stylesheets="@Competition.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-	<children>
-		<!-- Bottom bar -->
-		<fx:include fx:id="bottommenubar" source="GameBottomMenuBar.fxml" />
-		<Pane>
-			<children>
-				<Button id="btn_Games" layoutX="90" layoutY="430" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Games" text="Games" onAction="#handleGames"/>
-				<Button id="btn_Ranking" layoutX="90" layoutY="530" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_Ranking" text="Ranking" onAction="#handleRanking"/>
-				<Button id="btn_ShowNextGame" layoutX="90" layoutY="630" mnemonicParsing="false" prefHeight="100" prefWidth="400" styleClass="btn_ShowNextGame" text="Next Game" onAction="#handleShowNextGame"/>
-			</children>
-		</Pane>
-	</children>
-</Pane>
-
+<AnchorPane prefHeight="692.0" prefWidth="1232.0" styleClass="pane" stylesheets="@Competition.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.CompetitionController">
+   <children>
+      <Button id="btn_ShowNextGame" layoutX="79.0" layoutY="369.0" mnemonicParsing="false" onAction="#handleShowNextGame" prefHeight="100" prefWidth="400" styleClass="btn_ShowNextGame" text="Next Game" />
+      <Button id="btn_Ranking" layoutX="79.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleRanking" prefHeight="100" prefWidth="400" styleClass="btn_Ranking" text="Ranking" />
+      <Button id="btn_Games" layoutX="79.0" layoutY="169.0" mnemonicParsing="false" onAction="#handleGames" prefHeight="100.0" prefWidth="400.0" styleClass="btn_Games" text="Games" />
+   </children>
+</AnchorPane>

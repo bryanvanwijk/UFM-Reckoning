@@ -40,7 +40,7 @@ public abstract class Player {
 		return playerID;
 	}
 
-	public String getfullName() {
+	public String getFullName() {
 		return fullName;
 	}
 
@@ -52,7 +52,7 @@ public abstract class Player {
 		return price;
 	}
 
-	public String getlastName() {
+	public String getLastName() {
 		return lastName;
 	}
 
