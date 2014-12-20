@@ -55,7 +55,7 @@ public class TeamBuilderControl {
     @FXML
     private void initialize() {
     	teamname.setText(team.getTeamName());
-    	ArrayList<Player> playerslist = team.getActivePlayers();
+    	ArrayList<Player> playerslist = team.getAllplayers();
     	players = FXCollections.observableArrayList(playerslist);
     	playertable.setItems(players);
     	

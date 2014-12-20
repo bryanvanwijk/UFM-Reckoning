@@ -456,7 +456,15 @@ public class Team {
 		
 		result = result/getTotalPlayers();
 		averageStamina = result;
-	}	
+	}
+	
+	public ArrayList<Player> getAllplayers(){
+		ArrayList<Player> res = getActivePlayers();
+		for(int i =0; i<getBenchPlayers().size(); i++){
+			res.add(getBenchPlayers().get(i));
+		}
+		return res;
+	}
 	
 	public int getAverageStamina() {
 		return averageStamina;

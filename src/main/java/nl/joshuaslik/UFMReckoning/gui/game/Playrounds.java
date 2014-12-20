@@ -12,12 +12,14 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import javafx.util.Callback;
 import nl.joshuaslik.UFMReckoning.backend.Game;
 import nl.joshuaslik.UFMReckoning.backend.Match;
 import nl.joshuaslik.UFMReckoning.backend.Playround;
@@ -66,6 +68,29 @@ public class Playrounds {
 		
 		 competitiontable.getSortOrder().add(playround);
         playround.setSortable(true);
+        
+        competitiontable.setRowFactory(new Callback<TableView<Match>, TableRow<Match>>() {
+            @Override public TableRow<Match> call(TableView<Match> param) {
+                return new TableRow<Match>() {
+                    @Override protected void updateItem(Match item, boolean empty) {
+                        super.updateItem(item, empty);
+                        ArrayList<Integer> indexteam = new ArrayList<Integer>();
+                        for(int i =0; i<competitiontable.getItems().size(); i++){
+                        	if(competitiontable.getItems().get(i).getHometeam().equals(MainGame.game.getUser().getTeam().getTeamName())
+                        			||competitiontable.getItems().get(i).getAwayteam().equals(MainGame.game.getUser().getTeam().getTeamName())){
+                        		indexteam.add(i);
+                        	}
+                        }
+                        System.out.println(indexteam.size());
+                        if (indexteam.contains(getIndex())) {
+                            getStyleClass().add("highlightedRow");
+                        } else {
+                            getStyleClass().remove("highlightedRow");
+                        }
+                    }
+                };
+            }
+        });
     }
     
 
