@@ -11,9 +11,9 @@
         <columns>
           <TableColumn fx:id="teamColumn" prefWidth="187.0" text="Team" />
           <TableColumn fx:id="coachColumn" prefWidth="194.0" text="Coach" />
-            <TableColumn minWidth="0.0" prefWidth="207.0" text="Average Attack" />
-            <TableColumn prefWidth="231.0" text="Average Defence" />
-            <TableColumn minWidth="0.0" prefWidth="265.0" text="Average Stagmina" />
+            <TableColumn fx:id="averageattack" minWidth="0.0" prefWidth="207.0" text="Average Attack" />
+            <TableColumn fx:id="averagedefence" prefWidth="231.0" text="Average Defence" />
+            <TableColumn fx:id="averagestamina" minWidth="0.0" prefWidth="265.0" text="Average Stamina" />
             <TableColumn minWidth="0.0" prefWidth="183.0" text="Total Players" />
             <TableColumn minWidth="0.0" prefWidth="245.0" text="Team value" />
         </columns>

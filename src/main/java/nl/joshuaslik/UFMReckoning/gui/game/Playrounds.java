@@ -64,25 +64,16 @@ public class Playrounds {
         // Listen for selection changes 
 		competitiontable.getSelectionModel().selectedItemProperty().addListener(
 				(observable, oldValue, newValue) -> selectedMatch(newValue));
-		playround.setSortType(TableColumn.SortType.ASCENDING);
 		
-		 competitiontable.getSortOrder().add(playround);
+		competitiontable.getSortOrder().add(playround);
         playround.setSortable(true);
-        
+       
         competitiontable.setRowFactory(new Callback<TableView<Match>, TableRow<Match>>() {
             @Override public TableRow<Match> call(TableView<Match> param) {
                 return new TableRow<Match>() {
                     @Override protected void updateItem(Match item, boolean empty) {
                         super.updateItem(item, empty);
-                        ArrayList<Integer> indexteam = new ArrayList<Integer>();
-                        for(int i =0; i<competitiontable.getItems().size(); i++){
-                        	if(competitiontable.getItems().get(i).getHometeam().equals(MainGame.game.getUser().getTeam().getTeamName())
-                        			||competitiontable.getItems().get(i).getAwayteam().equals(MainGame.game.getUser().getTeam().getTeamName())){
-                        		indexteam.add(i);
-                        	}
-                        }
-                        System.out.println(indexteam.size());
-                        if (indexteam.contains(getIndex())) {
+                        if (getItem() != null && getItem().contains(MainGame.game.getUser().getTeam())) {
                             getStyleClass().add("highlightedRow");
                         } else {
                             getStyleClass().remove("highlightedRow");
@@ -91,6 +82,7 @@ public class Playrounds {
                 };
             }
         });
+
     }
     
 

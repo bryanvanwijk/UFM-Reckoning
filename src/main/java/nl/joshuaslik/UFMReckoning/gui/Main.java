@@ -32,7 +32,7 @@ public class Main extends Application {
 		primaryStage.setFullScreen(true);
 		primaryStage.getIcons().add(new Image("file:recources/images/Address_book.png"));
 		primaryStage.setTitle("Ultimate Football Manager");
-	
+		primaryStage.setFullScreenExitKeyCombination(KeyCombination.NO_MATCH);
 		Scene scene = new Scene(rootLayout);
         primaryStage.setScene(scene);
         primaryStage.show();

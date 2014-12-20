@@ -53,6 +53,8 @@ public class Competition {
 		int i = 0;
 		int j = 0;
 		int k = 0;
+		int p=0;
+		int round = 0;
 		ArrayList<User> usersindelen = users;
 		Collections.shuffle(usersindelen);
 		User user = usersindelen.get(0);
@@ -61,7 +63,14 @@ public class Competition {
 		
 		for(i=0; i < (users.size()*(users.size()-1)/(users.size()/2)); i++){
 			Playround newplayround = new Playround();
-			newplayround.setPlayroundnr(i+1);
+			if(i % 2 == 0){
+				round = p +1;
+			}
+			else if(i % 2 != 0){
+				round = (users.size()*(users.size()-1)/(users.size()/2)) - (p);
+				p = p + 1;
+			}
+			newplayround.setPlayroundnr(round);
 			for(j=0; j < (users.size()/2); j++){
 				if(k == users.size()){
 					usersindelen.remove(user);
@@ -70,14 +79,13 @@ public class Competition {
 					k = 0;
 				}
 				Match newmatch = new Match(usersindelen.get(k).getTeam(), usersindelen.get(users.size()-1-k).getTeam());
-				newmatch.setPlayround(i+1);
+				newmatch.setPlayround(round);
 				newplayround.addmatch(newmatch);
 				k = k+1;
 				
 				
 			}
 			playrounds.add(newplayround);
-			Collections.shuffle(playrounds);
 		}
 	}
 	

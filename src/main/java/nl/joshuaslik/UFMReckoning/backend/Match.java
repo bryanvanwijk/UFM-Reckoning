@@ -260,4 +260,14 @@ public class Match {
 	public void setPlayround(int playround) {
 		this.playround = playround;
 	}
+	
+	public boolean contains(Team team){
+		if(hometeam.equals(team)){
+			return true;
+		}
+		else if(awayteam.equals(team)){
+			return true;
+		}
+		return false;
+	}
 }

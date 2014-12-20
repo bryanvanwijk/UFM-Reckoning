@@ -31,6 +31,12 @@ public class NewGameController {
 	    private TableColumn<Team, String> teamColumn;
 	    @FXML
 	    private TableColumn<Team, String> coachColumn;
+	    @FXML
+	    private TableColumn<Team, String> averagedefence;
+	    @FXML
+	    private TableColumn<Team, String> averagestamina;
+	    @FXML
+	    private TableColumn<Team, String> averageattack;
 	    
 	    /**
 	     * Initializes the controller class. This method is automatically called
@@ -46,6 +52,12 @@ public class NewGameController {
 					"teamName"));
 			coachColumn.setCellValueFactory(new PropertyValueFactory<Team, String>(
 					"coachName"));
+			averagedefence.setCellValueFactory(new PropertyValueFactory<Team, String>(
+					"averageDefencePower"));
+			averagestamina.setCellValueFactory(new PropertyValueFactory<Team, String>(
+					"averageStamina"));
+			averageattack.setCellValueFactory(new PropertyValueFactory<Team, String>(
+					"averageAttackPower"));
 	    
 	        // Listen for selection changes 
 			teamtable.getSelectionModel().selectedItemProperty().addListener(
