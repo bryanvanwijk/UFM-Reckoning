@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
@@ -67,16 +68,57 @@ public class Playrounds {
 		
 		competitiontable.getSortOrder().add(playround);
         playround.setSortable(true);
-       
+        /**
+        home.setCellFactory(column -> {
+        	return new TableCell<Match, String>(){
+        		@Override
+        		protected void updateItem(String item, boolean empty){
+        			super.updateItem(item, empty);
+        			if(item == null || empty){
+        				setText(null);
+        				setStyle("");
+        			} else {
+        				setText(item);
+        				if(item.equals(MainGame.game.getUser().getTeam().getTeamName())){
+        					setStyle("-fx-background-color: yellow");
+        				}
+        				else{
+        					setStyle("");
+        				}
+        			}
+        		}
+        	};
+        });
+        away.setCellFactory(column -> {
+        	return new TableCell<Match, String>(){
+        		@Override
+        		protected void updateItem(String item, boolean empty){
+        			super.updateItem(item, empty);
+        			if(item == null || empty){
+        				setText(null);
+        				setStyle("");
+        			} else {
+        				setText(item);
+        				if(item.equals(MainGame.game.getUser().getTeam().getTeamName())){
+        					setStyle("-fx-background-color: yellow");
+        				}
+        				else{
+        					setStyle("");
+        				}
+        			}
+        		}
+        	};
+        });
+        */
         competitiontable.setRowFactory(new Callback<TableView<Match>, TableRow<Match>>() {
             @Override public TableRow<Match> call(TableView<Match> param) {
                 return new TableRow<Match>() {
                     @Override protected void updateItem(Match item, boolean empty) {
                         super.updateItem(item, empty);
                         if (getItem() != null && getItem().contains(MainGame.game.getUser().getTeam())) {
-                            getStyleClass().add("highlightedRow");
+                            setStyle("-fx-background-color: yellow");
                         } else {
-                            getStyleClass().remove("highlightedRow");
+                           setStyle("");
                         }
                     }
                 };
