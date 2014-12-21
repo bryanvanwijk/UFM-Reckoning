@@ -230,8 +230,8 @@ public class Game {
 	 *
 	 */
 	public LinkedHashMap<String, String> resultplayround(int round) {
-		ArrayList<Match> matches = getPlayround(round - 1).getMatches();
-		getPlayround(round - 1).determineResultPlayround();
+		ArrayList<Match> matches = getPlayround(round).getMatches();
+		this.getPlayround(round).determineResultPlayround();
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		for (int i = 0; i < matches.size(); i++) {
 			Match match = matches.get(i);
