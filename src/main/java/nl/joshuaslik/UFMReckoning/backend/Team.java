@@ -16,7 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName, id;
-	//private Formation formation;
+	private Formation formation;
 	private int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	private int attackPower, defencePower, stamina = 0;
 	private int averageAttackPower, averageDefencePower, averageStamina;
@@ -377,18 +377,42 @@ public class Team {
 	 * Change the type of formation of the team
 	 * choos out 442
 	 */
-//	public void changeFormationType(int type){
-//		if(type ==442){
-//			for(int i =0; i < activePlayers.size(); i++){
-//				setPlayerBench(activePlayers.get(i));
-//			}
-//			formation = new Form442(this);
-//		}
-//	}
+	public void changeFormationType(int type){
+		if(type == 442){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form442(this);
+		}
+		else if(type == 433){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form433(this);
+		}
+		else if(type == 532){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form532(this);
+		}
+		else if(type == 4321){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form4321(this);
+		}
+		else if(type == 343){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form343(this);
+		}
+	}
 	
-//	public Formation getFormation(){
-//		return formation;
-//	}
+	public Formation getFormation(){
+		return formation;
+	}
 
 	public int getAttackPower() {
 		return attackPower;

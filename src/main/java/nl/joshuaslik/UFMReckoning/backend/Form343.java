@@ -11,54 +11,43 @@ package nl.joshuaslik.UFMReckoning.backend;
  * RM is right midfield player
  * LW is left wing player
  * RW is right wing player
+ * ORM is offensive right midfield
+ * OLM is offensive left midfield
+ * st is 
  */
 
-public class Form442 extends Formation {
+public class Form343 extends Formation {
 		
-	private Fieldplayer CB1;
-	private Fieldplayer CB2;
+	private Fieldplayer CB;
 	private Fieldplayer RB;
 	private Fieldplayer LB;
 	private Fieldplayer CM1;
 	private Fieldplayer CM2;
 	private Fieldplayer LM;
 	private Fieldplayer RM;
-	private Fieldplayer LW;
 	private Fieldplayer RW;
+	private Fieldplayer LW;
+	private Fieldplayer ST;
 	
-	public Form442(Team team){
+	public Form343(Team team){
 		super(team);
 	}
 	
 	/**
-	 * Set the Centralback 1
+	 * Set the Centralback
 	 * @param new CB1
 	 * @return old CB1
 	 */
-	public Fieldplayer setCB1(Fieldplayer CB1){
-		Fieldplayer tmp = this.CB1;
+	public Fieldplayer setCB(Fieldplayer CB){
+		Fieldplayer tmp = this.CB;
 		if(tmp != null){
 			team.setPlayerBench(tmp);
 		}
-		this.CB1 = CB1;
-		team.setPlayerActive(CB1);
+		this.CB = CB;
+		team.setPlayerActive(CB);
 		return tmp;
 	}
-	
-	/**
-	 * Set the Centralback 2
-	 * @param new CB1
-	 *  @retun old CB1
-	 */
-	public Fieldplayer setCB2(Fieldplayer CB2){
-		Fieldplayer tmp = this.CB2;
-		if(tmp != null){
-			team.setPlayerBench(tmp);
-		}
-		this.CB2 = CB2;
-		team.setPlayerActive(CB2);
-		return tmp;
-	}
+
 	
 	/**
 	 * Set the rightback
@@ -106,7 +95,7 @@ public class Form442 extends Formation {
 	}
 	
 	/**
-	 * Set the Central midfield 1
+	 * Set the Central midfield 2
 	 * @param new CM2
 	 *  @retun old CM2
 	 */
@@ -119,6 +108,7 @@ public class Form442 extends Formation {
 		team.setPlayerActive(CM2);
 		return tmp;
 	}
+	
 	
 	/**
 	 * Set the left midfield
@@ -151,9 +141,9 @@ public class Form442 extends Formation {
 	}
 	
 	/**
-	 * Set the left Wing
+	 * Set the left wing
 	 * @param new LW
-	 *  @retun old LW
+	 * @retun old LW
 	 */
 	public Fieldplayer setLW(Fieldplayer LW){
 		Fieldplayer tmp = this.LW;
@@ -166,17 +156,32 @@ public class Form442 extends Formation {
 	}
 	
 	/**
-	 * Set the right Wing
+	 * Set the right wing
 	 * @param new RW
-	 * @retun old RW
+	 *  @retun old RW
 	 */
-	public Fieldplayer setRW(Fieldplayer RW){
+	public Fieldplayer setORM(Fieldplayer RW){
 		Fieldplayer tmp = this.RW;
 		if(tmp != null){
 			team.setPlayerBench(tmp);
 		}
 		this.RW = RW;
 		team.setPlayerActive(RW);
+		return tmp;
+	}
+	
+	/**
+	 * Set the 
+	 * @param new ST
+	 * @retun old ST
+	 */
+	public Fieldplayer setST(Fieldplayer ST){
+		Fieldplayer tmp = this.ST;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
+		this.ST = ST;
+		team.setPlayerActive(ST);
 		return tmp;
 	}
 	
