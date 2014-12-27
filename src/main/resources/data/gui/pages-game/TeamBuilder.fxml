@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="697.0" prefWidth="1259.0" styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.TeamBuilderControl">
+<AnchorPane prefHeight="960.0" prefWidth="1920.0" styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.TeamBuilderControl">
    <children>
-      <TableView fx:id="playertable" layoutX="20.0" layoutY="115.0" opacity="0.85" prefHeight="521.0" prefWidth="405.0">
+      <TableView fx:id="playertable" layoutX="21.0" layoutY="238.0" opacity="0.85" prefHeight="713.0" prefWidth="825.0">
         <columns>
           <TableColumn fx:id="fullname" prefWidth="75.0" text="Name" />
           <TableColumn fx:id="country" prefWidth="114.0" text="Country" />
             <TableColumn fx:id="price" prefWidth="120.0" text="Price" />
         </columns>
       </TableView>
-      <Label fx:id="teamname" layoutX="14.0" layoutY="44.0" styleClass="teamname" text="TeamName" textFill="#e8142d">
-         <font>
-            <Font name="System Bold" size="27.0" />
-         </font>
-      </Label>
-      <Label fx:id="playerlabel" layoutX="460.0" layoutY="212.0" prefHeight="77.0" prefWidth="774.0" styleClass="selectedplayer" text="Player" textFill="#a10d0d">
-         <font>
-            <Font name="System Bold" size="53.0" />
-         </font>
-      </Label>
+      <ImageView fx:id="playerimg" fitHeight="313.0" fitWidth="329.0" layoutX="1335.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="teamimg" fitHeight="208.0" fitWidth="271.0" layoutX="21.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

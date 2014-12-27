@@ -14,6 +14,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import nl.joshuaslik.UFMReckoning.backend.Game;
 import nl.joshuaslik.UFMReckoning.backend.Player;
@@ -41,9 +43,9 @@ public class TeamBuilderControl {
     private TableColumn<Player, String> country;
     
     @FXML
-    private Label playerlabel;
+    private ImageView playerimg;
     @FXML
-    private Label teamname;
+    private ImageView teamimg;
     @FXML
     private TableColumn<Player, String> price;
 
@@ -54,7 +56,8 @@ public class TeamBuilderControl {
      */
     @FXML
     private void initialize() {
-    	teamname.setText(team.getTeamName());
+    	Image image = new Image("/data/base/teams/pictures/"+team.getid()+".png");
+    	teamimg.setImage(image);
     	ArrayList<Player> playerslist = team.getAllplayers();
     	players = FXCollections.observableArrayList(playerslist);
     	playertable.setItems(players);
@@ -73,7 +76,8 @@ public class TeamBuilderControl {
     
     public void selectedPlayer(Player player){
     	selectedplayer = player;
-    	playerlabel.setText(selectedplayer.getFullName());
+    	Image image = new Image("/data/base/players/pictures/"+selectedplayer.getID()+".png");
+    	playerimg.setImage(image);
     }
     
     public static void start(Game game) throws IOException {
