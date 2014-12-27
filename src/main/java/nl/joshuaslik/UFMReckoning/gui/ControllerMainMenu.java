@@ -2,13 +2,20 @@ package nl.joshuaslik.UFMReckoning.gui;
 
 import java.io.IOException;
 
+
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.input.InputEvent;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.control.Label;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 public class ControllerMainMenu {
 	
@@ -67,7 +74,18 @@ public class ControllerMainMenu {
 	protected void handleNewGame(ActionEvent event) throws IOException {
 		System.out.println("btn_NewGame pressed");
 		System.out.println(event.getSource());
-		
+		FXMLLoader loader = new FXMLLoader();
+		loader.setLocation(Class.class.getResource("/data/gui/pages-menu/ChooseUsernameDialog.fxml"));
+		AnchorPane page = (AnchorPane) loader.load();
+
+		// Create the dialog Stage.
+		Stage dialogStage = new Stage(StageStyle.UNDECORATED);
+		dialogStage.setTitle("Choose Username");
+		dialogStage.initModality(Modality.WINDOW_MODAL);
+		dialogStage.initOwner(Main.stage);
+		Scene scene = new Scene(page);
+		dialogStage.setScene(scene);
+		//dialogStage.show();
 		NewGameController.start();
 	}
 
