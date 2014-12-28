@@ -16,7 +16,7 @@ public class Team {
 	private ArrayList<Player> benchPlayers = new ArrayList<Player>();
 	private Player teamCaptain;
 	private String teamName, coachName, id;
-	//private Formation formation;
+	private Formation formation;
 	private int totalWins, totalLosses, totalDraws, points, goalsagainst, ranking, totalGoals = 0;
 	private int attackPower, defencePower, stamina = 0;
 	private int averageAttackPower, averageDefencePower, averageStamina;
@@ -369,7 +369,7 @@ public class Team {
 		averageAttackPower = result;
 	}
 	
-	public int getTotalAverageAttackPower() {
+	public int getAverageAttackPower() {
 		return averageAttackPower;
 	}
 	
@@ -377,18 +377,42 @@ public class Team {
 	 * Change the type of formation of the team
 	 * choos out 442
 	 */
-//	public void changeFormationType(int type){
-//		if(type ==442){
-//			for(int i =0; i < activePlayers.size(); i++){
-//				setPlayerBench(activePlayers.get(i));
-//			}
-//			formation = new Form442(this);
-//		}
-//	}
+	public void changeFormationType(int type){
+		if(type == 442){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form442(this);
+		}
+		else if(type == 433){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form433(this);
+		}
+		else if(type == 532){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form532(this);
+		}
+		else if(type == 4321){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form4321(this);
+		}
+		else if(type == 343){
+			for(int i = 0; i < activePlayers.size(); i++){
+				setPlayerBench(activePlayers.get(i));
+			}
+			formation = new Form343(this);
+		}
+	}
 	
-//	public Formation getFormation(){
-//		return formation;
-//	}
+	public Formation getFormation(){
+		return formation;
+	}
 
 	public int getAttackPower() {
 		return attackPower;
@@ -422,7 +446,7 @@ public class Team {
 		averageDefencePower = result;
 	}	
 	
-	public int getTotalAverageDefencePower() {
+	public int getAverageDefencePower() {
 		return averageDefencePower;
 	}
 	
@@ -456,7 +480,15 @@ public class Team {
 		
 		result = result/getTotalPlayers();
 		averageStamina = result;
-	}	
+	}
+	
+	public ArrayList<Player> getAllplayers(){
+		ArrayList<Player> res = getActivePlayers();
+		for(int i =0; i<getBenchPlayers().size(); i++){
+			res.add(getBenchPlayers().get(i));
+		}
+		return res;
+	}
 	
 	public int getAverageStamina() {
 		return averageStamina;

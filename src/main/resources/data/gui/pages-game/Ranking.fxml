@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="1080.0" prefWidth="1920.0" styleClass="pane" stylesheets="@Competition.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.RankingController">
+   <children>
+      <TableView fx:id="rankingtable" layoutX="498.0" layoutY="213.0" opacity="0.9" prefHeight="637.0" prefWidth="399.0">
+        <columns>
+          <TableColumn fx:id="nr" prefWidth="83.0" text="nr" />
+          <TableColumn fx:id="team" prefWidth="315.0" text="Team" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

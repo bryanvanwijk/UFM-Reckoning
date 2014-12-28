@@ -5,6 +5,8 @@ import java.io.IOException;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 
 /**5
@@ -15,12 +17,15 @@ import nl.joshuaslik.UFMReckoning.gui.Main;
 public class Competition {
 
 
-	public static void start() throws IOException {
-		Parent root = FXMLLoader.load(Class.class
-				.getResource("/data/gui/pages-game/Competition.fxml"));
-		Scene scene = new Scene(root, 1080, 1920);
-		Main.stage.setScene(scene);
-		Main.stage.setFullScreen(true);
+	public static void start() throws IOException {	
+		AnchorPane scene = (AnchorPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-game/Competition.fxml"));
+		AnchorPane topmenu = (AnchorPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-menu/TopMenu.fxml"));
+		Label label = (Label) topmenu.lookup("#title");
+		label.setText("Competition");
+		Main.setCenter(scene);
+		Main.setTop(topmenu);
+		AnchorPane bottom = (AnchorPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-game/GameBottomMenuBar.fxml"));
+		Main.setBottom(bottom);
 	}
 	
 	/*When pushing this button a new game has to start. In page shownextgame!!

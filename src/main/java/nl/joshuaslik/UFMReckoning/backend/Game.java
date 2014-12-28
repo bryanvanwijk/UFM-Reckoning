@@ -15,7 +15,7 @@ public class Game {
 	private ArrayList<User> users = new ArrayList<User>();
 	private Competition competition;
 	private LinkedHashMap<String, Player> players;
-	private int currentround = 1;
+	public int currentround = 1;
 
 	/**
 	 * Constructor
@@ -145,7 +145,7 @@ public class Game {
 	 */
 	public Player getPlayerByName(String name) {
 		for(String key: players.keySet()){
-			if(players.get(key).getName().equals(name)){
+			if(players.get(key).getFullName().equals(name)){
 				return players.get(key);
 			}
 		}
@@ -212,14 +212,14 @@ public class Game {
 	 * currentround
 	 */
 	public LinkedHashMap<String, String> resultplayround() {
-		ArrayList<Match> matches = getPlayround(currentround - 1).getMatches();
-		getPlayround(currentround - 1).determineResultPlayround();
+		ArrayList<Match> matches = getPlayround(currentround).getMatches();
+		getPlayround(currentround).determineResultPlayround();
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		for (int i = 0; i < matches.size(); i++) {
 			Match match = matches.get(i);
 			result.put(match.getHomeTeam().getTeamName() + " - "
-					+ match.getAwayTeam().getTeamName(), match.gethomegoals()
-					+ " - " + match.getawaygoals());
+					+ match.getAwayTeam().getTeamName(), match.getHomegoals()
+					+ " - " + match.getAwaygoals());
 		}
 		currentround = currentround + 1;
 		return result;
@@ -230,14 +230,14 @@ public class Game {
 	 *
 	 */
 	public LinkedHashMap<String, String> resultplayround(int round) {
-		ArrayList<Match> matches = getPlayround(round - 1).getMatches();
-		getPlayround(round - 1).determineResultPlayround();
+		ArrayList<Match> matches = getPlayround(round).getMatches();
+		this.getPlayround(round).determineResultPlayround();
 		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
 		for (int i = 0; i < matches.size(); i++) {
 			Match match = matches.get(i);
 			result.put(match.getHomeTeam().getTeamName() + " - "
-					+ match.getAwayTeam().getTeamName(), match.gethomegoals()
-					+ " - " + match.getawaygoals());
+					+ match.getAwayTeam().getTeamName(), match.getHomegoals()
+					+ " - " + match.getAwaygoals());
 		}
 		return result;
 	}

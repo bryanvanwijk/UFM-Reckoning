@@ -9,20 +9,14 @@ public class CompetitionController {
 	
 	@SuppressWarnings("unused")
 	@FXML
-	protected void handleGames(ActionEvent event) throws IOException {
-		Games.start();
+	protected void handlePlayrounds(ActionEvent event) throws IOException {
+		Playrounds.start();
 	}
 
 	@SuppressWarnings("unused")
 	@FXML
 	protected void handleRanking(ActionEvent event) throws IOException {
-		Ranking.start();
-	}
-
-	@SuppressWarnings("unused")
-	@FXML
-	protected void handleShowNextGame(ActionEvent event) throws IOException {
-		ShowNextGame.start();
+		RankingController.start();
 	}
 
 }

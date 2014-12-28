@@ -81,7 +81,7 @@ public class Playroundtest {
 		Match match = new Match(team1, team2);
 		playround1.addmatch(match);
 		playround1.determineResultPlayround();
-		assertNotSame(playround1.getMatches().get(0).gethomegoals(), -1);
+		assertNotSame(playround1.getMatches().get(0).getHomegoals(), -1);
 	}
 	
 	

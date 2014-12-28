@@ -11,22 +11,25 @@ package nl.joshuaslik.UFMReckoning.backend;
  * RM is right midfield player
  * LW is left wing player
  * RW is right wing player
+ * ORM is offensive right midfield
+ * OLM is offensive left midfield
+ * st is 
  */
 
-public class Form442 extends Formation {
+public class Form4321 extends Formation {
 		
 	private Fieldplayer CB1;
 	private Fieldplayer CB2;
 	private Fieldplayer RB;
 	private Fieldplayer LB;
-	private Fieldplayer CM1;
-	private Fieldplayer CM2;
+	private Fieldplayer CM;
 	private Fieldplayer LM;
 	private Fieldplayer RM;
-	private Fieldplayer LW;
-	private Fieldplayer RW;
+	private Fieldplayer OLM;
+	private Fieldplayer ORM;
+	private Fieldplayer ST;
 	
-	public Form442(Team team){
+	public Form4321(Team team){
 		super(team);
 	}
 	
@@ -91,34 +94,20 @@ public class Form442 extends Formation {
 	}
 	
 	/**
-	 * Set the Central midfield 1
-	 * @param new CM1
-	 *  @retun old CM1
+	 * Set the Central midfield 
+	 * @param new CM
+	 *  @retun old CM
 	 */
-	public Fieldplayer setCM1(Fieldplayer CM1){
-		Fieldplayer tmp = this.CM1;
+	public Fieldplayer setCM1(Fieldplayer CM){
+		Fieldplayer tmp = this.CM;
 		if(tmp != null){
 			team.setPlayerBench(tmp);
 		}
-		this.CM1 = CM1;
-		team.setPlayerActive(CM1);
+		this.CM = CM;
+		team.setPlayerActive(CM);
 		return tmp;
 	}
 	
-	/**
-	 * Set the Central midfield 1
-	 * @param new CM2
-	 *  @retun old CM2
-	 */
-	public Fieldplayer setCM2(Fieldplayer CM2){
-		Fieldplayer tmp = this.CM2;
-		if(tmp != null){
-			team.setPlayerBench(tmp);
-		}
-		this.CM2 = CM2;
-		team.setPlayerActive(CM2);
-		return tmp;
-	}
 	
 	/**
 	 * Set the left midfield
@@ -151,32 +140,47 @@ public class Form442 extends Formation {
 	}
 	
 	/**
-	 * Set the left Wing
-	 * @param new LW
-	 *  @retun old LW
+	 * Set the offensive left midfield
+	 * @param new OLM
+	 * @retun old OLM
 	 */
-	public Fieldplayer setLW(Fieldplayer LW){
-		Fieldplayer tmp = this.LW;
+	public Fieldplayer setOLM(Fieldplayer OLM){
+		Fieldplayer tmp = this.OLM;
 		if(tmp != null){
 			team.setPlayerBench(tmp);
 		}
-		this.LW = LW;
-		team.setPlayerActive(LW);
+		this.OLM = OLM;
+		team.setPlayerActive(OLM);
 		return tmp;
 	}
 	
 	/**
-	 * Set the right Wing
-	 * @param new RW
-	 * @retun old RW
+	 * Set the offensive right midfield 
+	 * @param new ORM
+	 *  @retun old ORM
 	 */
-	public Fieldplayer setRW(Fieldplayer RW){
-		Fieldplayer tmp = this.RW;
+	public Fieldplayer setORM(Fieldplayer ORM){
+		Fieldplayer tmp = this.ORM;
 		if(tmp != null){
 			team.setPlayerBench(tmp);
 		}
-		this.RW = RW;
-		team.setPlayerActive(RW);
+		this.ORM = ORM;
+		team.setPlayerActive(ORM);
+		return tmp;
+	}
+	
+	/**
+	 * Set the 
+	 * @param new ST
+	 * @retun old ST
+	 */
+	public Fieldplayer setST(Fieldplayer ST){
+		Fieldplayer tmp = this.ST;
+		if(tmp != null){
+			team.setPlayerBench(tmp);
+		}
+		this.ST = ST;
+		team.setPlayerActive(ST);
 		return tmp;
 	}
 	

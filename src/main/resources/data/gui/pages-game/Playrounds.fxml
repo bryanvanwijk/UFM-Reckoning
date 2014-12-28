@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="731.0" prefWidth="1298.0" styleClass="pane" stylesheets="@Competition.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.Playrounds">
+   <children>
+      <TableView fx:id="competitiontable" layoutX="557.0" layoutY="115.0" prefHeight="584.0" prefWidth="644.0">
+        <columns>
+          <TableColumn fx:id="playround" prefWidth="75.0" text="Playround" />
+          <TableColumn fx:id="home" prefWidth="103.0" text="Home" />
+            <TableColumn fx:id="away" prefWidth="75.0" text="Away" />
+            <TableColumn fx:id="homegoals" prefWidth="75.0" text="HomeGoals" />
+            <TableColumn fx:id="awaygoals" prefWidth="75.0" text="AwayGoals" />
+        </columns>
+      </TableView>
+      <Button layoutX="103.0" layoutY="248.0" mnemonicParsing="false" onAction="#handlenNextround" text="PlayNextRound" />
+   </children>
+</AnchorPane>
