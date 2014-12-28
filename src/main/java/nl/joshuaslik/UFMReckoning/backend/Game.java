@@ -6,8 +6,7 @@ import java.util.LinkedHashMap;
 /**
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>
  * @author Naomi de Ridder
- * @author <a href="http://www.bryangoulds.nl/" target="_blank">Bryan van
- *         Wijk</a>
+ * @author <a href="http://www.bryangoulds.nl/" target="_blank">Bryan van Wijk</a>
  *
  */
 public class Game {
@@ -102,6 +101,20 @@ public class Game {
 		for (int i = 0; i < users.size(); i++)
 			if (users.get(i).getUserName().equals(userName))
 				return users.get(i);
+		return null;
+	}
+	
+	/**
+	 * Get a User by Team
+	 * 
+	 * @param Team of the user to get
+	 * @return
+	 */
+	public User getUser(Team team) {
+		for (int i = 0; i < users.size(); i++)
+			if (users.get(i).getTeam().equals(team)){
+				return users.get(i);
+			}
 		return null;
 	}
 

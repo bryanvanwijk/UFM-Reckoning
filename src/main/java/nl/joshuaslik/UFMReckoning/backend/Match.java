@@ -1,5 +1,7 @@
 package nl.joshuaslik.UFMReckoning.backend;
 
+import nl.joshuaslik.UFMReckoning.gui.game.MainGame;
+
 /**
  * @author Bryan van Wijk
  * 
@@ -95,6 +97,7 @@ public class Match {
 			hometeam.addPoints(3);
 			hometeam.incTotalWins();
 			awayteam.incTotalLosses();
+			MainGame.game.getUser(hometeam).addMoney(20000);
 		}
 		else if(homegoals == awaygoals){
 			hometeam.addGoals(homegoals);
@@ -106,6 +109,8 @@ public class Match {
 			hometeam.incTotalDraws();
 			awayteam.incTotalDraws();
 			draw = true;
+			MainGame.game.getUser(hometeam).addMoney(10000);
+			MainGame.game.getUser(awayteam).addMoney(10000);
 		}
 		else{
 			winner = awayteam;
@@ -117,6 +122,7 @@ public class Match {
 			awayteam.addPoints(3);
 			hometeam.incTotalLosses();
 			awayteam.incTotalWins();
+			MainGame.game.getUser(awayteam).addMoney(20000);
 		}
 	
 	}

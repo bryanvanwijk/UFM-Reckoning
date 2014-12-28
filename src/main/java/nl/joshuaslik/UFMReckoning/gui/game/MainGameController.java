@@ -3,7 +3,10 @@ package nl.joshuaslik.UFMReckoning.gui.game;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.input.MouseEvent;
 import nl.joshuaslik.UFMReckoning.gui.MainMenu;
 
 /**
@@ -12,6 +15,14 @@ import nl.joshuaslik.UFMReckoning.gui.MainMenu;
  */
 public class MainGameController {
 
+	@FXML
+	private Label budgetlabel;
+	
+	@FXML
+	 private void initialize() {
+		budgetlabel.setText("Budget: " + MainGame.game.getUser().getBudget());
+	}
+	
 	@SuppressWarnings("unused")
 	@FXML
 	protected void handleQuitGame(ActionEvent event) throws IOException {
