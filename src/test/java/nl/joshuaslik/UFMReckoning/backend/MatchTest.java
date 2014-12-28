@@ -55,16 +55,7 @@ public class MatchTest {
 		assertFalse(match.equals(team1));
 	}
 	
-	@Test
-	public void testEquals3() {
-		Team team1 = new Team("ajax","ajax", "Frank de Boer");
-		Team team2 = new Team("ado", "ado", "Ronald de Boer");
-		Match match1 = new Match(team1, team2);
-		Match match2 = new Match(team2, team1);
-		match1.determineResult();
-		match2.determineResult();
-		assertFalse(match1.equals(match2));
-	}
+
 	
 	@Test
 	public void testEquals4() {

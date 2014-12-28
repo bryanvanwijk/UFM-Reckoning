@@ -32,20 +32,20 @@ public class SaveTest {
 		System.out.println();
 		game.getCompetition().check();
 		int j = 0;
-		for (j = 1; j <= game.getCompetition().getPlayrounds().size(); j++) {
-			LinkedHashMap<String, String> result = game.resultplayround(j);
-			for (String key : result.keySet()) {
-				System.out.println(key + "    " + result.get(key));
-			}
-			System.out.println("");
-		}
-		System.out.println(j - 1);
-		System.out.println();
-		game.getCompetition().ComputeStandings();
-		for (int i = 0; i < game.getUsers().size(); i++) {
-			System.out.println(game.getUsers().get(i).getTeam().getTeamName()
-					+ "-" + game.getUsers().get(i).getTeam().getRanking());
-		}
+		//for (j = 1; j <= game.getCompetition().getPlayrounds().size(); j++) {
+		//	LinkedHashMap<String, String> result = game.resultplayround(j);
+		//	for (String key : result.keySet()) {
+		//		System.out.println(key + "    " + result.get(key));
+		//	}
+		//	System.out.println("");
+		//}
+		//System.out.println(j - 1);
+		//System.out.println();
+		//game.getCompetition().ComputeStandings();
+		//for (int i = 0; i < game.getUsers().size(); i++) {
+		//	System.out.println(game.getUsers().get(i).getTeam().getTeamName()
+		//			+ "-" + game.getUsers().get(i).getTeam().getRanking());
+		//}
 	}
 
 }

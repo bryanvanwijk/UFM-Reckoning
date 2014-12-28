@@ -73,16 +73,7 @@ public class Playroundtest {
 		assertEquals(playround1.getMatches().size(), 1);
 	}
 	
-	@Test
-	public void testdetermineResultPlayround() {
-		Playround playround1 = new Playround();
-		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
-		Team team2 = new Team("ado", "ado", "Frank de Boer");
-		Match match = new Match(team1, team2);
-		playround1.addmatch(match);
-		playround1.determineResultPlayround();
-		assertNotSame(playround1.getMatches().get(0).getHomegoals(), -1);
-	}
+
 	
 	
 }
