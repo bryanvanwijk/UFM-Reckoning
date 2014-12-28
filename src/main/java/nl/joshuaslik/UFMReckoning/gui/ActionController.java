@@ -12,26 +12,6 @@ import nl.joshuaslik.UFMReckoning.gui.game.MainGame;
  *
  */
 public class ActionController {
-
-	@FXML
-	protected void handleStartGame(ActionEvent event) throws IOException {
-		System.out.println("btn_StartGame pressed");
-		System.out.println(event.getSource());
-		StartGame.start();
-	}
-
-	@FXML
-	protected void handleNewGame(ActionEvent event) throws IOException {
-		System.out.println("btn_NewGame pressed");
-		System.out.println(event.getSource());
-		NewGame.start();
-	}
-
-	@FXML
-	protected void handleLoadGame(ActionEvent event) {
-		System.out.println("btn_LoadGame pressed");
-		System.out.println(event.getSource());
-	}
 	
 	private void initialize() {
 	    

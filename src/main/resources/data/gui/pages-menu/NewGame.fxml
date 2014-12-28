@@ -1,27 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<<<<<<< HEAD
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.canvas.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" styleClass="pane" stylesheets="@NewGame.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <StackPane layoutX="206.0" layoutY="158.0" prefHeight="150.0" prefWidth="200.0">
-         <children>
-            <Button mnemonicParsing="false" text="Submit">
-               <font>
-                  <Font name="Narkisim" size="32.0" />
-               </font>
-            </Button>
-         </children></StackPane>
-   </children>
-</Pane>
-=======
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -50,4 +27,3 @@
       </HBox>
    </children>
 </AnchorPane>
->>>>>>> 599249a00a8cbc2bd04953a7e2ae05e0f6b9e4fd
