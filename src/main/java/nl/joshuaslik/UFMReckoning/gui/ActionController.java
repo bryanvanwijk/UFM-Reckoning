@@ -21,7 +21,7 @@ public class ActionController {
 	}
 
 	@FXML
-	protected void handleNewGame(ActionEvent event) {
+	protected void handleNewGame(ActionEvent event) throws IOException {
 		System.out.println("btn_NewGame pressed");
 		System.out.println(event.getSource());
 		NewGame.start();

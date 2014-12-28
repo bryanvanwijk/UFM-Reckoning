@@ -82,7 +82,11 @@ public class NewGame2 {
 			@Override
 			public void handle(ActionEvent arg0) {
 				t.setText("Loading...");
-				NewGame.start();
+				try {
+					NewGame.start();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 			}
 		});
 

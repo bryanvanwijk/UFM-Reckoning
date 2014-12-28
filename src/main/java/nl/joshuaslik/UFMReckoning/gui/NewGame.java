@@ -4,9 +4,12 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -17,7 +20,7 @@ public class NewGame {
 	 * Start
 	 * Text, buttons en textfield + events die bij de scene horen
 	 */
-	public static void start() {
+	public static void start() throws IOException {
 		
 		Text t = new Text(400, 300, "Enter your name");
 		t.setFont(Font.font("Maiandra GD", FontWeight.BOLD, 60));
@@ -62,8 +65,9 @@ public class NewGame {
 			}
 		});
 
-		VBox root = new VBox();
-		root.getChildren().addAll(t, txt, btn_Submit, btn_Return, t2);
+		Pane root = FXMLLoader.load(Class.class.getResource("/data/gui/pages-menu/NewGame.fxml"));
+		//VBox root = new VBox();
+		//root.getChildren().addAll(t, txt, btn_Submit, btn_Return, t2);
 
 		Scene scene = new Scene(root, 1080, 1920);
 		scene.getStylesheets().add("/data/GUI/pages-menu/NewGame.css");

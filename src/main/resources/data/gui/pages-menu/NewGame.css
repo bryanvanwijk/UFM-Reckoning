@@ -1,12 +1,7 @@
 /*@import url("../fonts.css");*/
 
-@font-face {
-  font-family: 'Quicksand';
-  src: url(fonts/Quicksand.otf);
-}
-
 .pane {
-	-fx-background-image: url("../img/background.png");
+	-fx-background-image: url("../img/grassy.png");
 	-fx-background-size: 100%;
 	-fx-background-repeat: stretch;
 }
