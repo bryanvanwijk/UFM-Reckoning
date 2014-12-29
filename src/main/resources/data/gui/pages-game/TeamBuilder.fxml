@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="960.0" prefWidth="1920.0" styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.TeamBuilderControl">
+<AnchorPane styleClass="pane" stylesheets="@TeamBuilder.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.TeamBuilderControl">
    <children>
-      <TableView fx:id="playertable" layoutX="21.0" layoutY="238.0" opacity="0.85" prefHeight="713.0" prefWidth="825.0">
+      <TableView fx:id="playertable" opacity="0.85" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="150.0">
         <columns>
-          <TableColumn fx:id="fullname" prefWidth="75.0" text="Name" />
-          <TableColumn fx:id="country" prefWidth="114.0" text="Country" />
+          <TableColumn fx:id="fullname" prefWidth="104.0" text="Name" />
+          <TableColumn fx:id="country" prefWidth="90.0" text="Country" />
             <TableColumn fx:id="price" prefWidth="120.0" text="Price" />
         </columns>
       </TableView>
-      <ImageView fx:id="playerimg" fitHeight="313.0" fitWidth="329.0" layoutX="1335.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fx:id="teamimg" fitHeight="208.0" fitWidth="271.0" layoutX="21.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerimg" fitHeight="160.0" fitWidth="160.0" layoutX="1335.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="200.0" />
+      <ImageView fx:id="teamimg" fitHeight="150.0" fitWidth="150.0" layoutX="21.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0" />
    </children>
 </AnchorPane>

@@ -7,16 +7,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="60.0" prefWidth="1098.0" style="-fx-background-color: black;" stylesheets="@GameBottomMenuBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController">
+<AnchorPane style="-fx-background-color: black;" stylesheets="@GameBottomMenuBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.MainGameController">
    <children>
-      <Button layoutX="591.0" onAction="#handleQuitGame" prefHeight="60" prefWidth="231.0" styleClass="bottombarbutton" text="Quit" />
-      <Button layoutX="391.0" prefHeight="60" prefWidth="200" styleClass="bottombarbutton" text="Save" />
-      <Button layoutX="191.0" onAction="#handleCompetition" prefHeight="60" prefWidth="200" styleClass="bottombarbutton" text="Competition" />
-      <Button layoutX="-9.0" onAction="#handleTeamBuilder" prefHeight="60" prefWidth="200" styleClass="bottombarbutton" text="Team" />
-      <Label fx:id="budgetlabel" layoutX="862.0" layoutY="12.0" prefHeight="36.0" prefWidth="224.0" textFill="#fffefe">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
+      <HBox>
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleTeamBuilder" styleClass="bottombarbutton" text="Team" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleCompetition" styleClass="bottombarbutton" text="Competition" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="bottombarbutton" text="Save" />
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onAction="#handleQuitGame" styleClass="bottombarbutton" text="Quit" />
+            <Label fx:id="budgetlabel" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" textFill="#fffefe">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

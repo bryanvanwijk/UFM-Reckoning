@@ -5,9 +5,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="692.0" prefWidth="1232.0" styleClass="pane" stylesheets="@Competition.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.CompetitionController">
+<AnchorPane styleClass="pane" stylesheets="@Competition.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.game.CompetitionController">
    <children>
-      <Button id="btn_Ranking" layoutX="79.0" layoutY="269.0" mnemonicParsing="false" onAction="#handleRanking" prefHeight="100" prefWidth="400" styleClass="btn_Ranking" text="Ranking" />
-      <Button id="btn_Games" layoutX="79.0" layoutY="169.0" mnemonicParsing="false" onAction="#handlePlayrounds" prefHeight="100.0" prefWidth="400.0" styleClass="btn_Games" text="Playrounds" />
+      <VBox layoutX="79.0" layoutY="-6.0" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <Button id="btn_Games" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handlePlayrounds" styleClass="btn_Games" text="Playrounds" />
+            <Button id="btn_Ranking" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleRanking" styleClass="btn_Ranking" text="Ranking" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
