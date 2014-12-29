@@ -13,6 +13,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Rectangle2D;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
@@ -20,6 +21,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Screen;
 
 public class NewGameController {
 	
@@ -89,6 +91,8 @@ public class NewGameController {
 	    	AnchorPane topmenu = (AnchorPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-menu/TopMenu.fxml"));
 			Label label = (Label) topmenu.lookup("#title");
 			label.setText("Loading....");
+			Rectangle2D visualBounds = Screen.getPrimary().getVisualBounds();
+			topmenu.setPrefWidth(visualBounds.getWidth());
 			Main.setTop(topmenu);
 			AnchorPane scene = (AnchorPane) FXMLLoader.load(Class.class.getResource("/data/gui/pages-menu/NewGame.fxml"));
 			label.setText("Choose a Team");
