@@ -46,10 +46,11 @@ public class Playrounds {
     private TableColumn<Match, String> homegoals;
     @FXML
     private TableColumn<Match, String> awaygoals;
-    
+    @FXML
+    private Label currentround;
     @FXML
     private void initialize() {
-    	
+    	currentround.setText("Current round: "+MainGame.game.currentround);
     	ObservableList<Match> matches = FXCollections.observableArrayList(getMatchList());
     	competitiontable.setItems(matches);
     	
@@ -160,7 +161,7 @@ public class Playrounds {
 	
 	@FXML
 	protected void handlenNextround(ActionEvent event) throws IOException {
-		System.out.println(MainGame.game.currentround);
+		
     	MainGame.game.resultplayround();
     	Playrounds.start();
 	}

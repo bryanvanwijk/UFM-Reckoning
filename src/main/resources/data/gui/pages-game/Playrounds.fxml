@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -16,11 +17,12 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="359.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="359.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="527.0" minHeight="10.0" prefHeight="16.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TableView fx:id="competitiontable" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <TableView fx:id="competitiontable" GridPane.columnIndex="2" GridPane.rowIndex="2">
               <columns>
                 <TableColumn fx:id="playround" prefWidth="75.0" text="Playround" />
                 <TableColumn fx:id="home" prefWidth="103.0" text="Home" />
@@ -32,11 +34,16 @@
                   <Insets right="25.0" />
                </GridPane.margin>
             </TableView>
-            <Button mnemonicParsing="false" onAction="#handlenNextround" text="PlayNextRound" GridPane.rowIndex="1">
+            <Button mnemonicParsing="false" onAction="#handlenNextround" text="PlayNextRound" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="10.0" />
                </GridPane.margin>
             </Button>
+            <Label fx:id="currentround" textFill="#ee0f0f" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
          </children>
       </GridPane>
    </children>

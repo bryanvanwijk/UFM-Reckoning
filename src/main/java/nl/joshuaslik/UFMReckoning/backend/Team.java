@@ -130,6 +130,16 @@ public class Team {
 		
 		calcAverageStats();
 	}
+	
+	public Goalkeeper getActiveGoalkeeper(){
+		Goalkeeper res = null;
+		for(int i = 0; i < activePlayers.size(); i++){
+			if(activePlayers.get(i) instanceof Goalkeeper){
+				return (Goalkeeper) activePlayers.get(i);
+			}
+		}
+		return res;
+	}
 
 	/**
 	 * Assigns the given player as the Team Captain

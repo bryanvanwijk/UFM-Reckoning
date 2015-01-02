@@ -225,16 +225,19 @@ public class Game {
 	 * currentround
 	 */
 	public LinkedHashMap<String, String> resultplayround() {
-		ArrayList<Match> matches = getPlayround(currentround).getMatches();
-		getPlayround(currentround).determineResultPlayround();
-		LinkedHashMap<String, String> result = new LinkedHashMap<String, String>();
-		for (int i = 0; i < matches.size(); i++) {
-			Match match = matches.get(i);
-			result.put(match.getHomeTeam().getTeamName() + " - "
-					+ match.getAwayTeam().getTeamName(), match.getHomegoals()
-					+ " - " + match.getAwaygoals());
+		LinkedHashMap<String, String> result = null;
+		if(currentround <= ((users.size()*(users.size()-1))/(users.size()/2))){
+			ArrayList<Match> matches = getPlayround(currentround).getMatches();
+			getPlayround(currentround).determineResultPlayround();
+			result = new LinkedHashMap<String, String>();
+			for (int i = 0; i < matches.size(); i++) {
+				Match match = matches.get(i);
+				result.put(match.getHomeTeam().getTeamName() + " - "
+						+ match.getAwayTeam().getTeamName(), match.getHomegoals()
+						+ " - " + match.getAwaygoals());
+			}
+			currentround = currentround + 1;
 		}
-		currentround = currentround + 1;
 		return result;
 	}
 
