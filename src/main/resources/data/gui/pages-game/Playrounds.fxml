@@ -34,14 +34,14 @@
                   <Insets right="25.0" />
                </GridPane.margin>
             </TableView>
-            <Button mnemonicParsing="false" onAction="#handlenNextround" text="PlayNextRound" GridPane.rowIndex="2">
+            <Button mnemonicParsing="false" onAction="#handlenNextround" text="Play next round" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets left="10.0" />
                </GridPane.margin>
             </Button>
-            <Label fx:id="currentround" textFill="#ee0f0f" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="currentround" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
-                  <Font name="System Bold" size="21.0" />
+                  <Font name="Verdana Bold" size="21.0" />
                </font>
             </Label>
          </children>

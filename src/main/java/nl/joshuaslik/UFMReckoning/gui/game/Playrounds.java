@@ -6,28 +6,19 @@ import java.util.ArrayList;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Scene;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableCell;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.util.Callback;
-import nl.joshuaslik.UFMReckoning.backend.Game;
 import nl.joshuaslik.UFMReckoning.backend.Match;
 import nl.joshuaslik.UFMReckoning.backend.Playround;
-import nl.joshuaslik.UFMReckoning.backend.Save;
-import nl.joshuaslik.UFMReckoning.backend.Team;
 import nl.joshuaslik.UFMReckoning.gui.Main;
 
 public class Playrounds {

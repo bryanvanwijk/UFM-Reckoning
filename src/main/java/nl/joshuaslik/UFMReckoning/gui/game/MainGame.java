@@ -2,11 +2,7 @@ package nl.joshuaslik.UFMReckoning.gui.game;
 
 import java.io.IOException;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Label;
-import javafx.scene.layout.AnchorPane;
 import nl.joshuaslik.UFMReckoning.backend.Game;
-import nl.joshuaslik.UFMReckoning.gui.Main;
 
 /**
  * @author <a href="http://www.joshuaslik.nl/" target="_blank">Joshua Slik</a>

@@ -13,9 +13,6 @@ import nl.joshuaslik.UFMReckoning.gui.game.MainGame;
  */
 public class ActionController {
 	
-	private void initialize() {
-	    
-	}
 
 	@FXML
 	protected void handleReturnMainMenu(ActionEvent event) throws IOException {
@@ -25,10 +22,6 @@ public class ActionController {
 		MainMenu.start();
 	}
 
-	
-
-	
-	
 	@FXML
 	protected void handleMainGame(ActionEvent event) throws IOException {
 		System.out.println(event.getSource());

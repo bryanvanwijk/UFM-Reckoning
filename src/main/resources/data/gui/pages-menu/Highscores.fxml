@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
 <?import java.net.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
@@ -7,10 +10,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="555.0" prefWidth="1019.0" styleClass="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.ActionController">
-   <children>
-     
-   </children>
    <stylesheets>
       <URL value="@MainMenu.css" />
    </stylesheets>
+   <children>
+      <Label layoutX="152.0" layoutY="349.0" text="Your highscore:">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
