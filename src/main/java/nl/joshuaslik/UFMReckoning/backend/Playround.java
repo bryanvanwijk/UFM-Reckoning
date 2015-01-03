@@ -53,14 +53,14 @@ public class Playround {
 	}
 	
 	/**
-	 * checks of a team is already in this playround
+	 * checks how many times a team is in this playround
 	 * @param team
 	 * @return
 	 */
 	public int contains(Team team){
 		int result = 0;
 		for (int i = 0; i < matches.size(); i++){
-			if(matches.get(i).getHomeTeam().equals(team) || matches.get(i).getAwayTeam().equals(team)){
+			if(matches.get(i).getHomeTeam().equals(team) | matches.get(i).getAwayTeam().equals(team)){
 				result = result+1;
 			}
 		}

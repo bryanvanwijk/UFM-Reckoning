@@ -84,9 +84,11 @@ public class Game {
 	 * @return the Human player
 	 */
 	public User getUser() {
-		for (int i = 0; i < users.size(); i++)
-			if (users.get(i) instanceof Human)
+		for (int i = 0; i < users.size(); i++){
+			if (users.get(i) instanceof Human){
 				return users.get(i);
+			}
+		}
 		return null;
 	}
 
@@ -136,8 +138,9 @@ public class Game {
 	 */
 	public Team getTeam(String teamid) {
 		for (int i = 0; i < users.size(); i++) {
-			if (users.get(i).getTeam().getid().equals(teamid))
-				;
+			if (users.get(i).getTeam().getid().equals(teamid)){
+				return users.get(i).getTeam();
+			}
 		}
 		return null;
 	}

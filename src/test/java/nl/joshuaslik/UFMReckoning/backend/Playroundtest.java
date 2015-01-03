@@ -49,7 +49,6 @@ public class Playroundtest {
 		assertFalse(playround1.equals(team1));
 	}
 	
-	/**
 	@Test
 	public void testconatains() {
 		Playround playround1 = new Playround();
@@ -58,10 +57,19 @@ public class Playroundtest {
 		Team team3 = new Team("az", "az", "Frank de Boer");
 		Match match = new Match(team1, team2);
 		playround1.addmatch(match);
-		assertTrue(playround1.contains(team1));
-		assertFalse(playround1.contains(team3));
+		assertEquals(playround1.contains(team1), 1);
 	}
-	*/
+	
+	@Test
+	public void testconatains2() {
+		Playround playround1 = new Playround();
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Frank de Boer");
+		Team team3 = new Team("az", "az", "Frank de Boer");
+		Match match = new Match(team1, team2);
+		playround1.addmatch(match);
+		assertEquals(playround1.contains(team3), 0);
+	}
 	
 	@Test
 	public void testgetMatches() {
@@ -73,6 +81,16 @@ public class Playroundtest {
 		assertEquals(playround1.getMatches().size(), 1);
 	}
 	
+	@Test
+	public void testPlayroundnr() {
+		Playround playround1 = new Playround();
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Frank de Boer");
+		Match match = new Match(team1, team2);
+		playround1.addmatch(match);
+		playround1.setPlayroundnr(5);
+		assertEquals(playround1.getPlayroundnr(), 5);
+	}
 
 	
 	

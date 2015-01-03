@@ -159,9 +159,9 @@ public class Team {
 	 *            is a Player Object.
 	 */
 	public void setPlayerActive(Player player) {
-		if (!activePlayers.contains(player) && activePlayers.size() < 11) {
+		if (!activePlayers.contains(player) & activePlayers.size() < 11) {
 
-			if (player instanceof Goalkeeper && !checkActiveGoalkeeper()) {
+			if (player instanceof Goalkeeper & !checkActiveGoalkeeper()) {
 				activePlayers.add(player);
 			}
 
@@ -201,8 +201,7 @@ public class Team {
 					stamina -= ((Fieldplayer) player).getStamina();
 				}
 			}
-		}
-		
+		}	
 		calcAverageStats();
 	}
 

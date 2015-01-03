@@ -2,6 +2,7 @@ package nl.joshuaslik.UFMReckoning.backend;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -192,11 +193,6 @@ public class MatchTest {
 		assertFalse(match1.equals(match2));
 	}
 	
-
-
-	
-	
-	
 	@Test
 	public void testgetHomeTeam() {
 		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
@@ -213,15 +209,56 @@ public class MatchTest {
 		assertEquals(match.getAwayTeam(), team2);
 	}
 	
+	@Test
+	public void testgetHometeam() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.getHometeam(), team1.getTeamName());
+	}
 	
-	//@Test
-	//public void testgetAwayGoals() {
-	//	Team team1 = new Team("ajax", "ajax", "Frank de Boer");
-	//	Team team2 = new Team("ado", "ado", "Ronald de Boer");
-	//	Match match = new Match(team1, team2);
-	//	match.setawaygoals(5);
-	//	assertEquals(match.getAwaygoals(), 5);
-	//}
+	@Test
+	public void testgetAwayteam() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.getAwayteam(), team2.getTeamName());
+	}
+	
+	
+	@Test
+	public void testgetAwayGoals1() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		match.setawaygoals(5);
+		assertEquals(match.getAwaygoals(), (Integer) 5);
+	}
+	
+	@Test
+	public void testgetAwayGoals2() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.getAwaygoals(), null);
+	}
+	
+	@Test
+	public void testgetHomeGoals1() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		match.setHomegoals(5);
+		assertEquals(match.getHomegoals(), (Integer) 5);
+	}
+	
+	@Test
+	public void testgetHomeGoals2() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.getHomegoals(), null);
+	}
 	
 	@Test
 	public void testgetWinner() {
@@ -247,6 +284,144 @@ public class MatchTest {
 		Team team2 = new Team("ado", "ado", "Ronald de Boer");
 		Match match = new Match(team1, team2);
 		assertEquals(match.getDraw(), false);
+	}
+	
+	@Test
+	public void testPlayround() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		match.setPlayround(5);
+		assertEquals(match.getPlayround(), 5);
+	}
+	
+	@Test
+	public void testContains() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertTrue(match.contains(team1));
+	}
+	
+	@Test
+	public void testContains2() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertTrue(match.contains(team2));
+	}
+	
+	@Test
+	public void testContains3() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Team team3 = new Team("PSV", "PSV", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertFalse(match.contains(team3));
+	}
+	
+	@Test
+	public void testDetermineGoals1() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(50), 0);
+	}
+	
+	@Test
+	public void testDetermineGoals2() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(811), 1);
+	}
+	
+	@Test
+	public void testDetermineGoals3() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(1531), 2);
+	}
+	
+	@Test
+	public void testDetermineGoals4() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2131), 3);
+	}
+	
+	@Test
+	public void testDetermineGoals5() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2431), 4);
+	}
+	
+	@Test
+	public void testDetermineGoals6() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2641), 5);
+	}
+	
+	@Test
+	public void testDetermineGoals7() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2851), 6);
+	}
+	
+	@Test
+	public void testDetermineGoals8() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2911), 7);
+	}
+	
+	@Test
+	public void testDetermineGoals9() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2941), 8);
+	}
+	
+	@Test
+	public void testDetermineGoals10() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2971), 9);
+	}
+	
+	@Test
+	public void testDetermineGoals11() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(2986), 10);
+	}
+	
+	@Test
+	public void testDetermineGoals12() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(3001), -1);
+	}
+	
+	@Test
+	public void testDetermineGoals13() {
+		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
+		Team team2 = new Team("ado", "ado", "Ronald de Boer");
+		Match match = new Match(team1, team2);
+		assertEquals(match.determinegoals(-1), -1);
 	}
 	
 

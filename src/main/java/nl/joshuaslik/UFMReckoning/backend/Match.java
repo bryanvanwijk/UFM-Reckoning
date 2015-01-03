@@ -20,45 +20,50 @@ public class Match {
 			this.awayteam = awayteam;
 		}
 	}
+	
 	/**
 	 * Method to determine the amount of goals
 	 * @param goalchance chance to have a goal
 	 * @return amount of goals
 	 */
-	private int determinegoals(int goalchance){
-
-		if(goalchance >= 0 && goalchance <= 810){
-			return 0;
-		}
-		else if(goalchance < 1530) {
-			return 1;
-		}
-		else if(goalchance < 2130){
-			return 2;
-		}
-		else if(goalchance < 2430){
-			return 3;
-		}
-		else if(goalchance < 2640){
-			return 4;
-		}
-		else if(goalchance < 2850){
-			return 5;
-		}
-		else if(goalchance < 2910){
-			return 6;
-		}
-		else if(goalchance < 2940){
-			return 7;
-		}
-		else if(goalchance < 2970){
-			return 8;
-		}
-		else if(goalchance < 2985){
-			return 9;
-		}
-		else if(goalchance <= 3000){
-			return 10;
+	public int determinegoals(int goalchance){
+		if(goalchance >= 0){ 
+			if(goalchance <= 810){
+				return 0;
+			}
+			else if(goalchance < 1530) {
+				return 1;
+			}
+			else if(goalchance < 2130){
+				return 2;
+			}
+			else if(goalchance < 2430){
+				return 3;
+			}
+			else if(goalchance < 2640){
+				return 4;
+			}
+			else if(goalchance < 2850){
+				return 5;
+			}
+			else if(goalchance < 2910){
+				return 6;
+			}
+			else if(goalchance < 2940){
+				return 7;
+			}
+			else if(goalchance < 2970){
+				return 8;
+			}
+			else if(goalchance < 2985){
+				return 9;
+			}
+			else if(goalchance <= 3000){
+				return 10;
+			}
+			else{
+				return -1;
+			}
 		}
 		else{
 			return -1;

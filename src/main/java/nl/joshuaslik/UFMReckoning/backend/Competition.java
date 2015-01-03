@@ -32,6 +32,7 @@ public class Competition {
 	public void ComputeStandings() {
 		int ranking = 1;
 		for (int i = 0; i < users.size(); i++) {
+			
 			ranking = 1;
 			for (int j = 0; j < users.size(); j++) {
 				if ((users.get(i).getTeam().getPoints() < users.get(j)
@@ -96,21 +97,6 @@ public class Competition {
 	}
 
 	/**
-	 * check for dublicates in playrounds
-	 */
-	public void check() {
-		int k = 0;
-		for (int i = 0; i < users.size(); i++) {
-			for (int j = 0; j < playrounds.size(); j++) {
-				if (playrounds.get(i).contains(users.get(i).getTeam()) != 1) {
-					System.out.println("fout neeeee "
-							+ users.get(i).getTeam().getTeamName() + k);
-				}
-			}
-		}
-	}
-
-	/**
 	 * Compte the result of the total competition
 	 */
 	public void computeresultCompetition() {
@@ -125,7 +111,7 @@ public class Competition {
 	 *            between 0 and total playrounds
 	 * @return playround i of this competition stating from 0
 	 */
-	public Playround getPlayround(int nr) {
+	public Playround getPlayround(int nr){
 		for (int i = 0; i < playrounds.size(); i++) {
 			if (playrounds.get(i).getPlayroundnr() == nr) {
 				return playrounds.get(i);
