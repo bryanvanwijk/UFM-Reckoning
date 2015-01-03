@@ -7,7 +7,7 @@
 
 <AnchorPane styleClass="pane" stylesheets="@NewGame.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.joshuaslik.UFMReckoning.gui.NewGameController">
    <children>
-      <TableView fx:id="teamtable" layoutX="157.0" opacity="0.75" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+      <TableView fx:id="teamtable" layoutX="157.0" onDragEntered="#handleChooseTeam" opacity="0.75" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
         <columns>
           <TableColumn fx:id="teamColumn" text="Team" />
           <TableColumn fx:id="coachColumn" text="Coach" />
