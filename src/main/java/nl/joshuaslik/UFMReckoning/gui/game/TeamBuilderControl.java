@@ -56,7 +56,7 @@ public class TeamBuilderControl {
     private void initialize() {
     	Image image = new Image("/data/base/teams/pictures/"+team.getid()+".png");
     	teamimg.setImage(image);
-    	ArrayList<Player> playerslist = team.getAllplayers();
+    	ArrayList<Player> playerslist = team.getAllPlayers();
     	players = FXCollections.observableArrayList(playerslist);
     	playertable.setItems(players);
     	
