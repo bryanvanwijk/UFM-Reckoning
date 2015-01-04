@@ -131,6 +131,14 @@ public class Team {
 		calcAverageStats();
 	}
 	
+	public void removePlayer(String id) {
+		Player player = this.getPlayer(id);
+		if (benchPlayers.contains(player))
+			this.removeBenchPlayer(player);
+		else
+			this.removeActivePlayer(player);
+	}
+	
 	public Goalkeeper getActiveGoalkeeper(){
 		Goalkeeper res = null;
 		for(int i = 0; i < activePlayers.size(); i++){
@@ -258,6 +266,22 @@ public class Team {
 
 	public ArrayList<Player> getBenchPlayers() {
 		return benchPlayers;
+	}
+	
+	public ArrayList<Player> getAllPlayers() {
+		ArrayList<Player> list = new ArrayList<Player>();
+		list.addAll(activePlayers);
+		list.addAll(benchPlayers);
+		return list;
+	}
+	
+	public Player getPlayer(String id) {
+		ArrayList<Player> list = this.getAllPlayers();
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i).getID().equals(id))
+				return list.get(i);
+		}
+		throw new UnknownPlayerException(id + " does not exist");
 	}
 
 	public String getTeamName() {
@@ -489,14 +513,6 @@ public class Team {
 		
 		result = result/getTotalPlayers();
 		averageStamina = result;
-	}
-	
-	public ArrayList<Player> getAllplayers(){
-		ArrayList<Player> res = getActivePlayers();
-		for(int i =0; i<getBenchPlayers().size(); i++){
-			res.add(getBenchPlayers().get(i));
-		}
-		return res;
 	}
 	
 	public int getAverageStamina() {

@@ -574,7 +574,7 @@ public class TeamTest {
 		Team team1 = new Team("ajax", "ajax", "Frank de Boer");
 		Fieldplayer fieldplayer1 = new Fieldplayer("raivloet", "Rai", "Vloet","Netherlands", "CAM", 62, 32, 63, 4000000);
 		team1.addBenchPlayer(fieldplayer1);
-		assertEquals(team1.getAllplayers().size(), 1);
+		assertEquals(team1.getAllPlayers().size(), 1);
 	}
 	
 	@Test
@@ -584,7 +584,7 @@ public class TeamTest {
 		Goalkeeper goalkeeper1 = new Goalkeeper("pietvelthuizen", "Piet","Velthuizen", "Netherlands", 74, 72, 84, 3000000);
 		team1.addBenchPlayer(fieldplayer1);
 		team1.addBenchPlayer(goalkeeper1);
-		assertEquals(team1.getAllplayers().size(), 2);
+		assertEquals(team1.getAllPlayers().size(), 2);
 	}
 
 	@Test
