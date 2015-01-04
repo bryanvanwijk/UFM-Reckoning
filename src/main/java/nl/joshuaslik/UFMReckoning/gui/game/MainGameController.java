@@ -44,4 +44,8 @@ public class MainGameController {
 		Competition.start();
 	}
 
+	@FXML
+	protected void handleMarket(ActionEvent event) throws IOException {
+		MarketController.start();
+	}
 }
